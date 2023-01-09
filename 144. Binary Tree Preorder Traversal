@@ -1,0 +1,44 @@
+C++:
+
+Preorder traversal of binary tree in c++ best solution  // time complexity O(N) and space complexity O(N)
+
+class Solution {
+public:
+    vector<int> preorderTraversal(TreeNode* root) {  // root is the root of the binary tree
+        vector<int> ans;        // ans is the preorder traversal of the binary tree
+        if(root==NULL) return ans;      // if root is null then return ans
+        stack<TreeNode*> st;        // st is the stack which stores the nodes of the binary tree
+        st.push(root);      // push the root into the stack
+        while(!st.empty()){     // while the stack is not empty
+            TreeNode* node = st.top();      // node is the topmost node of the stack
+            st.pop();       // pop the topmost node of the stack
+            ans.push_back(node->val);       // add the value of the node into the ans
+            if(node->right!=NULL) st.push(node->right);       // if the right child of the node is not null then push the right child of the node into the stack
+            if(node->left!=NULL) st.push(node->left);     // if the left child of the node is not null then push the left child of the node into the stack
+        }
+        return ans;     // ans is the preorder traversal of the binary tree
+    
+    }
+};
+
+
+
+
+Java:
+
+Preorder traversal of binary tree in java beslution  // time complexity O(N) and space complexity O(N)
+class Solution {
+    public List<Integer> preorderTraversal(TreeNode root) {  // root is the root of the binary tree
+        List<Integer> ans = new ArrayList<>();     // ans is the preorder traversal of the binary tree
+        if(root==null) return ans;      // if root is null then return ans
+        Stack<TreeNode> st = new Stack<>();        // st is the stack which stores the nodes of the binary tree
+        st.push(root);      // push the root into the stack
+        while(!st.isEmpty()){       // while the stack is not empty
+            TreeNode node = st.pop();       // node is the topmost node of the stack
+            ans.add(node.val);      // add the value of the node into the ans
+            if(node.right!=null) st.push(node.right);     // if the right child of the node is not null then push the right child into the stack
+            if(node.left!=null) st.push(node.left);       // if the left child of the node is not null then push the left child into the stack
+        }
+        return ans;     // return ans
+    }
+}
