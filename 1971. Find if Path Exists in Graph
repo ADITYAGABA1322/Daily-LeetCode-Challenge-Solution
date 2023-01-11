@@ -6,7 +6,7 @@ Medium
 
 C++:
 
-class Solution{
+class Solution{ // Time complexity O(N+E) and Space Complexity O(N+E)
     public:
     bool dfs(int node , vector<vector<int>>& g , vector<bool>& vis , int destination){
         if(node == destination) return true;
@@ -35,7 +35,7 @@ class Solution{
 
 Java:
 
-class Solution{
+class Solution{ // Time complexity O(N+E) and Space Complexity O(N+E)
     public boolean dfs(int node , List<List<Integer>> g , boolean[] vis , int destination){
         if(node == destination) return true;
         vis[node]  = true;
