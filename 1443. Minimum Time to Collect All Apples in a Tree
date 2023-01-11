@@ -1,0 +1,65 @@
+# Daily-LeetCode-Challenge-Solution
+
+11 Jan 2023
+
+Medium 
+
+C++:
+
+class Solution{ // Time complexity O(N+E) and Space Complexity O(N+E)
+ public:
+    int dfs(vector<vector<int>>& g , int curr, int parent , vector<bool>& hasApple){
+        int time = 0;
+        for(auto child:g[curr]){
+            if(child == parent){
+                continue;
+            }
+            int time_from_my_child = dfs(g,child,curr,hasApple);
+            if(time_from_my_child > 0 || hasApple[child]){
+                time += time_from_my_child+2;
+            }
+        }
+        return time;
+    }
+    int minTime(int n, vector<vector<int>>& edges, vector<bool>& hasApple) {
+        vector<vector<int>> g(n);
+        for(auto edge : edges){
+            // int u = edge[0];
+            // int v = edge[1];
+            g[edge[0]].push_back(edge[1]);
+            g[edge[1]].push_back(edge[0]);
+        }
+        return dfs(g , 0 , -1 , hasApple);
+    }
+};
+
+
+
+
+Java:
+
+class Solution{ // Time complexity O(N+E) and Space Complexity O(N+E)
+      public int dfs(List<List<Integer>> g, List<Boolean> hasApple, int node, int parent) {
+        int time = 0;
+        for (int child : g.get(node)) {
+            if (child == parent) {
+                continue;
+            }
+            int timeFromMyChild = dfs(g, hasApple, child, node);
+            if (timeFromMyChild > 0 || hasApple.get(child)) {
+                time += timeFromMyChild + 2;
+            }
+        }
+        return time;
+    }
+
+    public int minTime(int n, int[][] edges, List<Boolean> hasApple) {
+        List<List<Integer>> g = new ArrayList<>();
+        for(int i=0 ; i<n; i++) g.add(new ArrayList<>());
+        for(int[] edge:edges){
+           g.get(edge[0]).add(edge[1]);
+           g.get(edge[1]).add(edge[0]);
+        }
+        return dfs(g , hasApple , 0 , -1);
+    }
+}
