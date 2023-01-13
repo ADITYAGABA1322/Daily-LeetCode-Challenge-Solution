@@ -5,6 +5,35 @@
 Medium
 
 C++ :
+class Solution {   
+public:  //Time Complexity O(N+E) and Space Complexity O(N+E)
+    vector<int> dfs(unordered_map<int , vector<int>>& g , int node , int parent ,vector<int>& result , string &labels){ // dfs function to find the number of nodes in the subtree with the same label
+        vector<int> my_count(26,0);   // my_count is the vector which stores the count of the nodes in the subtree with the same label
+        my_count[labels[node]-'a']++;  // increment the count of the labels[node] by 1
+        for(auto child:g[node]){  // for each child of the node
+            if(child == parent){  // if the child is equal to the parent
+                continue;  // continue
+            }
+            vector<int> child_count = dfs(g,child,node,result,labels);  // child_count is the vector which stores the count of the nodes in the subtree with the same label of the child
+            for(int i=0;i<26;i++){  // for each character
+                my_count[i] += child_count[i];  // increment the count of the character by the count of the character in the child_count
+            }
+        }
+        result[node] = my_count[labels[node]-'a'];  // result[node] is the number of nodes in the subtree with the same label of the node
+        return my_count;  // return the my_count
+    }
+    vector<int> countSubTrees(int n, vector<vector<int>>& edges, string labels) {
+        unordered_map<int , vector<int>> g;  // g is the graph
+        for(auto edge:edges){  // for each edge in the edges
+            g[edge[0]].push_back(edge[1]);  // add the edge[1] into the g[edge[0]]
+            g[edge[1]].push_back(edge[0]);  // add the edge[0] into the g[edge[1]]
+        }
+        vector<int> result(n,0);  // result is the vector which stores the number of nodes in the subtree with the same label
+        dfs(g,0,-1,result,labels);  // call the dfs function
+        return result;  // return the result
+    }
+};
+
 
 
 Java :
