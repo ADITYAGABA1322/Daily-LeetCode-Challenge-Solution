@@ -37,30 +37,35 @@ public:  //Time Complexity O(N+E) and Space Complexity O(N+E)
 
 
 Java :
- public int[] countSubTrees(int n, int[][] edges, String labels) {
-        Map<Integer, List<Integer>> g = new HashMap<>();
-        for (int[] e : edges) {
-            g.computeIfAbsent(e[0], l -> new ArrayList<>()).add(e[1]);
-            g.computeIfAbsent(e[1], l -> new ArrayList<>()).add(e[0]);
-        }
-        int[] ans = new int[n];
-        Set<Integer> seen = new HashSet<>();
-        dfs(g, 0, labels, ans, seen);
-        return ans;
-    }
-    private int[] dfs(Map<Integer, List<Integer>> g, int node, String labels, int[] ans, Set<Integer> seen) {
-        int[] cnt = new int[26];
-        if (seen.add(node)) {
-            char c = labels.charAt(node);
-            for (int child : g.getOrDefault(node, Collections.emptyList())) {
-                int[] sub = dfs(g, child, labels, ans, seen);
-                for (int i = 0; i < 26; ++i) {
-                    cnt[i] += sub[i];
-                }
+class Solution {  // Time Complexity O(N+E) and Space Complexity O(N+E)
+    public int[] dfs(List<List<Integer>> map, int node, int parent, int[] result, String labels) { // dfs function to find the number of nodes in the subtree with the same label
+        int[] myCount = new int[26];  // myCount is the array which stores the count of the nodes in the subtree with the same label
+        myCount[labels.charAt(node) - 'a']++;  // increment the count of the labels.charAt(node) by 1
+        for (int child : map.get(node)) {  // for each child of the node
+            if (child == parent) {  // if the child is equal to the parent
+                continue;  // continue
             }
-            ++cnt[c - 'a'];
-            ans[node] = cnt[c - 'a'];
+            int[] childCount = dfs(map, child, node, result, labels);  // childCount is the array which stores the count of the nodes in the subtree with the same label of the child
+            for (int i = 0; i < 26; i++) {  // for each character
+                myCount[i] += childCount[i];  // increment the count of the character by the count of the character in the childCount
+            }
         }
-        return cnt;
+        result[node] = myCount[labels.charAt(node) - 'a'];  // result[node] is the number of nodes in the subtree with the same label of the node
+        return myCount;  // return the myCount
     }
+    public int[] countSubTrees(int n, int[][] edges, String labels) {
+        List<List<Integer>> map = new ArrayList<>();  // map is the graph
+        for (int i = 0; i < n; i++) {
+            map.add(new ArrayList<>());
+        }
+        for (int[] edge : edges) {
+            map.get(edge[0]).add(edge[1]);
+            map.get(edge[1]).add(edge[0]);
+        }
+        int[] result = new int[n];  // result is the array which stores the number of nodes in the subtree with the same label
+        dfs(map, 0, -1, result, labels);  // call the dfs function
+        return result;  // return the result
+    }
+
+}
     
