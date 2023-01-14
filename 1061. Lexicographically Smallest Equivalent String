@@ -58,8 +58,13 @@ Java :
 
 2 Approach
 
-1st using Disjoint Set Union (DSU) and Path Compression Technique 
+1st using Disjoint Set Union (DSU) and Path Compression Technique  :
 
+
+
+
+
+2nd using DFS :
 
 
 
