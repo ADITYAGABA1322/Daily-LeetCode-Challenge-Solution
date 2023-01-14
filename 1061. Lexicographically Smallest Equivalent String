@@ -57,6 +57,39 @@ public:
 2nd using DFS :
 
 
+class Solution { // Time Complexity O(N+E) and Space Complexity O(N+E)
+public:
+    char dfs(vector<vector<int>>& adj, int node, vector<bool>& visited){
+        visited[node] = true;
+        char ch = node + 'a';
+        for(int i=0; i<adj[node].size(); i++){
+            if(!visited[adj[node][i]]){
+                ch = min(ch, dfs(adj, adj[node][i], visited));
+            }
+        }
+        return ch;
+    }
+
+    string smallestEquivalentString(string s1, string s2, string baseStr){
+        int  n = s1.size();
+        int m = baseStr.size();
+        vector<vector<int>> adj(26);
+        for(int i=0; i<n; i++){
+            adj[s1[i]-'a'].push_back(s2[i]-'a');
+            adj[s2[i]-'a'].push_back(s1[i]-'a');
+        }
+        string result;
+        for(int i=0; i<m; i++){
+            vector<bool> visited(26, false);
+            char ch = dfs(adj, baseStr[i]-'a', visited);
+            result += ch;
+        }
+        return result;
+    }
+};
+
+
+
 Java :
 
 // Time Complexity O(N) and Space Complexity O(1)
@@ -100,6 +133,39 @@ class Solution {
 
 
 2nd using DFS :
+
+class Solution { // Time Complexity O(N+E) and Space Complexity O(N+E)
+    public char dfs(List<Integer>[] adj, int node, boolean[] visited){
+        visited[node] = true;
+        char ch = (char)(node + 'a');
+        for(int i=0; i<adj[node].size(); i++){
+            if(!visited[adj[node].get(i)]){
+                ch = (char)Math.min(ch, dfs(adj, adj[node].get(i), visited));
+            }
+        }
+        return ch;
+    }
+
+    public String smallestEquivalentString(String s1, String s2, String baseStr){
+        int  n = s1.length();
+        int m = baseStr.length();
+        List<Integer>[] adj = new ArrayList[26];
+        for(int i=0; i<26; i++){
+            adj[i] = new ArrayList<>();
+        }
+        for(int i=0; i<n; i++){
+            adj[s1.charAt(i)-'a'].add(s2.charAt(i)-'a');
+            adj[s2.charAt(i)-'a'].add(s1.charAt(i)-'a');
+        }
+        StringBuilder sb = new StringBuilder();
+        for(int i=0; i<m; i++){
+            boolean[] visited = new boolean[26];
+            char ch = dfs(adj, baseStr.charAt(i)-'a', visited);
+            sb.append(ch);
+        }
+        return sb.toString();
+    }
+};
 
 
 
