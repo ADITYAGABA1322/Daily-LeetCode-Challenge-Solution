@@ -1,0 +1,114 @@
+# Daily-LeetCode-Challenge-Solution
+
+2246. Longest Path With Different Adjacent Characters
+
+Hard 
+
+13 Jan 2023
+
+C++ :
+3 Approach using DFS
+
+1st:
+class Solution {
+public:
+    int longestPath(vector<int>& parent, string s) {
+        int n = parent.size() , ans = 0;
+       vector<vector<int>> child(n);
+       for(int i=1 ; i<n; i++){
+           child[parent[i]].push_back(i);
+       }
+       dfs(0 , child , s , ans);
+       return ans;  
+    }
+     int dfs(int curr_node  , vector<vector<int>> &child, string &s , int &ans ){
+        int max1 = 0 , max2 = 0;
+        for(auto child_node: child[curr_node]){
+            int len = dfs( child_node , child , s ,ans);
+            if(s[curr_node] == s[child_node]) continue;
+            if(len > max2)  max2 = len;
+            if(max2 > max1) swap(max1 , max2);
+
+        }
+        ans = max(ans , 1+max1+max2);
+        return 1+max1;
+
+    }
+};
+
+2nd :
+class Solution{
+    public:
+    vector<int> child[100001];
+    int ans = 0;
+    int dfs(int curr_node , string &s){
+        int max1 = 0 , max2 = 0;
+        if(child[curr_node].empty()) return 1;
+        for(auto child_node : child[curr_node]){
+            int len = dfs(child_node , s);
+            ans = max(ans , len);
+            if(s[curr_node] == s[child_node]) continue;
+            if(len > max1){
+                max2 = max1;
+                max1= len;
+            }
+            else max2 = max(max2 , len);
+          
+        }
+        ans = max(ans ,1+max1+max2);
+        return 1+max1;
+
+    }
+    int longestPath(vector<int>& parent , string s){
+        int n = parent.size();
+        for(int i=1; i<n; i++){
+         child[parent[i]].push_back(i);
+        }
+        ans = 1;
+        dfs(0 ,s);
+        return ans;
+    }
+};
+
+3rd :
+class Solution{
+    public:
+    int ans;
+    int dfs(unordered_map<int , vector<int>>& g , int curr_node , int parent , string& s){
+        int longest = 0;
+        int second_longest = 0;
+        for(auto child : g[curr_node]){
+            if(child == parent) continue;
+            int child_longest_length = dfs(g , child  , curr_node , s);
+            if(s[child] == s[curr_node]) continue;
+            if(child_longest_length > second_longest) second_longest  = child_longest_length;
+            if(second_longest > longest) swap(longest , second_longest);
+            
+        }
+        int koi_ek_acha = max(longest , second_longest) + 1;
+        int only_root_acha = 1;
+        int niche_hi_milgya_answer = 1+longest+second_longest;
+        ans = max({ans ,koi_ek_acha , only_root_acha , niche_hi_milgya_answer});
+        return max(koi_ek_acha , only_root_acha);
+
+
+    }
+    int longestPath(vector<int>& parent , string s){
+        int n = parent.size();
+        unordered_map<int , vector<int>> g;
+           ans = 0;
+        for(int i=1; i<n; i++){
+            g[parent[i]].push_back(i);
+        }
+     
+        dfs(g , 0  , -1 , s);
+        return ans;
+    }
+};
+
+
+
+Java : 
+
+3 Approach using DFS
+
