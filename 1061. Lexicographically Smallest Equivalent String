@@ -10,7 +10,10 @@ Medium
 
 C++ :
 
+// Time Complexity O(N) and Space Complexity O(1)
+
 2 Approach
+
 
 1st using Disjoint Set Union (DSU) and Path Compression Technique :
 
@@ -55,6 +58,8 @@ public:
 
 
 Java :
+
+// Time Complexity O(N) and Space Complexity O(1)
 
 2 Approach
 
