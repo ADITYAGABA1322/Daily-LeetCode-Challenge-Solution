@@ -51,14 +51,14 @@ public:
 };
 
 
-2nd using DFS
+2nd using DFS :
 
 
 Java :
 
 2 Approach
 
-1st using Disjoint Set Union (DSU) and Path Compression Technique  :
+1st using Disjoint Set Union (DSU) and Path Compression Technique :
 
 
 
