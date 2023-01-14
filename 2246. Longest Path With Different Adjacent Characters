@@ -7,6 +7,7 @@ Hard
 13 Jan 2023
 
 C++ :
+ // Time Complexity O(N+E) and Space Complexity O(N+E)
 
 3 Approach using DFS
 
@@ -110,6 +111,7 @@ class Solution{
 
 
 Java : 
+ // Time Complexity O(N+E) and Space Complexity O(N+E)
 
 2 Approach using DFS
 
