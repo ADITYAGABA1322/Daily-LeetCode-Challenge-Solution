@@ -66,6 +66,36 @@ Java :
 1st using Disjoint Set Union (DSU) and Path Compression Technique :
 
 
+class Solution {
+    public int find(int[] parent, int x){ // find the parent of the node x and also do the path compression 
+        if(parent[x] == x){  // if the parent of the node x is equal to the node x then return the node x
+            return x;       
+        }
+        return parent[x] = find(parent, parent[x]); // else return the parent of the node x
+    }
+    public String smallestEquivalentString(String s1, String s2, String baseStr) {  // function to find the lexicographically smallest equivalent string
+        int[] parent = new int[26];   // parent is the parent of the node i 
+        for(int i=0; i<26; i++){  // initialize the parent of the node i to the node i 
+            parent[i] = i;   // parent of the node i is the node i 
+        }
+        for(int i=0; i<s1.length(); i++){  // for each edge in the graph 
+            int p1 = find(parent, s1.charAt(i)-'a');  // find the parent of the node s1[i]-'a'
+            int p2 = find(parent, s2.charAt(i)-'a'); // find the parent of the node s2[i]-'a'
+            if(p1 < p2){   // if the parent of the node s1[i]-'a' is less than the parent of the node s2[i]-'a' then make the parent of the node s2[i]-'a' as the parent of the node s1[i]-'a' 
+                parent[p2] = p1;  // parent of the node s2[i]-'a' is the parent of the node s1[i]-'a'
+            }else{
+                parent[p1] = p2;  // parent of the node s1[i]-'a' is the parent of the node s2[i]-'a'
+            }
+        }
+        StringBuilder sb = new StringBuilder();  // sb is the string builder
+        for(int i=0; i<baseStr.length(); i++){ // for each character in the baseStr 
+            sb.append((char)(find(parent, baseStr.charAt(i)-'a') + 'a')); // find the parent of the node baseStr[i]-'a' and add 'a' to it to get the character
+        }
+        return sb.toString();  // return the baseStr    
+    }
+};
+
+
 
 
 
