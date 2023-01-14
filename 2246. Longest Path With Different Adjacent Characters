@@ -112,3 +112,38 @@ Java :
 
 3 Approach using DFS
 
+
+1st:
+
+class Solution {
+    public int ans = 0;
+    public int dfs(int curr_node , List<List<Integer>> g  , String s ){
+        int max1 = 0 , max2 = 0;
+        for(int child : g.get(curr_node)){
+            int len = dfs(child , g , s);
+            if(s.charAt(curr_node) == s.charAt(child)) continue;
+            if(len > max2)  max2 = len ;
+             if (max2 > max1) {  // if the max2 is greater than the max1
+                int temp = max1;  // swap the max1 and max2
+                max1 = max2;
+                max2 = temp;
+            }
+            
+        }
+        ans = Math.max(ans , 1+max1+max2);
+        return 1+max1;
+
+    }
+    public int longestPath(int[] parent, String s) {
+        int n= parent.length;
+        List<List<Integer>> g = new ArrayList<>();
+        for(int i=0; i<n; i++) g.add(new ArrayList<>());
+        for(int i=1; i<n; i++){
+            g.get(parent[i]).add(i);
+        }
+        dfs(0 , g  ,s);
+        return ans;
+
+    }
+}
+
