@@ -147,3 +147,43 @@ class Solution {
     }
 }
 
+
+2nd :
+
+
+class Solution{
+    public int ans = 0;
+     public int dfs(List<List<Integer>> g , int curr_node , int parent , String s){
+         int Longest = 0;
+         int secondLongest = 0;
+         for(int child : g.get(curr_node)){
+             if(child == parent) continue;
+             int childLongestLength = dfs(g , child , curr_node , s);
+             if(s.charAt(curr_node) == s.charAt(child)) continue;
+             if(childLongestLength > secondLongest)  secondLongest = childLongestLength;
+             if(secondLongest > Longest){
+                 int temp = Longest;
+                 Longest = secondLongest;
+                 secondLongest = temp;
+             }
+
+         }
+        int koiEkAcha = Math.max(Longest , secondLongest) + 1;
+        int onlyRootAcha = 1;
+        int nicheHiMilGyaAnswer = 1+Longest+secondLongest;
+        ans = Math.max(ans , Math.max(koiEkAcha , Math.max(onlyRootAcha ,  nicheHiMilGyaAnswer)));  // update the ans
+        return Math.max(koiEkAcha , onlyRootAcha);
+
+     }
+      public int longestPath(int[] parent, String s) {
+        int n= parent.length;
+        List<List<Integer>> g = new ArrayList<>();
+        for(int i=0; i<n; i++) g.add(new ArrayList<>());
+        for(int i=1; i<n; i++){
+            g.get(parent[i]).add(i);
+        }
+        dfs(g , 0 ,-1 ,s);
+        return ans;
+
+    }
+}
