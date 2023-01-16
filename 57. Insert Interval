@@ -72,8 +72,6 @@ class Solution {  // Time Complexity O(N) and Space Complexity O(N)
 }
 
 
-
-
 2nd approach
 class Solution { // Time Complexity O(N) and Space Complexity O(1)
     public int[][] insert(int[][] intervals, int[] newInterval) { // function to insert the interval in the vector of intervals
