@@ -10,5 +10,33 @@ Medium
 C++ :
 
 
+class Solution { // Time Complexity O(N) and Space Complexity O(1)
+public:  // function to insert the interval in the vector of intervals
+    vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {  // function to insert the interval in the vector of intervals
+        int n = intervals.size();  // n is the size of the vector of intervals
+        int start = newInterval[0]; // start is the start of the interval
+        int end = newInterval[1]; // end is the end of the interval
+        int i = 0; // i is the index of the interval
+        vector<vector<int>> result;  // result is the vector of intervals after inserting the interval
+        while(i<n && intervals[i][1] < start){  // while the end of the interval is less than the start of the interval
+            result.push_back(intervals[i]);   // push the interval in the result    
+            i++;                      // increment the index of the interval
+        }
+        while(i<n && intervals[i][0] <= end){       // while the start of the interval is less than or equal to the end of the interval
+            start = min(start, intervals[i][0]);        // update the start of the interval
+            end = max(end, intervals[i][1]);        // update the end of the interval
+            i++;              // increment the index of the interval
+        }
+        result.push_back({start, end});     // push the interval in the result
+        while(i<n){                         // while the index of the interval is less than the size of the vector of intervals
+            result.push_back(intervals[i]);     // push the interval in the result
+            i++;          // increment the index of the interval
+        }
+        return result;      // return the result
+    }
+};
+
+
+
 
 Java :
