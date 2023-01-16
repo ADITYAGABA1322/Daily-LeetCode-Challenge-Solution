@@ -9,7 +9,6 @@ Medium
 
 C++ :
 
-
 class Solution { // Time Complexity O(N) and Space Complexity O(1)
 public:  // function to insert the interval in the vector of intervals
     vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {  // function to insert the interval in the vector of intervals
