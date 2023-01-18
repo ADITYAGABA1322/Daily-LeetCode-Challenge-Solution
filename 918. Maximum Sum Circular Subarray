@@ -35,3 +35,29 @@ public:
 
 
 Java:
+
+
+// Time Complexity : O(n) where n is the length of the array and space complexity is O(1)
+class Solution {
+    public int maxSubarraySumCircular(int[] nums) {  // function to find the maximum sum of the circular subarray
+        int n = nums.length;  // n is the length of the array
+        int max_sum = Integer.MIN_VALUE;  // max_sum is the maximum sum of the circular subarray
+        int min_sum = Integer.MAX_VALUE;  // min_sum is the minimum sum of the circular subarray
+        int total_sum = 0;  // total_sum is the total sum of the array
+        int curr_max = 0;  // curr_max is the current maximum sum of the subarray
+        int curr_min = 0;  // curr_min is the current minimum sum of the subarray
+        for(int i=0; i<n; i++){  // for each element in the array
+            total_sum += nums[i];  // increment the total sum by the element
+            curr_max = Math.max(curr_max + nums[i] , nums[i]);  // curr_max is the maximum of the current maximum sum of the subarray and the element
+            max_sum = Math.max(max_sum , curr_max);  // max_sum is the maximum of the maximum sum of the circular subarray and the current maximum sum of the subarray
+            curr_min = Math.min(curr_min + nums[i] , nums[i]);  // curr_min is the minimum of the current minimum sum of the subarray and the element
+            min_sum = Math.min(min_sum , curr_min);  // min_sum is the minimum of the minimum sum of the circular subarray and the current minimum sum of the subarray
+        }
+        if(max_sum < 0){  // if the maximum sum of the circular subarray is less than 0
+            return max_sum;  // return the maximum sum of the circular subarray
+        }
+        return Math.max(max_sum , total_sum - min_sum);  // return the maximum of the maximum sum of the circular subarray and the total sum of the array - the minimum sum of the circular subarray
+    }
+}
+
+
