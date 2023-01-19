@@ -3,6 +3,8 @@
 19 Jan 2023
 
 Medium
+Time complexity: O(n+k)
+Space complexity: O(k)
 
 C++ :
 
@@ -24,6 +26,9 @@ public:
 
 
 Java:
+
+Time complexity: O(n+k)
+Space complexity: O(k)
 
 class Solution {
     public int subarraysDivByK(int[] nums, int k) {
