@@ -1,0 +1,26 @@
+# Daily-LeetCode-Challenge-Solution
+
+19 Jan 2023
+
+Medium
+
+C++ :
+
+class Solution {
+public:
+    int subarraysDivByK(vector<int>& nums, int k) {
+      int prefixMod = 0 , result = 0;
+      int n = nums.size();
+      vector<int> modgroups(k);
+      modgroups[0] = 1;
+      for(int num : nums){
+          prefixMod = (prefixMod + num%k +k) % k;
+          result +=  modgroups[prefixMod];
+          modgroups[prefixMod]++;
+      } 
+        return result;
+    }
+};
+
+
+Java:
