@@ -24,3 +24,19 @@ public:
 
 
 Java:
+
+class Solution {
+    public int subarraysDivByK(int[] nums, int k) {
+        int n = nums.length;
+        int prefixMod = 0 , result = 0;
+        int[] modgroups = new int[k];
+        modgroups[0] = 1;
+        for(int num : nums){
+            prefixMod = (prefixMod + num%k + k)%k;
+            result += modgroups[prefixMod];
+            modgroups[prefixMod]++;
+
+        }
+        return result;
+    }
+}
