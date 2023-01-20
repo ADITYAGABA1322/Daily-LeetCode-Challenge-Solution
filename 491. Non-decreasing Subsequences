@@ -8,6 +8,64 @@ Medium
 
 C++:
 
+// Time Complexity : O(n^2) where n is the length of the array and space complexity is O(n)
+class Solution {
+    public:
+    vector<vector<int>> findSubsequences(vector<int>& nums) {  // function to find the non-decreasing subsequences
+        int n = nums.size();  // n is the length of the array
+        vector<vector<int>> ans;  // ans is the vector of vectors to store the non-decreasing subsequences
+        vector<int> temp;  // temp is the vector to store the current non-decreasing subsequence
+        findSubsequences(nums , ans , temp , 0);  // function call to find the non-decreasing subsequences
+        return ans;  // return the vector of vectors of the non-decreasing subsequences
+    }
+    void findSubsequences(vector<int>& nums , vector<vector<int>>& ans , vector<int>& temp , int index){  // function to find the non-decreasing subsequences
+        if(temp.size() >= 2){  // if the size of the current non-decreasing subsequence is greater than or equal to 2
+            ans.push_back(temp);  // push the current non-decreasing subsequence into the vector of vectors of the non-decreasing subsequences
+        }
+        unordered_set<int> s;  // s is the set to store the elements of the current non-decreasing subsequence
+        for(int i=index; i<nums.size(); i++){  // for each element in the array
+            if(s.find(nums[i]) != s.end()){  // if the element is already present in the set
+                continue;  // continue
+            }
+            if(temp.size() == 0 || nums[i] >= temp.back()){  // if the size of the current non-decreasing subsequence is 0 or the element is greater than or equal to the last element of the current non-decreasing subsequence
+                temp.push_back(nums[i]);  // push the element into the current non-decreasing subsequence
+                s.insert(nums[i]);  // insert the element into the set
+                findSubsequences(nums , ans , temp , i+1);  // function call to find the non-decreasing subsequences
+                temp.pop_back();  // pop the last element from the current non-decreasing subsequence
+            }
+        }
+    }
+};
 
 
 Java:
+
+
+class Solution {
+    public List<List<Integer>> findSubsequences(int[] nums) {  // function to find the non-decreasing subsequences
+        int n = nums.length;  // n is the length of the array
+        List<List<Integer>> ans = new ArrayList<>();  // ans is the list of lists to store the non-decreasing subsequences
+        List<Integer> temp = new ArrayList<>();  // temp is the list to store the current non-decreasing subsequence
+        findSubsequences(nums , ans , temp , 0);  // function call to find the non-decreasing subsequences
+        return ans;  // return the list of lists of the non-decreasing subsequences
+    }
+    void findSubsequences(int[] nums , List<List<Integer>> ans , List<Integer> temp , int index){  // function to find the non-decreasing subsequences
+        if(temp.size() >= 2){  // if the size of the current non-decreasing subsequence is greater than or equal to 2
+            ans.add(new ArrayList<>(temp));  // add the current non-decreasing subsequence into the list of lists of the non-decreasing subsequences
+        }
+        Set<Integer> s = new HashSet<>();  // s is the set to store the elements of the current non-decreasing subsequence
+        for(int i=index; i<nums.length; i++){  // for each element in the array
+            if(s.contains(nums[i])){  // if the element is already present in the set
+                continue;  // continue
+            }
+            if(temp.size() == 0 || nums[i] >= temp.get(temp.size()-1)){  // if the size of the current non-decreasing subsequence is 0 or the element is greater than or equal to the last element of the current non-decreasing subsequence
+                temp.add(nums[i]);  // add the element into the current non-decreasing subsequence
+                s.add(nums[i]);  // add the element into the set
+                findSubsequences(nums , ans , temp , i+1);  // function call to find the non-decreasing subsequences
+                temp.remove(temp.size()-1);  // remove the last element from the current non-decreasing subsequence
+            }
+        }
+    }
+
+}
+
