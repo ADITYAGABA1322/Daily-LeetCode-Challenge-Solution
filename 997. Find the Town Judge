@@ -1,0 +1,109 @@
+# Daily-LeetCode-Challenge-Solution
+
+997. Find the Town Judge
+
+Easy
+
+23 Jan 2023
+
+2 Approaches 
+
+
+
+C++:
+
+1st Approach:
+
+// Time Complexity : O(n) where n is the number of trust relations and space complexity is O(n)
+class Solution {
+public:
+    int findJudge(int N, vector<vector<int>>& trust) {  // function to find the town judge
+        vector<int> indegree(N+1) , outdegree(N+1);  // indegree and outdegree vectors to store the indegree and outdegree of each person
+        for(auto t : trust){  // for each trust relation
+            outdegree[t[0]]++;  // increment the outdegree of the person who trusts
+            indegree[t[1]]++;  // increment the indegree of the person who is trusted
+        }
+        for(int i=1; i<=N; i++){  // for each person
+            if(indegree[i] == N-1 && outdegree[i] == 0){  // if the indegree of the person is N-1 and the outdegree of the person is 0
+                return i;  // return the person
+            }
+        }
+        return -1;  // return -1 if the town judge is not found
+    }
+};
+
+2nd Approach:
+
+// Time Complexity : O(n) where n is the number of trust relations and space complexity is O(n)
+
+class Solution {    
+public:
+    int findJudge(int n, vector<vector<int>>& trust) {
+        vector<int> indegree(n+1) , outdegree(n+1);
+        for(auto t : trust){
+            outdegree[t[0]]--;      
+            indegree[t[1]]++;
+        }
+        for(int i=1; i<=n; i++){
+            if(indegree[i] == n-1 && outdegree[i] == 0){
+                return i;
+            }
+        }
+        return -1;
+    }
+};
+
+
+
+
+
+Java:
+
+2 Approaches
+
+
+// Time Complexity : O(n) where n is the number of trust relations and space complexity is O(n)
+
+1st Approach:
+
+class Solution {
+    public int findJudge(int N, int[][] trust) {  // function to find the town judge
+        int[] indegree = new int[N+1];  // indegree array to store the indegree of each person
+        int[] outdegree = new int[N+1];  // outdegree array to store the outdegree of each person
+        for(int[] t : trust){  // for each trust relation
+            outdegree[t[0]]++;  // increment the outdegree of the person who trusts
+            indegree[t[1]]++;  // increment the indegree of the person who is trusted
+        }
+        for(int i=1; i<=N; i++){  // for each person
+            if(indegree[i] == N-1 && outdegree[i] == 0){  // if the indegree of the person is N-1 and the outdegree of the person is 0
+                return i;  // return the person
+            }
+        }
+        return -1;  // return -1 if the town judge is not found
+    }
+}
+
+2nd Approach
+
+
+// Time Complexity : O(n) where n is the number of trust relations and space complexity is O(n)
+
+class Solution {
+    public int findJudge(int N, int[][] trust) {
+        int[] trustCount = new int[N+1];
+        for(int[] t : trust){
+            trustCount[t[0]]--;
+            trustCount[t[1]]++;
+        }
+        for(int i=1; i<=N; i++){
+            if(trustCount[i] == N-1){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+
+}
+
+
