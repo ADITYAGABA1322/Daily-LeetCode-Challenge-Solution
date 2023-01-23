@@ -33,6 +33,7 @@ public:
 
 2nd Approach:
 
+
 // Time Complexity : O(n) where n is the number of trust relations and space complexity is O(n)
 
 class Solution {    
