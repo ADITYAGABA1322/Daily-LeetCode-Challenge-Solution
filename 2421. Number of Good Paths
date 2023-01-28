@@ -6,11 +6,259 @@ Hard
 
 15 Jan 2023
 
+3 Approaches
+
 C++ :
+
+Number of good paths in c++ using find , union and rank in c++ 
+
+1st Solution
+
+
+class Solution {  // Time Complexity O(NlogN) and Space Complexity O(N)
+public:  // function to find the number of good paths
+    vector<int> parent;  // parent is the vector of parent of each node in the graph    
+    vector<int> rank;   // rank is the vector of rank of each node in the graph 
+    int find(int x){        // function to find the parent of the node  
+        if(x == parent[x]){     // if the node is the parent of itself 
+            return x;  // return the node 
+        }
+        return parent[x] = find(parent[x]);  // return the parent of the node 
+    }
+    void Union(int x ,int y){  // function to union the two nodes 
+        int x_parent = find(x); // x_parent is the parent of the node x 
+        int y_parent = find(y); // y_parent is the parent of the node y
+        if(x_parent == y_parent){  // if the parent of the node x is equal to the parent of the node y
+            return;         // return
+        }
+        if(rank[x_parent] > rank[y_parent]){   // if the rank of the parent of the node x is greater than the rank of the parent of the node y      
+            parent[y_parent] = x_parent;  // make the parent of the node y as the parent of the node x
+        }
+        else if(rank[x_parent] < rank[y_parent]){  // if the rank of the parent of the node x is less than the rank of the parent of the node y
+            parent[x_parent] = y_parent; // make the parent of the node x as the parent of the node y 
+        }
+        else{f
+            parent[x_parent] = y_parent;  // make the parent of the node x as the parent of the node y 
+            rank[y_parent] += 1;  // increment the rank of the parent of the node y by 1 
+        }
+
+    }
+    int numberOfGoodPaths(vector<int>& vals, vector<vector<int>>& edges) {  // function to find the number of good paths
+        int n = vals.size();  // n is the size of the vector of values 
+        parent.resize(n); // resize the parent vector to the size of the vector of values
+        rank.resize(n , 1);  // resize the rank vector to the size of the vector of values and initialize all the ranks to 1 
+        for(int i=0; i<n; i++){ // for each node in the graph 
+            parent[i] = i; // make the parent of the node as itself
+        }
+        unordered_map<int , vector<int>> adj;  // adj is the adjacency list of the graph 
+        for(vector<int> &vec: edges){ // for each edge in the graph 
+            int u = vec[0];  // u is the source of the edge 
+            int v = vec[1]; // v is the destination of the edge
+            adj[u].push_back(v);  // push the destination of the edge in the adjacency list of the source of the edge
+            adj[v].push_back(u); // push the source of the edge in the adjacency list of the destination of the edge
+        }
+        // val -> {nodes}
+        map<int , vector<int>> val_to_nodes; // val_to_nodes is the map of values to the nodes having that value
+        for(int i=0; i<n; i++){ // for each node in the graph 
+            int value = vals[i];  // value is the value of the node  
+            val_to_nodes[value].push_back(i); // push the node in the map of values to the nodes having that value
+        }
+        int result = n;  // result is the number of good paths
+        vector<bool> is_active(n , false); // staring me saare nodes inactive hain  // is_active is the vector of boolean values to check if the node is active or not
+        for(auto& it : val_to_nodes){ //   // for each value in the map of values to the nodes having that value
+           vector<int> nodes = it.second; // nodes is the vector of nodes having the value 
+             for(int &u : nodes){  // for each node in the vector of nodes having the value
+                 for(int &v : adj[u]){  // for each node in the adjacency list of the node
+                     if(is_active[v]){  // if the node is active
+                         Union(u , v);  // union the node with the active node
+                     }
+                 }
+                is_active[u] = true;  // make the node active
+             }
+           vector<int> tumhare_parents;  // tumhare_parents is the vector of parents of the nodes having the value
+              for(int &u : nodes){   // for each node in the vector of nodes having the value
+                int parent_kaun_hai = find(u);  // parent_kaun_hai is the parent of the node
+                tumhare_parents.push_back(parent_kaun_hai); // push the parent of the node in the vector of parents of the nodes having the value
+              }
+            sort(tumhare_parents.begin() , tumhare_parents.end());  // sort the vector of pare nts of the nodes having the value
+            int sz = tumhare_parents.size();  // sz is the size of the vector of parents of the nodes having the value
+            for(int j=0; j<sz; j++){  // for each parent in the vector of parents of the nodes having the value
+                long long count = 0;  // count is the number of nodes having the value
+                int current_parent = tumhare_parents[j];  // current_parent is the parent of the node 
+                while(j<sz && tumhare_parents[j] == current_parent){  // while the parent of the node is equal to the current parent
+                    count++;  // increment the count by 1   
+                    j++;        // increment the j by 1
+                }
+                j--;    // decrement the j by 1
+                int formula_wala_ans = (count * (count - 1)) / 2;       // formula_wala_ans is the number of good paths
+                result += formula_wala_ans;     // increment the result by the number of good paths
+            }
+        }
+        return result;      // return the number of good paths
+    }
+};
+
+
+2nd Solution
+
+class UnionFind {
+private:
+    vector<int> parent, rank;
+
+public:
+    UnionFind(int size) {
+        parent.resize(size);
+        rank.resize(size, 0);
+        for (int i = 0; i < size; i++) {
+            parent[i] = i;
+        }
+    }
+    int find(int x) {
+        if (parent[x] != x) parent[x] = find(parent[x]);
+        return parent[x];
+    }
+    void union_set(int x, int y) {
+        int xset = find(x), yset = find(y);
+        if (xset == yset) {
+            return;
+        } else if (rank[xset] < rank[yset]) {
+            parent[xset] = yset;
+        } else if (rank[xset] > rank[yset]) {
+            parent[yset] = xset;
+        } else {
+            parent[yset] = xset;
+            rank[xset]++;
+        }
+    }
+};
+
+class Solution {
+public:
+    int numberOfGoodPaths(vector<int>& vals, vector<vector<int>>& edges) {
+        int n = vals.size();
+        vector<vector<int>> adj(n);
+        for (auto& edge : edges) {
+            adj[edge[0]].push_back(edge[1]);
+            adj[edge[1]].push_back(edge[0]);
+        }
+        // Mapping from value to all the nodes having the same value in non-descending order of values.
+        map<int, vector<int>> valuesToNodes;
+        for (int node = 0; node < n; node++) {
+            valuesToNodes[vals[node]].push_back(node);
+        }
+
+        UnionFind dsu(n);
+        int goodPaths = 0;
+
+        // Iterate over all the nodes with the same value in sorted order, starting from the lowest
+        // value.
+        for (auto& [value, nodes] : valuesToNodes) {
+            // For every node in nodes, combine the sets of the node and its neighbors into one set.
+            for (int node : nodes) {
+                for (int neighbor : adj[node]) {
+                    // Only choose neighbors with a smaller value, as there is no point in
+                    // traversing to other neighbors.
+                    if (vals[node] >= vals[neighbor]) {
+                        dsu.union_set(node, neighbor);
+                    }
+                }
+            }
+            // Map to compute the number of nodes under observation (with the same values) in each
+            // of the sets.
+            unordered_map<int, int> group;
+            // Iterate over all the nodes. Get the set of each node and increase the count of the
+            // set by 1.
+            for (int u : nodes) {
+                group[dsu.find(u)]++;
+            }
+            // For each set of "size", add size * (size + 1) / 2 to the number of goodPaths.
+            for (auto& [_, size] : group) {
+                goodPaths += (size * (size + 1) / 2);
+            }
+        }
+        return goodPaths;
+    }
+};
+
+
+3rd Solution
+
+class Solution {
+public:
+    int findParent(vector<int>& parent, int x) {
+        
+        if(parent[x] == -1) return x;
+        return parent[x] = findParent(parent, parent[x]);
+    }
+    
+    int numberOfGoodPaths(vector<int>& vals, vector<vector<int>>& edges) {
+        
+        /*
+        We first consider all n nodes as n separate trees. Any edge joins exactly 2 of these subtrees. 
+        First of all, we need to sort edges vector based on the maximum value of vertices that it connects.
+        Once sorted, we start looking at the edges one by one. At every iteration, we will connect 2 subtrees.
+        Suppose the max elements in these 2 subtrees is a& b respectively and there frequency is 
+        a_freq & b_freq respectively.
+        
+        If a==b, we have found a_freq*b_freq new paths. These paths have starting nodes in 1 subtree and ending
+        nodes in the other subtree. Now we merge these two subtrees. 
+        We set parent[b]=a, so a_freq=a_freq + b_freq.
+        Suppose a!=b. In this case we have found no new paths. Assign parent of subtree with smaller max element
+        to parent of subtree with larger max element.
+        Continue this until we have covered all the edges.
+        
+        Why are we sorting the edges ?
+        Suppose we have this structure: vals- [2,4,2] and edges- [[0,1],[0,2]]. If we don't sort in increasing
+        order, we will first merge the nodes 2 & 4. This subtree will have max_element as 4 and count as 1. 
+        Next we will consider the 2nd edge - [0,2]. This will now merge our spreviously formed subtree with 
+        the node - 2. While merging, it will see that our previously formed subtree has maxelement 4. 
+        Since the new node 2 has maxelement as 2, it will think that there are no new possible paths from one
+        subtree to the other, but this is not true. 
+        The 1st subtree has a 2 that can form a new path with this new node 2.
+        Thus, we are sorting to ensure that whenever we are joining 2 subtrees, we have already taken into
+        account all the possible paths starting and ending with a smaller maxelement
+        */
+        
+        int n = vals.size();
+        int m = edges.size();
+        vector<int> parent(n, -1);
+       
+        sort(edges.begin(), edges.end(), [&](vector<int>& a, vector<int>& b) {
+            int x = max(vals[a[0]], vals[a[1]]);
+            int y = max(vals[b[0]], vals[b[1]]);
+            return x < y;
+        });
+        
+        int result = n;
+        vector<int> paths(n, 1);
+        
+        for(int i=0 ; i<m ; i++) {
+            
+            int x = findParent(parent, edges[i][0]);
+            int y = findParent(parent, edges[i][1]);
+            
+            if(vals[x] == vals[y]) {
+                parent[x] = y;
+                result += paths[x] * paths[y];
+                paths[y] += paths[x];
+            }
+            else {
+                if(vals[x] > vals[y]) parent[y] = x;
+                else parent[x] = y;
+            }
+            
+        }
+       
+        return result;
+    }
+};
+
 
 
 
 Java :
+
+2 Approaches
 
 
 
