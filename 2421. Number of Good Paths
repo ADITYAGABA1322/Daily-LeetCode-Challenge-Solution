@@ -14,6 +14,7 @@ Number of good paths in c++ using find , union and rank in c++
 
 1st Solution
 
+ // Time Complexity O(NlogN) and Space Complexity O(N)
 
 class Solution {  // Time Complexity O(NlogN) and Space Complexity O(N)
 public:  // function to find the number of good paths
@@ -258,6 +259,8 @@ public:
 
 Java :
 
+ // Time Complexity O(NlogN) and Space Complexity O(N)
+
 2 Approaches
 
 1st Solution
@@ -385,7 +388,5 @@ class Solution {
         return parent[x] = findParent(parent, parent[x]);
     }
 }
-
-
 
 
