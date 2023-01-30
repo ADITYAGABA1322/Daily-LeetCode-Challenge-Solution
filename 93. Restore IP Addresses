@@ -8,10 +8,70 @@ Medium
 
 
 C++ :
+// Time Complexity : O(3^4) where n is the length of the string and space complexity is O(n)
+class Solution {
+public:
+    vector<string> restoreIpAddresses(string s) {  // function to restore the IP addresses
+        vector<string> ans;  // ans is the vector to store the IP addresses
+        restoreIpAddresses(s , ans , "" , 0 , 0);  // function call to restore the IP addresses
+        return ans;  // return the vector of IP addresses
+    }
+    void restoreIpAddresses(string s , vector<string>& ans , string temp , int index , int count){  // function to restore the IP addresses
+        if(count > 4){  // if the count is greater than 4
+            return;  // return
+        }
+        if(count == 4 && index == s.length()){  // if the count is 4 and the index is equal to the length of the string
+            ans.push_back(temp);  // push the current IP address into the vector of IP addresses
+        }
+        for(int i=1; i<=3; i++){  // for each length of the substring
+            if(index+i > s.length()){  // if the index is greater than the length of the string
+                break;  // break
+            }
+            string sub = s.substr(index , i);  // sub is the substring
+            if((sub[0] == '0' && sub.length() > 1) || (i == 3 && stoi(sub) > 255)){  // if the substring is 0 or the length of the substring is 3 and the substring is greater than 255
+                continue;  // continue
+            }
+            restoreIpAddresses(s , ans , temp + sub + (count == 3 ? "" : ".") , index+i , count+1);  // function call to restore the IP addresses
+        }
+    }
+};
+
 
 
 
 Java :
+
+// Time Complexity : O(3^4) where n is the length of the string and space complexity is O(n)
+class Solution {
+    public List<String> restoreIpAddresses(String s) {  // function to restore the IP addresses
+        List<String> ans = new ArrayList<>();  // ans is the list to store the IP addresses
+        restoreIpAddresses(s , ans , "" , 0 , 0);  // function call to restore the IP addresses
+        return ans;  // return the list of IP addresses
+    }
+    void restoreIpAddresses(String s , List<String> ans , String temp , int index , int count){  // function to restore the IP addresses
+        if(count > 4){  // if the count is greater than 4
+            return;  // return
+        }
+        if(count == 4 && index == s.length()){  // if the count is 4 and the index is equal to the length of the string
+            ans.add(temp);  // add the current IP address into the list of IP addresses
+            return;  // return
+        }
+        for(int i=index; i<s.length(); i++){  // for each character in the string
+            String str = s.substring(index , i+1);  // str is the substring from the index to i
+            if(str.length() > 1 && str.charAt(0) == '0'){  // if the length of the substring is greater than 1 and the first character of the substring is 0
+                continue;  // continue
+            }
+            if(Integer.parseInt(str) <= 255){  // if the integer value of the substring is less than or equal to 255
+                if(count < 3){  // if the count is less than 3
+                    restoreIpAddresses(s , ans , temp + str + "." , i+1 , count+1);  // function call to restore the IP addresses
+                }
+                else{  // if the count is 3
+                    restoreIpAddresses(s , ans , temp + str , i+1 , count+1);  // function call to restore the IP addresses
+                }
+            }
+        }
+    }
+}
 
 
 
