@@ -1,0 +1,96 @@
+# Daily-LeetCode-Challenge-Solution
+
+1626. Best Team With No Conflicts
+
+31 Jan 2023
+
+Medium
+
+
+C++:
+// Time Complexity : O(n^2) where n is the number of players and space complexity is O(n)
+
+class Solution {
+public:
+    int bestTeamScore(vector<int>& scores, vector<int>& ages) {
+        vector<pair<int, int>> v;  // vector to store the pair of age and score
+        for(int i=0; i<scores.size(); i++){  // for each player
+            v.push_back({ages[i], scores[i]});  // push the pair of age and score into the vector
+        }
+        sort(v.begin(), v.end());  // sort the vector based on the age
+        vector<int> dp(v.size());  // dp vector to store the maximum score
+        for(int i=0; i<v.size(); i++){  // for each player
+            dp[i] = v[i].second;  // update the maximum score
+            for(int j=0; j<i; j++){  // for each player
+                if(v[i].second >= v[j].second){  // if the score of the current player is greater than or equal to the score of the previous player
+                    dp[i] = max(dp[i], dp[j] + v[i].second);  // update the maximum score
+                }
+            }
+        }
+        return *max_element(dp.begin(), dp.end());  // return the maximum score
+    }
+};
+
+
+
+
+Java:
+
+
+// Time Complexity : O(n^2) where n is the number of players and space complexity is O(n)
+
+class Solution {
+    public int bestTeamScore(int[] scores, int[] ages) {
+        int[][] v = new int[scores.length][2];  // array to store the pair of age and score
+        for(int i=0; i<scores.length; i++){  // for each player
+            v[i][0] = ages[i];  // update the age
+            v[i][1] = scores[i];  // update the score
+        }
+        Arrays.sort(v, (a, b) -> a[0] != b[0] ? a[0] - b[0] : a[1] - b[1]);  // sort the array based on the age
+        int[] dp = new int[v.length];  // dp array to store the maximum score
+        for(int i=0; i<v.length; i++){  // for each player
+            dp[i] = v[i][1];  // update the maximum score
+            for(int j=0; j<i; j++){  // for each player
+                if(v[i][1] >= v[j][1]){  // if the score of the current player is greater than or equal to the score of the previous player
+                    dp[i] = Math.max(dp[i], dp[j] + v[i][1]);  // update the maximum score
+                }
+            }
+        }
+        return Arrays.stream(dp).max().getAsInt();  // return the maximum score
+    }
+}
+
+Another Solution
+
+
+class Solution {
+    public int bestTeamScore(int[] scores, int[] ages) {
+        int n = scores.length;
+        int[][] arr = new int[n][2];
+        for(int i = 0; i < n; i++){
+            arr[i][0] = ages[i];
+            arr[i][1] = scores[i];
+        }
+        Arrays.sort(arr, (a, b) -> {
+            if(a[0] == b[0]){
+                return a[1] - b[1];
+            }
+            return a[0] - b[0];
+        });
+        int[] dp = new int[n];
+        for(int i = 0; i < n; i++){
+            dp[i] = arr[i][1];
+            for(int j = 0; j < i; j++){
+                if(arr[i][1] >= arr[j][1]){
+                    dp[i] = Math.max(dp[i], dp[j] + arr[i][1]);
+                }
+            }
+        }
+        int max = 0;
+        for(int i = 0; i < n; i++){
+            max = Math.max(max, dp[i]);
+        }
+        return max;
+    }
+}
+
