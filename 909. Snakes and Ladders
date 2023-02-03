@@ -9,14 +9,131 @@ Medium
 
 C++:
 
+// Time Complexity : O(n^2) where n is the number of rows and columns and space complexity is O(n^2)\
 
 
-
+class Solution {
+public:
+    int snakesAndLadders(vector<vector<int>>& board) {  // function to find the minimum number of moves to reach the last square
+        int n = board.size();  // n is the number of rows and columns
+        vector<int> moves(n*n+1);  // moves vector to store the moves
+        int i = n-1 , j = 0 , even = 0;  // i and j are the row and column indices and even is the variable to check if the row is even or odd
+        for(int k=1; k<=n*n; k++){  // for each square
+            moves[k] = board[i][j];  // store the value of the square in the moves vector
+            if(even % 2 == 0){  // if the row is even
+                j++;  // increment the column index
+            }
+            else{  // if the row is odd
+                j--;  // decrement the column index
+            }
+            if(j == n){  // if the column index is equal to the number of rows and columns
+                i--;  // decrement the row index
+                j--;  // decrement the column index
+                even++;  // increment the even variable
+            }
+            else if(j == -1){  // if the column index is -1
+                i--;  // decrement the row index
+                j++;  // increment the column index
+                even++;  // increment the even variable
+            }
+        }
+        queue<int> q;  // queue to store the moves
+        q.push(1);  // push the first square into the queue
+        vector<bool> visited(n*n+1);  // visited vector to check if the square is visited or not
+        visited[1] = true;  // mark the first square as visited
+        int count = 0;  // count is the variable to store the number of moves
+        while(!q.empty()){  // while the queue is not empty
+            int size = q.size();  // size is the size of the queue
+            for(int k=0; k<size; k++){  // for each square in the queue
+                int curr = q.front();  // curr is the current square
+                q.pop();  // pop the current square from the queue
+                if(curr == n*n){  // if the current square is the last square
+                    return count;  // return the count
+                }
+                for(int i=1; i<=6; i++){  // for each dice roll
+                    int next = curr + i;  // next is the next square
+                    if(next > n*n){  // if the next square is greater than the last square
+                        break;  // break
+                    }
+                    if(moves[next] != -1){  // if the next square is not a snake or ladder
+                        next = moves[next];  // next is the next square
+                    }
+                    if(!visited[next]){  // if the next square is not visited
+                        visited[next] = true;  // mark the next square as visited
+                        q.push(next);  // push the next square into the queue
+                    }
+                }
+            }
+            count++;  // increment the count
+        }
+        return -1;  // return -1 if the last square is not reached
+    }
+};
 
 
 
 
 Java:
+
+
+// Time Complexity : O(n^2) where n is the number of rows and columns and space complexity is O(n^2)
+
+class Solution {
+    public int snakesAndLadders(int[][] board) {  // function to find the minimum number of moves to reach the last square
+        int n = board.length;  // n is the number of rows and columns
+        int[] moves = new int[n*n+1];  // moves array to store the moves
+        int i = n-1 , j = 0 , even = 0;  // i and j are the row and column indices and even is the variable to check if the row is even or odd
+        for(int k=1; k<=n*n; k++){  // for each square
+            moves[k] = board[i][j];  // store the value of the square in the moves array
+            if(even % 2 == 0){  // if the row is even
+                j++;  // increment the column index
+            }
+            else{  // if the row is odd
+                j--;  // decrement the column index
+            }
+            if(j == n){  // if the column index is equal to the number of rows and columns
+                i--;  // decrement the row index
+                j--;  // decrement the column index
+                even++;  // increment the even variable
+            }
+            else if(j == -1){  // if the column index is -1
+                i--;  // decrement the row index
+                j++;  // increment the column index
+                even++;  // increment the even variable
+            }
+        }
+        Queue<Integer> q = new LinkedList<>();  // queue to store the moves
+        q.add(1);  // add the first square into the queue
+        boolean[] visited = new boolean[n*n+1];  // visited array to check if the square is visited or not
+        visited[1] = true;  // mark the first square as visited
+        int count = 0;  // count is the variable to store the number of moves
+        while(!q.isEmpty()){  // while the queue is not empty
+            int size = q.size();  // size is the size of the queue
+            for(int k=0; k<size; k++){  // for each square in the queue
+                int curr = q.poll();  // curr is the current square
+                if(curr == n*n){  // if the current square is the last square
+                    return count;  // return the count
+                }
+                for(int l=1; l<=6; l++){  // for each dice roll
+                    int next = curr + l;  // next is the next square
+                    if(next > n*n){  // if the next square is greater than the last square
+                        break;  // break
+                    }
+                    if(moves[next] != -1){  // if the next square is not a snake or ladder
+                        next = moves[next];  // next is the next square
+                    }
+                    if(!visited[next]){  // if the next square is not visited
+                        visited[next] = true;  // mark the next square as visited
+                        q.add(next);  // add the next square into the queue
+                    }
+                }
+            }
+            count++;  // increment the count
+        }
+        return -1;  // return -1 if the last square is not reached
+    }
+}
+
 
 
 
