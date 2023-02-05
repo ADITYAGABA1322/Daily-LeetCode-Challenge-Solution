@@ -36,3 +36,27 @@ public:
 
 Java:
 
+
+// Time Complexity : O(n) where n is the length of the string s and space complexity is O(1)
+
+class Solution {
+    public List<Integer> findAnagrams(String s, String p) {
+        int[] v1 = new int[26];  // vector to store the frequency of the characters of the string p
+        int[] v2 = new int[26];  // vector to store the frequency of the characters of the string s
+        List<Integer> res = new ArrayList<>();  // vector to store the result
+        for(int i=0; i<p.length(); i++){  // for each character of the string p
+            v1[p.charAt(i) - 'a']++;  // update the frequency of the character
+        }
+        for(int i=0; i<s.length(); i++){  // for each character of the string s
+            v2[s.charAt(i) - 'a']++;  // update the frequency of the character
+            if(i >= p.length()){  // if the window size is greater than the length of the string p
+                v2[s.charAt(i - p.length()) - 'a']--;  // decrement the frequency of the character
+            }
+            if(Arrays.equals(v1, v2)){  // if the frequency of the characters of the string p and the string s are equal
+                res.add(i - p.length() + 1);  // push the index to the result vector
+            }
+        }
+        return res;  // return the result vector
+    }
+};
+
