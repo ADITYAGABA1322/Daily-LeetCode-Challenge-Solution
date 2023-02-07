@@ -1,0 +1,140 @@
+# Daily-LeetCode-Challenge-Solution
+
+352. Data Stream as Disjoint Intervals
+
+28 Jan 2023
+
+Hard
+
+
+C++:
+
+Time Comlexity : O(log(N)) for addNum, O(N) for getIntervals.
+Space Complexity : O(n)
+
+class SummaryRanges {
+    set<int> values;
+
+public:
+    SummaryRanges() {}
+
+    void addNum(int value) { values.insert(value); }
+
+    vector<vector<int>> getIntervals() {
+        if (values.empty()) {
+            return {};
+        }
+        vector<vector<int>> intervals;
+        int left = -1, right = -1;
+        for (int value : values) {
+            if (left < 0) {
+                left = right = value;
+            } else if (value == right + 1) {
+                right = value;
+            } else {
+                intervals.push_back({left, right});
+                left = right = value;
+            }
+        }
+        intervals.push_back({left, right});
+        return intervals;
+    }
+};
+
+
+Java:
+Time Comlexity : O(log(N)) for addNum, O(N) for getIntervals.
+Space Complexity : O(n)
+
+2 Methods
+
+1st Method:
+
+class SummaryRanges {
+    private TreeMap<Integer, Integer> intervals;
+
+    public SummaryRanges() {
+        intervals = new TreeMap<>(); 
+    }
+    
+    public void addNum(int value) {
+        final Map.Entry<Integer, Integer> smallEntry = intervals.floorEntry(value); 
+        int left = value, right = value;
+        if (smallEntry != null) {
+            final int previous = smallEntry.getValue();
+            if (previous >= value) {
+                return;
+            }
+            if (previous == value - 1) {
+                left = smallEntry.getKey();
+            }
+        }
+        final Map.Entry<Integer, Integer> maxEntry = intervals.higherEntry(value); 
+        if (maxEntry != null && maxEntry.getKey() == value + 1) {
+            right = maxEntry.getValue();
+            intervals.remove(value + 1);
+        }
+        intervals.put(left, right);
+    }
+    
+    public int[][] getIntervals() {
+        final int[][] answer = new int[intervals.size()][2];
+        int ind = 0;
+        for (Map.Entry<Integer, Integer> entry : intervals.entrySet()) {
+            answer[ind][0] = entry.getKey();
+            answer[ind++][1] = entry.getValue();
+        }
+        return answer; 
+    }
+}
+
+2nd Method:
+
+class SummaryRanges {
+    List<int[]> intervals;
+    
+    /** Initialize your data structure here. */
+    public SummaryRanges() {
+        intervals = new ArrayList<>();
+    }
+    
+    public void addNum(int val) {
+        int n = intervals.size();
+        int[] newInterval = new int[] {val, val};
+        int i = 0;
+        while (i < n && intervals.get(i)[1] + 1 < val) {
+            i++;
+        }
+        if (i == n) {
+            intervals.add(newInterval);
+            return;
+        }
+        int[] cur = intervals.get(i);
+        if (val >= cur[0] && val <= cur[1]) {
+            return;
+        }
+        if (cur[0] == val + 1) {
+            cur[0] = val;
+        } else if (cur[1] + 1 == val) {
+            cur[1] = val;
+        } else {
+            intervals.add(i, newInterval);
+            n++;
+        }
+        i++;
+        while (i < n && val + 1 >= intervals.get(i)[0] && val + 1 <= intervals.get(i)[1]) {
+            int[] interval = intervals.get(i);
+            intervals.remove(i);
+            n--;
+            cur[1] = Math.max(cur[1], interval[1]);
+        }
+    }
+    
+    public int[][] getIntervals() {
+        int[][] res = new int[intervals.size()][2];
+        for (int i = 0; i < intervals.size(); i++) {
+            res[i] = intervals.get(i);
+        }
+        return res;
+    }
+}
