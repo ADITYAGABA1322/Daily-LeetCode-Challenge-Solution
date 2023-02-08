@@ -8,6 +8,75 @@ Easy
 
 C++:
 
+2 Methods
+
+// Time Complexity : O(n) where n is the length of the strings and space complexity is O(1)
+
+class Solution {
+public:
+    bool isAlienSorted(vector<string>& words, string order) {
+        vector<int> v(26);  // vector to store the order of the characters
+        for(int i=0; i<order.size(); i++){  // for each character of the string order
+            v[order[i] - 'a'] = i;  // update the order of the character
+        }
+        for(int i=0; i<words.size() - 1; i++){  // for each word
+            for(int j=0; j<words[i].size(); j++){  // for each character of the word
+                if(j >= words[i + 1].size()){  // if the length of the word is greater than the length of the next word
+                    return false;  // return false
+                }
+                if(words[i][j] != words[i + 1][j]){  // if the characters are not equal
+                    if(v[words[i][j] - 'a'] > v[words[i + 1][j] - 'a']){  // if the order of the first character is greater than the order of the second character
+                        return false;  // return false
+                    }
+                    break;  // break
+                }
+            }
+        }
+        return true;  // return true
+    }
+}
+
+2nd Method
+
+class Solution {
+public:
+        bool isAlienSorted(vector<string> words, string order) {
+        int mapping[26];
+        for (int i = 0; i < 26; i++)
+            mapping[order[i] - 'a'] = i;
+        for (string &w : words)
+            for (char &c : w)
+                c = mapping[c - 'a'];
+        return is_sorted(words.begin(), words.end());
+    }
+};
+
+
 
 Java:
+
+// Time Complexity : O(n) where n is the length of the strings and space complexity is O(1)
+
+class Solution {
+    public boolean isAlienSorted(String[] words, String order) {
+        int[] map = new int[26];
+        for(int i = 0; i < order.length(); i++){
+            map[order.charAt(i) - 'a'] = i;
+        }
+        for(int i = 0; i < words.length - 1; i++){
+            for(int j = 0; j < words[i].length(); j++){
+                if(j >= words[i + 1].length()){
+                    return false;
+                }
+                if(words[i].charAt(j) != words[i + 1].charAt(j)){
+                    if(map[words[i].charAt(j) - 'a'] > map[words[i + 1].charAt(j) - 'a']){
+                        return false;
+                    }
+                    break;
+                }
+            }
+        }
+        return true;
+    }
+}
 
