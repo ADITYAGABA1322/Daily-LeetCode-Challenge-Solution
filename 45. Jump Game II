@@ -1,0 +1,55 @@
+# Daily-LeetCode-Challenge-Solution
+
+45. Jump Game II
+
+8 Feb 2023
+
+Medium
+
+C++:
+
+// Time Complexity : O(n) where n is the length of the vector nums and space complexity is O(1)
+
+class Solution {
+public:
+    int jump(vector<int>& nums) {
+        int n = nums.size();  // variable to store the length of the vector nums
+        int res = 0;  // variable to store the result
+        int i = 0;  // variable to store the start index of the window
+        int j = 0;  // variable to store the end index of the window
+        while(j < n - 1){  // while the end index of the window is less than the length of the vector nums
+            int maxIndex = j;  // variable to store the maximum index
+            for(int k=i; k<=j; k++){  // for each element in the window
+                maxIndex = max(maxIndex, k + nums[k]);  // update the maximum index 
+            }
+            i = j + 1;  // update the start index of the window
+            j = maxIndex;  // update the end index of the window
+            res++;  // increment the result
+        }
+        return res;  // return the result
+    }
+};
+
+
+
+Java:
+// Time Complexity : O(n) where n is the length of the vector nums and space complexity is O(1)
+
+class Solution {
+    public int jump(int[] nums) {
+        int n = nums.length;  // variable to store the length of the vector nums
+        int res = 0;  // variable to store the result
+        int i = 0;  // variable to store the start index of the window
+        int j = 0;  // variable to store the end index of the window
+        while(j < n - 1){  // while the end index of the window is less than the length of the vector nums
+            int maxIndex = j;  // variable to store the maximum index
+            for(int k=i; k<=j; k++){  // for each element in the window
+                maxIndex = Math.max(maxIndex, k + nums[k]);  // update the maximum index
+            }
+            i = j + 1;  // update the start index of the window
+            j = maxIndex;  // update the end index of the window
+            res++;  // increment the result
+        }
+        return res;  // return the result
+    }
+}
