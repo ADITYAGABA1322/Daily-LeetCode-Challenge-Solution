@@ -1,0 +1,54 @@
+# Daily-LeetCode-Challenge-Solution
+
+1071. Greatest Common Divisor of Strings
+
+1 Feb 2023
+
+Easy
+
+C++:
+
+// Time Complexity : O(n) where n is the length of the strings and space complexity is O(1)
+
+class Solution {
+public:
+    string gcdOfStrings(string str1, string str2) {
+        if(str1 + str2 != str2 + str1){  // if the concatenation of the strings is not equal to the concatenation of the strings in reverse order
+            return "";  // return empty string
+        }
+        return str1.substr(0, __gcd(str1.size(), str2.size()));  // return the gcd of the strings
+    }
+};
+
+2nd 
+class Solution {
+public:
+    string gcdOfStrings(string str1, string str2) {
+        if(str1 + str2 != str2 + str1){
+            return "";
+        }
+        int gcdLength = gcd(str1.size() , str2.size());
+        return str1.substr(0 , gcdLength);
+    }
+};
+
+
+
+Java:
+
+// Time Complexity : O(n) where n is the length of the strings and space complexity is O(1)
+
+class Solution {
+    public String gcdOfStrings(String str1, String str2) {
+        if(!(str1 + str2).equals(str2 + str1)){
+            return "";
+        }
+        return str1.substring(0, gcd(str1.length(), str2.length()));
+    }
+    public int gcd(int a, int b){
+        if(b == 0){
+            return a;
+        }
+        return gcd(b, a % b);
+    }
+}
