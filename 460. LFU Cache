@@ -1,0 +1,290 @@
+# Daily-LeetCode-Challenge-Solution
+
+460. LFU Cache
+
+29 Jan 2023
+
+Hard
+
+
+C++:
+
+// Time Complexity : O(1) for all the operations and space complexity is O(n) where n is the capacity of the cache
+
+2 Approaches
+
+1st:
+
+// Time Complexity : O(1) for all the operations and space complexity is O(n) where n is the capacity of the cache
+
+class LFUCache {
+public:
+    int capacity;  // variable to store the capacity of the cache
+    int minFreq;  // variable to store the minimum frequency of the cache
+    unordered_map<int, pair<int, int>> cache;  // unordered map to store the key, value and frequency of the cache
+    unordered_map<int, list<int>> freq;  // unordered map to store the frequency and the list of keys of the cache
+    unordered_map<int, list<int>::iterator> pos;  // unordered map to store the key and the position of the key in the list of keys of the cache
+    LFUCache(int capacity) {
+        this->capacity = capacity;  // initialize the capacity of the cache
+        minFreq = 0;  // initialize the minimum frequency of the cache
+    }
+    
+    int get(int key) {
+        if(cache.find(key) == cache.end()){  // if the key is not present in the cache
+            return -1;  // return -1
+        }
+        int value = cache[key].first;  // get the value of the key
+        int frequency = cache[key].second;  // get the frequency of the key
+        freq[frequency].erase(pos[key]);  // erase the key from the list of keys of the cache
+        if(freq[frequency].size() == 0){  // if the list of keys of the cache is empty
+            freq.erase(frequency);  // erase the frequency from the unordered map
+            if(minFreq == frequency){  // if the minimum frequency of the cache is equal to the frequency of the key
+                minFreq++;  // increment the minimum frequency of the cache
+            }
+        }
+        freq[frequency + 1].push_front(key);  // push the key to the list of keys of the cache
+        pos[key] = freq[frequency + 1].begin();  // update the position of the key in the list of keys of the cache
+        cache[key].second++;  // increment the frequency of the key
+        return value;  // return the value of the key
+    }
+    
+    void put(int key, int value) {
+        if(capacity == 0){  // if the capacity of the cache is 0
+            return;  // return
+        }
+        if(cache.find(key) != cache.end()){  // if the key is present in the  
+            cache[key].first = value;  // update the value of the key
+            get(key);  // call the get function
+            return;  // return
+        }
+        if(cache.size() == capacity){  // if the size of the cache is equal to the capacity of the cache
+            int lastKey = freq[minFreq].back();  // get the last key of the list of keys of the cache
+            freq[minFreq].pop_back();  // pop the last key from the list of keys of the cache
+            cache.erase(lastKey);  // erase the key from the cache
+            pos.erase(lastKey);  // erase the key from the unordered map
+        }
+        cache[key] = {value, 1};  // insert the key, value and frequency to the cache
+        freq[1].push_front(key);  // push the key to the list of keys of the cache
+        pos[key] = freq[1].begin();  // update the position of the key in the list of keys of the cache
+        minFreq = 1;  // update the minimum frequency of the cache
+    }
+};
+
+2nd:
+
+// Time Complexity : O(1) for all the operations and space complexity is O(n) where n is the capacity of the cache
+
+class LFUCache {
+private:
+    int cap;
+    int size;
+    unordered_map<int, list<vector<int>>::iterator> mp; //key -> address of list of vector{key, value, freq}
+    map<int, list<vector<int>>> freq; //freq -> list of vector{key, value, freq}
+    
+public:
+    LFUCache(int capacity) {
+        cap = capacity;
+        size = 0;
+    }
+    
+    void makeMostFrequentlyUsed(int key) {
+        auto &vec = *(mp[key]);
+        
+        int value = vec[1];
+        
+        int f     = vec[2];
+        
+        freq[f].erase(mp[key]);
+        
+        if(freq[f].empty())
+            freq.erase(f);
+        
+        f++;
+        
+        freq[f].push_front(vector<int>({key, value, f}));
+        
+        mp[key] = freq[f].begin();
+    }
+    
+    int get(int key) {
+        if(mp.find(key) == mp.end())
+            return -1;
+        
+        auto &vec = (*(mp[key]));
+        
+        int value = vec[1];
+        
+        makeMostFrequentlyUsed(key);
+        
+        return value;
+    }
+    
+    void put(int key, int value) {
+        if(cap == 0)
+            return;
+        
+        if(mp.find(key) != mp.end()) {
+            auto &vec = (*(mp[key]));
+            vec[1] = value;
+            makeMostFrequentlyUsed(key);
+        }
+        else if(size < cap) {
+            size++;
+            freq[1].push_front(vector<int>({key, value, 1}));
+            mp[key] = freq[1].begin();
+        }
+        else { //Time to remove LFU or LRU if tie
+            
+            auto &kaun_sa_list = freq.begin()->second;
+            
+            int key_delete = (kaun_sa_list.back())[0]; //ordered_map ensures that the begin() will be th eleast frequency
+            
+            kaun_sa_list.pop_back();
+            
+            if(kaun_sa_list.empty())
+                freq.erase(freq.begin()->first);
+            
+            freq[1].push_front(vector<int>({key, value, 1}));
+            
+            mp.erase(key_delete);
+            mp[key] = freq[1].begin();
+        }
+    }
+};
+
+
+Java:
+
+// Time Complexity : O(1) for all the operations and space complexity is O(n) where n is the capacity of the cache
+
+2 Approaches
+
+1st:
+
+
+// Time Complexity : O(1) for all the operations and space complexity is O(n) where n is the capacity of the cache
+
+
+class LFUCache {
+    int capacity;  // variable to store the capacity of the cache
+    int minFreq;  // variable to store the minimum frequency of the cache
+    HashMap<Integer, Integer> cache;  // unordered map to store the key, value and frequency of the cache
+    HashMap<Integer, Integer> freq;  // unordered map to store the frequency and the list of keys of the cache
+    HashMap<Integer, LinkedHashSet<Integer>> pos;  // unordered map to store the frequency and the list of keys of the cache
+    public LFUCache(int capacity) {
+        this.capacity = capacity;  // initialize the capacity of the cache
+        minFreq = 0;  // initialize the minimum frequency of the cache
+        cache = new HashMap<>();  // initialize the unordered map to store the key, value and frequency of the cache
+        freq = new HashMap<>();  // initialize the unordered map to store the frequency and the list of keys of the cache
+        pos = new HashMap<>();  // initialize the unordered map to store the frequency and the list of keys of the cache
+    }
+    
+    public int get(int key) {
+        if(!cache.containsKey(key)){  // if the key is not present in the cache
+            return -1;  // return -1
+        }
+        int value = cache.get(key);  // get the value of the key
+        int frequency = freq.get(key);  // get the frequency of the key
+        freq.put(key, frequency + 1);  // increment the frequency of the key
+        pos.get(frequency).remove(key);  // remove the key from the list of keys of the cache
+        if(pos.get(frequency).size() == 0){  // if the list of keys of the cache is empty
+            pos.remove(frequency);  // remove the frequency from the unordered map
+            if(minFreq == frequency){  // if the minimum frequency of the cache is equal to the frequency of the key
+                minFreq++;  // increment the minimum frequency of the cache
+            }
+        }
+        if(!pos.containsKey(frequency + 1)){  // if the frequency is not present in the unordered map
+            pos.put(frequency + 1, new LinkedHashSet<>());  // insert the frequency and the list of keys of the cache to the unordered map
+        }
+        pos.get(frequency + 1).add(key);  // add the key to the list of keys of the cache
+        return value;  // return the value of the key
+    }
+
+    public void put(int key, int value) {
+        if(capacity == 0){  // if the capacity of the cache is 0
+            return;  // return
+        }
+        if(cache.containsKey(key)){  // if the key is present in the cache
+            cache.put(key, value);  // update the value of the key
+            get(key);  // call the get function
+            return;  // return
+        }
+        if(cache.size() == capacity){  // if the size of the cache is equal to the capacity of the cache
+            int lastKey = pos.get(minFreq).iterator().next();  // get the last key of the list of keys of the cache
+            pos.get(minFreq).remove(lastKey);  // remove the last key from the list of keys of the cache
+            if(pos.get(minFreq).size() == 0){  // if the list of keys of the cache is empty
+                pos.remove(minFreq);  // remove the frequency from the unordered map
+            }
+            cache.remove(lastKey);  // remove the key from the cache
+            freq.remove(lastKey);  // remove the key from the unordered map
+        }
+        cache.put(key, value);  // insert the key, value and frequency to the cache
+        freq.put(key, 1);  // insert the key and frequency to the unordered map
+        minFreq = 1;  // update the minimum frequency of the cache
+        if(!pos.containsKey(1)){  // if the frequency is not present in the unordered map
+            pos.put(1, new LinkedHashSet<>());  // insert the frequency and the list of keys of the cache to the unordered map
+        }
+        pos.get(1).add(key);  // add the key to the list of keys of the cache
+    }
+}
+
+2nd:
+
+// Time Complexity : O(1) for all the operations and space complexity is O(n) where n is the capacity of the cache
+
+class LFUCache {
+    int capacity;
+    int min;
+    Map<Integer, Integer> keyToVal;
+    Map<Integer, Integer> keyToCount;
+    Map<Integer, LinkedHashSet<Integer>> countToLRUKeys;
+    
+    public LFUCache(int capacity) {
+        this.capacity = capacity;
+        this.min = -1;
+        keyToVal = new HashMap<>();
+        keyToCount = new HashMap<>();
+        countToLRUKeys = new HashMap<>();
+        countToLRUKeys.put(1, new LinkedHashSet<>());
+    }
+    
+    public int get(int key) {
+        if (!keyToVal.containsKey(key)) {
+            return -1;
+        }
+        int count = keyToCount.get(key);
+        keyToCount.put(key, count + 1);
+        countToLRUKeys.get(count).remove(key);
+        if (count == min && countToLRUKeys.get(count).size() == 0) {
+            min++;
+        }
+        if (!countToLRUKeys.containsKey(count + 1)) {
+            countToLRUKeys.put(count + 1, new LinkedHashSet<>());
+        }
+        countToLRUKeys.get(count + 1).add(key);
+        return keyToVal.get(key);
+    }
+    
+    public void put(int key, int value) {
+        if (capacity <= 0) {
+            return;
+        }
+        if (keyToVal.containsKey(key)) {
+            keyToVal.put(key, value);
+            get(key);
+            return;
+        }
+        if (keyToVal.size() >= capacity) {
+            int evit = countToLRUKeys.get(min).iterator().next();
+            countToLRUKeys.get(min).remove(evit);
+            keyToVal.remove(evit);
+            keyToCount.remove(evit);
+        }
+        keyToVal.put(key, value);
+        keyToCount.put(key, 1);
+        min = 1;
+        countToLRUKeys.get(1).add(key);
+    }
+}
+
+
