@@ -1,0 +1,81 @@
+# Daily-LeetCode-Challenge-Solution
+
+6. Zigzag Conversion
+
+3 Feb 2023
+
+Medium
+
+C++:
+
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(n)
+
+class Solution {
+public:
+    string convert(string s, int numRows) {
+        if(numRows == 1){  // if the number of rows is 1
+            return s;  // return the string
+        }
+        vector<string> v(numRows);  // vector to store the string in zigzag order
+        int i = 0;  // variable to store the index of the vector
+        int j = 0;  // variable to store the index of the string
+        while(j < s.size()){  // while the index of the string is less than the length of the string
+            while(i < numRows && j < s.size()){  // while the index of the vector is less than the number of rows and the index of the string is less than the length of the string
+                v[i] += s[j];  // append the character to the string
+                i++;  // increment the index of the vector
+                j++;  // increment the index of the string
+            }
+            i -= 2;  // decrement the index of the vector by 2
+            while(i >= 1 && j < s.size()){  // while the index of the vector is greater than or equal to 1 and the index of the string is less than the length of the string
+                v[i] += s[j];  // append the character to the string
+                i--;  // decrement the index of the vector
+                j++;  // increment the index of the string
+            }
+        }
+        string ans = "";  // variable to store the final string
+        for(int i=0; i<numRows; i++){  // for each string in the vector
+            ans += v[i];  // append the string to the final string
+        }
+        return ans;  // return the final string
+    }
+};
+
+
+
+Java:
+
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(n)
+
+class Solution {
+    public String convert(String s, int numRows) {  
+        if(numRows == 1){
+            return s;
+        }
+        StringBuilder[] v = new StringBuilder[numRows];
+        for(int i=0; i<numRows; i++){
+            v[i] = new StringBuilder();
+        }
+        int i = 0;
+        int j = 0;
+        while(j < s.length()){
+            while(i < numRows && j < s.length()){
+                v[i].append(s.charAt(j));
+                i++;
+                j++;
+            }
+            i -= 2;
+            while(i >= 1 && j < s.length()){
+                v[i].append(s.charAt(j));
+                i--;
+                j++;
+            }
+        }
+        String ans = "";
+        for(int k=0; k<numRows; k++){
+            ans += v[k].toString();
+        }
+        return ans;
+    }
+}
+
+
