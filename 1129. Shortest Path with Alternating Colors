@@ -9,8 +9,195 @@ Medium
 
 C++:
 
+// Time Complexity : O(n) where n is the number of edges and space complexity is O(n)
+
+class Solution {
+public:
+    vector<int> shortestAlternatingPaths(int n, vector<vector<int>>& red_edges, vector<vector<int>>& blue_edges) {
+        vector<vector<int>> red(n), blue(n);  // vector to store the red and blue edges
+        for(auto edge : red_edges){  // iterate over the red edges
+            red[edge[0]].push_back(edge[1]);  // add the edge to the red vector
+        }
+        for(auto edge : blue_edges){  // iterate over the blue edges
+            blue[edge[0]].push_back(edge[1]);  // add the edge to the blue vector
+        }
+        vector<vector<int>> dist(n, vector<int>(2, INT_MAX));  // vector to store the distance of the nodes from the source node
+        dist[0][0] = dist[0][1] = 0;  // initialize the distance of the source node to 0
+        queue<pair<int, int>> q;  // queue to store the node and the color of the node
+        q.push({0, 0});  // push the source node and the color of the node
+        q.push({0, 1});  // push the source node and the color of the node
+        while(!q.empty()){  // iterate over the queue
+            auto [node, color] = q.front();  // get the node and the color of the node
+            q.pop();  // pop the node and the color of the node
+            for(auto next : (color ? red[node] : blue[node])){  // iterate over the edges of the node
+                if(dist[next][color] == INT_MAX){  // if the distance of the node is INT_MAX
+                    dist[next][color] = dist[node][!color] + 1;  // update the distance of the node
+                    q.push({next, !color});  // push the node and the color of the node
+                }
+            }
+        }
+        vector<int> ans(n);  // vector to store the distance of the nodes from the source node
+        for(int i = 0; i < n; i++){  // iterate over the vector
+            ans[i] = min(dist[i][0], dist[i][1]);  // update the distance of the node
+            if(ans[i] == INT_MAX){  // if the distance of the node is INT_MAX
+                ans[i] = -1;  // update the distance of the node to -1
+            }
+        }
+        return ans;  // return the distance of the nodes from the source node
+    }
+};
+
+
+2nd Method 
+
+class Solution {
+
+public:
+    vector<int> shortestAlternatingPaths(int n, vector<vector<int>>& red_edges, vector<vector<int>>& blue_edges) {
+        vector<vector<int>> red(n);
+        vector<vector<int>> blue(n);
+        for(auto& edge : red_edges){
+            red[edge[0]].push_back(edge[1]);
+        }
+        for(auto& edge : blue_edges){
+            blue[edge[0]].push_back(edge[1]);
+        }
+        vector<vector<int>> dist(n , vector<int>(2 , INT_MAX));
+        dist[0][0] = 0;
+        dist[0][1] = 0;
+        queue<pair<int , int>> q;
+        q.push({0 , 0});
+        q.push({0 , 1});
+        while(!q.empty()){
+            auto [node , color] = q.front();
+            q.pop();
+            if(color == 0){
+                for(auto child : blue[node]){
+                    if(dist[child][1] == INT_MAX){
+                        dist[child][1] = dist[node][0] + 1;
+                        q.push({child , 1});
+                    }
+                }
+            }
+            else{
+                for(auto child : red[node]){
+                    if(dist[child][0] == INT_MAX){
+                        dist[child][0] = dist[node][1] + 1;
+                        q.push({child , 0});
+                    }
+                }
+            }
+        }
+        vector<int> ans(n);
+        for(int i = 0 ; i < n ; i++){
+            ans[i] = min(dist[i][0] , dist[i][1]);
+            if(ans[i] == INT_MAX) ans[i] = -1;
+        }
+        return ans;
+    }
+};
+
 
 
 Java:
+
+
+// Time Complexity : O(n) where n is the number of edges and space complexity is O(n)
+
+class Solution {
+    public int[] shortestAlternatingPaths(int n, int[][] red_edges, int[][] blue_edges) {
+        List<Integer>[] red = new List[n];  // list to store the red edges
+        List<Integer>[] blue = new List[n];  // list to store the blue edges
+        for(int i = 0; i < n; i++){  // iterate over the list
+            red[i] = new ArrayList<>();  // initialize the list
+            blue[i] = new ArrayList<>();  // initialize the list
+        }
+        for(int[] edge : red_edges){  // iterate over the red edges
+            red[edge[0]].add(edge[1]);  // add the edge to the red list
+        }
+        for(int[] edge : blue_edges){  // iterate over the blue edges
+            blue[edge[0]].add(edge[1]);  // add the edge to the blue list
+        }
+        int[][] dist = new int[n][2];  // array to store the distance of the nodes from the source node
+        for(int i = 0; i < n; i++){  // iterate over the array
+            Arrays.fill(dist[i], Integer.MAX_VALUE);  // fill the array with INT_MAX
+        }
+        dist[0][0] = dist[0][1] = 0;  // initialize the distance of the source node to 0
+        Queue<int[]> q = new LinkedList<>();  // queue to store the node and the color of the node
+        q.offer(new int[]{0, 0});  // push the source node and the color of the node
+        q.offer(new int[]{0, 1});  // push the source node and the color of the node
+        while(!q.isEmpty()){  // iterate over the queue
+            int[] node = q.poll();  // get the node and the color of the node
+            int color = node[1];  // get the color of the node
+            for(int next : (color == 0 ? blue[node[0]] : red[node[0]])){  // iterate over the edges of the node
+                if(dist[next][color] == Integer.MAX_VALUE){  // if the distance of the node is INT_MAX
+                    dist[next][color] = dist[node[0]][1 - color] + 1;  // update the distance
+                    q.offer(new int[]{next, 1 - color});  // push the node and the color of the node
+                }
+            }
+        }
+        int[] ans = new int[n];  // array to store the distance of the nodes from the source node
+        for(int i = 0; i < n; i++){  // iterate over the array
+            ans[i] = Math.min(dist[i][0], dist[i][1]);  // update the distance of the node
+            if(ans[i] == Integer.MAX_VALUE){  // if the distance of the node is INT_MAX
+                ans[i] = -1;  // update the distance of the node to -1
+            }
+        }
+        return ans;  // return the distance of the nodes from the source node
+    }
+}
+
+
+2nd Method 
+class Solution {
+    public int[] shortestAlternatingPaths(int n, int[][] red_edges, int[][] blue_edges) {
+        List<Integer>[] red = new ArrayList[n];
+        List<Integer>[] blue = new ArrayList[n];
+        for(int i = 0 ; i < n ; i++){
+            red[i] = new ArrayList<>();
+            blue[i] = new ArrayList<>();
+        }
+        for(int[] edge : red_edges){
+            red[edge[0]].add(edge[1]);
+        }
+        for(int[] edge : blue_edges){
+            blue[edge[0]].add(edge[1]);
+        }
+        int[][] dist = new int[n][2];
+        for(int i = 0 ; i < n ; i++){
+            dist[i][0] = dist[i][1] = Integer.MAX_VALUE;
+        }
+        dist[0][0] = 0;
+        dist[0][1] = 0;
+        Queue<int[]> q = new LinkedList<>();
+        q.add(new int[]{0 , 0});
+        q.add(new int[]{0 , 1});
+        while(!q.isEmpty()){
+            int[] node = q.poll();
+            if(node[1] == 0){
+                for(int child : blue[node[0]]){
+                    if(dist[child][1] == Integer.MAX_VALUE){
+                        dist[child][1] = dist[node[0]][0] + 1;
+                        q.add(new int[]{child , 1});
+                    }
+                }
+            }
+            else{
+                for(int child : red[node[0]]){
+                    if(dist[child][0] == Integer.MAX_VALUE){
+                        dist[child][0] = dist[node[0]][1] + 1;
+                        q.add(new int[]{child , 0});
+                    }
+                }
+            }
+        }
+        int[] ans = new int[n];
+        for(int i = 0 ; i < n ; i++){
+            ans[i] = Math.min(dist[i][0] , dist[i][1]);
+            if(ans[i] == Integer.MAX_VALUE) ans[i] = -1;
+        }
+        return ans;
+    }
+}
 
 
