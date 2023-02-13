@@ -10,6 +10,66 @@ Medium
 
 C++:
 
+class Solution {
+public:
+long long fuel;
+int dfs(int node , int parent , vector<vector<int>>& g , int &seats){
+    int representative = 1;
+    for(auto child : g[node]){
+        if(child == parent) continue;
+        representative += dfs(child , node , g , seats);
+
+    }
+    if(node != 0){
+        fuel += (representative + seats - 1) / seats;
+    }
+    return representative;
+}
+    
+
+    long long minimumFuelCost(vector<vector<int>>& roads, int seats) {
+        int n = roads.size()+1;
+        vector<vector<int>> g(n);
+        for(auto& road : roads){
+            g[road[0]].push_back(road[1]);
+            g[road[1]].push_back(road[0]);
+        }
+        dfs(0 , -1 , g , seats);
+        return fuel;
+
+    }
+};
+
 
 
 Java:
+
+
+class Solution {
+    long fuel;
+    public long dfs(int node , int parent ,   List<List<Integer>> g , int seats){
+        int  representatives = 1;
+        for(int child : g.get(node)){
+            if(child == parent) continue;
+            representatives += dfs(child , node , g , seats);
+        }
+        if(node != 0){
+            fuel += (representatives + seats-1)/seats;
+        }
+        return representatives;
+        
+    }
+    public long minimumFuelCost(int[][] roads, int seats) {
+        int n = roads.length + 1;
+         List<List<Integer>> g = new ArrayList<>();
+        for(int i=0;  i<n; i++){
+            g.add(new ArrayList<>());
+        }
+        for(int[] road : roads){
+            g.get(road[0]).add(road[1]);
+            g.get(road[1]).add(road[0]);
+        }
+        dfs(0 , -1 , g , seats);
+        return fuel;
+    }
+}
