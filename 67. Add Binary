@@ -12,5 +12,40 @@ Easy
 C++:
 
 
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(n)
+
+class Solution {
+public:
+    string addBinary(string a, string b) {
+        int i = a.size() - 1, j = b.size() - 1, carry = 0;   // initialize i,j,carry
+        string ans = "";   // initialize ans
+        while(i >= 0 || j >= 0 || carry){   // loop for i,j,carry
+            if(i >= 0) carry += a[i--] - '0';   // if condition is true
+            if(j >= 0) carry += b[j--] - '0';   // if condition is true
+            ans = to_string(carry % 2) + ans;   // ans=to_string(carry%2)+ans
+            carry /= 2;   // carry/=2
+        }
+        return ans;   // return ans
+    }
+};
+
+
+
 
 Java:
+
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(n)
+
+class Solution {
+    public String addBinary(String a, String b) {
+        int i = a.length() - 1, j = b.length() - 1, carry = 0;   // initialize i,j,carry
+        StringBuilder ans = new StringBuilder();   // initialize ans
+        while(i >= 0 || j >= 0 || carry > 0){   // loop for i,j,carry
+            if(i >= 0) carry += a.charAt(i--) - '0';   // if condition is true
+            if(j >= 0) carry += b.charAt(j--) - '0';   // if condition is true
+            ans.append(carry % 2);   // ans.append(carry%2)
+            carry /= 2;   // carry/=2
+        }
+        return ans.reverse().toString();   // return ans.reverse().toString()
+    }
+}
