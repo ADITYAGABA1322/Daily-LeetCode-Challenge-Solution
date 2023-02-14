@@ -1,0 +1,48 @@
+# Daily-LeetCode-Challenge-Solution
+
+1523. Count Odd Numbers in an Interval Range
+
+Easy
+
+C++:
+
+// Time Complexity : O(1) and space complexity is O(1)
+
+class Solution {
+public:
+    int countOdds(int low, int high) {
+        int count = 0;  // initialize the count to 0
+        if(low % 2 == 0){  // if the low is even
+            low++;  // increment the low
+        }
+        if(high % 2 == 0){  // if the high is even
+            high--;  // decrement the high
+        }
+        if(low <= high){  // if the low is less than or equal to high
+            count = (high - low) / 2 + 1;  // calculate the count
+        }
+        return count;  // return the count
+    }
+};
+
+
+Java:
+
+// Time Complexity : O(1) and space complexity is O(1)
+
+class Solution {
+    public int countOdds(int low, int high) {
+        int count = 0;  // initialize the count to 0
+        if(low % 2 == 0){  // if the low is even
+            low++;  // increment the low
+        }
+        if(high % 2 == 0){  // if the high is even
+            high--;  // decrement the high
+        }
+        if(low <= high){  // if the low is less than or equal to high
+            count = (high - low) / 2 + 1;  // calculate the count
+        }
+        return count;  // return the count
+    }
+}
+
