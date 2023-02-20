@@ -9,9 +9,55 @@ Easy
 
 C++:
 
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(n)
+
+
+class Solution {
+public:
+    int minDiffInBST(TreeNode* root) {
+        vector<int> v;   // vector<int> v
+        inorder(root , v);   // inorder(root,v)
+        int ans = INT_MAX;   // int ans=INT_MAX
+        for(int i=1 ; i<v.size() ; i++){   // for(int i=1;i<v.size();i++)
+            ans = min(ans , v[i] - v[i-1]);   // ans=min(ans,v[i]-v[i-1])
+        }
+        return ans;   // return ans
+    }
+    void inorder(TreeNode* root , vector<int>& v){   // void inorder(TreeNode* root,vector<int>& v)
+        if(!root) return;   // if condition is true
+        inorder(root->left , v);   // inorder(root->left,v)
+        v.push_back(root->val);   // v.push_back(root->val)
+        inorder(root->right , v);   // inorder(root->right,v)
+    }
+
+};
+
+
 
 
 Java:
+
+
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(n)
+
+
+class Solution {
+    public int minDiffInBST(TreeNode root) {
+        List<Integer> v = new ArrayList<>();   // List<Integer> v=new ArrayList<>();
+        inorder(root , v);   // inorder(root,v)
+        int ans = Integer.MAX_VALUE;   // int ans=Integer.MAX_VALUE
+        for(int i=1 ; i<v.size() ; i++){   // for(int i=1;i<v.size();i++)
+            ans = Math.min(ans , v.get(i) - v.get(i-1));   // ans=Math.min(ans,v.get(i)-v.get(i-1))
+        }
+        return ans;   // return ans
+    }
+    public void inorder(TreeNode root , List<Integer> v){   // public void inorder(TreeNode root,List<Integer> v)
+        if(root == null) return;   // if condition is true
+        inorder(root.left , v);   // inorder(root.left,v)
+        v.add(root.val);   // v.add(root.val)
+        inorder(root.right , v);   // inorder(root.right,v)
+    }
+};
 
 
 
