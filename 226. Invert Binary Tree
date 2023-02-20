@@ -12,8 +12,41 @@ Easy:
 C++:
 
 
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(n)
+
+
+class Solution {
+public:
+    TreeNode* invertTree(TreeNode* root) {
+        if(!root) return NULL;   // if condition is true
+       invertTree(root->left);   // invertTree(root->left)
+         invertTree(root->right);   // invertTree(root->right)
+          TreeNode* temp = root->left;   // TreeNode* temp=root->left
+          root->left = root->right;   // root->left=root->right
+          root->right = temp;   // root->right=temp
+          return root;   // return root
+};
+
+
 
 Java:
+
+
+
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(n)
+
+
+class Solution {
+    public TreeNode invertTree(TreeNode root) {
+        if(root == null) return null;   // if condition is true
+        invertTree(root.left);   // invertTree(root.left)
+        invertTree(root.right);   // invertTree(root.right)
+        TreeNode temp = root.left;   // TreeNode temp=root.left
+        root.left = root.right;   // root.left=root.right
+        root.right = temp;   // root.right=temp
+        return root;   // return root
+    }
+};
 
 
 
