@@ -6,11 +6,137 @@
 
 Medium
 
+2 Methods
 
 C++:
 
+1st Method:
 
 
-JAVA:
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(n)
+
+
+class Solution {
+public:
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+        vector<vector<int>> ans;   // initialize ans
+        if(!root) return ans;   // if condition is true
+        queue<TreeNode*> q;   // initialize q
+        q.push(root);   // q.push(root)
+        int level = 0;   // initialize level
+        while(!q.empty()){   // loop for q
+            int size = q.size();   // int size=q.size()
+            vector<int> temp;   // initialize temp
+            for(int i = 0; i < size; ++i){   // loop for i
+                TreeNode* node = q.front();   // TreeNode* node=q.front()
+                q.pop();   // q.pop()
+                temp.push_back(node->val);   // temp.push_back(node->val)
+                if(node->left) q.push(node->left);   // if condition is true
+                if(node->right) q.push(node->right);   // if condition is true
+            }
+            if(level % 2 == 1) reverse(temp.begin(), temp.end());   // if condition is true
+            ans.push_back(temp);   // ans.push_back(temp)
+            level++;   // level++
+        }
+        return ans;   // return ans
+    }
+};
+
+2nd Method:
+
+class Solution {
+public:
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+        vector<vector<int>> ans;
+        if(root == NULL)
+            return ans;
+        queue<TreeNode*> q;
+        q.push(root);
+        bool reversehaikya = false;
+        while(!q.empty()){
+            int size = q.size();
+            vector<int> v;
+            for(int i=0 ; i<size ; i++){
+                TreeNode* temp = q.front();
+                q.pop();
+                v.push_back(temp->val);
+                if(temp->left)
+                    q.push(temp->left);
+                if(temp->right)
+                    q.push(temp->right);
+            }
+            if(reversehaikya)
+                reverse(v.begin() , v.end());
+            reversehaikya = !reversehaikya;
+            ans.push_back(v);
+        }
+        return ans;
+        
+    }
+};
+
+
+
+Java:
+
+
+1st Method:
+
+
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(n)
+
+
+class Solution {
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> ans = new ArrayList<>();   // initialize ans
+        if(root == null) return ans;   // if condition is true
+        Queue<TreeNode> q = new LinkedList<>();   // initialize q
+        q.add(root);   // q.add(root)
+        int level = 0;   // initialize level
+        while(!q.isEmpty()){   // loop for q
+            int size = q.size();   // int size=q.size()
+            List<Integer> temp = new ArrayList<>();   // initialize temp
+            for(int i = 0; i < size; ++i){   // loop for i
+                TreeNode node = q.poll();   // TreeNode node=q.poll()
+                temp.add(node.val);   // temp.add(node.val)
+                if(node.left != null) q.add(node.left);   // if condition is true
+                if(node.right != null) q.add(node.right);   // if condition is true
+            }
+            if(level % 2 == 1) Collections.reverse(temp);   // if condition is true
+            ans.add(temp);   // ans.add(temp)
+            level++;   // level++
+        }
+        return ans;   // return ans
+    }
+};
+
+2nd Method:
+
+class Solution {
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> ans = new ArrayList<>();
+        if(root == null) return ans;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        boolean reversehaiKya = false;
+        while(!q.isEmpty()){
+            int size = q.size();
+            List<Integer> temp = new ArrayList<>();
+            for(int i=0; i<size ; i++){
+                TreeNode node = q.poll();
+                temp.add(node.val);
+                if(node.left != null) q.add(node.left);
+                if(node.right != null) q.add(node.right);
+            }
+            if(reversehaiKya) Collections.reverse(temp);
+            reversehaiKya = !reversehaiKya;
+            ans.add(temp);
+           
+        }
+        return ans;
+    }
+}
+
+
 
 
