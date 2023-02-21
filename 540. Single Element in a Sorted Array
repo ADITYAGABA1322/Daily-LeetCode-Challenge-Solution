@@ -11,4 +11,43 @@ Medium
 C++:
 
 
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(n)
+
+
+class Solution {
+public:
+    int singleNonDuplicate(vector<int>& nums) {
+        int n = nums.size();   // int n=nums.size()
+        int l = 0, r = n - 1;   // int l=0,r=n-1
+        while(l < r){   // loop for l and r
+            int mid = l + (r - l) / 2;   // int mid=l+(r-l)/2
+            if(mid % 2 == 1) mid--;   // if condition is true
+            if(nums[mid] == nums[mid + 1]) l = mid + 2;   // if condition is true
+            else r = mid;   // else condition is true
+        }
+        return nums[l];   // return nums[l]
+    }
+};
+
+
+
 Java:
+
+
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(n)
+
+
+class Solution {
+    public int singleNonDuplicate(int[] nums) {
+        int n = nums.length;   // int n=nums.length
+        int l = 0, r = n - 1;   // int l=0,r=n-1
+        while(l < r){   // loop for l and r
+            int mid = l + (r - l) / 2;   // int mid=l+(r-l)/2
+            if(mid % 2 == 1) mid--;   // if condition is true
+            if(nums[mid] == nums[mid + 1]) l = mid + 2;   // if condition is true
+            else r = mid;   // else condition is true
+        }
+        return nums[l];   // return nums[l]
+    }
+};
+
