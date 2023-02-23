@@ -9,7 +9,65 @@ Hard
 
 2 Methods
 
+
 C++:
+
+// Time Complexity : O(nlogn) where n is the number of projects and space complexity is O(n)
+
+class Solution {
+public:
+    int findMaximizedCapital(int k, int w, vector<int>& profits, vector<int>& capital) {
+        vector<pair<int, int>> projects;  // vector to store the projects
+        for(int i = 0; i < profits.size(); i++){  // iterate over the profits
+            projects.push_back({capital[i], profits[i]});  // push the capital and the profit of the project
+        }
+        sort(projects.begin(), projects.end());  // sort the projects based on the capital
+        priority_queue<int> pq;  // max heap to store the profits
+        int i = 0;  // variable to store the index
+        while(k--){  // iterate k times
+            while(i < projects.size() && projects[i].first <= w){  // iterate until the index is less than the size of the projects and the capital is less than or equal to w
+                pq.push(projects[i].second);  // push the profit of the project
+                i++;  // increment the index
+            }
+            if(pq.empty()){  // if the max heap is empty
+                break;  // break
+            }
+            w += pq.top();  // add the top of the max heap to w
+            pq.pop();  // pop the top of the max heap
+        }
+        return w;  // return w
+        
+    }
+};
+
+
+2nd Method:
+
+class Solution {
+public:
+    int findMaximizedCapital(int k, int w, vector<int>& profits, vector<int>& capital) {
+        vector<pair<int, int>> projects;  // vector to store the projects
+        for(int i = 0; i < profits.size(); i++){  // iterate over the profits
+            projects.push_back({capital[i], profits[i]});  // push the capital and the profit of the project
+        }
+        sort(projects.begin(), projects.end());  // sort the projects based on the capital
+        priority_queue<int> pq;  // max heap to store the profits
+        int i = 0;  // variable to store the index
+        for(int j = 0; j < k; j++){  // iterate k times
+            while(i < projects.size() && projects[i].first <= w){  // iterate until the index is less than the size of the projects and the capital is less than or equal to w
+                pq.push(projects[i].second);  // push the profit of the project
+                i++;  // increment the index
+            }
+            if(pq.empty()){  // if the max heap is empty
+                break;  // break
+            }
+            w += pq.top();  // add the top of the max heap to w
+            pq.pop();  // pop the top of the max heap
+        }
+        return w;  // return w
+        
+    }
+};
 
 
 
