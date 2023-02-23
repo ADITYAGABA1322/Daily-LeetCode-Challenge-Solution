@@ -72,3 +72,62 @@ public:
 
 
 Java:
+
+
+
+// Time Complexity : O(nlogn) where n is the number of projects and space complexity is O(n)
+
+
+class Solution {
+    public int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
+        int[][] projects = new int[profits.length][2];  // array to store the projects
+        for(int i = 0; i < profits.length; i++){  // iterate over the profits
+            projects[i][0] = capital[i];  // store the capital of the project
+            projects[i][1] = profits[i];  // store the profit of the project
+        }
+        Arrays.sort(projects, (a, b) -> a[0] - b[0]);  // sort the projects based on the capital
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b - a);  // max heap to store the profits
+        int i = 0;  // variable to store the index
+        while(k-- > 0){  // iterate k times
+            while(i < projects.length && projects[i][0] <= w){  // iterate until the index is less than the size of the projects and the capital is less than or equal to w
+                pq.add(projects[i][1]);  // add the profit of the project
+                i++;  // increment the index
+            }
+            if(pq.isEmpty()){  // if the max heap is empty
+                break;  // break
+            }
+            w += pq.poll();  // add the top of the max heap to w
+        }
+        return w;  // return w
+    }
+};
+
+
+
+2nd Method:
+
+class Solution {
+    public int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
+        int[][] projects = new int[profits.length][2];  // array to store the projects
+        for(int i = 0; i < profits.length; i++){  // iterate over the profits
+            projects[i][0] = capital[i];  // store the capital of the project
+            projects[i][1] = profits[i];  // store the profit of the project
+        }
+        Arrays.sort(projects, (a, b) -> a[0] - b[0]);  // sort the projects based on the capital
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> b - a);  // max heap to store the profits
+        int i = 0;  // variable to store the index
+        for(int j = 0; j < k; j++){  // iterate k times
+            while(i < projects.length && projects[i][0] <= w){  // iterate until the index is less than the size of the projects and the capital is less than or equal to w
+                pq.add(projects[i][1]);  // add the profit of the project
+                i++;  // increment the index
+            }
+            if(pq.isEmpty()){  // if the max heap is empty
+                break;  // break
+            }
+            w += pq.poll();  // add the top of the max heap to w
+        }
+        return w;  // return w
+    }
+};
+
+
