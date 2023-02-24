@@ -9,5 +9,57 @@ Hard
 
 C++:
 
+// Time Complexity : O(nlogn) where n is the number of elements in the array and space complexity is O(n)
+
+
+class Solution {
+public:
+    int minimumDeviation(vector<int>& nums) {
+        int n = nums.size();  // variable to store the size of the array
+        set<int> s;  // set to store the elements in the array
+        for(int i = 0; i < n; i++){  // iterate through the array
+            if(nums[i] % 2 == 1){  // if the element is odd
+                nums[i] *= 2;  // multiply the element by 2
+            }
+            s.insert(nums[i]);  // insert the element into the set
+        }
+        int res = *s.rbegin() - *s.begin();  // variable to store the result
+        while(*s.rbegin() % 2 == 0){  // iterate until the last element in the set is even
+            int temp = *s.rbegin();  // variable to store the last element in the set
+            s.erase(temp);  // erase the last element in the set
+            s.insert(temp / 2);  // insert the last element in the set divided by 2
+            res = min(res, *s.rbegin() - *s.begin());  // update the result
+        }
+        return res;  // return the result
+    }
+};
+
+
+
 
 Java:
+
+
+// Time Complexity : O(nlogn) where n is the number of elements in the array and space complexity is O(n)
+
+
+class Solution {
+    public int minimumDeviation(int[] nums) {
+        int n = nums.length;  // variable to store the size of the array
+        TreeSet<Integer> s = new TreeSet<>();  // set to store the elements in the array
+        for(int i = 0; i < n; i++){  // iterate through the array
+            if(nums[i] % 2 == 1){  // if the element is odd
+                nums[i] *= 2;  // multiply the element by 2
+            }
+            s.add(nums[i]);  // insert the element into the set
+        }
+        int res = s.last() - s.first();  // variable to store the result
+        while(s.last() % 2 == 0){  // iterate until the last element in the set is even
+            int temp = s.last();  // variable to store the last element in the set
+            s.remove(temp);  // erase the last element in the set
+            s.add(temp / 2);  // insert the last element in the set divided by 2
+            res = Math.min(res, s.last() - s.first());  // update the result
+        }
+        return res;  // return the result
+    }
+};
