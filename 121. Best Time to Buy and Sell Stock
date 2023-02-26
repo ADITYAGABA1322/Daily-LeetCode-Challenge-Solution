@@ -9,6 +9,31 @@ Easy
 
 C++:
 
+// Time Complexity : O(n) where n is the number of elements in the array and space complexity is O(1)
+
+
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int n = prices.size();  // variable to store the size of the array
+        int minPrice = INT_MAX;  // variable to store the minimum price
+        int maxProfit = 0;  // variable to store the maximum profit
+        for(int i = 0; i < n; i++){  // iterate through the array
+            if(prices[i] < minPrice){  // if the current price is less than the minimum price
+                minPrice = prices[i];  // update the minimum price
+            }
+            else if(prices[i] - minPrice > maxProfit){  // if the current price minus the minimum price is greater than the maximum profit
+                maxProfit = prices[i] - minPrice;  // update the maximum profit
+            }
+        }
+        return maxProfit;  // return the maximum profit
+    }
+};
+
+
+
+
+
 
 Java:
 
