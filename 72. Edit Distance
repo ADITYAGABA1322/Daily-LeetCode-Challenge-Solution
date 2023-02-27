@@ -9,5 +9,65 @@ Hard
 
 C++:
 
+// Time Complexity : O(mn) where m is the length of the first string and n is the length of the second string and space complexity is O(mn)
+
+
+
+class Solution {
+public:
+    int minDistance(string word1, string word2) {
+        int m = word1.length();  // variable to store the length of the first string
+        int n = word2.length();  // variable to store the length of the second string
+        vector<vector<int>> dp(m + 1, vector<int>(n + 1));  // vector to store the dp values
+        for(int i = 0; i <= m; i++){  // iterate through the first string
+            for(int j = 0; j <= n; j++){  // iterate through the second string
+                if(i == 0){  // if the first string is empty
+                    dp[i][j] = j;  // the number of operations is equal to the length of the second string
+                }
+                else if(j == 0){  // if the second string is empty
+                    dp[i][j] = i;  // the number of operations is equal to the length of the first string
+                }
+                else if(word1[i - 1] == word2[j - 1]){  // if the characters are equal
+                    dp[i][j] = dp[i - 1][j - 1];  // the number of operations is equal to the number of operations for the previous characters
+                }
+                else{  // if the characters are not equal
+                    dp[i][j] = 1 + min(dp[i - 1][j - 1], min(dp[i - 1][j], dp[i][j - 1]));  // the number of operations is equal to the minimum of the number of operations for the previous characters, the number of operations for the previous character in the first string and the number of operations for the previous character in the second string
+                }
+            }
+        }
+        return dp[m][n];  // return the number of operations
+    }
+};
+
 
 Java:
+
+
+// Time Complexity : O(mn) where m is the length of the first string and n is the length of the second string and space complexity is O(mn)
+
+
+
+class Solution {
+    public int minDistance(String word1, String word2) {
+        int m = word1.length();  // variable to store the length of the first string
+        int n = word2.length();  // variable to store the length of the second string
+        int[][] dp = new int[m + 1][n + 1];  // array to store the dp values
+        for(int i = 0; i <= m; i++){  // iterate through the first string
+            for(int j = 0; j <= n; j++){  // iterate through the second string
+                if(i == 0){  // if the first string is empty
+                    dp[i][j] = j;  // the number of operations is equal to the length of the second string
+                }
+                else if(j == 0){  // if the second string is empty
+                    dp[i][j] = i;  // the number of operations is equal to the length of the first string
+                }
+                else if(word1.charAt(i - 1) == word2.charAt(j - 1)){  // if the characters are equal
+                    dp[i][j] = dp[i - 1][j - 1];  // the number of operations is equal to the number of operations for the previous characters
+                }
+                else{  // if the characters are not equal
+                    dp[i][j] = 1 + Math.min(dp[i - 1][j - 1], Math.min(dp[i - 1][j], dp[i][j - 1]));  // the number of operations is equal to the minimum of the number of operations for the previous characters, the number of operations for the previous character in the first string and the number of operations for the previous character in the second string
+                }
+            }
+        }
+        return dp[m][n];  // return the number of operations
+    }
+}
