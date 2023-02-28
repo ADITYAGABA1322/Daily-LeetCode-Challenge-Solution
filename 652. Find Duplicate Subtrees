@@ -12,4 +12,61 @@ Medium
 C++:
 
 
+// Time Complexity : O(n) where n is the number of nodes in the tree and space complexity is O(n)
+
+
+
+class Solution {
+public:
+    vector<TreeNode*> findDuplicateSubtrees(TreeNode* root) {
+        vector<TreeNode*> res;  // vector to store the duplicate subtrees
+        unordered_map<string, int> m;  // map to store the subtrees and their count
+        helper(root, m, res);  // call the helper function
+        return res;  // return the duplicate subtrees
+    }
+    
+    string helper(TreeNode* root, unordered_map<string, int>& m, vector<TreeNode*>& res){  // function to find the duplicate subtrees
+        if(root == NULL){  // if the root is null
+            return "";  // return empty string
+        }
+        string s = to_string(root->val) + "," + helper(root->left, m, res) + "," + helper(root->right, m, res);  // variable to store the subtree
+        if(m[s] == 1){  // if the subtree is already present
+            res.push_back(root);  // push the root into the result vector
+        }.
+        m[s]++;  // increment the count of the subtree
+        return s;  // return the subtree
+    }
+};
+
+
+
+
+
 Java:
+
+
+
+// Time Complexity : O(n) where n is the number of nodes in the tree and space complexity is O(n)
+
+
+
+class Solution {
+    public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
+        List<TreeNode> res = new ArrayList<>();  // list to store the duplicate subtrees
+        Map<String, Integer> m = new HashMap<>();  // map to store the subtrees and their count
+        helper(root, m, res);  // call the helper function
+        return res;  // return the duplicate subtrees
+    }
+    
+    public String helper(TreeNode root, Map<String, Integer> m, List<TreeNode> res){  // function to find the duplicate subtrees
+        if(root == null){  // if the root is null
+            return "";  // return empty string
+        }
+        String s = root.val + "," + helper(root.left, m, res) + "," + helper(root.right, m, res);  // variable to store the subtree
+        if(m.getOrDefault(s, 0) == 1){  // if the subtree is already present
+            res.add(root);  // add the root to the result list
+        }
+        m.put(s, m.getOrDefault(s, 0) + 1);  // increment the count of the subtree
+        return s;  // return the subtree
+    }
+}
