@@ -10,4 +10,75 @@ Medium
 C++:
 
 
+
+// Time Complexity : O(n^2) where n is the length of the grid and space complexity is O(n^2)
+
+
+
+class Solution {
+public:
+    Node* construct(vector<vector<int>>& grid) {
+        int n = grid.size();  // variable to store the length of the grid
+        return construct(grid, 0, 0, n);  // call the construct function
+    }
+    
+    Node* construct(vector<vector<int>>& grid, int x, int y, int n){  // function to construct the quad tree
+        if(n == 0){  // if the length of the grid is 0
+            return NULL;  // return NULL
+        }
+        bool isLeaf = true;  // variable to store if the current node is a leaf node
+        int val = grid[x][y];  // variable to store the value of the current node
+        for(int i = x; i < x + n; i++){  // iterate through the grid
+            for(int j = y; j < y + n; j++){  // iterate through the grid
+                if(grid[i][j] != val){  // if the value of the current node is not equal to the value of the first node
+                    isLeaf = false;  // update the isLeaf variable
+                    break;  // break the loop
+                }
+            }
+        }
+        if(isLeaf){  // if the current node is a leaf node
+            return new Node(val == 1, true, NULL, NULL, NULL, NULL);  // return the node
+        }
+        int m = n / 2;  // variable to store the length of the grid
+        return new Node(false, false, construct(grid, x, y, m), construct(grid, x, y + m, m), construct(grid, x + m, y, m), construct(grid, x + m, y + m, m));  // return the node
+    }
+};
+
+
+
 Java:
+
+
+
+// Time Complexity : O(n^2) where n is the length of the grid and space complexity is O(n^2)
+
+
+
+class Solution {
+    public Node construct(int[][] grid) {
+        int n = grid.length;  // variable to store the length of the grid
+        return construct(grid, 0, 0, n);  // call the construct function
+    }
+    
+    public Node construct(int[][] grid, int x, int y, int n){  // function to construct the quad tree
+        if(n == 0){  // if the length of the grid is 0
+            return null;  // return null
+        }
+        boolean isLeaf = true;  // variable to store if the current node is a leaf node
+        int val = grid[x][y];  // variable to store the value of the current node
+        for(int i = x; i < x + n; i++){  // iterate through the grid
+            for(int j = y; j < y + n; j++){  // iterate through the grid
+                if(grid[i][j] != val){  // if the value of the current node is not equal to the value of the first node
+                    isLeaf = false;  // update the isLeaf variable
+                    break;  // break the loop
+                }
+            }
+        }
+        if(isLeaf){  // if the current node is a leaf node
+            return new Node(val == 1, true, null, null, null, null);  // return the node
+        }
+        int m = n / 2;  // variable to store the length of the grid
+        return new Node(false, false, construct(grid, x, y, m), construct(grid, x, y + m, m), construct(grid, x + m, y, m), construct(grid, x + m, y + m, m));  // return the node
+    }
+}
+
