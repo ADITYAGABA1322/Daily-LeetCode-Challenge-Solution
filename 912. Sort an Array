@@ -6,6 +6,34 @@ Medium
 C++:
 
 
+// Time Complexity : O(nlogn) where n is the length of the array and space complexity is O(n)
+
+
+
+class Solution {
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        sort(nums.begin(), nums.end());  // sort the array
+        return nums;  // return the sorted array
+    }
+};
+
+
+
 
 Java:
+
+
+
+// Time Complexity : O(nlogn) where n is the length of the array and space complexity is O(n)
+
+
+
+class Solution {
+    public int[] sortArray(int[] nums) {
+        Arrays.sort(nums);  // sort the array
+        return nums;  // return the sorted array
+    }
+}
+
 
