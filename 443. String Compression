@@ -10,9 +10,69 @@ Medium
 
 
 
+
 C++:
+
+
+// Time Complexity : O(n) where n is the length of the array and space complexity is O(1)
+
+
+class Solution {
+public:
+    int compress(vector<char>& chars) {
+        int i = 0, j = 0;  // variables to store the index
+        while(i < chars.size()){  // iterate through the array
+            int count = 0;  // variable to store the count
+            char c = chars[i];  // variable to store the character
+            while(i < chars.size() && chars[i] == c){  // iterate through the array
+                i++;  // increment the index
+                count++;  // increment the count
+            }f
+            chars[j++] = c;  // update the character
+            if(count > 1){  // if the count is greater than 1
+                string s = to_string(count);  // convert the count to string
+                for(char ch: s){  // iterate through the string
+                    chars[j++] = ch;  // update the character
+                }
+            }
+        }
+        return j;  // return the index
+    }
+};
 
 
 
 Java:
+
+
+// Time Complexity : O(n) where n is the length of the array and space complexity is O(1)
+
+
+
+class Solution {
+    public int compress(char[] chars) {
+        int i = 0, j = 0;  // variables to store the index
+        while(i < chars.length){  // iterate through the array
+            int count = 0;  // variable to store the count
+            char c = chars[i];  // variable to store the character
+            while(i < chars.length && chars[i] == c){  // iterate through the array
+                i++;  // increment the index
+                count++;  // increment the count
+            }
+            chars[j++] = c;  // update the character
+            if(count > 1){  // if the count is greater than 1
+                String s = Integer.toString(count);  // convert the count to string
+                for(char ch: s.toCharArray()){  // iterate through the string
+                    chars[j++] = ch;  // update the character
+                }
+            }
+        }
+        return j;  // return the index
+    }
+};
+
+
+
+
+
 
