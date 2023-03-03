@@ -5,7 +5,7 @@
 Easy
 
 
-C++
+C++:
 
 
 Same tree in c++ best solution  // time complexity O(N) and space complexity O(N)
@@ -22,7 +22,7 @@ public:
 };
 
 
-Java
+Java:
 
 Same tree in java best solution  // time complexity O(N) and space complexity O(N)
 class Solution {
