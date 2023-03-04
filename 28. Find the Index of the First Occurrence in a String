@@ -10,4 +10,49 @@ Medium
 C++:
 
 
+
+// Time Complexity : O(n) where n is the length of the array and space complexity is O(1)
+
+
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        if(needle == "") return 0;  // if the needle is empty return 0
+        int n = haystack.size(), m = needle.size();  // variables to store the size of the haystack and needle
+        for(int i = 0; i <= n - m; i++){  // iterate through the haystack
+            int j = 0;  // variable to store the index
+            while(j < m && haystack[i + j] == needle[j]){  // iterate through the haystack and needle
+                j++;  // increment the index
+            }
+            if(j == m) return i;  // if the index is equal to the size of the needle return the index
+        }
+        return -1;  // return -1
+        
+    }
+};
+
+
+
 Java:
+
+
+
+// Time Complexity : O(n) where n is the length of the array and space complexity is O(1)
+
+
+class Solution {
+    public int strStr(String haystack, String needle) {
+        if(needle.equals("")) return 0;  // if the needle is empty return 0
+        int n = haystack.length(), m = needle.length();  // variables to store the size of the haystack and needle
+        for(int i = 0; i <= n - m; i++){  // iterate through the haystack
+            int j = 0;  // variable to store the index
+            while(j < m && haystack.charAt(i + j) == needle.charAt(j)){  // iterate through the haystack and needle
+                j++;  // increment the index
+            }
+            if(j == m) return i;  // if the index is equal to the size of the needle return the index
+        }
+        return -1;  // return -1
+        
+    }
+};
+
