@@ -10,6 +10,61 @@ Hard
 C++:
 
 
+// Time Complexity : O(n) where n is the length of the array and space complexity is O(1)
+
+
+
+class Solution {
+public:
+    long long countSubarrays(vector<int>& nums, int minK, int maxK) {
+        long long ans = 0;
+        int n = nums.size();
+        int minPosition = -1 , maxPosition = -1 , leftBound = -1;
+        for(int i=0; i<n; i++){
+            if(nums[i] < minK || nums[i] > maxK){
+                leftBound = i;
+            }
+            if(nums[i] == minK){
+                minPosition = i;
+            }
+            if(nums[i] == maxK){
+                maxPosition = i;
+            }
+            ans += max(0 , min(maxPosition  , minPosition) - leftBound);
+        }
+        return ans;
+    }
+};
+
+
+
 
 Java:
+
+
+// Time Complexity : O(n) where n is the length of the array and space complexity is O(1)
+
+
+
+class Solution {
+    public long countSubarrays(int[] nums, int minK, int maxK) {
+        long ans = 0;
+        int n = nums.length;
+        int minPosition = -1 , maxPosition = -1 , leftBound = -1;
+        for(int i=0; i<n; i++){
+            if(nums[i] < minK || nums[i] > maxK){
+                leftBound = i;
+            }
+            if(nums[i] == minK){
+                minPosition = i;
+            }
+            if(nums[i] == maxK){
+                maxPosition = i;
+            }
+            ans += Math.max(0 , Math.min(maxPosition  , minPosition) - leftBound);
+        }
+        return ans;
+    }
+}
+
 
