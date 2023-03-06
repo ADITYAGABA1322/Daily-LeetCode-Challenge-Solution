@@ -4,12 +4,59 @@
 
 6 March 2023
 
+
+
 Easy 
 
 
 C++:
 
 
+// Time Complexity : O(logn) where n is the number of elements in the array and space complexity is O(1)
+
+
+
+class Solution {
+public:
+    int findKthPositive(vector<int>& arr, int k) {
+        int left = 0;  // variable to store the left index
+        int right = arr.size() - 1;  // variable to store the right index
+        while(left <= right){  // iterate until the left index is less than or equal to the right index
+            int mid = left + (right - left) / 2;  // variable to store the mid index
+            if(arr[mid] - (mid + 1) >= k){  // if the difference between the element at the mid index and the mid index is greater than or equal to k
+                right = mid - 1;  // update the right index
+            }
+            else{  // if the difference between the element at the mid index and the mid index is less than k
+                left = mid + 1;  // update the left index
+            }
+        }
+        return left + k;  // return the left index + k
+    }
+};
+
+
 
 Java:
+
+
+// Time Complexity : O(logn) where n is the number of elements in the array and space complexity is O(1)
+
+
+
+class Solution {
+    public int findKthPositive(int[] arr, int k) {
+        int left = 0;  // variable to store the left index
+        int right = arr.length - 1;  // variable to store the right index
+        while(left <= right){  // iterate until the left index is less than or equal to the right index
+            int mid = left + (right - left) / 2;  // variable to store the mid index
+            if(arr[mid] - (mid + 1) >= k){  // if the difference between the element at the mid index and the mid index is greater than or equal to k
+                right = mid - 1;  // update the right index
+            }
+            else{  // if the difference between the element at the mid index and the mid index is less than k
+                left = mid + 1;  // update the left index
+            }
+        }
+        return left + k;  // return the left index + k
+    }
+};
 
