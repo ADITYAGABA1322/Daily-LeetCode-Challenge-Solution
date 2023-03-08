@@ -13,4 +13,103 @@ Medium
 C++:
 
 
+
+// Time Complexity : O(nlogn) where n is the number of piles and space complexity is O(1)
+
+
+
+class Solution {
+public:
+    int minEatingSpeed(vector<int>& piles, int h) {
+        int low = 1;  // variable to store the low value
+        int high = *max_element(piles.begin(), piles.end());  // variable to store the high value
+        while(low < high){  // iterate until the low value is less than the high value
+            int mid = low + (high - low) / 2;  // variable to store the mid value
+            int hours = 0;  // variable to store the number of hours
+            for(int i = 0; i < piles.size(); i++){  // iterate through the piles
+                hours += (piles[i] / mid);  // calculate the number of hours
+                if(piles[i] % mid != 0){  // if the current pile is not divisible by the mid value
+                    hours++;  // increment the number of hours
+                }
+            }
+            if(hours > h){  // if the number of hours is greater than the given hours
+                low = mid + 1;  // increment the low value
+            }
+            else{  // if the number of hours is less than or equal to the given hours
+                high = mid;  // decrement the high value
+            }
+        }
+        return low;  // return the low value
+    }
+};
+
+
+2nd Method  using bool function
+
+
+
+// Time Complexity : O(nlogn) where n is the number of piles and space complexity is O(1)
+
+
+
+class Solution {
+public:
+    bool canEatAllBananas(vector<int>& piles, int h, int k){  // function to check if the given k value is valid
+        int hours = 0;  // variable to store the number of hours
+        for(int i = 0; i < piles.size(); i++){  // iterate through the piles
+            hours += (piles[i] / k);  // calculate the number of hours
+            if(piles[i] % k != 0){  // if the current pile is not divisible by the k value
+                hours++;  // increment the number of hours
+            }
+        }
+        return hours <= h;  // return true if the number of hours is less than or equal to the given hours
+    }
+    int minEatingSpeed(vector<int>& piles, int h) {
+        int low = 1;  // variable to store the low value
+        int high = *max_element(piles.begin(), piles.end());  // variable to store the high value
+        while(low < high){  // iterate until the low value is less than the high value
+            int mid = low + (high - low) / 2;  // variable to store the mid value
+            if(canEatAllBananas(piles, h, mid)){  // if the given mid value is valid
+                high = mid;  // decrement the high value
+            }
+            else{  // if the given mid value is not valid
+                low = mid + 1;  // increment the low value
+            }
+        }
+        return low;  // return the low value
+    }
+};
+
+
+
+                        OR 
+
+class Solution {
+public:
+    bool canEatAllBananas(vector<int>& piles, int H, int K) {
+        int hours = 0;
+        for (int pile : piles) {
+            hours += (pile - 1) / K + 1;
+        }
+        return hours <= H;
+    }
+    int minEatingSpeed(vector<int>& piles, int H) {
+        int left = 1, right = *max_element(piles.begin(), piles.end());
+        while (left < right) {
+            int mid = (left + right) / 2;
+            if (canEatAllBananas(piles, H, mid)) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return left;
+    }
+};
+
+
+
+
+
+
 Java:
