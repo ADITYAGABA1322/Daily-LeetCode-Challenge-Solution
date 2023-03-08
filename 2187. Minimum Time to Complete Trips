@@ -47,3 +47,30 @@ public:
 
 
 Java:
+
+
+// Time Complexity : O(nlogn) where n is the number of trips and space complexity is O(1)
+
+
+
+class Solution {
+    public long minimumTime(int[] time, int totalTrips) {
+        long left = 1, right = 1L * Arrays.stream(time).max().getAsInt() * totalTrips;
+        while (left < right) {
+            long mid = (left + right) / 2;
+            if (timeEnough(time, mid, totalTrips)) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return left;
+    }
+    public boolean timeEnough(int[] time, long givenTime, int totalTrips) {
+        long actualTrips = 0;
+        for (int t : time) {
+            actualTrips += givenTime / t;
+        }
+        return actualTrips >= totalTrips;
+    }
+}
