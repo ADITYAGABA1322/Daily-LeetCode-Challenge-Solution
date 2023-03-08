@@ -113,3 +113,72 @@ public:
 
 
 Java:
+
+
+
+
+// Time Complexity : O(nlogm) where n is the length of the array and m is the maximum element in the array and space complexity is O(1)
+
+
+
+class Solution {
+    public int minEatingSpeed(int[] piles, int h) {
+        int n = piles.length;  // variable to store the length of the array
+        int low = 1;  // variable to store the minimum speed
+        int high = 0;  // variable to store the maximum speed
+        for(int i = 0; i < n; i++){  // iterate through the array
+            high = Math.max(high, piles[i]);  // find the maximum element in the array
+        }
+        while(low < high){  // iterate until the low is less than high
+            int mid = low + (high - low) / 2;  // variable to store the current speed
+            int hours = 0;  // variable to store the number of hours
+            for(int i = 0; i < n; i++){  // iterate through the array
+                hours += (piles[i] / mid);  // calculate the number of hours
+                if(piles[i] % mid != 0){  // if the current element is not completely divisible by the current speed
+                    hours++;  // increment the number of hours
+                }
+            }
+            if(hours > h){  // if the number of hours is greater than the given hours
+                low = mid + 1;  // increment the low
+            }
+            else{  // if the number of hours is less than or equal to the given hours
+                high = mid;  // decrement the high
+            }
+        }
+        return low;  // return the low
+    }
+}
+
+
+
+
+
+2nd Method using bool function
+
+
+// Time Complexity : O(nlogn) where n is the number of piles and space complexity is O(1)
+
+
+class Solution {
+    public int minEatingSpeed(int[] piles, int h) {
+        int low = 1, high = Arrays.stream(piles).max().getAsInt();
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+            if (canEatAllBananas(piles, h, mid)) {
+                high = mid;
+            } else {
+                low = mid + 1;
+            }
+        }
+        return low;
+    }
+    public boolean canEatAllBananas(int[] piles, int h, int k) {
+        int hours = 0;
+        for (int pile : piles) {
+            hours += (pile - 1) / k + 1;
+        }
+        return hours <= h;
+    }
+}
+
+
