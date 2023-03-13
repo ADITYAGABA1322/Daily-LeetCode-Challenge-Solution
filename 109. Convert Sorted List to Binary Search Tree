@@ -56,3 +56,42 @@ public:
 
 
 Java:
+
+
+
+
+// Time Complexity : O(n) where n is the number of nodes in the linked list and space complexity is O(logn)
+
+
+
+
+
+class Solution {
+    ListNode head;  // pointer to store the head of the linked list
+    public TreeNode sortedListToBST(ListNode head) {
+        if(head == null){  // if the head is null
+            return null;  // return null
+        }
+        this.head = head;  // update the head of the linked list
+        int n = 0;  // variable to store the number of nodes in the linked list
+        ListNode curr = head;  // pointer to store the current node
+        while(curr != null){  // iterate through the linked list
+            n++;  // update the count
+            curr = curr.next;  // update the current node
+        }
+        return helper(0, n - 1);  // return the result
+    }
+    public TreeNode helper(int start, int end){  // function to create the tree
+        if(start > end){  // if the start is greater than the end
+            return null;  // return null
+        }
+        int mid = start + (end - start) / 2;  // variable to store the mid
+        TreeNode left = helper(start, mid - 1);  // variable to store the left node
+        TreeNode root = new TreeNode(head.val);  // variable to store the root node
+        root.left = left;  // update the left node
+        head = head.next;  // update the head of the linked list
+        root.right = helper(mid + 1, end);  // update the right node
+        return root;  // return the root node
+    }
+}
+
