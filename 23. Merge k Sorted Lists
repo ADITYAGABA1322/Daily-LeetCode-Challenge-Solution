@@ -10,6 +10,40 @@ Hard
 C++:
 
 
+// Time Complexity : O(nklogk) where n is the number of nodes in the linked list and space complexity is O(k)
+
+
+
+
+class Solution {
+public:
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        if(lists.size() == 0){  // if the size of the vector is 0
+            return NULL;  // return null
+        }
+        priority_queue<pair<int, ListNode*>, vector<pair<int, ListNode*>>, greater<pair<int, ListNode*>>> pq;  // min heap to store the values
+        for(int i = 0; i < lists.size(); i++){  // iterate through the vector
+            if(lists[i] != NULL){  // if the node is not null
+                pq.push({lists[i]->val, lists[i]});  // push the value into the heap
+            }
+        }
+        ListNode* dummy = new ListNode(-1);  // dummy node
+        ListNode* curr = dummy;  // pointer to store the current node
+        while(!pq.empty()){  // iterate through the heap
+            pair<int, ListNode*> p = pq.top();  // variable to store the top of the heap
+            pq.pop();  // pop the top of the heap
+            curr->next = p.second;  // update the next node
+            curr = curr->next;  // update the current node
+            if(p.second->next != NULL){  // if the next node is not null
+                pq.push({p.second->next->val, p.second->next});  // push the value into the heap
+            }
+        }
+        return dummy->next;  // return the result
+    }
+};
+
+
+
 Java:
 
 
