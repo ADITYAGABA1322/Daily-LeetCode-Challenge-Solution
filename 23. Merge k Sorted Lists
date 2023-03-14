@@ -48,3 +48,35 @@ Java:
 
 
 
+
+
+
+class Solution {
+    public ListNode mergeKLists(ListNode[] lists) {
+        if(lists.length == 0){  // if the size of the vector is 0
+            return null;  // return null
+        }
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);  // min heap to store the values
+        for(int i = 0; i < lists.length; i++){  // iterate through the vector
+            if(lists[i] != null){  // if the node is not null
+                pq.add(new int[]{lists[i].val, i});  // push the value into the heap
+            }
+        }
+        ListNode dummy = new ListNode(-1);  // dummy node
+        ListNode curr = dummy;  // pointer to store the current node
+        while(!pq.isEmpty()){  // iterate through the heap
+            int[] p = pq.poll();  // variable to store the top of the heap
+            curr.next = lists[p[1]];  // update the next node
+            curr = curr.next;  // update the current node
+            if(lists[p[1]].next != null){  // if the next node is not null
+                lists[p[1]] = lists[p[1]].next;  // update the next node
+                pq.add(new int[]{lists[p[1]].val, p[1]});  // push the value into the heap
+            }
+        }
+        return dummy.next;  // return the result
+    }
+}
+
+
+
+
