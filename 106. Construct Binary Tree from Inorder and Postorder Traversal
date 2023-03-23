@@ -1,0 +1,94 @@
+106. Construct Binary Tree from Inorder and Postorder Traversal
+
+
+
+
+16 March 2023
+
+
+
+Medium
+
+
+
+C++:
+
+
+
+
+// Time Complexity : O(n) where n is the number of nodes in the tree and space complexity is O(n) where n is the number of nodes in the tree
+
+
+
+
+
+class Solution {
+public:
+    unordered_map<int, int> m;  // map to store the inorder values
+    int index;  // variable to store the index
+    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
+        if(inorder.size() == 0){  // if the inorder size is 0
+            return NULL;  // return null
+        }
+        for(int i = 0; i < inorder.size(); i++){  // iterate through the inorder
+            m[inorder[i]] = i;  // update the map
+        }
+        index = postorder.size() - 1;  // update the index
+        return helper(postorder, 0, postorder.size() - 1);  // return the result
+    }
+    TreeNode* helper(vector<int>& postorder, int start, int end){  // function to build the tree
+        if(start > end){  // if the start is greater than the end
+            return NULL;  // return null
+        }
+        TreeNode* root = new TreeNode(postorder[index]);  // create a new node
+        int idx = m[postorder[index]];  // get the index of the current node
+        index--;  // decrement the index
+        root->right = helper(postorder, idx + 1, end);  // update the right node
+        root->left = helper(postorder, start, idx - 1);  // update the left node
+        return root;  // return the root
+    }
+};
+
+
+
+
+
+Java:
+
+
+
+
+// Time Complexity : O(n) where n is the number of nodes in the tree and space complexity is O(n) where n is the number of nodes in the tree
+
+
+
+
+
+
+class Solution {
+    HashMap<Integer, Integer> m;  // map to store the inorder values
+    int index;  // variable to store the index
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
+        if(inorder.length == 0){  // if the inorder length is 0
+            return null;  // return null
+        }
+        m = new HashMap<>();  // create a new map
+        for(int i = 0; i < inorder.length; i++){  // iterate through the inorder
+            m.put(inorder[i], i);  // update the map
+        }
+        index = postorder.length - 1;  // update the index
+        return helper(postorder, 0, postorder.length - 1);  // return the result
+    }
+    public TreeNode helper(int[] postorder, int start, int end){  // function to build the tree
+        if(start > end){  // if the start is greater than the end
+            return null;  // return null
+        }
+        TreeNode root = new TreeNode(postorder[index]);  // create a new node
+        int idx = m.get(postorder[index]);  // get the index of the current node
+        index--;  // decrement the index
+        root.right = helper(postorder, idx + 1, end);  // update the right node
+        root.left = helper(postorder, start, idx - 1);  // update the left node
+        return root;  // return the root
+    }
+}
+
