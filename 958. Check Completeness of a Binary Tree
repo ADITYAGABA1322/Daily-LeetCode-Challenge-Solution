@@ -1,0 +1,88 @@
+958. Check Completeness of a Binary Tree
+
+
+
+15 March 2023
+
+
+
+Medium
+
+
+
+C++:
+
+// Time Complexity : O(n) where n is the number of nodes in the tree and space complexity is O(h) where h is the height of the tree
+
+
+
+
+
+class Solution {
+public:
+    bool isCompleteTree(TreeNode* root) {
+        if(root == NULL){  // if the root is null
+            return true;  // return true
+        }
+        queue<TreeNode*> q;  // queue to store the nodes
+        q.push(root);  // push the root into the queue
+        bool flag = false;  // variable to store the flag
+        while(!q.empty()){  // iterate through the queue
+            TreeNode* curr = q.front();  // get the front of the qr
+            q.pop();  // pop the front of the queue
+            if(curr == NULL){  // if the current node is null
+                flag = true;  // update the flag
+            }
+            else{  // if the current node is not null
+                if(flag == true){  // if the flag is true
+                    return false;  // return false
+                }
+                q.push(curr->left);  // push the left node into the queue
+                q.push(curr->right);  // push the right node into the queue
+            }
+        }
+        return true;  // return true
+    }
+};
+
+
+
+
+
+Java:
+
+
+
+// Time Complexity : O(n) where n is the number of nodes in the tree and space complexity is O(h) where h is the height of the tree
+
+
+
+
+
+
+class Solution {
+    public boolean isCompleteTree(TreeNode root) {
+        if(root == null){  // if the root is null
+            return true;  // return true
+        }
+        Queue<TreeNode> q = new LinkedList<>();  // queue to store the nodes
+        q.add(root);  // add the root into the queue
+        boolean flag = false;  // variable to store the flag
+        while(!q.isEmpty()){  // iterate through the queue
+            TreeNode curr = q.poll();  // get the front of the queue
+            if(curr == null){  // if the current node is null
+                flag = true;  // update the flag
+            }
+            else{  // if the current node is not null
+                if(flag == true){  // if the flag is true
+                    return false;  // return false
+                }
+                q.add(curr.left);  // add the left node into the queue
+                q.add(curr.right);  // add the right node into the queue
+            }
+        }
+        return true;  // return true
+    }
+}
+
+
