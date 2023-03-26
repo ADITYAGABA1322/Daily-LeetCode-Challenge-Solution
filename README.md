@@ -12,8 +12,12 @@ C++🫶 && JAVA🔥
 
 
 
-<img align="right" src="https://media.giphy.com/media/GgcusW5RLS9Nu/giphy.gif" width="50%"  />
+<img align="right" src="https://media.giphy.com/media/GgcusW5RLS9Nu/giphy.gif" width="400" />
+
+
+
 <img align="bottom" src="https://appstickers-cdn.appadvice.com/1485748162/833420271/21c8eb2676cd8083729b7f85c616f97a-11.gif" width="20%"  />
+
 
 
 
