@@ -22,7 +22,6 @@ Same tree in c++ best solution  // time complexity O(N) and space complexity O(N
 
 
 
-
 class Solution {
 public:
     bool isSameTree(TreeNode* p, TreeNode* q) {     // p is the root of the first binary tree and q is the root of the second binary tree
