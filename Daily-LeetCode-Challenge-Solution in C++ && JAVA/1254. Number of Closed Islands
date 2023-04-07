@@ -14,5 +14,92 @@ Medium
 C++:
 
 
+// Time Complexity : O(m * n) where m is the number of rows and n is the number of columns and space complexity is O(m * n) where m is the number of rows and n is the number of columns
+
+
+
+
+
+
+class Solution {
+
+public:
+    int closedIsland(vector<vector<int>>& grid) {
+        int result = 0;  // variable to store the result
+        for(int i = 0; i < grid.size(); i++){  // iterate through the grid
+            for(int j = 0; j < grid[0].size(); j++){  // iterate through the grid
+                if(grid[i][j] == 0){  // if the value is 0
+                    if(dfs(grid, i, j)){  // if the value is true
+                        result++;  // increment the result
+                    }
+                }
+            }
+        }
+        return result;  // return the result
+    }
+    bool dfs(vector<vector<int>>& grid, int i, int j){  // function to perform dfs
+        if(i < 0 || i >= grid.size() || j < 0 || j >= grid[0].size()){  // if the value is out of bounds
+            return false;  // return false
+        }
+        if(grid[i][j] == 1){  // if the value is 1
+            return true;  // return true
+        }
+        grid[i][j] = 1;  // update the value
+        bool top = dfs(grid, i - 1, j);  // get the top value
+        bool bottom = dfs(grid, i + 1, j);  // get the bottom value
+        bool left = dfs(grid, i, j - 1);  // get the left value
+        bool right = dfs(grid, i, j + 1);  // get the right value
+        return top && bottom && left && right;  // return the result
+    }
+};
+
+
+
+
+
+
 
 Java:
+
+
+// Time Complexity : O(m * n) where m is the number of rows and n is the number of columns and space complexity is O(m * n) where m is the number of rows and n is the number of columns
+
+
+
+
+
+
+class Solution {
+    public int closedIsland(int[][] grid) {
+        int result = 0;  // variable to store the result
+        for(int i = 0; i < grid.length; i++){  // iterate through the grid
+            for(int j = 0; j < grid[0].length; j++){  // iterate through the grid
+                if(grid[i][j] == 0){  // if the value is 0
+                    if(dfs(grid, i, j)){  // if the value is true
+                        result++;  // increment the result
+                    }
+                }
+            }
+        }
+        return result;  // return the result
+    }
+    public boolean dfs(int[][] grid, int i, int j){  // function to perform dfs
+        if(i < 0 || i >= grid.length || j < 0 || j >= grid[0].length){  // if the value is out of bounds
+            return false;  // return false
+        }
+        if(grid[i][j] == 1){  // if the value is 1
+            return true;  // return true
+        }
+        grid[i][j] = 1;  // update the value
+        boolean top = dfs(grid, i - 1, j);  // get the top value
+        boolean bottom = dfs(grid, i + 1, j);  // get the bottom value
+        boolean left = dfs(grid, i, j - 1);  // get the left value
+        boolean right = dfs(grid, i, j + 1);  // get the right value
+        return top && bottom && left && right;  // return the result
+    }
+}
+
+
+
+
+
