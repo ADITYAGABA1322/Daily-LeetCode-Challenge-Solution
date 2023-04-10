@@ -13,5 +13,138 @@ Medium
 C++:
 
 
+// Time Complexity : O(n) where n is the length of the word and space complexity is O(n) where n is the length of the word
+
+
+
+
+
+class WordDictionary {
+public:
+    /** Initialize your data structure here. */
+    struct TrieNode{  // structure to store the trie node
+        bool isEnd;  // variable to store the end of the word
+        TrieNode* children[26];  // array to store the children
+    };
+    TrieNode* root;  // variable to store the root
+    WordDictionary() {
+        root = new TrieNode();  // create a new node
+    }
+    
+    /** Adds a word into the data structure. */
+    void addWord(string word) {
+        TrieNode* curr = root;  // get the root
+        for(int i = 0; i < word.length(); i++){  // iterate through the word
+            char c = word[i];  // get the character
+            if(curr->children[c - 'a'] == NULL){  // if the child is null
+                curr->children[c - 'a'] = new TrieNode();  // create a new node
+            }
+            curr = curr->children[c - 'a'];  // update the current node
+        }
+        curr->isEnd = true;  // update the end of the word
+    }
+    
+    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */
+    bool search(string word) {
+        return helper(word, root, 0);  // return the result
+    }
+    bool helper(string word, TrieNode* root, int index){  // function to search the word
+        if(index == word.length()){  // if the index is equal to the length of the word
+            return root->isEnd;  // return the result
+        }
+        char c = word[index];  // get the character
+        if(c == '.'){  // if the character is '.'
+            for(int i = 0; i < 26; i++){  // iterate through the children
+                if(root->children[i] != NULL){  // if the child is not null
+                    if(helper(word, root->children[i], index + 1)){  // if the helper function returns true
+                        return true;  // return true
+                    }
+                }
+            }
+            return false;  // return false
+        }
+        else{  // if the character is not '.'
+            if(root->children[c - 'a'] == NULL
+                ){  // if the child is null
+                    return false;  // return false
+                }
+            return helper(word, root->children[c - 'a'], index + 1);  // return the result
+
+        }
+    }
+};
+
+
+
+
 
 Java:
+
+
+
+// Time Complexity : O(n) where n is the length of the word and space complexity is O(n) where n is the length of the word
+
+
+
+
+
+class WordDictionary {
+    class TrieNode{  // structure to store the trie node
+        boolean isEnd;  // variable to store the end of the word
+        TrieNode[] children;  // array to store the children
+        public TrieNode(){  // constructor
+            children = new TrieNode[26];  // create a new array
+        }
+    }
+    TrieNode root;  // variable to store the root
+    /** Initialize your data structure here. */
+    public WordDictionary() {
+        root = new TrieNode();  // create a new node
+    }
+    
+    /** Adds a word into the data structure. */
+    public void addWord(String word) {
+        TrieNode curr = root;  // get the root
+        for(int i = 0; i < word.length(); i++){  // iterate through the word
+            char c = word.charAt(i);  // get the character
+            if(curr.children[c - 'a'] == null){  // if the child is null
+                curr.children[c - 'a'] = new TrieNode();  // create a new node
+            }
+            curr = curr.children[c - 'a'];  // update the current node
+        }
+        curr.isEnd = true;  // update the end of the word
+    }
+    
+    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */
+    public boolean search(String word) {
+        return helper(word, root, 0);  // return the result
+    }
+    public boolean helper(String word, TrieNode root, int index){  // function to search the word
+        if(index == word.length()){  // if the index is equal to the length of the word
+            return root.isEnd;  // return the result
+        }
+        char c = word.charAt(index);  // get the character
+        if(c == '.'){  // if the character is '.'
+            for(int i = 0; i < 26; i++){  // iterate through the children
+                if(root.children[i] != null){  // if the child is not null
+                    if(helper(word, root.children[i], index + 1)){  // if the helper function returns true
+                        return true;  // return true
+                    }
+                }
+            }
+            return false;  // return false
+        }
+        else{  // if the character is not '.'
+            if(root.children[c - 'a'] == null
+                ){  // if the child is null
+                    return false;  // return false
+                }
+            return helper(word, root.children[c - 'a'], index + 1);  // return the result
+
+        }
+    }
+}
+
+
+
+
