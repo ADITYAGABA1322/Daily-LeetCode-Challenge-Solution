@@ -139,3 +139,47 @@ class Solution {
 
 
 
+// Time Complexity : O(n^2) where n is the number of cities and space complexity is O(n^2) where n is the number of cities
+
+
+
+
+
+
+
+class Solution {
+    int ans = Integer.MAX_VALUE;
+    public int bfs(int n , List<List<int[]>> g){
+        boolean[] vis = new boolean[n+1];
+        Queue<Integer> q = new LinkedList<>();
+        q.add(1);
+        vis[1] = true;
+        while(!q.isEmpty()){
+            int node = q.poll();
+            for(int[] edge : g.get(node)){
+            ans = Math.min(ans , edge[1]);
+            if(!vis[edge[0]]){
+                vis[edge[0]] = true;
+               q.offer(edge[0]);
+            }
+        }
+      
+        }
+          return ans;
+    }
+    public int minScore(int n, int[][] roads) {
+        List<List<int[]>> g = new ArrayList<>();
+        for(int i=0; i<=n; i++){
+            g.add(new ArrayList<>());
+        }
+        for(int[] road : roads){
+            g.get(road[0]).add(new int[]{road[1] , road[2]});
+            g.get(road[1]).add(new int[]{road[0] , road[2]});
+        }
+        
+        return bfs(n , g);
+    }
+}
+
+
+
