@@ -17,6 +17,8 @@ by using DFS || BFS
 
 C++:
 
+1st Method Using DFS
+
 
 // Time Complexity : O(n^2) where n is the number of cities and space complexity is O(n^2) where n is the number of cities
 
