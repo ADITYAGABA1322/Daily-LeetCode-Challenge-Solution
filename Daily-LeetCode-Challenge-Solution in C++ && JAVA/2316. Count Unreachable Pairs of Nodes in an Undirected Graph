@@ -110,3 +110,96 @@ public:
 
 JAVA:
 
+
+
+
+// Time Complexity : O(n) where n is the number of edges and space complexity is O(n) where n is the number of edges
+
+
+1st Method DFS 
+
+class Solution {
+    public long dfs(int node ,  List<List<Integer>> g ,  boolean[] vis){
+        vis[node] = true;
+        int count = 1;
+        for(int child : g.get(node)){
+            if(!vis[child]){
+                count += dfs(child , g , vis); 
+            }
+        }
+        return count;
+    }
+    public long countPairs(int n, int[][] edges) {
+        List<List<Integer>> g = new ArrayList<>();
+        for(int i=0; i<n; i++){
+            g.add(new ArrayList<>());
+        }
+        for(int[] edge : edges){
+            g.get(edge[0]).add(edge[1]);
+            g.get(edge[1]).add(edge[0]);
+        }
+        long numberofPairs = 0;
+        long remainingComponents = n;
+        long sizeofComponents = 0;
+        boolean[] vis = new boolean[n];
+        for(int i=0; i<n; i++){
+            if(!vis[i]){
+                sizeofComponents = dfs(i , g , vis);
+                numberofPairs += sizeofComponents * (remainingComponents - sizeofComponents);
+                remainingComponents -= sizeofComponents;
+            }
+        }
+        return numberofPairs;
+    }
+}
+
+
+
+2nd Method BFS  
+
+
+class Solution {
+    public long bfs(int node ,  List<List<Integer>> g ,  boolean[] vis){
+        Queue<Integer> q = new LinkedList<>();
+        q.add(node);
+        vis[node] = true;
+        int count = 1;
+        while(!q.isEmpty()){
+             node = q.poll();
+            for(int child : g.get(node)){
+            if(!vis[child]){
+               vis[child] = true;
+               count++;
+               q.add(child);
+            }
+        }
+         
+        }
+           return count;
+        
+    }
+    public long countPairs(int n, int[][] edges) {
+        List<List<Integer>> g = new ArrayList<>();
+        for(int i=0; i<n; i++){
+            g.add(new ArrayList<>());
+        }
+        for(int[] edge : edges){
+            g.get(edge[0]).add(edge[1]);
+            g.get(edge[1]).add(edge[0]);
+        }
+        long numberofPairs = 0;
+        long remainingComponents = n;
+        long sizeofComponents = 0;
+        boolean[] vis = new boolean[n];
+        for(int i=0; i<n; i++){
+            if(!vis[i]){
+                sizeofComponents = bfs(i , g , vis);
+                numberofPairs += sizeofComponents * (remainingComponents - sizeofComponents);
+                remainingComponents -= sizeofComponents;
+            }
+        }
+        return numberofPairs;
+    }
+}
+
+
