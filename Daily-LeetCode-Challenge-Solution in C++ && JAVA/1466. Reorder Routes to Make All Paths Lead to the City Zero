@@ -117,3 +117,112 @@ public:
 
 Java:
 
+
+// Time Complexity : O(n) where n is the number of edges and space complexity is O(n) where n is the number of edges
+
+
+
+
+
+class Solution {
+    public int minReorder(int n, int[][] connections) {
+        List<Integer>[] graph = new ArrayList[n];  // create a graph
+        for(int i = 0; i < n; i++){  // iterate through the array
+            graph[i] = new ArrayList<>();  // create a new list
+        }
+        for(int i = 0; i < connections.length; i++){  // iterate through the connections
+            graph[connections[i][0]].add(connections[i][1]);  // add the edge
+            graph[connections[i][1]].add(-connections[i][0]);  // add the edge
+        }
+        boolean[] visited = new boolean[n];  // create a visited array
+        return dfs(graph, visited, 0);  // return the result
+    }
+    public int dfs(List<Integer>[] graph, boolean[] visited, int node){  // function to perform dfs
+        visited[node] = true;  // update the visited array
+        int result = 0;  // variable to store the result
+        for(int i = 0; i < graph[node].size(); i++){  // iterate through the graph
+            int child = graph[node].get(i);  // get the child
+            if(child > 0){  // if the child is greater than 0
+                if(!visited[child]){  // if the child is not visited
+                    result += 1 + dfs(graph, visited, child);  // update the result
+                }
+            }
+            else{  // if the child is less than 0
+                if(!visited[-child]){  // if the child is not visited
+                    result += dfs(graph, visited, -child);  // update the result
+                }
+            }
+        }
+        return result;  // return the result
+    }
+}
+
+
+or   
+
+
+class Solution {
+    int count = 0;
+    void dfs(int node , int parent , List<List<int[]>> g){
+        for(int[] nei : g.get(node)){
+            int child = nei[0];
+            int sign = nei[1]; 
+            if(child != parent){
+                count += sign;
+                dfs(child , node , g);
+            }
+        }
+    }
+    public int minReorder(int n, int[][] connections) {
+        List<List<int[]>> g = new ArrayList<>();
+        for(int i=0; i<n; i++){
+            g.add(new ArrayList<>());
+        }
+        for(int[] connection : connections){
+            g.get(connection[0]).add(new int[]{connection[1] , 1});
+            g.get(connection[1]).add(new int[]{connection[0] , 0});
+        }
+        dfs(0 , -1 , g);
+        return count;
+    }
+}
+
+
+2nd Method Using BFS 
+
+
+class Solution {
+    int count = 0;
+    void bfs(int node , int n , List<List<int[]>> g){
+        Queue<Integer> q = new LinkedList<>();
+        boolean[] vis = new boolean[n];
+        q.add(node);
+        vis[node] = true;
+        while(!q.isEmpty()){
+             node = q.poll();
+            for(int[] nei : g.get(node)){
+            int child = nei[0];
+            int sign = nei[1]; 
+            if(!vis[child]){
+                vis[child] = true;
+                count += sign;
+                q.add(child);
+            }
+        }
+        }
+    }
+    public int minReorder(int n, int[][] connections) {
+        List<List<int[]>> g = new ArrayList<>();
+        for(int i=0; i<n; i++){
+            g.add(new ArrayList<>());
+        }
+        for(int[] connection : connections){
+            g.get(connection[0]).add(new int[]{connection[1] , 1});
+            g.get(connection[1]).add(new int[]{connection[0] , 0});
+        }
+        bfs(0 , n , g);
+        return count;
+    }
+}
+
+
