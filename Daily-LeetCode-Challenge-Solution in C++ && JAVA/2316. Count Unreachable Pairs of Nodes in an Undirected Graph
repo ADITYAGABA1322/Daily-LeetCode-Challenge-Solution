@@ -18,6 +18,94 @@ Medium
 
 C++:
 
+// Time Complexity : O(n) where n is the number of edges and space complexity is O(n) where n is the number of edges
+
+
+1st Method DFS 
+
+class Solution {
+public:
+    int dfs(int node, vector<vector<int>>& adj, vector<bool>& visit) {
+        int count = 1;
+        visit[node] = true;
+        for (int neighbor : adj[node]) {
+            if (!visit[neighbor]) {
+                count += dfs(neighbor, adj, visit);
+            }
+        }
+        return count;
+    }
+
+    long long countPairs(int n, vector<vector<int>>& edges) {
+        vector<vector<int>> adj(n);
+        for (auto edge : edges) {
+            adj[edge[0]].push_back(edge[1]);
+            adj[edge[1]].push_back(edge[0]);
+        }
+
+        long long numberOfPairs = 0;
+        long long sizeOfComponent = 0;
+        long long remainingNodes = n;
+        vector<bool> visit(n);
+        for (int i = 0; i < n; i++) {
+            if (!visit[i]) {
+                sizeOfComponent = dfs(i, adj, visit);
+                numberOfPairs += sizeOfComponent * (remainingNodes - sizeOfComponent);
+                remainingNodes -= sizeOfComponent;
+            }
+        }
+        return numberOfPairs;
+    }
+};
+
+
+
+2nd Method BFS  
+
+class Solution {
+public:
+    int bfs(int node, vector<vector<int>>& adj, vector<bool>& visit) {
+        queue<int> q;
+        q.push(node);
+        int count = 1;
+        visit[node] = true;
+
+        while (!q.empty()) {
+            node = q.front();
+            q.pop();
+            for (int neighbor : adj[node]) {
+                if (!visit[neighbor]) {
+                    visit[neighbor] = true;
+                    count++;
+                    q.push(neighbor);
+                }
+            }
+        }
+        return count;
+    }
+
+    long long countPairs(int n, vector<vector<int>>& edges) {
+        vector<vector<int>> adj(n);
+        for (auto edge : edges) {
+            adj[edge[0]].push_back(edge[1]);
+            adj[edge[1]].push_back(edge[0]);
+        }
+
+        long long numberOfPairs = 0;
+        long long sizeOfComponent = 0;
+        long long remainingNodes = n;
+        vector<bool> visit(n);
+        for (int i = 0; i < n; i++) {
+            if (!visit[i]) {
+                sizeOfComponent = bfs(i, adj, visit);
+                numberOfPairs += sizeOfComponent * (remainingNodes - sizeOfComponent);
+                remainingNodes -= sizeOfComponent;
+            }
+        }
+        return numberOfPairs;
+    }
+};
+
 
 
 JAVA:
