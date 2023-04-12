@@ -14,4 +14,135 @@ Medium
 C++:
 
 
+// Time Complexity : O(n) where n is the number of edges and space complexity is O(n) where n is the number of edges
+
+
+
+
+
+class Solution {
+public:
+    int makeConnected(int n, vector<vector<int>>& connections) {
+        if(connections.size() < n-1) return -1;  // if the number of edges is less than n-1 then return -1
+        vector<vector<int>> graph(n);  // create a graph
+        for(int i = 0; i < connections.size(); i++){  // iterate through the connections
+            graph[connections[i][0]].push_back(connections[i][1]);  // add the edge
+            graph[connections[i][1]].push_back(connections[i][0]);  // add the edge
+        }
+        vector<bool> visited(n, false);  // create a visited array
+        int count = 0;  // create a count variable
+        for(int i = 0; i < n; i++){  // iterate through the graph
+            if(!visited[i]){  // if the node is not visited
+                dfs(graph, visited, i);  // perform dfs
+                count++;  // increment the count
+            }
+        }
+        return count-1;  // return the result
+    }
+    void dfs(vector<vector<int>>& graph, vector<bool>& visited, int node){  // function to perform dfs
+        visited[node] = true;  // mark the node as visited
+        for(int i = 0; i < graph[node].size(); i++){  // iterate through the graph
+            if(!visited[graph[node][i]]){  // if the node is not visited
+                dfs(graph, visited, graph[node][i]);  // perform dfs
+            }
+        }
+    }
+};
+
+
+
+
+
+
+2nd Method using bfs 
+
+
+
+
+
+
+// Time Complexity : O(n) where n is the number of edges and space complexity is O(n) where n is the number of edges
+
+
+
+
+
+class Solution {
+
+public:
+    int makeConnected(int n, vector<vector<int>>& connections) {
+        if(connections.size() < n-1) return -1;  // if the number of edges is less than n-1 then return -1
+        vector<vector<int>> graph(n);  // create a graph
+        for(int i = 0; i < connections.size(); i++){  // iterate through the connections
+            graph[connections[i][0]].push_back(connections[i][1]);  // add the edge
+            graph[connections[i][1]].push_back(connections[i][0]);  // add the edge
+        }
+        vector<bool> visited(n, false);  // create a visited array
+        int count = 0;  // create a count variable
+        for(int i = 0; i < n; i++){  // iterate through the graph
+            if(!visited[i]){  // if the node is not visited
+                bfs(graph, visited, i);  // perform bfs
+                count++;  // increment the count
+            }
+        }
+        return count-1;  // return the result
+    }
+    void bfs(vector<vector<int>>& graph, vector<bool>& visited, int node){  // function to perform bfs
+        queue<int> q;  // create a queue
+        q.push(node);  // push the node into the queue
+        visited[node] = true;  // mark the node as visited
+        while(!q.empty()){  // iterate through the queue
+            int curr = q.front();  // get the front element
+            q.pop();  // pop the element
+            for(int i = 0; i < graph[curr].size(); i++){  // iterate through the graph
+                if(!visited[graph[curr][i]]){  // if the node is not visited
+                    q.push(graph[curr][i]);  // push the node into the queue
+                    visited[graph[curr][i]] = true;  // mark the node as visited
+                }
+            }
+        }
+    }
+};
+
+            OR  
+
+class Solution {
+public:
+    void bfs(int node  , vector<vector<int>>& g , vector<bool>& vis){
+        queue<int> q;
+        q.push(node);
+        vis[node] = true;
+        while(!q.empty()){
+            int node = q.front();
+            q.pop();
+            for(auto child : g[node]){
+                if(!vis[child]){
+                    vis[child] = true;
+                    q.push(child);
+                }
+            }
+        }
+    }
+    int makeConnected(int n, vector<vector<int>>& connections) {
+        if(connections.size() < n-1){
+            return -1;
+        }
+        vector<vector<int>> g(n);
+        for(auto connection : connections){
+            g[connection[0]].push_back(connection[1]);
+            g[connection[1]].push_back(connection[0]);
+        }
+        vector<bool> vis(n);
+        int count  = 0;
+        for(int i=0; i<n; i++){
+            if(!vis[i]){
+                bfs( i , g , vis);
+                count++;
+            }
+        }
+        return count - 1;
+    }
+};
+
+
 JAVA:
