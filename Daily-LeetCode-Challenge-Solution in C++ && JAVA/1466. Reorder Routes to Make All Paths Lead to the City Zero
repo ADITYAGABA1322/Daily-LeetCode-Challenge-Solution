@@ -15,6 +15,105 @@ Medium
 
 C++:
 
+// Time Complexity : O(n) where n is the number of edges and space complexity is O(n) where n is the number of edges
+
+
+
+
+
+class Solution {
+public:
+    int minReorder(int n, vector<vector<int>>& connections) {
+        vector<vector<int>> graph(n);  // create a graph
+        for(int i = 0; i < connections.size(); i++){  // iterate through the connections
+            graph[connections[i][0]].push_back(connections[i][1]);  // add the edge
+            graph[connections[i][1]].push_back(-connections[i][0]);  // add the edge
+        }
+        vector<bool> visited(n, false);  // create a visited array
+        return dfs(graph, visited, 0);  // return the result
+    }
+    int dfs(vector<vector<int>>& graph, vector<bool>& visited, int node){  // function to perform dfs
+        visited[node] = true;  // update the visited array
+        int result = 0;  // variable to store the result
+        for(int i = 0; i < graph[node].size(); i++){  // iterate through the graph
+            int child = graph[node][i];  // get the child
+            if(child > 0){  // if the child is greater than 0
+                if(!visited[child]){  // if the child is not visited
+                    result += 1 + dfs(graph, visited, child);  // update the result
+                }
+            }
+            else{  // if the child is less than 0
+                if(!visited[-child]){  // if the child is not visited
+                    result += dfs(graph, visited, -child);  // update the result
+                }
+            }
+        }
+        return result;  // return the result
+    }
+};
+
+
+or 
+
+class Solution {
+public:
+    int count = 0;
+    void dfs(int node, int parent, vector<vector<pair<int, int>>>& adj) {
+        for (auto& [child, sign] : adj[node]) {
+            if (child != parent) {
+                count += sign;
+                dfs(child, node, adj);
+            }
+        }
+    }
+
+    int minReorder(int n, vector<vector<int>>& connections) {
+        vector<vector<pair<int, int>>> adj(n);
+        for (auto& connection : connections) {
+            adj[connection[0]].push_back({connection[1], 1});
+            adj[connection[1]].push_back({connection[0], 0});
+        }
+        dfs(0, -1, adj);
+        return count;
+    }
+};
+
+2nd Method Using BFS 
+
+
+class Solution {
+public:
+    int count = 0;
+    void bfs(int node , int n , vector<vector<pair<int , int>>>& g){
+       queue<int> q;
+       vector<bool> vis(n);
+       q.push(node);
+       vis[node] = true;
+       while(!q.empty()){
+           node = q.front();
+           q.pop();
+           for (auto& [child, sign] : g[node]){
+            if(!vis[child]){
+                vis[child] = true;
+                count += sign;
+                q.push(child);
+            }
+        }
+       }
+
+    }
+    int minReorder(int n, vector<vector<int>>& connections) {
+        vector<vector<pair<int , int>>> g(n);
+        for(auto connection : connections){
+            g[connection[0]].push_back({connection[1] , 1});
+            g[connection[1]].push_back({connection[0] , 0});
+        }
+        bfs(0 , n , g);
+        return count;
+    }
+};
+
+
 
 Java:
 
