@@ -13,5 +13,72 @@ C++:
 
 
 
+
+
+// Time Complexity : O(n) where n is the length of the pushed array and space complexity is O(n) where n is the length of the pushed array
+
+
+
+
+
+
+
+
+class Solution {
+public:
+    bool validateStackSequences(vector<int>& pushed, vector<int>& popped) {
+        stack<int> st;  // stack to store the pushed values
+        int i = 0;  // index for the pushed array
+        int j = 0;  // index for the popped array
+        while(i < pushed.size()){  // while the index is less than the size of the pushed array
+            st.push(pushed[i]);  // push the value into the stack
+            while(!st.empty() && st.top() == popped[j]){  // while the stack is not empty and the top of the stack is equal to the value in the popped array
+                st.pop();  // pop the top of the stack
+                j++;  // increment the index
+            }
+            i++;  // increment the index
+        }
+        if(st.empty()){  // if the stack is empty
+            return true;  // return true
+        }
+        return false;  // return false
+    }
+};
+
+
+
 JAVA:
+
+
+
+
+// Time Complexity : O(n) where n is the length of the pushed array and space complexity is O(n) where n is the length of the pushed array
+
+
+
+
+
+
+
+
+class Solution {
+    public boolean validateStackSequences(int[] pushed, int[] popped) {
+        Stack<Integer> st = new Stack<>();  // stack to store the pushed values
+        int i = 0;  // index for the pushed array
+        int j = 0;  // index for the popped array
+        while(i < pushed.length){  // while the index is less than the length of the pushed array
+            st.push(pushed[i]);  // push the value into the stack
+            while(!st.isEmpty() && st.peek() == popped[j]){  // while the stack is not empty and the top of the stack is equal to the value in the popped array
+                st.pop();  // pop the top of the stack
+                j++;  // increment the index
+            }
+            i++;  // increment the index
+        }
+        if(st.isEmpty()){  // if the stack is empty
+            return true;  // return true
+        }
+        return false;  // return false
+    }
+};
+
 
