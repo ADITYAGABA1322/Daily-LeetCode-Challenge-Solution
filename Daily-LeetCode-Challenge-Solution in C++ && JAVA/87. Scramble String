@@ -1,0 +1,108 @@
+	87. Scramble String
+
+
+	30 March 2023
+
+
+
+	Hard
+
+
+	C++:
+
+
+	// Time Complexity : O(n^4) where n is the length of the string and space complexity is O(n^4)
+
+
+
+
+
+	class Solution {
+	public:
+			bool isScramble(string s1, string s2) {
+					if(s1 == s2){  // if the strings are equal
+							return true;  // return true
+					}
+					int n = s1.length();  // variable to store the length of the string
+					int count[26] = {0};  // array to store the count of the characters
+					for(int i = 0; i < n; i++){  // iterate through the string
+							count[s1[i] - 'a']++;  // update the count of the character
+							count[s2[i] - 'a']--;  // update the count of the character
+					}
+					for(int i = 0; i < 26; i++){  // iterate through the array
+							if(count[i] != 0){  // if the count is not equal to 0
+									return false;  // return false
+							}
+					}
+					bool dp[n][n][n + 1];  // 3d array to store the dp values
+					for(int i = 0; i < n; i++){  // iterate through the string
+							for(int j = 0; j < n; j++){  // iterate through the string
+									dp[i][j][1] = s1[i] == s2[j];  // update the dp value
+							}
+					}
+					for(int len = 2; len <= n; len++){  // iterate through the string
+							for(int i = 0; i <= n - len; i++){  // iterate through the string
+									for(int j = 0; j <= n - len; j++){  // iterate through the string
+											dp[i][j][len] = false;  // update the dp 
+											for(int k = 1; k < len; k++){  // iterate through the string
+													if((dp[i][j][k] && dp[i + k][j + k][len - k]) || (dp[i][j + len - k][k] && dp[i + k][j][len - k])){  // if the strings are scrambled
+															dp[i][j][len] = true;  // update the dp value
+															break;  // break
+													}
+											}
+									}
+							}
+					}
+					return dp[0][0][n];  // return the dp value
+
+			}
+	};
+
+
+	Java:
+
+
+
+	// Time Complexity : O(n^4) where n is the length of the string and space complexity is O(n^4)
+
+
+
+
+	class Solution {
+			public boolean isScramble(String s1, String s2) {
+					if(s1.equals(s2)){  // if the strings are equal
+							return true;  // return true
+					}
+					int n = s1.length();  // variable to store the length of the string
+					int[] count = new int[26];  // array to store the count of the characters
+					for(int i = 0; i < n; i++){  // iterate through the string
+							count[s1.charAt(i) - 'a']++;  // update the count of the character
+							count[s2.charAt(i) - 'a']--;  // update the count of the character
+					}
+					for(int i = 0; i < 26; i++){  // iterate through the array
+							if(count[i] != 0){  // if the count is not equal to 0
+									return false;  // return false
+							}
+					}
+					boolean[][][] dp = new boolean[n][n][n + 1];  // 3d array to store the dp values
+					for(int i = 0; i < n; i++){  // iterate through the string
+							for(int j = 0; j < n; j++){  // iterate through the string
+									dp[i][j][1] = s1.charAt(i) == s2.charAt(j);  // update the dp value
+							}
+					}
+					for(int len = 2; len <= n; len++){  // iterate through the string
+							for(int i = 0; i <= n - len; i++){  // iterate through the string
+									for(int j = 0; j <= n - len; j++){  // iterate through the string
+											dp[i][j][len] = false;  // update the dp 
+											for(int k = 1; k < len; k++){  // iterate through the string
+													if((dp[i][j][k] && dp[i + k][j + k][len - k]) || (dp[i][j + len - k][k] && dp[i + k][j][len - k])){  // if the strings are scrambled
+															dp[i][j][len] = true;  // update the dp value
+															break;  // break
+													}
+											}
+									}
+							}
+					}
+					return dp[0][0][n];  // return the dp value
+			}
+	}
