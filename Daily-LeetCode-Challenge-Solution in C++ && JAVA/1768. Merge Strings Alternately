@@ -1,0 +1,61 @@
+1768. Merge Strings Alternately
+
+
+
+18 April 2023
+
+
+
+C++:
+
+
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(n) where n is the length of the string
+
+
+
+
+
+class Solution {
+public:
+    string mergeAlternately(string word1, string word2) {
+        int n = word1.length();
+        int m = word2.length();
+        string result = "";
+        int i =0 , j = 0;
+        while(i<n || j<m){
+            if(i<n) result.push_back(word1[i++]);
+             if(j<m) result.push_back(word2[j++]); 
+        }
+        return result;
+    }
+};
+
+
+
+Java:
+
+
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(n) where n is the length of the string
+
+
+
+
+
+class Solution {
+    public String mergeAlternately(String word1, String word2) {
+        int n = word1.length();
+        int m = word2.length();
+        String result = "";
+        int i =0 , j = 0;
+        while(i<n || j<m){
+            if(i<n) result += word1.charAt(i++);
+             if(j<m) result += word2.charAt(j++); 
+        }
+        return result;
+    }
+}
+
+
+
+
+
