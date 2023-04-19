@@ -8,10 +8,73 @@
 Medium
 
 
+
 C++:
 
 
 
+// Time Complexity : O(n) where n is the number of days and space complexity is O(n) where n is the number of days
+
+
+
+
+
+class Solution {
+public:
+    int mincostTickets(vector<int>& days, vector<int>& costs) {
+        int n = days.size();
+        vector<int> dp(n + 1, INT_MAX);
+        dp[0] = 0;
+        for (int i = 1; i <= n; i++) {
+            int j = i - 1;
+            dp[i] = min(dp[i], dp[j] + costs[0]);
+            while (j >= 0 && days[i - 1] - days[j] < 7) {
+                dp[i] = min(dp[i], dp[j] + costs[1]);
+                j--;
+            }
+            j = i - 1;
+            while (j >= 0 && days[i - 1] - days[j] < 30) {
+                dp[i] = min(dp[i], dp[j] + costs[2]);
+                j--;
+            }
+        }
+        return dp[n];
+    }
+};
+
+
+
+
 Java:
+
+
+// Time Complexity : O(n) where n is the number of days and space complexity is O(n) where n is the number of days
+
+
+
+
+
+class Solution {
+    public int mincostTickets(int[] days, int[] costs) {
+        int n = days.length;
+        int[] dp = new int[n + 1];
+        Arrays.fill(dp , Integer.MAX_VALUE);
+        dp[0] = 0;
+        for (int i = 1; i <= n; i++) {
+            int j = i - 1;
+            dp[i] = Math.min(dp[i], dp[j] + costs[0]);
+            while (j >= 0 && days[i - 1] - days[j] < 7) {
+                dp[i] = Math.min(dp[i], dp[j] + costs[1]);
+                j--;
+            }
+            j = i - 1;
+            while (j >= 0 && days[i - 1] - days[j] < 30) {
+                dp[i] = Math.min(dp[i], dp[j] + costs[2]);
+                j--;
+            }
+        }
+        return dp[n];
+    }
+}
 
 
