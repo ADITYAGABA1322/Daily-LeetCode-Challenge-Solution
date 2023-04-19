@@ -15,5 +15,62 @@ C++:
 
 
 
+// Time Complexity : O(n) where n is the number of nodes in the tree and space complexity is O(n) where n is the number of nodes in the tree
+
+
+
+
+
+
+
+
+class Solution {
+public:
+    int longestZigZag(TreeNode* root) {
+        int result = 0;  // variable to store the result
+        dfs(root, result, 0, 0);  // call the dfs function
+        return result;  // return the result
+    }
+    void dfs(TreeNode* root, int& result, int left, int right){  // dfs function
+        if(root == NULL){  // if the root is null
+            return;  // return
+        }
+        result = max(result, max(left, right));  // update the result
+        dfs(root->left, result, 0, left+1);  // call the dfs function on the left child
+        dfs(root->right, result, right+1, 0);  // call the dfs function on the right child
+    }
+};
+
+
+
+
+
 Java:
+
+
+// Time Complexity : O(n) where n is the number of nodes in the tree and space complexity is O(n) where n is the number of nodes in the tree
+
+
+
+
+
+
+class Solution {
+    public int longestZigZag(TreeNode root) {
+        int[] result = new int[1];  // variable to store the result
+        dfs(root, result, 0, 0);  // call the dfs function
+        return result[0];  // return the result
+    }
+    public void dfs(TreeNode root, int[] result, int left, int right){  // dfs function
+        if(root == null){  // if the root is null
+            return;  // return
+        }
+        result[0] = Math.max(result[0], Math.max(left, right));  // update the result
+        dfs(root.left, result, 0, left+1);  // call the dfs function on the left child
+        dfs(root.right, result, right+1, 0);  // call the dfs function on the right child
+    }
+}
+
+
+
 
