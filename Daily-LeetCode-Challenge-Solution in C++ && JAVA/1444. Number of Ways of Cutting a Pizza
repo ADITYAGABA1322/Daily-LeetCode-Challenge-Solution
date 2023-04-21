@@ -63,3 +63,56 @@ public:
 
 JAVA:
 
+
+
+
+
+// Time Complexity : O(m * n * k) where m is the number of rows, n is the number of columns and k is the number of cuts and space complexity is O(m * n * k) where m is the number of rows, n is the number of columns and k is the number of cuts
+
+
+
+
+
+
+class Solution {
+    public int ways(String[] pizza, int k) {
+        int m = pizza.length;  // get the number of rows
+        int n = pizza[0].length();  // get the number of columns
+        int[][] dp = new int[m + 1][n + 1];  // create a dp array
+        for(int i = m - 1; i >= 0; i--){  // iterate from the end of the rows
+            for(int j = n - 1; j >= 0; j--){  // iterate from the end of the columns
+                dp[i][j] = dp[i + 1][j] + dp[i][j + 1] - dp[i + 1][j + 1] + (pizza[i].charAt(j) == 'A' ? 1 : 0);  // update the dp array
+            }
+        }
+        int[][][] memo = new int[m][n][k + 1];  // create a memo array
+        for(int i = 0; i < m; i++){  // iterate through the rows
+            for(int j = 0; j < n; j++){  // iterate through the columns
+                Arrays.fill(memo[i][j], -1);  // fill the memo array with -1
+            }
+        }
+        return helper(dp, memo, 0, 0, k);  // call the helper function
+    }
+    public int helper(int[][] dp, int[][][] memo, int i, int j, int k){
+        if(k == 1){  // if the number of cuts is 1
+            return dp[i][j] > 0 ? 1 : 0;  // return the dp array value
+        }
+        if(memo[i][j][k] != -1){  // if the value is already present in the memo array
+            return memo[i][j][k];  // return the value
+        }
+        int result = 0;  // variable to store the result
+        for(int x = i + 1; x < dp.length - 1; x++){  // iterate through the rows
+            if(dp[i][j] - dp[x][j] > 0){  // if the value is greater than 0 
+                result = (result + helper(dp, memo, x, j, k - 1)) % 1000000007;  // update the result
+            }
+        }
+        for(int y = j + 1; y < dp[0].length - 1; y++){  // iterate through the columns
+            if(dp[i][j] - dp[i][y] > 0){  // if the value is greater than 0
+                result = (result + helper(dp, memo, i, y, k - 1)) % 1000000007;  // update the result
+            }
+        }
+        memo[i][j][k] = result;  // update the memo array
+        return result;  // return the result
+    }
+}
+
+
