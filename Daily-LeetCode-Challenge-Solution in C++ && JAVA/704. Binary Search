@@ -11,5 +11,67 @@ C++:
 
 
 
+
+// Time Complexity : O(log n) where n is the length of the array and space complexity is O(1) as we are not using any extra space
+
+
+
+
+
+
+class Solution {
+public:
+    int search(vector<int>& nums, int target) {
+        int low = 0;  // initialize the low pointer
+        int high = nums.size() - 1;  // initialize the high pointer
+        while(low <= high){  // iterate till low is less than or equal to high
+            int mid = low + (high - low) / 2;  // get the mid value
+            if(nums[mid] == target){  // if the mid value is equal to the target
+                return mid;  // return the mid value
+            }
+            else if(nums[mid] > target){  // if the mid value is greater than the target
+                high = mid - 1;  // update the high pointer
+            }
+            else{  // if the mid value is less than the target
+                low = mid + 1;  // update the low pointer
+            }
+        }
+        return -1;  // return -1
+    }
+};
+
+
+
+
+
 Java:
+
+// Time Complexity : O(log n) where n is the length of the array and space complexity is O(1) as we are not using any extra space
+
+
+
+
+
+
+class Solution {
+    public int search(int[] nums, int target) {
+        int low = 0;  // initialize the low pointer
+        int high = nums.length - 1;  // initialize the high pointer
+        while(low <= high){  // iterate till low is less than or equal to high
+            int mid = low + (high - low) / 2;  // get the mid value
+            if(nums[mid] == target){  // if the mid value is equal to the target
+                return mid;  // return the mid value
+            }
+            else if(nums[mid] > target){  // if the mid value is greater than the target
+                high = mid - 1;  // update the high pointer
+            }
+            else{  // if the mid value is less than the target
+                low = mid + 1;  // update the low pointer
+            }
+        }
+        return -1;  // return -1
+    }
+}
+
+
 
