@@ -10,5 +10,28 @@ Medium
 
 C++:
 
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(1) 
+
+
+
+
+class Solution {
+public:
+    int partitionString(string s) {
+        vector<int> lastSeen(26, -1);
+        int count = 1, substringStart = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            if (lastSeen[s[i] - 'a'] >= substringStart) {
+                count++;
+                substringStart = i;
+            }
+            lastSeen[s[i] - 'a'] = i;
+        }
+
+        return count;
+    }
+};
+
 
 Java:
