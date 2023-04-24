@@ -11,4 +11,57 @@ Medium
 C++:
 
 
+// Time Complexity : O(nlogn) where n is the length of the array and space complexity is O(1) as we are not using any extra space
+
+
+
+
+
+
+class Solution {
+public:
+    int numRescueBoats(vector<int>& people, int limit) {
+        int result = 0;  // variable to store the result
+        sort(people.begin(), people.end());  // sort the array
+        int low = 0;  // initialize the low pointer
+        int high = people.size() - 1;  // initialize the high pointer
+        while(low <= high){  // iterate till low is less than or equal to high
+            if(people[low] + people[high] <= limit){  // if the sum of the values at low and high is less than or equal to the limit
+                low++;  // increment the low pointer
+            }
+            high--;  // decrement the high pointer
+            result++;  // increment the result
+        }
+        return result;  // return the result
+    }
+};
+
+
 Java:
+
+
+
+// Time Complexity : O(nlogn) where n is the length of the array and space complexity is O(1) as we are not using any extra space
+
+
+
+
+
+
+
+class Solution {
+    public int numRescueBoats(int[] people, int limit) {
+        int result = 0;  // variable to store the result
+        Arrays.sort(people);  // sort the array
+        int low = 0;  // initialize the low pointer
+        int high = people.length - 1;  // initialize the high pointer
+        while(low <= high){  // iterate till low is less than or equal to high
+            if(people[low] + people[high] <= limit){  // if the sum of the values at low and high is less than or equal to the limit
+                low++;  // increment the low pointer
+            }
+            high--;  // decrement the high pointer
+            result++;  // increment the result
+        }
+        return result;  // return the result
+    }
+};
