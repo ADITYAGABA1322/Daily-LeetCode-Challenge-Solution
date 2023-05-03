@@ -12,7 +12,9 @@ Easy
 C++:
 
 
-// Time Complexity : O(n) and space complexity is O(n)
+
+// Time complexity: O(N+M) and Space complexity: O(max(N,M))
+
 
 
 
@@ -66,7 +68,8 @@ Java:
 
 
 
-// Time Complexity : O(n) and space complexity is O(n)
+
+// Time complexity: O(N+M) and Space complexity: O(max(N,M))
 
 
 
