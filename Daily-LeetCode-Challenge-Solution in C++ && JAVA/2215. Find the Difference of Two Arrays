@@ -63,3 +63,55 @@ public:
 
 Java:
 
+
+
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+
+
+
+
+
+import java.util.*;
+
+class Solution {
+    public List<List<Integer>> findDifference(int[] nums1, int[] nums2) {
+        Set<Integer> s1 = new HashSet<>();
+        Set<Integer> s2 = new HashSet<>();
+
+        for (int num : nums1) {
+            s1.add(num);
+        }
+
+        for (int num : nums2) {
+            s2.add(num);
+        }
+
+        List<Integer> ans1 = new ArrayList<>();
+        List<Integer> ans2 = new ArrayList<>();
+
+        for (int num : s1) {
+            if (!s2.contains(num)) {
+                ans1.add(num);
+            }
+        }
+
+        for (int num : s2) {
+            if (!s1.contains(num)) {
+                ans2.add(num);
+            }
+        }
+
+        List<List<Integer>> result = new ArrayList<>();
+        result.add(ans1);
+        result.add(ans2);
+        return result;
+    }
+}
+
+
+
+
+
+
