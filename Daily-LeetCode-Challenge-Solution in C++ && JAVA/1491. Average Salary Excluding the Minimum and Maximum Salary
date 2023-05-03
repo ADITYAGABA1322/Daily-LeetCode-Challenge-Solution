@@ -49,3 +49,34 @@ public:
 
 
 Java:
+
+
+// Time Complexity : O(n) and space complexity is O(1)
+
+
+
+
+
+// where n is the number of people
+
+
+
+
+class Solution {
+    public double average(int[] salary) {
+        int n = salary.length;  // size of the vector
+        int sum = 0;  // sum of the salary
+        int minSalary = Integer.MAX_VALUE;  // minimum salary
+        int maxSalary = Integer.MIN_VALUE;  // maximum salary
+        for(int  sal : salary){
+            sum += sal;  // add the salary
+            minSalary = Math.min(minSalary, sal);  // update the minimum salary
+            maxSalary = Math.max(maxSalary, sal);  // update the maximum salary
+
+        }
+        return (double)(sum - minSalary - maxSalary)/(n-2);  // return the average
+    }
+}
+
+
+
