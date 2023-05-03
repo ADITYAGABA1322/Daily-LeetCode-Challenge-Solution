@@ -11,6 +11,59 @@ Easy
 
 C++:
 
+// Time Complexity : O(n) and space complexity is O(1)
+
+
+
+
+
+
+
+class Solution {
+public:
+    int arraySign(vector<int>& nums) {
+        int sign = 1;  // sign of the product
+        for(int num : nums){
+            if(num == 0){  // if the number is 0
+                return 0;  // return 0
+            }
+            if(num < 0){  // if the number is negative
+                sign *= -1;  // update the sign
+            }
+        }
+        return sign;  // return the sign
+
+    }
+};
+
+
 
 Java:
+
+
+// Time Complexity : O(n) and space complexity is O(1)
+
+
+
+
+
+
+
+class Solution {
+    public int arraySign(int[] nums) {
+        int sign = 1;  // sign of the product
+        for(int num : nums){
+            if(num == 0){  // if the number is 0
+                return 0;  // return 0
+            }
+            if(num < 0){  // if the number is negative
+                sign *= -1;  // update the sign
+            }
+        }
+        return sign;  // return the sign
+
+    }
+}
+
+
 
