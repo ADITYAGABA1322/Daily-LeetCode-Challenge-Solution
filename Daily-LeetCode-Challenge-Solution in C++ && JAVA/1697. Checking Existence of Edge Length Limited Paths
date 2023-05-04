@@ -114,3 +114,76 @@ public:
 Java:
 
 
+
+// Time complexity: O(NlogN + QlogQ) and Space complexity: O(N+Q)
+
+
+class UnionFind{
+    int[] parent;
+    int[] size;
+    public UnionFind(int n){
+        parent=new int[n];
+        size=new int[n];
+        for(int i=0;i<n;i++){
+            parent[i]=i;
+            size[i]=1;
+        }
+    }
+    public int find(int x){
+        if(parent[x]==x)
+            return x;
+        return parent[x]=find(parent[x]);
+    }
+    public void Union(int x,int y){
+        int a=find(x);
+        int b=find(y);
+        if(a!=b){
+            if(size[a]<size[b]){
+                int temp=a;
+                a=b;
+                b=temp;
+            }
+              
+            parent[b]=a;
+            size[a]+=size[b];
+        }
+    }
+    public boolean connected(int x,int y){
+        return find(x)==find(y);
+    }
+}
+
+
+
+
+class Solution {
+    public boolean[] distanceLimitedPathsExist(int n, int[][] edgeList, int[][] queries) {
+        UnionFind uf=new UnionFind(n);
+        boolean[] ans=new boolean[queries.length];
+        for(int i=0;i<queries.length;i++)
+        queries[i] = new int[]{queries[i][0], queries[i][1], queries[i][2], i};
+
+        Arrays.sort(queries,(a,b)->a[2]-b[2]);
+        Arrays.sort(edgeList,(a,b)->a[2]-b[2]);
+        int j=0;
+        for(int i=0;i<queries.length;i++){
+            while(j<edgeList.length && edgeList[j][2]<queries[i][2]){
+                uf.Union(edgeList[j][0],edgeList[j][1]);
+                j++;
+            }
+            ans[queries[i][3]]=uf.connected(queries[i][0],queries[i][1]);
+        }
+        return ans;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
