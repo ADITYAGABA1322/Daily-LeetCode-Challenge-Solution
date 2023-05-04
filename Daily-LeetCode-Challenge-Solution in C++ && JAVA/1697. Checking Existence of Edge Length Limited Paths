@@ -17,6 +17,100 @@ Hard
 C++:
 
 
+
+// This code implements the Union-Find algorithm and uses it to answer queries about whether a distance-limited path exists between two vertices in a graph.
+
+// The `UnionFind` class implements an instance of the Union-Find data structure, which keeps track of the connected components of a graph. The constructor initializes each vertex as its own parent with size 1. The `find` function returns the root parent of the component that `x` belongs to, using path compression optimization. The `Union` function joins the components containing `x` and `y`, merging the smaller component into the larger one to avoid skewing the tree.
+
+// The `Solution` class provides a method `distanceLimitedPathsExist` for answering queries of the form "Is there a path between vertex `u` and vertex `v` in the graph whose edge weights do not exceed `distanceLimit`?". It sorts the `queries` array by increasing distance limit, so that we can process them in order from smallest to largest. It also sorts the `edgeList` array by edge weight, to ensure that we only consider edges that are within the distance limit of each query.
+
+// For each query in `queries`, the `while` loop processes all the edges in `edgeList` whose weight is less than the current query's distance limit. It uses Union-Find to merge any vertices that belong to the same component (since they are already connected by shorter paths), until all such edges have been processed. Finally, it checks if the two queried vertices are connected, and stores the result in the corresponding index of the `ans` array.
+
+// The overall time complexity of this algorithm is O((m + n) * log m), where m is the number of edges in the graph, since we need to sort both the `queries` array and the `edgeList` array. However, this approach is more efficient than the brute-force approach of checking all possible paths, which would take O((n + m) * 2^m) time.
+
+
+// The code you provided is part of the implementation of the `distanceLimitedPathsExist` method in the `Solution` class. 
+
+// The first line creates an instance of the `UnionFind` class with `n` vertices, which represents the current state of the connected components in the graph.
+
+// Then, for each query in the `queries` vector, the code uses a `while` loop to process all the edges in the `edgeList` vector whose weight is less than the current query's distance limit `queries[i][2]`. This is done to ensure that we only consider edges that are within the distance limit of the current query.
+
+// Inside the `while` loop, we check if the current edge's weight is less than the current query's distance limit and, if so, we join the two vertices belonging to this edge using the `Union` function of the `uf` object.
+
+// The variable `j` keeps track of the position of the last processed edge in the `edgeList` vector, so that we don't need to re-process any edges we've already looked at before. The loop exits as soon as an edge with a weight greater than or equal to the current query's distance limit is encountered.
+
+// After processing all the relevant edges from the `edgeList`, the code checks whether the two queried vertices `queries[i][0]` and `queries[i][1]` belong to the same connected component using the `connected` function of the `uf` object. If they do, then there exists a path between them whose length is less than `queries[i][2]`, and the corresponding entry in the `ans` array is set to `true`. Otherwise, the entry is set to `false`.
+
+// In summary, this part of the code iterates through every query in `queries`, processes all the edges whose weight is less than the current query's distance limit, and checks whether there exists a path between the queried vertices whose length is less than this limit. The `UnionFind` data structure is used to keep track of the connected components in the graph and efficiently determine whether two vertices are already connected or not.
+
+
+
+
+
+
+
+// Time complexity: O(NlogN + QlogQ) and Space complexity: O(N+Q)
+
+
+class UnionFind{
+    vector<int> parent;
+    vector<int> size;
+public:
+    UnionFind(int n){
+        parent.resize(n);
+        size.resize(n);
+        for(int i=0;i<n;i++){
+            parent[i]=i;
+            size[i]=1;
+        }
+    }
+    int find(int x){
+        if(parent[x]==x)
+            return x;
+        return parent[x]=find(parent[x]);
+    }
+    void Union(int x,int y){
+        int a=find(x);
+        int b=find(y);
+        if(a!=b){
+            if(size[a]<size[b])
+                swap(a,b);
+            parent[b]=a;
+            size[a]+=size[b];
+        }
+    }
+    bool connected(int x,int y){
+        return find(x)==find(y);
+    }
+};
+
+
+class Solution {
+public:
+    bool static compare(vector<int> &a , vector<int> &b){
+        return a[2] < b[2];
+    }
+    vector<bool> distanceLimitedPathsExist(int n, vector<vector<int>>& edgeList, vector<vector<int>>& queries) {
+        UnionFind uf(n);
+        vector<bool> ans(queries.size());
+        for(int i=0; i<queries.size(); i++)
+            queries[i].push_back(i);
+            sort(queries.begin() , queries.end()  , compare);
+            sort(edgeList.begin() , edgeList.end() , compare);
+        int j = 0;
+         for(int i=0;i<queries.size();i++){
+            while(j<edgeList.size() && edgeList[j][2]<queries[i][2]){
+                uf.Union(edgeList[j][0],edgeList[j][1]);
+                j++;
+            }
+            ans[queries[i][3]]=uf.connected(queries[i][0],queries[i][1]);
+        }
+        return ans;
+            
+    }
+
+};
+
 Java:
 
 
