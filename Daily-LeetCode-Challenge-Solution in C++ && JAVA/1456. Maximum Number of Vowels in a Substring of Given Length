@@ -13,5 +13,34 @@ Medium
 C++:
 
 
+
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(1)
+
+
+
+
+
+class Solution {
+public:
+    int maxVowels(string s, int k) {
+        int n=s.length();
+        int count=0;
+        int max_count=0;
+        for(int i=0;i<n;i++){
+            if(i>=k && isVowel(s[i-k]))
+                count--;
+            if(isVowel(s[i]))
+                count++;
+            max_count=max(max_count,count);
+        }
+        return max_count;
+    }
+    bool isVowel(char c){
+        return (c=='a' || c=='e' || c=='i' || c=='o' || c=='u');
+    }
+
+};
+
+
 Java:
 
