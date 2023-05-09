@@ -60,3 +60,40 @@ public:
 
 Java:
 
+
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+
+
+
+
+
+
+class Solution {
+    public String predictPartyVictory(String senate) {
+        Queue<Integer> q1=new LinkedList<>();  // queue for the radiant
+        Queue<Integer> q2=new LinkedList<>();  // queue for the dire
+        int n=senate.length();  // size of the senate
+        for(int i=0;i<n;i++){
+            if(senate.charAt(i)=='R'){  // if the senate is radiant
+                q1.add(i);  // push the index
+            }
+            else{  // if the senate is dire
+                q2.add(i);  // push the index
+            }
+        }
+        while(!q1.isEmpty() && !q2.isEmpty()){  // while both the queues are not empty
+            int r_index=q1.poll();  // get the index of the radiant
+            int d_index=q2.poll();  // get the index of the dire
+            if(r_index<d_index){  // if the radiant is before the dire
+                q1.add(r_index+n);  // push the radiant
+            }
+            else{  // if the dire is before the radiant
+                q2.add(d_index+n);  // push the dire
+            }
+        }
+        return q1.size()>q2.size()?"Radiant":"Dire";  // return the winner
+    }
+}
+
