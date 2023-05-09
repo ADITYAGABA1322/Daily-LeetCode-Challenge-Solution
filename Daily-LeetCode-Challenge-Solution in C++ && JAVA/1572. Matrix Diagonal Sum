@@ -12,5 +12,52 @@ Easy
 C++:
 
 
+
+// Time Complexity : O(n) where n is the number of rows and space complexity is O(1)
+
+
+
+class Solution {
+    public int diagonalSum(int[][] mat) {
+        int result = 0;  // variable to store the result
+        int n = mat.length;  // number of rows
+        for(int i = 0; i < n; i++){  // iterate through the rows
+            result += mat[i][i];  // update the result
+            result += mat[i][n - i - 1];  // update the result
+        }
+        if(n % 2 == 1){  // if the number of rows is odd
+            result -= mat[n / 2][n / 2];  // update the result
+        }
+        return result;  // return the result
+    }
+};
+
+
+
+
 Java:
+
+
+
+// Time Complexity : O(n) where n is the number of rows and space complexity is O(1)
+
+
+
+
+class Solution {
+    public int diagonalSum(int[][] mat) {
+        int result = 0;  // variable to store the result
+        int n = mat.length;  // number of rows
+        for(int i = 0; i < n; i++){  // iterate through the rows
+            result += mat[i][i];  // update the result
+            result += mat[i][n - i - 1];  // update the result
+        }
+        if(n % 2 == 1){  // if the number of rows is odd
+            result -= mat[n / 2][n / 2];  // update the result
+        }
+        return result;  // return the result
+    }
+}
+
+
 
