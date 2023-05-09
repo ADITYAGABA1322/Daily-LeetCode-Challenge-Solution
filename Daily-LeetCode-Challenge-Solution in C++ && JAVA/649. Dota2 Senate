@@ -15,5 +15,48 @@ C++:
 
 
 
+
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+
+
+
+
+
+
+class Solution {
+public:
+    string predictPartyVictory(string senate) {
+        queue<int> q1;  // queue for the radiant
+        queue<int> q2;  // queue for the dire
+        int n = senate.size();  // size of the senate
+        for(int i = 0; i < n; i++){
+            if(senate[i] == 'R'){  // if the senate is radiant
+                q1.push(i);  // push the index
+            }
+            else{  // if the senate is dire
+                q2.push(i);  // push the index
+            }
+        }
+        while(!q1.empty() && !q2.empty()){  // while both the queues are not empty
+            int r_index = q1.front();  // get the index of the radiant
+            int d_index = q2.front();  // get the index of the dire
+            q1.pop();  // pop the radiant
+            q2.pop();  // pop the dire
+            if(r_index < d_index){  // if the radiant is before the dire
+                q1.push(r_index + n);  // push the radiant
+            }
+            else{  // if the dire is before the radiant
+                q2.push(d_index + n);  // push the dire
+            }
+        }
+        return q1.size() > q2.size() ? "Radiant" : "Dire";  // return the winner
+    }
+};
+
+
+
+
 Java:
 
