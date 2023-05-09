@@ -44,3 +44,34 @@ public:
 
 Java:
 
+
+
+// Time Complexity : O(n) where n is the length of the string and space complexity is O(1)
+
+
+
+
+
+
+
+
+class Solution {
+    public int maxVowels(String s, int k) {
+        int n=s.length();
+        int count=0;
+        int max_count=0;
+        for(int i=0;i<n;i++){
+            if(i>=k && isVowel(s.charAt(i-k)))
+                count--;
+            if(isVowel(s.charAt(i)))
+                count++;
+            max_count=Math.max(max_count,count);
+        }
+        return max_count;
+    }
+    public boolean isVowel(char c){
+        return (c=='a' || c=='e' || c=='i' || c=='o' || c=='u');
+    }
+
+}
+
