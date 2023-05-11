@@ -16,6 +16,35 @@ Hard
 C++:
 
 
+// Time Complexity : O(n log n) where n is the length of the array and space complexity is O(n)
+
+
+
+
+
+
+
+class Solution {
+public:
+    vector<int> longestObstacleCourseAtEachPosition(vector<int>& obstacles) {
+        vector<int> result;  // vector to store the result
+        vector<int> dp;  // vector to store the dp values
+        for(int i = 0; i < obstacles.size(); i++){  // iterate through the array
+            int index = upper_bound(dp.begin(), dp.end(), obstacles[i]) - dp.begin();  // find the index of the element in the dp array
+            if(index == dp.size()){  // if the index is equal to the size of the dp array
+                dp.push_back(obstacles[i]);  // push the element into the dp array
+            }
+            else{  // if the index is not equal to the size of the dp array
+                dp[index] = obstacles[i];  // update the element in the dp array
+            }
+            result.push_back(index + 1);  // push the index + 1 into the result array
+        }
+        return result;  // return the result array
+    }
+};
+
+
+
 Java:
 
 
