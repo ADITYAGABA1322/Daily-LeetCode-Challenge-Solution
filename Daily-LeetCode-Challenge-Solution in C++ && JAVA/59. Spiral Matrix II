@@ -12,6 +12,42 @@ Medium
 
 C++:
 
+// Time Complexity : O(n^2) where n is the size of the matrix and space complexity is O(1)
+
+
+
+class Solution {
+public:
+    vector<vector<int>> generateMatrix(int n) {
+        vector<vector<int>> matrix(n, vector<int>(n));  // matrix is the 2D vector of size n*n
+        int top = 0;  // top is the topmost row of the matrix
+        int bottom = n-1;  // bottom is the bottommost row of the matrix
+        int left = 0;  // left is the leftmost column of the matrix
+        int right = n-1;  // right is the rightmost column of the matrix
+        int num = 1;  // num is the number to be filled in the matrix
+        while(top <= bottom && left <= right){  // while the topmost row is less than or equal to the bottommost row and the leftmost column is less than or equal to the rightmost column
+            for(int i=left; i<=right; i++){  // for each element in the topmost row
+                matrix[top][i] = num++;  // fill the element with the number and increment the number
+            }
+            top++;  // increment the topmost row
+            for(int i=top; i<=bottom; i++){  // for each element in the rightmost column
+                matrix[i][right] = num++;  // fill the element with the number and increment the number
+            }
+            right--;  // decrement the rightmost column
+            for(int i=right; i>=left; i--){  // for each element in the bottommost row
+                matrix[bottom][i] = num++;  // fill the element with the number and increment the number
+            }
+            bottom--;  // decrement the bottommost row
+            for(int i=bottom; i>=top; i--){  // for each element in the leftmost column
+                matrix[i][left] = num++;  // fill the element with the number and increment the number
+            }
+            left++;  // increment the leftmost column
+        }
+        return matrix;  // return the matrix
+    }
+};
+
+
 
 
 Java:
