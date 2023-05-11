@@ -53,3 +53,43 @@ public:
 
 
 Java:
+
+
+
+// Time Complexity : O(n log n) where n is the length of the array and space complexity is O(1)
+
+
+
+
+
+
+
+class Solution {
+    public int numSubseq(int[] nums, int target) {
+        Arrays.sort(nums);  // sort the array
+        int result = 0;  // variable to store the result
+        int mod = (int)1e9 + 7;  // variable to store the mod value
+        int left = 0;  // variable to store the left pointer
+        int right = nums.length - 1;  // variable to store the right pointer
+        int[] power = new int[nums.length];  // array to store the power values
+        power[0] = 1;  // initialize the first value
+        for(int i = 1; i < nums.length; i++){  // iterate through the array
+            power[i] = (power[i - 1] * 2) % mod;  // calculate the power value
+        }
+        while(left <= right){  // while the left pointer is less than or equal to the right pointer
+            if(nums[left] + nums[right] > target){  // if the sum is greater than the target
+                right--;  // decrement the right pointer
+            }
+            else{  // if the sum is less than or equal to the target
+                result = (result + power[right - left]) % mod;  // update the result
+                left++;  // increment the left pointer
+            }
+        }
+        return result;  // return the result
+    }
+}
+
+
+
+
+
