@@ -91,3 +91,93 @@ public:
 
 
 Java:
+
+
+
+// Time Complexity : O(n) where n is the number of nodes and space complexity is O(n)
+
+
+
+
+
+
+
+class Solution {
+    public boolean isBipartite(int[][] graph) {
+        int n = graph.length;  // n is the number of nodes
+        int[] color = new int[n];  // color is the vector to store the color of each node
+        Arrays.fill(color, -1);  // fill the color vector with -1
+        for(int i=0; i<n; i++){  // for each node
+            if(color[i] == -1){  // if the color is not assigned
+                Queue<Integer> q = new LinkedList<>();  // q is the queue to store the nodes
+                q.add(i);  // push the node into the queue
+                color[i] = 0;  // assign the color to the node
+                while(!q.isEmpty()){  // while the queue is not empty
+                    int curr = q.poll();  // curr is the front element of the queue
+                    for(int it: graph[curr]){  // for each adjacent node
+                        if(color[it] == -1){  // if the color is not assigned
+                            color[it] = 1 - color[curr];  // assign the color to the node
+                            q.add(it);  // push the node into the queue
+                        }
+                        else if(color[it] == color[curr]){  // if the color is same as the adjacent node
+                            return false;  // return false
+                        }
+                    }
+                }
+            }
+        }
+        return true;  // return true
+    }
+}
+
+
+
+
+2nd Method using dfs
+
+
+
+// Time Complexity : O(n) where n is the number of nodes and space complexity is O(n)
+
+
+
+
+
+
+
+
+class Solution {
+    public boolean dfs(int[][] graph, int[] color, int node){
+        for(int it: graph[node]){  // for each adjacent node
+            if(color[it] == -1){  // if the color is not assigned
+                color[it] = 1 - color[node];  // assign the color to the node
+                if(!dfs(graph, color, it)){  // if the adjacent node is not bipartite
+                    return false;  // return false
+                }
+            }
+            else if(color[it] == color[node]){  // if the color is same as the adjacent node
+                return false;  // return false
+            }
+        }
+        return true;  // return true
+    }
+    public boolean isBipartite(int[][] graph) {
+        int n = graph.length;  // n is the number of nodes
+        int[] color = new int[n];  // color is the vector to store the color of each node
+        Arrays.fill(color, -1);  // fill the color vector with -1
+        for(int i=0; i<n; i++){  // for each node
+            if(color[i] == -1){  // if the color is not assigned
+                color[i] = 0;  // assign the color to the node
+                if(!dfs(graph, color, i)){  // if the node is not bipartite
+                    return false;  // return false
+                }
+            }
+        }
+        return true;  // return true
+    }
+}
+
+
+
+
+
