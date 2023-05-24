@@ -12,5 +12,69 @@ Medium
 C++:
 
 
+// Time Complexity : O(n) where n is the number of nodes and space complexity is O(n)
+
+
+
+
+
+
+
+
+class Solution {
+    public:
+    double dfs(vector<vector<pair<int, double>>>& graph, int src, int dest, vector<bool>& visited){
+        if(src == dest){  // if the source is equal to the destination
+            return 1.0;  // return 1.0
+        }
+        visited[src] = true;  // mark the source as visited
+        for(auto it: graph[src]){  // for each adjacent node
+            if(!visited[it.first]){  // if the node is not visited
+                double ans = dfs(graph, it.first, dest, visited);  // call the dfs function
+                if(ans > 0.0){  // if the ans is greater than 0.0
+                    return ans * it.second;  // return the ans * the weight of the edge
+                }
+            }
+        }
+        return -1.0;  // return -1.0
+    }
+    vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {
+        unordered_map<string, int> mp;  // mp is the map to store the index of each node
+        int idx = 0;  // idx is the index of the node
+        for(auto it: equations){  // for each equation
+            if(mp.find(it[0]) == mp.end()){  // if the node is not present in the map
+                mp[it[0]] = idx++;  // assign the index to the node
+            }
+            if(mp.find(it[1]) == mp.end()){  // if the node is not present in the map
+                mp[it[1]] = idx++;  // assign the index to the node
+            }
+        }
+        vector<vector<pair<int, double>>> graph(idx);  // graph is the adjacency list
+        for(int i=0; i<equations.size(); i++){  // for each equation
+            int u = mp[equations[i][0]];  // u is the index of the node
+            int v = mp[equations[i][1]];  // v is the index of the node
+            graph[u].push_back({v, values[i]});  // push the edge into the adjacency list
+            graph[v].push_back({u, 1.0/values[i]});  // push the edge into the adjacency list
+        }
+        vector<double> ans;  // ans is the vector to store the answer
+        for(auto it: queries){  // for each query
+            if(mp.find(it[0]) == mp.end() || mp.find(it[1]) == mp.end()){  // if the node is not present in the map
+                ans.push_back(-1.0);  // push -1.0 into the ans vector
+            }
+            else{  // else
+                vector<bool> visited(idx, false);  // visited is the vector to store the visited nodes
+                ans.push_back(dfs(graph, mp[it[0]], mp[it[1]], visited));  // call the dfs function
+            }
+        }
+        return ans;  // return the ans vector
+    }
+
+};
+
+
+
+
+
+
 
 Java:
