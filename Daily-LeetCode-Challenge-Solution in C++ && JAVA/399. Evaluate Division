@@ -145,7 +145,6 @@ class Solution {
 
 // why we are using simpleEntry not pair
 
-// ChatGPT
 // Apologies for any confusion caused. The reason for using AbstractMap.SimpleEntry instead of Pair is due to the availability of the classes in different packages.
 
 // In the original code, the import statement import javafx.util.Pair was used, which is specific to JavaFX and not available in all Java environments. To provide an alternative implementation that is more widely accessible, AbstractMap.SimpleEntry from the java.util package can be used as a substitute for Pair.
