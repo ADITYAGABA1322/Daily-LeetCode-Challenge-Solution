@@ -78,3 +78,146 @@ class Solution {
 
 
 Java:
+
+
+// Time Complexity : O(n) where n is the number of nodes and space complexity is O(n)
+
+
+
+
+
+import java.util.AbstractMap.SimpleEntry;
+
+
+
+class Solution {
+    public double dfs(List<List<SimpleEntry<Integer, Double>>> graph, int src, int dest, boolean[] visited){
+        if(src == dest){  // if the source is equal to the destination
+            return 1.0;  // return 1.0
+        }
+        visited[src] = true;  // mark the source as visited
+        for(SimpleEntry<Integer, Double> it: graph.get(src)){  // for each adjacent node
+            if(!visited[it.getKey()]){  // if the node is not visited
+                double ans = dfs(graph, it.getKey(), dest, visited);  // call the dfs function
+                if(ans > 0.0){  // if the ans is greater than 0.0
+                    return ans * it.getValue();  // return the ans * the weight of the edge
+                }
+            }
+        }
+        return -1.0;  // return -1.0
+    }
+    public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
+        HashMap<String, Integer> mp = new HashMap<>();  // mp is the map to store the index of each node
+        int idx = 0;  // idx is the index of the node
+        for(List<String> it: equations){  // for each equation
+            if(!mp.containsKey(it.get(0))){  // if the node is not present in the map
+                mp.put(it.get(0), idx++);  // assign the index to the node
+            }
+            if(!mp.containsKey(it.get(1))){  // if the node is not present in the map
+                mp.put(it.get(1), idx++);  // assign the index to the node
+            }
+        }
+        List<List<SimpleEntry<Integer, Double>>> graph = new ArrayList<>();  // graph is the adjacency list
+        for(int i=0; i<idx; i++){  // for each equation
+            graph.add(new ArrayList<>());  // add the list into the graph
+        }
+        for(int i=0; i<equations.size(); i++){  // for each equation
+            int u = mp.get(equations.get(i).get(0));  // u is the index of the node
+            int v = mp.get(equations.get(i).get(1));  // v is the index of the node
+            graph.get(u).add(new SimpleEntry<>(v, values[i]));  // push the edge into the adjacency list
+            graph.get(v).add(new SimpleEntry<>(u, 1.0/values[i]));  // push the edge into the adjacency list
+        }
+        double[] ans = new double[queries.size()];  // ans is the vector to store the answer
+        for(int i=0; i<queries.size(); i++){  // for each query
+            if(!mp.containsKey(queries.get(i).get(0)) || !mp.containsKey(queries.get(i).get(1))){  // if the node is not present in the map
+                ans[i] = -1.0;  // push -1.0 into the ans vector
+            }
+            else{  // else
+                boolean[] visited = new boolean[idx];  // visited is the vector to store the visited nodes
+                ans[i] = dfs(graph, mp.get(queries.get(i).get(0)), mp.get(queries.get(i).get(1)), visited);  // call the dfs function
+            }
+        }
+        return ans;  // return the ans vector
+    }
+}
+
+
+
+// why we are using simpleEntry not pair
+
+// ChatGPT
+// Apologies for any confusion caused. The reason for using AbstractMap.SimpleEntry instead of Pair is due to the availability of the classes in different packages.
+
+// In the original code, the import statement import javafx.util.Pair was used, which is specific to JavaFX and not available in all Java environments. To provide an alternative implementation that is more widely accessible, AbstractMap.SimpleEntry from the java.util package can be used as a substitute for Pair.
+
+// Both Pair and SimpleEntry are key-value pair classes, but they belong to different packages and have different names. The functionality they provide is similar, allowing you to store a pair of values together. In this case, SimpleEntry can be used as an alternative to Pair in order to make the code work with standard Java libraries.
+
+// Please note that if you have access to a Pair class from a different package or library in your specific environment, you can use that instead of SimpleEntry as long as the class provides the necessary functionality for your code.        
+       
+
+
+
+2nd Method if pair package available 
+
+
+
+
+// Time Complexity : O(n) where n is the number of nodes and space complexity is O(n)
+
+
+import javafx.util.Pair;
+
+class Solution {
+    public double dfs(List<List<Pair<Integer, Double>>> graph, int src, int dest, boolean[] visited) {
+        if (src == dest) {
+            return 1.0;
+        }
+        visited[src] = true;
+        for (Pair<Integer, Double> it : graph.get(src)) {
+            if (!visited[it.getKey()]) {
+                double ans = dfs(graph, it.getKey(), dest, visited);
+                if (ans > 0.0) {
+                    return ans * it.getValue();
+                }
+            }
+        }
+        return -1.0;
+    }
+
+    public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
+        HashMap<String, Integer> mp = new HashMap<>();
+        int idx = 0;
+        for (List<String> it : equations) {
+            if (!mp.containsKey(it.get(0))) {
+                mp.put(it.get(0), idx++);
+            }
+            if (!mp.containsKey(it.get(1))) {
+                mp.put(it.get(1), idx++);
+            }
+        }
+        List<List<Pair<Integer, Double>>> graph = new ArrayList<>();
+        for (int i = 0; i < idx; i++) {
+            graph.add(new ArrayList<>());
+        }
+        for (int i = 0; i < equations.size(); i++) {
+            int u = mp.get(equations.get(i).get(0));
+            int v = mp.get(equations.get(i).get(1));
+            graph.get(u).add(new Pair<>(v, values[i]));
+            graph.get(v).add(new Pair<>(u, 1.0 / values[i]));
+        }
+        double[] ans = new double[queries.size()];
+        for (int i = 0; i < queries.size(); i++) {
+            if (!mp.containsKey(queries.get(i).get(0)) || !mp.containsKey(queries.get(i).get(1))) {
+                ans[i] = -1.0;
+            } else {
+                boolean[] visited = new boolean[idx];
+                ans[i] = dfs(graph, mp.get(queries.get(i).get(0)), mp.get(queries.get(i).get(1)), visited);
+            }
+        }
+        return ans;
+    }
+}
+
+
+
+
