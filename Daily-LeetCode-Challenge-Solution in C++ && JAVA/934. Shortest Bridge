@@ -164,3 +164,59 @@ public:
 
 
 Java
+
+// Time Complexity : O(m * n) where m is the number of rows and n is the number of columns and space complexity is O(m * n)
+
+
+
+class Solution {
+    public void dfs(int[][] A, int i, int j, Queue<int[]> q) {
+        if(i < 0 || j < 0 || i >= A.length || j >= A[0].length || A[i][j] != 1) {
+            return;
+        }
+        A[i][j] = 2;
+        q.add(new int[]{i, j});
+        dfs(A, i + 1, j, q);
+        dfs(A, i - 1, j, q);
+        dfs(A, i, j + 1, q);
+        dfs(A, i, j - 1, q);
+    }
+    public int shortestBridge(int[][] A) {
+        Queue<int[]> q = new LinkedList<>();
+        boolean found = false;
+        for(int i = 0; i < A.length; i++) {
+            if(found) {
+                break;
+            }
+            for(int j = 0; j < A[0].length; j++) {
+                if(A[i][j] == 1) {
+                    dfs(A, i, j, q);
+                    found = true;
+                    break;
+                }
+            }
+        }
+        int level = 0;
+        int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+        while(!q.isEmpty()) {
+            int size = q.size();
+            while(size-- > 0) {
+                int[] curr = q.poll();
+                for(int[] dir : dirs) {
+                    int x = curr[0] + dir[0];
+                    int y = curr[1] + dir[1];
+                    if(x < 0 || y < 0 || x >= A.length || y >= A[0].length || A[x][y] == 2) {
+                        continue;
+                    }
+                    if(A[x][y] == 1) {
+                        return level;
+                    }
+                    A[x][y] = 2;
+                    q.add(new int[]{x, y});
+                }
+            }
+            level++;
+        }
+        return -1;
+    }
+}
