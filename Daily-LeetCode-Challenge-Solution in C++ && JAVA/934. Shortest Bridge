@@ -15,5 +15,64 @@ Medium
 C++:
 
 
+// Time Complexity : O(m * n) where m is the number of rows and n is the number of columns and space complexity is O(m * n)
+
+
+
+class Solution {
+public:
+    void dfs(vector<vector<int>>& A, int i, int j, queue<pair<int, int>>& q) {
+        if(i < 0 || j < 0 || i >= A.size() || j >= A[0].size() || A[i][j] != 1) {
+            return;
+        }
+        A[i][j] = 2;
+        q.push({i, j});
+        dfs(A, i + 1, j, q);
+        dfs(A, i - 1, j, q);
+        dfs(A, i, j + 1, q);
+        dfs(A, i, j - 1, q);
+    }
+    int shortestBridge(vector<vector<int>>& A) {
+        queue<pair<int, int>> q;
+        bool found = false;
+        for(int i = 0; i < A.size(); i++) {
+            if(found) {
+                break;
+            }
+            for(int j = 0; j < A[0].size(); j++) {
+                if(A[i][j] == 1) {
+                    dfs(A, i, j, q);
+                    found = true;
+                    break;
+                }
+            }
+        }
+        int level = 0;
+        vector<vector<int>> dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+        while(!q.empty()) {
+            int size = q.size();
+            while(size--) {
+                pair<int, int> curr = q.front();
+                q.pop();
+                for(auto dir : dirs) {
+                    int x = curr.first + dir[0];
+                    int y = curr.second + dir[1];
+                    if(x < 0 || y < 0 || x >= A.size() || y >= A[0].size() || A[x][y] == 2) {
+                        continue;
+                    }
+                    if(A[x][y] == 1) {
+                        return level;
+                    }
+                    A[x][y] = 2;
+                    q.push({x, y});
+                }
+            }
+            level++;
+        }
+        return -1;
+    }
+};
+
+
 
 Java
