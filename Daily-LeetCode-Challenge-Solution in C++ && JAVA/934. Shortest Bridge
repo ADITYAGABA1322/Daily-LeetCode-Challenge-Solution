@@ -74,5 +74,93 @@ public:
 };
 
 
+       OR
+
+
+
+
+
+
+// Time Complexity : O(n^2) where n is the number of rows and columns and space complexity is O(n^2)
+
+
+
+class Solution {
+public:
+    void dfs(vector<vector<int>>& A, int i, int j, queue<pair<int, int>>& q, vector<vector<bool>>& visited) {  // dfs function to find the first island
+        if (i < 0 || i >= A.size() || j < 0 || j >= A[0].size() || A[i][j] == 0 || visited[i][j]) {  // if the indices are out of bounds or the square is 0 or the square is visited
+            return;  // return
+        }
+        visited[i][j] = true;  // mark the square as visited
+        q.push({i, j});  // push the square into the queue
+        dfs(A, i+1, j, q, visited);  // call the dfs function for the bottom square
+        dfs(A, i-1, j, q, visited);  // call the dfs function for the top square
+        dfs(A, i, j+1, q, visited);  // call the dfs function for the right square
+        dfs(A, i, j-1, q, visited);  // call the dfs function for the left square
+    }
+    
+    int shortestBridge(vector<vector<int>>& A) {  // function to find the shortest bridge
+        int n = A.size();  // n is the number of rows and columns
+        vector<vector<bool>> visited(n, vector<bool>(n));  // visited vector to check if the square is visited or not
+        queue<pair<int, int>> q;  // queue to store the squares
+        bool found = false;  // found is the variable to check if the first island is found or not
+        for(int i=0; i<n; i++){  // for each row
+            for(int j=0; j<n; j++){  // for each column
+                if(A[i][j] == 1){  // if the square is 1
+                    dfs(A, i, j, q, visited);  // call he dfs function to find the first island
+                    found = true;  // mark found as true
+                    break;  // break
+                }
+            }
+            if(found){  // if the first island is found
+                break;  // break
+            }
+        
+        }
+        int count = 0;  // count is the variable to store the number of moves
+        while(!q.empty()){  // while the queue is not empty
+        int size = q.size();  // size is the size of the queue
+        for(int i=0; i<size; i++){  // for each square in the queue
+        int x = q.front().first;  // x is the x coordinate of the square
+        int y = q.front().second;  // y is the y coordinate of the square
+        q.pop();  // pop the square from the queue
+        if(x > 0 && !visited[x-1][y]){  // if the top square is not visited
+        if(A[x-1][y] == 1){  // if the top square is 1
+        return count;  // return the count
+        }
+        q.push({x-1, y});  // push the top square into the queue
+        visited[x-1][y] = true;  // mark the top square as visited
+        }
+        if(x < n-1 && !visited[x+1][y]){  // if the bottom square is not visited
+        if(A[x+1][y] == 1){  // if the bottom square is 1
+        return count;  // return the count
+        }
+        q.push({x+1, y});  // push the bottom square into the queue
+
+        visited[x+1][y] = true;  // mark the bottom square as visited
+        }
+        if(y > 0 && !visited[x][y-1]){  // if the left square is not visited
+        if(A[x][y-1] == 1){  // if the left square is 1
+        return count;  // return the count
+        }
+        q.push({x, y-1});  // push the left square into the queue
+        visited[x][y-1] = true;  // mark the left square as visited
+        }
+        if(y < n-1 && !visited[x][y+1]){  // if the right square is not visited
+        if(A[x][y+1] == 1){  // if the right square is 1
+        return count;  // return the count
+        }
+        q.push({x, y+1});  // push the right square into the queue
+        visited[x][y+1] = true;  // mark the right square as visited
+        }
+        }
+        count++;  // increment the count
+        }
+        return -1;  // return -1 if the second island is not found
+    }
+};
+
+
+
 
 Java
