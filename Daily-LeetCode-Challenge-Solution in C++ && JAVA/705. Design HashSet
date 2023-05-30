@@ -14,4 +14,39 @@ Easy
 C++:
 
 
+
+
+// Time Complexity : O(1) and space complexity is O(n)
+
+
+
+
+
+
+
+class MyHashSet {
+public:
+    /** Initialize your data structure here. */
+    vector<bool> hashSet;  // hashSet vector to store the values
+    MyHashSet() {  // constructor
+        hashSet.resize(1000001);  // resize the hashSet vector
+    }
+    
+    void add(int key) {  // function to add the value
+        hashSet[key] = true;  // mark the value as true
+    }
+    
+    void remove(int key) {  // function to remove the value
+        hashSet[key] = false;  // mark the value as false
+    }
+    
+    /** Returns true if this set contains the specified element */
+    bool contains(int key) {  // function to check if the value is present or not
+        return hashSet[key];  // return the value
+    }
+};
+
+
+
+
 Java:
