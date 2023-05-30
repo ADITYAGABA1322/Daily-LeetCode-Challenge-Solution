@@ -13,6 +13,44 @@ Hard
 C++:
 
 
+// Time Complexity : O(n^2 * 2^n) where n is the number of elements in the nums vector and space complexity is O(n * 2^n)
+
+
+
+
+class Solution {
+public:
+    int dp[15][32768];  // dp vector to store the maximum score
+    int n;  // n is the number of elements in the nums vector
+    int solve(vector<int>& nums, int mask, int i){  // function to find the maximum score
+        if(i == n/2){  // if the number of operations is n/2
+            return 0;  // return 0
+        }
+        if(dp[i][mask] != -1){  // if the maximum score is already calculated
+            return dp[i][mask];  // return the maximum score
+        }
+        int ans = 0;  // ans is the variable to store the maximum score
+        for(int j=0; j<n; j++){  // for each element in the nums vector
+            if((mask & (1 << j)) == 0){  // if the element is not used
+                for(int k=j+1; k<n; k++){  // for each element in the nums vector
+                    if((mask & (1 << k)) == 0){  // if the element is not used
+                        ans = max(ans, (i+1)*__gcd(nums[j], nums[k]) + solve(nums, mask | (1 << j) | (1 << k), i+1));  // calculate the maximum score
+                    }
+                }
+            }
+        }
+        return dp[i][mask] = ans;  // return the maximum score
+    }
+    int maxScore(vector<int>& nums) {  // function to find the maximum score
+        n = nums.size();  // n is the number of elements in the nums vector
+        memset(dp, -1, sizeof(dp));  // initialize the dp vector
+        return solve(nums, 0, 0);  // return the maximum score
+    }
+};
+
+
+
+
 
 
 Java:
