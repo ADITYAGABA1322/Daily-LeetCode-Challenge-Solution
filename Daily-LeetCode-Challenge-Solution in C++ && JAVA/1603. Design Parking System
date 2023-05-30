@@ -3,10 +3,54 @@
 
 29 May 2023
 
+
 Easy
 
 
 C++:
+
+// Time Complexity : O(1) and space complexity is O(1)
+
+
+
+
+
+
+
+class ParkingSystem {
+public:
+    int big, medium, small;  // big, medium and small are the variables to store the number of parking slots
+    ParkingSystem(int big, int medium, int small) {  // constructor
+        this->big = big;  // initialize the big variable
+        this->medium = medium;  // initialize the medium variable
+        this->small = small;  // initialize the small variable
+    }
+    
+    bool addCar(int carType) {  // function to add the car
+        if(carType == 1){  // if the car type is 1
+            if(big > 0){  // if the big parking slot is available
+                big--;  // decrement the big variable
+                return true;  // return true
+            }
+            return false;  // return false
+        }
+        else if(carType == 2){  // if the car type is 2
+            if(medium > 0){  // if the medium parking slot is available
+                medium--;  // decrement the medium variable
+                return true;  // return true
+            }
+            return false;  // return false
+        }
+        else{  // if the car type is 3
+            if(small > 0){  // if the small parking slot is available
+                small--;  // decrement the small variable
+                return true;  // return true
+            }
+            return false;  // return false
+        }
+    }
+};
+
 
 
 Java:
