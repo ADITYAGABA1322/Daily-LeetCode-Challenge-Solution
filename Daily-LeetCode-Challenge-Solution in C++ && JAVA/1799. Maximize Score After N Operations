@@ -54,3 +54,91 @@ public:
 
 
 Java:
+
+
+
+
+
+// Time Complexity : O(n^2 * 2^n) where n is the number of elements in the nums vector and space complexity is O(n * 2^n)
+
+
+
+class Solution {
+      public int gcd(int a, int b){  // function to find the gcd of two numbers
+        if(b == 0){  // if b is 0
+            return a;  // return a
+        }
+        return gcd(b, a % b);  // return the gcd of b and a % b
+    }
+    public int solve(int[] nums, int mask, int i, int[][] dp){  // function to find the maximum score
+        if(i == nums.length/2){  // if the number of operations is n/2
+            return 0;  // return 0
+        }
+        if(dp[i][mask] != -1){  // if the maximum score is already calculated
+            return dp[i][mask];  // return the maximum score
+        }
+        int ans = 0;  // ans is the variable to store the maximum score
+        for(int j=0; j<nums.length; j++){  // for each element in the nums vector
+            if((mask & (1 << j)) == 0){  // if the element is not used
+                for(int k=j+1; k<nums.length; k++){  // for each element in the nums vector
+                    if((mask & (1 << k)) == 0){  // if the element is not used
+                        ans = Math.max(ans, (i+1)*gcd(nums[j], nums[k]) + solve(nums, mask | (1 << j) | (1 << k), i+1, dp));  // calculate the maximum score
+                    }
+                }
+            }
+        }
+        return dp[i][mask] = ans;  // return the maximum score
+    }
+    public int maxScore(int[] nums) {
+        int n = nums.length;  // length of the nums array
+        int[][] dp = new int[n/2 + 1][1 << n];  // dp array to store the maximum score
+        for(int i=0; i<=n/2; i++){  // for each number
+            Arrays.fill(dp[i], -1);  // initialize the dp array
+        }
+        return solve(nums, 0, 0, dp);  // return the maximum score
+        
+    }
+}
+
+
+
+
+2nd Method
+
+
+
+// Time Complexity : O(n^2) where n is the length of the nums array and space complexity is O(n)
+
+
+
+class Solution {
+    public int maxScore(int[] nums) {
+        int n = nums.length;  // length of the nums array
+        int[] dp = new int[1 << n];  // dp array to store the maximum score
+        for(int i=0; i<(1 << n); i++){  // for each number
+            int count = Integer.bitCount(i);  // count of the number of set bits
+            if(count % 2 == 1){  // if the count is odd
+                continue;  // continue
+            }
+            for(int j=0; j<n; j++){  // for each number
+                if(((i >> j) & 1) == 1){  // if the jth bit is set
+                    for(int k=j+1; k<n; k++){  // for each number
+                        if(((i >> k) & 1) == 1){  // if the kth bit is set
+                            dp[i] = Math.max(dp[i], dp[i ^ (1 << j) ^ (1 << k)] + count / 2 * gcd(nums[j], nums[k]));  // update the maximum score
+                        }
+                    }
+                }
+            }
+        }
+        return dp[(1 << n) - 1];  // return the maximum score
+    }
+    public int gcd(int a, int b){  // function to find the gcd of two numbers
+        if(b == 0){  // if b is 0
+            return a;  // return a
+        }
+        return gcd(b, a % b);  // return the gcd of b and a % b
+    }
+}
+
+
+
