@@ -58,3 +58,39 @@ public:
 
 
 Java:
+
+
+import java.util.PriorityQueue;
+class Solution {
+    public long totalCost(int[] costs, int k, int candidates) {
+        int n = costs.length;
+        int i = 0;
+        int j = n-1;
+        PriorityQueue<Integer> pq1 = new PriorityQueue<>();
+        PriorityQueue<Integer> pq2 = new PriorityQueue<>();
+
+        long  ans = 0;
+
+        while(k-->0){
+            while(pq1.size() < candidates && i<=j){
+                pq1.offer(costs[i++]);
+            }
+            while(pq2.size() < candidates && i<=j){
+                pq2.offer(costs[j--]);
+            }
+            int p1 = pq1.size() > 0 ? pq1.peek() : Integer.MAX_VALUE;
+            int p2 = pq2.size() > 0 ? pq2.peek() : Integer.MAX_VALUE;
+
+            if(p1<=p2){
+                ans += p1;
+                pq1.poll();
+            }
+            else{
+                ans += p2;
+                pq2.poll();
+            }
+
+        }
+        return ans;
+    }
+}
