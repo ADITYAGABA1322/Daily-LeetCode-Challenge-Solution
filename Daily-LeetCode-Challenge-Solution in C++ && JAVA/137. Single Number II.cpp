@@ -126,3 +126,14 @@ class Solution {
 }
 
 
+second method 
+
+
+
+
+
+
+third Method  using map
+
+
+
