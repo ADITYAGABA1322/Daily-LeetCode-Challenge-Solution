@@ -96,3 +96,33 @@ public:
 
   
 Java:
+
+
+
+
+
+// Time Complexity : O(n) where n is the number of elements in the array and space complexity is O(1)
+
+
+
+
+class Solution {
+    public int singleNumber(int[] nums) {
+        int n = nums.length;  // variable to store the length of the array
+        int result = 0;  // variable to store the result
+        for(int i = 0; i < 32; i++){  // iterate through the bits
+            int sum = 0;  // variable to store the sum
+            for(int j = 0; j < n; j++){  // iterate through the array
+                if((nums[j] & (1 << i)) != 0){  // if the ith bit of the current element is set
+                    sum++;  // increment the sum
+                }
+            }
+            if(sum % 3 != 0){  // if the sum is not divisible by 3
+                result |= (1 << i);  // set the ith bit of the result
+            }
+        }
+        return result;  // return the result
+    }
+}
+
+
