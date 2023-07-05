@@ -129,11 +129,55 @@ class Solution {
 second method 
 
 
+// Time Complexity : O(n) where n is the number of elements in the array and space complexity is O(1)
+
+
+
+
+
+class Solution {
+    public int singleNumber(int[] nums) {
+        int n = nums.length;  // variable to store the length of the array
+        int ones = 0;  // variable to store the ones
+        int twos = 0;  // variable to store the twos
+        for(int i = 0; i < n; i++){  // iterate through the arra
+            ones = (ones ^ nums[i]) & (~twos);  // update the ones
+            twos = (twos ^ nums[i]) & (~ones);  // update the twos
+        }
+        return ones;  // return the ones
+    }
+}
+
+
 
 
 
 
 third Method  using map
 
+
+// Time Complexity : O(n) where n is the number of elements in the array and space complexity is O(n)
+
+
+
+
+
+
+
+class Solution {
+    public int singleNumber(int[] nums) {
+        int n = nums.length;  // variable to store the length of the array
+        HashMap<Integer, Integer> mp = new HashMap<>();  // hashmap to store the frequency of the elements
+        for(int i = 0; i < n; i++){  // iterate through the array
+            mp.put(nums[i], mp.getOrDefault(nums[i], 0) + 1);  // update the frequency
+        }
+        for(Map.Entry<Integer, Integer> entry : mp.entrySet()){  // iterate through the map
+            if(entry.getValue() == 1){  // if the frequency is 1
+                return entry.getKey();  // return the element
+            }
+        }
+        return -1;  // return -1
+    }
+}
 
 
