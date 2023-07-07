@@ -13,6 +13,61 @@ Medium
 C++:
 
 
+// Time Complexity : O(n) where n is the length of the array and space complexity is O(1)
+
+
+
+
+
+class Solution {
+public:
+    int minSubArrayLen(int target, vector<int>& nums) {
+        int n = nums.size();  // variable to store the length of the array
+        int left = 0;  // variable to store the left pointer
+        int right = 0;  // variable to store the right pointer
+        int result = INT_MAX;  // variable to store the result
+        int sum = 0;  // variable to store the sum
+        while(right < n){  // iterate until the right pointer reaches the end
+            sum += nums[right];  // update the sum
+            while(sum >= target){  // if the sum is greater than or equal to the target
+                result = min(result, right - left + 1);  // update the result
+                sum -= nums[left];  // update the sum
+                left++;  // increment the left pointer
+            }
+            right++;  // increment the right pointer
+        }
+        return result == INT_MAX ? 0 : result;  // return the result
+    }
+};
+
+
+
+
+2nd Method  
+
+class Solution {
+public:
+    int minSubArrayLen(int target, vector<int>& nums) {
+        int minLen = INT_MAX; 
+        int currentSum = 0;
+        int start = 0;
+        
+        for(int i = 0; i < nums.size(); i++){
+            currentSum += nums[i];
+            
+            while (currentSum >= target) {
+                minLen = min(minLen, i - start + 1);
+                currentSum -= nums[start];
+                start++;
+            }
+        }
+        
+        return (minLen != INT_MAX) ? minLen : 0;
+    }
+};
+
+
+
 
 
 Java:
