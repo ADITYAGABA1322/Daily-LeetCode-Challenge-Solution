@@ -72,3 +72,68 @@ public:
 
 Java:
 
+
+// Time Complexity : O(n) where n is the length of the array and space complexity is O(1)
+
+
+
+
+
+class Solution {
+    public int minSubArrayLen(int target, int[] nums) {
+        int n = nums.length;  // variable to store the length of the array
+        int left = 0;  // variable to store the left pointer
+        int right = 0;  // variable to store the right pointer
+        int result = Integer.MAX_VALUE;  // variable to store the result
+        int sum = 0;  // variable to store the sum
+        while(right < n){  // iterate until the right pointer reaches the end
+            sum += nums[right];  // update the sum
+            while(sum >= target){  // if the sum is greater than or equal to the target
+                result = Math.min(result, right - left + 1);  // update the result
+                sum -= nums[left];  // update the sum
+                left++;  // increment the left pointer
+            }
+            right++;  // increment the right pointer
+        }
+        return result == Integer.MAX_VALUE ? 0 : result;  // return the result
+    }
+}
+
+
+
+
+
+
+
+2nd Method
+
+
+
+
+// Time Complexity : O(n) where n is the length of the array and space complexity is O(1)
+
+
+
+
+
+class Solution {
+    public int minSubArrayLen(int target, int[] nums) {
+        int minLen = Integer.MAX_VALUE; 
+        int currentSum = 0;
+        int start = 0;
+        
+        for(int i = 0; i < nums.length; i++){
+            currentSum += nums[i];
+            
+            while (currentSum >= target) {
+                minLen = Math.min(minLen, i - start + 1);
+                currentSum -= nums[start];
+                start++;
+            }
+        }
+        
+        return (minLen != Integer.MAX_VALUE) ? minLen : 0;
+    }
+}
+
+
