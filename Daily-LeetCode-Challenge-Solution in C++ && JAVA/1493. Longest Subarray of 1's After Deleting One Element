@@ -12,6 +12,69 @@ Medium
 
 C++:
 
+// Time Complexity : O(n) where n is the length of the array and space complexity is O(1)
+
+
+
+
+class Solution {
+public:
+    int longestSubarray(vector<int>& nums) {
+        int n = nums.size();  // variable to store the length of the array
+        int left = 0;  // variable to store the left pointer
+        int right = 0;  // variable to store the right pointer
+        int result = 0;  // variable to store the result
+        int count = 0;  // variable to store the count of 1's
+        while(right < n){  // iterate until the right pointer reaches the end
+            if(nums[right] == 1){  // if the current element is 1
+                count++;  // increment the count
+            }
+            while(right - left + 1 - count > 1){  // if the number of 0's is greater than 1
+                if(nums[left] == 1){  // if the left element is 1
+                    count--;  // decrement the count
+                }
+                left++;  // increment the left pointer
+            }
+            result = max(result, right - left);  // update the result
+            right++;  // increment the right pointer
+        }
+        return result;  // return the result
+    }
+};
+
+
+
+
+2nd Method 
+
+
+class Solution {
+public:
+    int longestSubarray(vector<int>& nums) {
+        // Number of zero's in the window.
+        int zeroCount ;
+        int longestWindow = 0;
+        // Left end of the window.
+        int start = 0;
+        
+        for (int i = 0; i < nums.size(); i++) {
+            zeroCount += (nums[i] == 0);
+                          
+            // Shrink the window until the zero counts come under the limit.
+            while (zeroCount > 1) {
+                zeroCount -= (nums[start] == 0);
+                start++;
+            }
+              
+            longestWindow = max(longestWindow, i - start);
+        }
+
+        return longestWindow;
+    }
+};
+
+
+
 
 
 
