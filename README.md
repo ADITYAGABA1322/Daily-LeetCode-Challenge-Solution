@@ -6,7 +6,7 @@
 
 Hi Everyone. It's me Aditya and Here I'm providing you Daily LeetCode Challenge Solution with a full Explanation(Line to Line)
 
-In Both Languages:
+In Eight Languages:
 
 C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift 🔥
 
