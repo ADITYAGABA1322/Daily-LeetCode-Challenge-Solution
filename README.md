@@ -8,7 +8,7 @@ Hi Everyone. It's me Aditya and Here I'm providing you Daily LeetCode Challenge 
 
 In Both Languages:
 
-C++🫶 && JAVA🔥
+C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift 🔥
 
 
 
