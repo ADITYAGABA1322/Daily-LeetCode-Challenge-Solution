@@ -5,6 +5,43 @@
 
 
 
+Medium
+
+
+
+# Intuition
+<!-- Describe your first thoughts on how to solve this problem. -->
+The intuition behind solving Jump Game II is to keep track of the maximum reachable index from the current position and choose the next position with maximum reach. In other words, at each step, we want to jump as far as we can to reach the end of the array in the minimum number of jumps. This is a greedy approach, as we make the locally optimal choice (jumping as far as possible) at each step, which leads to the globally optimal solution.
+# Approach
+<!-- Describe your approach to solving the problem. -->
+The approach to solve Jump Game II is as follows:
+
+1.) Initialize variables: Set the starting position to be 0, and initialize a variable to keep track of the minimum number of jumps needed to reach the end.
+
+2.) Iterate over the array: Keep moving forward while updating the maximum reachable index from the current position.
+
+3.) Check if the current position has reached the end: If the current position is greater than or equal to the end, break out of the loop and return the number of jumps.
+
+4.) Choose the next position: Select the next position with the maximum reachable index.
+
+5.) Increment the number of jumps: Increment the number of jumps taken to reach the next position.
+
+6.) Repeat steps 2-5 until the end is reached.
+
+This approach has a time complexity of O(n), where n is the length of the array.
+
+# Complexity
+- Time complexity: O(n)
+<!-- Add your time complexity here, e.g. $$O(n)$$ -->
+
+- Space complexity: O(1)
+<!-- Add your space complexity here, e.g. $$O(n)$$ -->
+
+# Code
+
+# Daily-LeetCode-Challenge-Solution
+
+
 C++:
 
 // Time Complexity : O(n) where n is the length of the vector nums and space complexity is O(1)
