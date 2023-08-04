@@ -5,6 +5,8 @@
 
 Medium
 
+
+
 16 Jan 2023
 
 C++ :
@@ -95,6 +97,156 @@ class Solution { // Time Complexity O(N) and Space Complexity O(1)
             i++; // increment the index of the interval
         }
         return result.toArray(new int[result.size()][]); // return the result
+    }
+}
+
+
+Python:
+
+// Time Complexity : O(n) where n is the size of the vector intervals and space complexity is O(1)
+
+class Solution(object):
+    def insert(self, intervals, newInterval):
+        """
+        :type intervals: List[List[int]]
+        :type newInterval: List[int]
+        :rtype: List[List[int]]
+        """ 
+        n = len(intervals)  # n is the size of the vector of intervals
+        start = newInterval[0]  # start is the start of the interval
+        end = newInterval[1]  # end is the end of the interval
+        i = 0  # i is the index of the interval
+        result = []  # result is the vector of intervals after inserting the interval
+        while i < n and intervals[i][1] < start:  # while the end of the interval is less than the start of the interval
+            result.append(intervals[i])  # push the interval in the result    
+            i += 1  # increment the index of the interval
+        while i < n and intervals[i][0] <= end:  # while the start of the interval is less than or equal to the end of the interval
+            start = min(start, intervals[i][0])  # update the start of the interval
+            end = max(end, intervals[i][1])  # update the end of the interval
+            i += 1  # increment the in interval
+        result.append([start, end])  # push the interval in the result
+        while i < n:  # while the index of the interval is less than the size of the vector of intervals
+            result.append(intervals[i])  # push the interval in the result
+            i += 1  # increment the index of the interval
+        return result  # return the result
+
+
+
+Python3:
+
+// Time Complexity : O(n) where n is the size of the vector intervals and space complexity is O(1)
+
+class Solution:
+    def insert(self, intervals: List[List[int], newInterval: List[int]) -> List[List[int]]:  // add the missing bracket after List[int] and add the missing colon after List[int] and add the missing colon after List[int]
+        n = len(intervals)  # n is the size of the vector of intervals
+        start = newInterval[0]  # start is the start of the interval
+        end = newInterval[1]  # end is the end of the interval
+        i = 0  # i is the index of the interval
+        result = []  # result is the vector of intervals after inserting the interval
+        while i < n and intervals[i][1] < start:  # while the end of the interval is less than the start of the interval
+            result.append(intervals[i])  # push the interval in the result    
+            i += 1  # increment the index of the interval
+        while i < n and intervals[i][0] <= end:  # while the start of the interval is less than or equal to the end of the interval
+            start = min(start, intervals[i][0])  # update the start of the interval
+            end = max(end, intervals[i][1])  # update the end of the interval
+            i += 1  # increment the in interval
+        result.append([start, end])  # push the interval in the result
+        while i < n:  # while the index of the interval is less than the size of the vector of intervals
+            result.append(intervals[i])  # push the interval in the result
+            i += 1  # increment the index of the interval
+        return result  # return the result
+
+
+C#:
+
+
+
+// Time Complexity : O(n) where n is the size of the vector intervals and space complexity is O(1)
+
+public class Solution {
+    public int[][] Insert(int[][] intervals, int[] newInterval) {
+        int n = intervals.Length;  // n is the size of the vector of intervals
+        int start = newInterval[0];  // start is the start of the interval
+        int end = newInterval[1];  // end is the end of the interval
+        int i = 0;  // i is the index of the interval
+        List<int[]> result = new List<int[]>();  // result is the vector of intervals after inserting the interval
+        while(i < n && intervals[i][1] < start){  // while the end of the interval is less than the start of the interval
+            result.Add(intervals[i]);  // push the interval in the result    
+            i++;  // increment the index of the interval
+        }
+        while(i < n && intervals[i][0] <= end){  // while the start of the interval is less than or equal to the end of the interval
+            start = Math.Min(start, intervals[i][0]);  // update the start of the interval
+            end = Math.Max(end, intervals[i][1]);  // update the end of the interval
+            i++;  // increment the in interval
+        }
+        result.Add(new int[]{start, end});  // push the interval in the result
+        while(i < n){  // while the index of the interval is less than the size of the vector of intervals
+            result.Add(intervals[i]);  // push the interval in the result
+            i++;  // increment the index of the interval
+        }
+        return result.ToArray();  // return the result
+    }
+}
+
+
+
+JavaScript:
+
+
+// Time Complexity : O(n) where n is the size of the vector intervals and space complexity is O(1)
+
+var insert = function(intervals, newInterval) {
+    let n = intervals.length;  // n is the size of the vector of intervals
+    let start = newInterval[0];  // start is the start of the interval
+    let end = newInterval[1];  // end is the end of the interval
+    let i = 0;  // i is the index of the interval
+    let result = [];  // result is the vector of intervals after inserting the interval
+    while(i < n && intervals[i][1] < start){  // while the end of the interval is less than the start of the interval
+        result.push(intervals[i]);  // push the interval in the result    
+        i++;  // increment the index of the interval
+    }
+    while(i < n && intervals[i][0] <= end){  // while the start of the interval is less than or equal to the end of the interval
+        start = Math.min(start, intervals[i][0]);  // update the start of the interval
+        end = Math.max(end, intervals[i][1]);  // update the end of the interval
+        i++;  // increment the in interval
+    }
+    result.push([start, end]);  // push the interval in the result
+    while(i < n){  // while the index of the interval is less than the size of the vector of intervals
+        result.push(intervals[i]);  // push the interval in the result
+        i++;  // increment the index of the interval
+    }
+    return result;  // return the result
+};
+
+
+
+Swift:
+
+
+// Time Complexity : O(n) where n is the size of the vector intervals and space complexity is O(1)
+
+class Solution {
+    func insert(_ intervals: [[Int]], _ newInterval: [Int]) -> [[Int]] {
+        var n = intervals.count;  // n is the size of the vector of intervals
+        var start = newInterval[0];  // start is the start of the interval
+        var end = newInterval[1];  // end is the end of the interval
+        var i = 0;  // i is the index of the interval
+        var result = [[Int]]();  // result is the vector of intervals after inserting the interval
+        while i < n && intervals[i][1] < start {  // while the end of the interval is less than the start of the interval
+            result.append(intervals[i]);  // push the interval in the result    
+            i += 1;  // increment the index of the interval
+        }
+        while i < n && intervals[i][0] <= end {  // while the start of the interval is less than or equal to the end of the interval
+            start = min(start, intervals[i][0]);  // update the start of the interval
+            end = max(end, intervals[i][1]);  // update the end of the interval
+            i += 1;  // increment the in interval
+        }
+        result.append([start, end]);  // push the interval in the result
+        while i < n {  // while the index of the interval is less than the size of the vector of intervals
+            result.append(intervals[i]);  // push the interval in the result
+            i += 1;  // increment the index of the interval
+        }
+        return result;  // return the result
     }
 }
 
