@@ -191,3 +191,23 @@ class Solution {
 
 
 Dart:
+
+                                        
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(1)
+
+bool validPartition(List<int> nums) {
+    int n = nums.length; // variable to store the size of the vector nums
+    List<bool> dp = new List<bool>.filled(3, false);  // vector to store the result
+    dp[0] = true;
+    for(int i=0; i<n; i++){
+        bool ans = false; // variable to store the ans
+        int index = i+1; // variable to store the dpindex
+        if(i>0 && nums[i] == nums[i-1]) ans |= dp[(index-2)%3]; // if the current element is equal to the previous element
+        if(i>1 && nums[i] == nums[i-1] && nums[i] == nums[i-2]) ans |= dp[(index-3)%3]; // if the current element is equal to the previous two elements
+        if(i>1 && nums[i] == nums[i-1]+1 && nums[i] == nums[i-2]+2) ans |= dp[(index-3)%3]; // if the current element is equal to the previous two elements
+        dp[index%3] = ans; // update the dp
+    }
+    return dp[n%3]; // return the dp[n%3]
+}
+
+
