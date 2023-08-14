@@ -168,6 +168,26 @@ var validPartition = function(nums) {
 
 Swift:
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(1)
+
+class Solution {
+    func validPartition(_ nums: [Int]) -> Bool {
+        let n = nums.count; // variable to store the size of the vector nums
+        var dp = [Bool](repeating: false, count: 3);  // vector to store the result
+        dp[0] = true;
+        for i in 0..<n{
+            var ans = false; // variable to store the ans
+            let index = i+1; // variable to store the dpindex
+            if i>0 && nums[i] == nums[i-1]{ ans = ans || dp[(index-2)%3]; } // if the current element is equal to the previous element
+            if i>1 && nums[i] == nums[i-1] && nums[i] == nums[i-2]{ ans = ans || dp[(index-3)%3]; } // if the current element is equal to the previous two elements
+            if i>1 && nums[i] == nums[i-1]+1 && nums[i] == nums[i-2]+2{ ans = ans || dp[(index-3)%3]; } // if the current element is equal to the previous two elements
+            dp[index%3] = ans; // update the dp
+        }
+        return dp[n%3]; // return the dp[n%3]
+    }
+}
+
+
 
 
 Dart:
