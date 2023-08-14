@@ -123,6 +123,25 @@ bool validPartition(int* nums, int numsSize){
 
 C#:
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(1)
+
+public class Solution {
+    public bool ValidPartition(int[] nums) {
+        int n = nums.Length; // variable to store the size of the vector nums
+        bool[] dp = new bool[3];  // vector to store the result
+        dp[0] = true;
+        for(int i=0; i<n; i++){
+            bool ans = false; // variable to store the ans
+            int index = i+1; // variable to store the dpindex
+            if(i>0 && nums[i] == nums[i-1]) ans |= dp[(index-2)%3]; // if the current element is equal to the previous element
+            if(i>1 && nums[i] == nums[i-1] && nums[i] == nums[i-2]) ans |= dp[(index-3)%3]; // if the current element is equal to the previous two elements
+            if(i>1 && nums[i] == nums[i-1]+1 && nums[i] == nums[i-2]+2) ans |= dp[(index-3)%3]; // if the current element is equal to the previous two elements
+            dp[index%3] = ans; // update the dp
+    }
+    return dp[n%3]; // return the dp[n%3]
+    }
+}
+
 
 
 JavaScript:
