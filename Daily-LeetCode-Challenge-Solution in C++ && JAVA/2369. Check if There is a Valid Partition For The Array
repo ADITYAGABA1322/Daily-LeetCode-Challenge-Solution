@@ -80,6 +80,22 @@ class Solution:
 
 Python3:
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(1)
+
+class Solution:
+    def validPartition(self, nums: List[int) -> bool:  // add the missing bracket after int 
+        n = len(nums) # variable to store the size of the vector nums
+        dp = [False]*3  # vector to store the result
+        dp[0] = True
+        for i in range(n):
+            ans = False # variable to store the ans
+            index = i+1 # variable to store the dpindex
+            if i>0 and nums[i] == nums[i-1]: ans |= dp[(index-2)%3] # if the current element is equal to the previous element
+            if i>1 and nums[i] == nums[i-1] and nums[i] == nums[i-2]: ans |= dp[(index-3)%3] # if the current element is equal to the previous two elements
+            if i>1 and nums[i] == nums[i-1]+1 and nums[i] == nums[i-2]+2: ans |= dp[(index-3)%3] # if the current element is equal to the previous two elements
+            dp[index%3] = ans # update the dp
+        return dp[n%3] # return the dp[n%3]
+
 
 
 C:
