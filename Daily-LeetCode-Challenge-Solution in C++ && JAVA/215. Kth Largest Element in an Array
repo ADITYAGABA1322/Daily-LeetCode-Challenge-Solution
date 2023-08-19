@@ -338,6 +338,50 @@ var quickSelect = function(nums, k) {  // function to find the kth largest eleme
 
 Swift:
 
+// Time Complexity : O(nlogk) where n is the size of the vector nums and space complexity is O(k)
+
+class Solution {
+    func findKthLargest(_ nums: [Int], _ k: Int) -> Int {
+        return nums.sorted()[nums.count-k] // sort the vector nums and return the kth largest element
+    }
+}
+
+2nd Method using  quick select (Quickselect, also known as Hoare's selection algorithm, is a selection algorithm to find the kth smallest/largest element in an unordered list. It is related to the quick sort sorting algorithm.)
+
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(1)
+
+class Solution {
+    func findKthLargest(_ nums: [Int], _ k: Int) -> Int {
+        return quickSelect(nums, k) // call the quickSelect function
+    }
+
+    func quickSelect(_ nums: [Int], _ k: Int) -> Int { // function to find the kth largest element
+        let pivot = nums.randomElement()! // variable to store the pivot
+        var left = [Int]() // vector to store the left
+        var mid = [Int]() // vector to store the mid
+        var right = [Int]() // vector to store the right
+        for num in nums{ // loop for num
+            if num > pivot{ // if num is greater than pivot
+                left.append(num) // push the num in the left
+            }
+            else if num == pivot{ // else if num is equal to pivot
+                mid.append(num) // push the num in the mid
+            }
+            else{ // else
+                right.append(num) // push the num in the right
+            }
+        }
+        if k <= left.count{ // if k is less than or equal to left.size()
+            return quickSelect(left, k) // call the quickSelect function
+        }
+        if k > left.count + mid.count{ // if k is greater than left.size()+mid.size()
+            return quickSelect(right, k - left.count - mid.count) // call the quickSelect function
+        }
+        return pivot // return the pivot
+    }
+}
+
+
 
 Dart:
 
