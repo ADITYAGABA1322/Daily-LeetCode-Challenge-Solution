@@ -185,6 +185,27 @@ var maxSlidingWindow = function(nums, k) {
 
 Swift:
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(k)
+
+class Solution {
+    func maxSlidingWindow(_ nums: [Int], _ k: Int) -> [Int] {
+        var dq = [Int]() // deque
+        var ans = [Int]() // vector to store the result
+        for i in 0..<nums.count{ // loop for i
+            while dq.count > 0 && dq.last! < nums[i]{ // if the deque is not empty and the last element of the deque is less than nums[i]
+                dq.removeLast() // pop the last element from the deque
+            }
+            dq.append(nums[i]) // push the element in the deque
+            if i >= k-1{ // if i is greater than or equal to k-1
+                ans.append(dq.first!) // push the front element of the deque in the ans
+                if nums[i-k+1] == dq.first!{ // if the front element of the deque is equal to nums[i-k+1]
+                    dq.removeFirst() // pop the front element from the deque
+                }
+            }
+        }
+        return ans // return the ans
+    }
+}
 
 Dart:
 
