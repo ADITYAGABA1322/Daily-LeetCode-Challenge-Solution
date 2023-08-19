@@ -242,9 +242,55 @@ void heapify(int* pq, int size){  // function to heapify the min heap
     }
 }
 
-
-
 C#:
+
+// Time Complexity : O(nlogk) where n is the size of the vector nums and space complexity is O(k)
+
+public class Solution {
+    public int FindKthLargest(int[] nums, int k) {
+    var queue = new PriorityQueue<int, int>(); // min heap 
+     foreach (var num in nums) { // loop for num
+        queue.Enqueue(num , num); // push the element in the min heap
+        if (queue.Count > k) { // if the size of the min heap is greater than k
+            queue.Dequeue(); // pop the element from the min heap
+        }
+    }
+    return queue.Peek(); // return the top element from the min heap
+    }
+}
+
+2nd Method using  quick select (Quickselect, also known as Hoare's selection algorithm, is a selection algorithm to find the kth smallest/largest element in an unordered list. It is related to the quick sort sorting algorithm.)
+
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(1)
+
+public class Solution {
+    public int FindKthLargest(int[] nums, int k) {
+        return QuickSelect(nums, k); // call the QuickSelect function
+    }
+
+    public int QuickSelect(int[] nums, int k) { // function to find the kth largest element
+        var pivot = nums[new Random().Next(nums.Length)]; // variable to store the pivot
+        var left = new List<int>(); // vector to store the left
+        var mid = new List<int>(); // vector to store the mid
+        var right = new List<int>(); // vector to store the right
+        foreach (var num in nums) { // loop for num
+            if (num > pivot) { // if num is greater than pivot
+                left.Add(num); // push the num in the left
+            } else if (num == pivot) { // else if num is equal to pivot
+                mid.Add(num); // push the num in the mid
+            } else { // else
+                right.Add(num); // push the num in the right
+            }
+        }
+        if (k <= left.Count) { // if k is less than or equal to left.size()
+            return QuickSelect(left.ToArray(), k); // call the QuickSelect function
+        }
+        if (k > left.Count + mid.Count) { // if k is greater than left.size()+mid.size()
+            return QuickSelect(right.ToArray(), k - left.Count - mid.Count); // call the QuickSelect function
+        }
+        return pivot; // return the pivot
+    }
+}
 
 
 JavaScript:
