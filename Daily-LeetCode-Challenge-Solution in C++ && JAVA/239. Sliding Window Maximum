@@ -102,6 +102,29 @@ class Solution:
 
 C:
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(k)
+
+int* maxSlidingWindow(int* nums, int numsSize, int k, int* returnSize){
+    int* ans = (int*)malloc(sizeof(int)*(numsSize-k+1)); // vector to store the result
+    int index = 0; // variable to store the index
+    int* dq = (int*)malloc(sizeof(int)*numsSize); // deque
+    int front = 0; // variable to store the front
+    int rear = 0; // variable to store the rear
+    for(int i=0; i<numsSize; i++){ // loop for i
+        while(front != rear && dq[front] < nums[i]){ // if the deque is not empty and the last element of the deque is less than nums[i]
+            front++; // increment the front
+        }
+        dq[front++] = nums[i]; // push the element in the deque
+        if(i >= k-1){ // if i is greater than or equal to k-1
+            ans[index++] = dq[rear]; // push the front element of the deque in the ans
+            if(nums[i-k+1] == dq[rear]){ // if the front element of the deque is equal to nums[i-k+1]
+                rear++; // increment the rear
+            }
+        }
+    }
+    *returnSize = index; // update the returnSize
+    return ans; // return the ans
+}
 
 
 C#:
