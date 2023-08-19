@@ -62,8 +62,57 @@ public:
 };
 
 
-
 Java:
+
+// Time Complexity : O(nlogk) where n is the size of the vector nums and space complexity is O(k)
+
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>(); // min heap
+        for(int i=0; i<nums.length; i++){ // loop for i
+            pq.add(nums[i]); // push the element in the min heap
+            if(pq.size() > k){ // if the size of the min heap is greater than k
+                pq.poll(); // pop the element from the min heap
+            }
+        }
+        return pq.peek(); // return the top element from the min heap
+    }
+}
+
+2nd Method using  quick select (Quickselect, also known as Hoare's selection algorithm, is a selection algorithm to find the kth smallest/largest element in an unordered list. It is related to the quick sort sorting algorithm.)
+
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(1)
+
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        return quickSelect(nums , k); // call the quickSelect function
+    }
+
+    public int quickSelect(int[] nums , int k){ // function to find the kth largest element
+        int pivot = nums[new Random().nextInt(nums.length)]; // variable to store the pivot
+        List<Integer> left = new ArrayList<>(); // vector to store the left
+        List<Integer> mid = new ArrayList<>(); // vector to store the mid
+        List<Integer> right = new ArrayList<>(); // vector to store the right
+        for(int num : nums) { // loop for num
+            if (num > pivot) { // if num is greater than pivot
+                left.add(num); // push the num in the left
+            } else if (num == pivot) { // else if num is equal to pivot
+                mid.add(num); // push the num in the mid
+            } else { // else
+                right.add(num); // push the num in the right
+            }
+        }
+       if(k<=left.size()){ // if k is less than or equal to left.size()
+           return quickSelect(left.stream().mapToInt(i -> i).toArray() , k); // call the quickSelect function
+       }
+       if(k>left.size()+mid.size()){ // if k is greater than left.size()+mid.size()
+           return quickSelect(right.stream().mapToInt(i -> i).toArray() , k-left.size()-mid.size()); // call the quickSelect function
+       }
+       return pivot; // return the pivot
+    }
+
+}
+
 
 
 Python:
