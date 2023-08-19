@@ -82,6 +82,22 @@ class Solution:
 
 Python3:
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(k)
+
+class Solution:
+    def maxSlidingWindow(self, nums: List[int, k: int) -> List[int]: # add the missing bracket after List[int]
+        dq = collections.deque() # deque
+        ans = [] # vector to store the result
+        for i in range(len(nums)): # loop for i
+            while dq and dq[-1] < nums[i]: # if the deque is not empty and the last element of the deque is less than nums[i]
+                dq.pop() # pop the last element from the deque
+            dq.append(nums[i]) # push the element in the deque
+            if i >= k-1: # if i is greater than or equal to k-1
+                ans.append(dq[0]) # push the front element of the deque in the ans
+                if nums[i-k+1] == dq[0]: # if the front element of the deque is equal to nums[i-k+1]
+                    dq.popleft() # pop the front element from the deque
+        return ans # return the ans
+
 
 
 C:
