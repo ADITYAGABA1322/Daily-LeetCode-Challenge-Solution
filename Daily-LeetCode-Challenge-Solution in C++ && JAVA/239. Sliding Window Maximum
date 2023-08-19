@@ -162,6 +162,25 @@ public class Solution {
 
 Javascript:
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(k)
+
+var maxSlidingWindow = function(nums, k) {
+    let dq = []; // deque
+    let ans = []; // vector to store the result
+    for(let i=0; i<nums.length; i++){ // loop for i
+        while(dq.length && dq[dq.length-1] < nums[i]){ // if e deque is not empty and the last element of the deque is less than nums[i]
+            dq.pop(); // pop the last element from the deque
+        }
+        dq.push(nums[i]); // push the element in the deque
+        if(i >= k-1){ // if i is greater than or equal to k-1
+            ans.push(dq[0]); // push the front element of the deque in the ans
+            if(nums[i-k+1] == dq[0]){ // if the front element of the deque is equal to nums[i-k+1]
+                dq.shift(); // pop the front element from the deque
+            }
+        }
+    }
+    return ans; // return the ans
+};
 
 
 Swift:
