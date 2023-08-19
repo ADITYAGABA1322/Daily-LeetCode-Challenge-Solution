@@ -205,6 +205,42 @@ class Solution:
 
 C:
 
+int findKthLargest(int* nums, int numsSize, int k){
+    int pq[numsSize];  // min heap
+    int size = 0;  // variable to store the size of the min heap
+    for(int i=0; i<numsSize; i++){  // loop for i
+        pq[size++] = nums[i];  // push the element in the min heap
+        if(size > k){  // if the size of the min heap is greater than k
+            heapify(pq, size);  // heapify the min heap
+            pq[0] = pq[size-1];  // update the pq[0]
+            size--;  // decrement the size
+        }
+    }
+    heapify(pq, size);  // heapify the min heap
+    return pq[0];  // return the top element from the min heap
+}
+
+void heapify(int* pq, int size){  // function to heapify the min heap
+    for(int i=size/2-1; i>=0; i--){  // loop for i
+        int smallest = i;  // variable to store the smallest
+        int left = 2*i+1;  // variable to store the left
+        int right = 2*i+2;  // variable to store the right
+        if(left<size && pq[left]<pq[smallest]){  // if left is less than size and pq[left] is less than pq[smallest]
+            smallest = left;  // update the smallest
+        }
+        if(right<size && pq[right]<pq[smallest]){  // if right is less than size and pq[right] is less than pq[smallest]
+            smallest = right;  // update the smallest
+        }
+        if(smallest != i){  // if smallest is not equal to i
+            int temp = pq[i];  // variable to store the pq[i]
+            pq[i] = pq[smallest];  // update the pq[i]
+            pq[smallest] = temp;  // update the pq[smallest]
+            heapify(pq, size);  // heapify the min heap
+        }
+    }
+}
+
+
 
 C#:
 
