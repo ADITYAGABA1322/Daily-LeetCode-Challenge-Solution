@@ -37,6 +37,29 @@ public:
 
 Java:
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(k)  
+
+class Solution {
+    public int[] maxSlidingWindow(int[] nums, int k) {
+        Deque<Integer> dq = new LinkedList<>(); // deque
+        int[] ans = new int[nums.length-k+1]; // vector to store the result
+        for(int i=0; i<nums.length; i++){ // loop for i
+            while(!dq.isEmpty() && dq.peekLast() < nums[i]){ // if the deque is not empty and the last element of the deque is less than nums[i]
+                dq.pollLast(); // pop the last element from the deque
+            }
+            dq.offer(nums[i]); // push the element in the deque
+            if(i >= k-1){ // if i is greater than or equal to k-1
+                ans[i-k+1] = dq.peekFirst(); // push the front element of the deque in the ans
+                if(nums[i-k+1] == dq.peekFirst()){ // if the front element of the deque is equal to nums[i-k+1]
+                    dq.pollFirst(); // pop the front element from the deque
+                }
+            }
+        }
+        return ans; // return the ans
+    }
+}
+
+
 
 Python:
 
