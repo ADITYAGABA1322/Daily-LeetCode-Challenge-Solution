@@ -9,6 +9,57 @@ Medium
 
 C++:
 
+// Time Complexity : O(nlogk) where n is the size of the vector nums and space complexity is O(k)
+
+class Solution {
+public:
+    int findKthLargest(vector<int>& nums, int k) {
+        priority_queue<int, vector<int>, greater<int>> pq; // min heap
+        for(int i=0; i<nums.size(); i++){ // loop for i
+            pq.push(nums[i]); // push the element in the min heap
+            if(pq.size() > k){ // if the size of the min heap is greater than k
+                pq.pop(); // pop the element from the min heap
+            }
+        }
+        return pq.top(); // return the top element from the min heap
+    }
+};
+
+2nd Method using  quick select (Quickselect, also known as Hoare's selection algorithm, is a selection algorithm to find the kth smallest/largest element in an unordered list. It is related to the quick sort sorting algorithm.)
+
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(1)
+
+class Solution {
+public:
+      int findKthLargest(vector<int>& nums, int k) {
+        return quickSelect(nums , k); // call the quickSelect function
+    }
+
+    int quickSelect(vector<int>& nums , int k){ // function to find the kth largest element
+        int pivot = nums[rand() % nums.size()]; // variable to store the pivot
+        vector<int> left; // vector to store the left
+        vector<int> mid; // vector to store the mid
+        vector<int> right; // vector to store the right
+        for(int num : nums) { // loop for num
+            if (num > pivot) { // if num is greater than pivot
+                left.push_back(num); // push the num in the left
+            } else if (num == pivot) { // else if num is equal to pivot
+                mid.push_back(num); // push the num in the mid
+            } else { // else
+                right.push_back(num); // push the num in the right
+            }
+        }
+       if(k<=left.size()){ // if k is less than or equal to left.size()
+           return quickSelect(left , k); // call the quickSelect function
+       }
+       if(k>left.size()+mid.size()){ // if k is greater than left.size()+mid.size()
+           return quickSelect(right , k-left.size()-mid.size()); // call the quickSelect function
+       }
+       return pivot; // return the pivot
+    }
+
+};
+
 
 
 Java:
