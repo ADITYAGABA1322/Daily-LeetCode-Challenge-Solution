@@ -296,6 +296,46 @@ public class Solution {
 JavaScript:
 
 
+// Time Complexity : O(nlogk) where n is the size of the vector nums and space complexity is O(k)
+
+var findKthLargest = function(nums, k) {
+    nums.sort((a, b) => a-b);    // sort the vector nums
+    return nums[nums.length-k];  // return the kth largest element
+};
+
+2nd Method using  quick select (Quickselect, also known as Hoare's selection algorithm, is a selection algorithm to find the kth smallest/largest element in an unordered list. It is related to the quick sort sorting algorithm.)
+
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(1)
+
+var findKthLargest = function(nums, k) {
+    return quickSelect(nums, k);  // call the quickSelect function
+};
+
+var quickSelect = function(nums, k) {  // function to find the kth largest element
+    let pivot = nums[Math.floor(Math.random() * nums.length)];  // variable to store the pivot
+    let left = [];  // vector to store the left
+    let mid = [];  // vector to store the mid
+    let right = [];  // vector to store the right
+    for(let num of nums){  // loop for num
+        if(num > pivot){  // if num is greater than pivot
+            left.push(num);  // push the num in the left
+        }
+        else if(num == pivot){  // else if num is equal to pivot
+            mid.push(num);  // push the num in the mid
+        }
+        else{  // else
+            right.push(num);  // push the num in the right
+        }
+    }
+    if(k <= left.length){  // if k is less than or equal to left.size()
+        return quickSelect(left, k);  // call the quickSelect function
+    }
+    if(k > left.length + mid.length){  // if k is greater than left.size()+mid.size()
+        return quickSelect(right, k - left.length - mid.length);  // call the quickSelect function
+    }
+    return pivot;  // return the pivot
+};
+
 Swift:
 
 
