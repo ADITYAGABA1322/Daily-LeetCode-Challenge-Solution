@@ -114,9 +114,54 @@ class Solution {
 }
 
 
-
 Python:
 
+// Time Complexity : O(nlogk) where n is the size of the vector nums and space complexity is O(k)
+
+class Solution(object):
+    def findKthLargest(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        pq = []  # min heap
+        for i in range(len(nums)):  # loop for i
+            heapq.heappush(pq, nums[i])  # push the element in the min heap
+            if len(pq) > k:  # if the size of the min heap is greater than k
+                heapq.heappop(pq)  # pop the element from the min heap
+        return pq[0]  # return the top element from the min heap
+
+2nd Method using  quick select (Quickselect, also known as Hoare's selection algorithm, is a selection algorithm to find the kth smallest/largest element in an unordered list. It is related to the quick sort sorting algorithm.)
+
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(1)
+
+class Solution(object):
+    def findKthLargest(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        return self.quickSelect(nums, k)  # call the quickSelect function
+
+    def quickSelect(self, nums, k):  # function to find the kth largest element
+        pivot = random.choice(nums)  # variable to store the pivot
+        left = []  # vector to store the left
+        mid = []  # vector to store the mid
+        right = []  # vector to store the right
+        for num in nums:  # loop for num
+            if num > pivot:  # if num is greater than pivot
+                left.append(num)  # push the num in the left
+            elif num == pivot:  # else if num is equal to pivot
+                mid.append(num)  # push the num in the mid
+            else:  # else
+                right.append(num)  # push the num in the right
+        if k <= len(left):  # if k is less than or equal to left.size()
+            return self.quickSelect(left, k)  # call the quickSelect function
+        if k > len(left) + len(mid):  # if k is greater than left.size()+mid.size()
+            return self.quickSelect(right, k - len(left) - len(mid))  # call the quickSelect function
+        return pivot  # return the pivot
 
 Python3:
 
