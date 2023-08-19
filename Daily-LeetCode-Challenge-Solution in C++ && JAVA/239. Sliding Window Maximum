@@ -209,3 +209,36 @@ class Solution {
 
 Dart:
 
+
+
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(k)
+
+import 'dart:collection';
+class Solution {
+  List<int> maxSlidingWindow(List<int> nums, int k) {
+    List<int> ans = [];
+    Queue<int> dq = Queue<int>();
+
+    for (int i = 0; i < nums.length; i++) {
+      // Remove elements from the back of the queue that are smaller than the current element
+      while (dq.isNotEmpty && nums[dq.last] < nums[i]) {
+        dq.removeLast();
+      }
+
+      dq.add(i); // Add the index of the current element to the queue
+
+      // Check if the front element of the queue is outside the current window
+      if (dq.first <= i - k) {
+        dq.removeFirst();
+      }
+
+      // Check if the window has reached the required size
+      if (i >= k - 1) {
+        ans.add(nums[dq.first]); // The front of the queue contains the maximum element for the current window
+      }
+    }
+
+    return ans;
+  }
+}
+
