@@ -385,4 +385,45 @@ class Solution {
 
 Dart:
 
+// Time Complexity : O(nlogk) where n is the size of the vector nums and space complexity is O(k)
+
+int findKthLargest(List<int> nums, int k) {
+    nums.sort(); // sort the vector nums
+    return nums[nums.length-k]; // return the kth largest element
+}
+
+2nd Method using  quick select (Quickselect, also known as Hoare's selection algorithm, is a selection algorithm to find the kth smallest/largest element in an unordered list. It is related to the quick sort sorting algorithm.)
+
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(1)
+class Solution {
+int findKthLargest(List<int> nums, int k) {
+    return quickSelect(nums, k); // call the quickSelect function
+}
+
+int quickSelect(List<int> nums, int k) { // function to find the kth largest element
+    int pivot = nums[new Random().nextInt(nums.length)]; // variable to store the pivot
+    List<int> left = []; // vector to store the left
+    List<int> mid = []; // vector to store the mid
+    List<int> right = []; // vector to store the right
+    for(int num in nums){ // loop for num
+        if(num > pivot){ // if num is greater than pivot
+            left.add(num); // push the num in the left
+        }
+        else if(num == pivot){ // else if num is equal to pivot
+            mid.add(num); // push the num in the mid
+        }
+        else{ // else
+            right.add(num); // push the num in the right
+        }
+    }
+    if(k <= left.length){ // if k is less than or equal to left.size()
+        return quickSelect(left, k); // call the quickSelect function
+    }
+    if(k > left.length + mid.length){ // if k is greater than left.size()+mid.size()
+        return quickSelect(right, k - left.length - mid.length); // call the quickSelect function
+    }
+    return pivot; // return the pivot
+}
+}
+
 
