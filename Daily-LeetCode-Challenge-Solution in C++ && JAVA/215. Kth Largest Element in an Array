@@ -205,6 +205,8 @@ class Solution:
 
 C:
 
+// Time Complexity : O(nlogk) where n is the size of the vector nums and space complexity is O(k)
+
 int findKthLargest(int* nums, int numsSize, int k){
     int pq[numsSize];  // min heap
     int size = 0;  // variable to store the size of the min heap
