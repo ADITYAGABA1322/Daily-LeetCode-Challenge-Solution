@@ -162,4 +162,15 @@ var repeatedSubstringPattern = function(s) {
 Swift:
 
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(n)
+
+class Solution {
+    func repeatedSubstringPattern(_ s: String) -> Bool {
+        let t = s + s  // Concatenate the string with itself
+        return t[t.index(t.startIndex, offsetBy: 1)..<t.index(t.endIndex, offsetBy: -1)].contains(s)  // Check if the substring exists
+    }
+}
+
+
+
 Dart:
