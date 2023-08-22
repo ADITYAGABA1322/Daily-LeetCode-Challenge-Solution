@@ -83,6 +83,16 @@ public:
 
 Java:
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(n)
+
+class Solution {
+    public boolean repeatedSubstringPattern(String s) {
+        String t = s + s;  // Concatenate the string with itself
+        return t.substring(1, t.length() - 1).contains(s);  // Check if the substring exists
+    }
+}
+
+
 
 
 Python:
