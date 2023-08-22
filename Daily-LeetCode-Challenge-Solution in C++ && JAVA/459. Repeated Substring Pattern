@@ -98,6 +98,13 @@ class Solution {
 Python:
 
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(n)
+
+class Solution:
+    def repeatedSubstringPattern(self, s: str) -> bool:
+        t = s + s  # Concatenate the string with itself
+        return s in t[1:-1]  # Check if the substring exists
+
 
 
 Python3:
