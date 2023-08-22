@@ -150,6 +150,13 @@ public class Solution {
 
 JavaScript:
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(n)
+
+var repeatedSubstringPattern = function(s) {
+    let t = s + s;  // Concatenate the string with itself
+    return t.substring(1, t.length - 1).includes(s);  // Check if the substring exists
+};
+
 
 
 Swift:
