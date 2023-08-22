@@ -137,6 +137,15 @@ bool repeatedSubstringPattern(char * s){
 
 C#:
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(n)
+
+public class Solution {
+    public bool RepeatedSubstringPattern(string s) {
+        string t = s + s;  // Concatenate the string with itself
+        return t.Substring(1, t.Length - 2).Contains(s);  // Check if the substring exists
+    }
+}
+
 
 
 JavaScript:
