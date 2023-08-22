@@ -13,6 +13,73 @@ Easy:
 C++:
 
 
+KMP (Knuth-Morris-Pratt) and LPS (Longest Prefix which is also Suffix) are algorithms and concepts used in string matching and manipulation problems, including problems related to repeated substrings or pattern searching. These algorithms are particularly useful for optimizing substring search and pattern matching in linear time.
+
+1. **KMP Algorithm (Knuth-Morris-Pratt Algorithm)**:
+
+The KMP algorithm is used for efficiently finding occurrences of a given pattern (substring) within a text (string). It works by preprocessing the pattern to create an auxiliary array known as the Longest Prefix which is also Suffix (LPS) array. This LPS array helps to determine the amount by which the pattern can be shifted during a mismatch in the pattern-text comparison.
+
+The KMP algorithm avoids unnecessary comparisons by using information from the LPS array to guide its search. This makes it more efficient than simple brute-force methods for substring matching.
+
+2. **LPS Array (Longest Prefix which is also Suffix)**:
+
+The LPS array is used by the KMP algorithm to optimize substring matching. It's an array of the same length as the pattern string, where each element `lps[i]` represents the length of the longest proper prefix of the substring `pattern[0...i]` that is also a suffix of the same substring.
+
+For example, if the pattern is "ABABCAB", the LPS array is [0, 0, 1, 2, 0, 1, 2]. This means that the longest prefix which is also a suffix for "AB" is 0, for "ABA" it's 1, for "ABAB" it's 2, and so on.
+
+In the context of problems related to repeated substrings or pattern searching, you might use KMP and the LPS array to efficiently find repeated patterns within a string. These algorithms help optimize the search for patterns in linear time, making them quite powerful for string manipulation problems.
+
+When dealing with problems like the "Repeated Substring Pattern" you mentioned earlier, KMP and LPS can be used to optimize the repeated pattern search process. By utilizing these algorithms, you can efficiently identify patterns that are repeated within a string and thus solve the problem more effectively.
+
+
+
+
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(n)
+
+class Solution {
+public:
+    bool repeatedSubstringPattern(string s) { // function to check whether the string is repeated substring pattern or not
+        int n=s.size(); // variable to store the size of the string
+        for(int i=n/2;i>=1;i--){  // loop until i is greater than or equal to 1 ,  This loop iterates from half of the string length down to 1. The idea is to check for possible substring lengths that can form the repeated pattern.
+            if(n%i==0){     // if n%i is equal to 0 , Check if the current value of i is a divisor of n. If it is, then it's a potential candidate for a substring length that might form the repeated pattern.
+                if(s.substr(0,n-i)==s.substr(i))return true;   // if s.substr(0,n-i) is equal to s.substr(i) return true , This line compares two substrings. The first substring starts from index 0 and has a length of (n - i), while the second substring starts from index i. If these two substrings are equal, it means that a repeated substring of length i is found.
+            }
+        }
+        return false;   // return false
+    }
+};
+
+2nd Method:
+
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(n)
+
+class Solution {
+public:
+    bool repeatedSubstringPattern(string s) {  // function to check whether the string is repeated substring pattern or not
+        string t = s + s;  // Concatenate the string with itself  (e.g. "abc" + "abc" = "abcabc")
+        if (t.substr(1, t.size() - 2).find(s) != -1) return true;  // Check if the substring exists  (e.g. "abc" is found in "bcabca")
+        // This line performs the following steps:
+        // t.substr(1, t.size() - 2): This extracts a substring from the concatenated string t. The range (1, t.size() - 2) is used to exclude the first and last characters of t. This is done to remove one instance of the original string that appears at both the beginning and the end of the concatenated string.
+        // .find(s) != -1: This checks if the original string s exists within the extracted substring. The find function returns the position of the substring within the string it's called on. If the substring is not found, it returns -1.
+        // If s is found within the substring, the condition will evaluate to true, and the function will return true, indicating that the given string can be formed by repeating a substring.
+        return false;  // If not, return false  (e.g. "abc" is not found in "bcabc")
+    }
+};
+
+3rd Method 
+
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(n)
+
+class Solution {
+public:
+    bool repeatedSubstringPattern(string s) {
+        string t = s + s;  // Concatenate the string with itself
+
+        return t.find(s, 1) != s.size();  // Check if the original string is present starting from index 1
+    }
+};
+
+
 
 Java:
 
