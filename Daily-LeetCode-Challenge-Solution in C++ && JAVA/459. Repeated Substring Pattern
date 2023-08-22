@@ -119,6 +119,21 @@ class Solution:
 
 C:
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(n)
+
+bool repeatedSubstringPattern(char * s){
+    int n = strlen(s); // variable to store the size of the string
+    char * t = (char *)malloc(sizeof(char)*(2*n+1)); // variable to store the t
+    strcpy(t,s); // copy the s to t
+    strcat(t,s); // concatenate the s to t
+    char * p = strstr(t+1,s); // variable to store the p
+    if(p == NULL){ // if p is equal to NULL
+        return false; // return false
+    }
+    return true; // return true
+}
+
+
 
 C#:
 
