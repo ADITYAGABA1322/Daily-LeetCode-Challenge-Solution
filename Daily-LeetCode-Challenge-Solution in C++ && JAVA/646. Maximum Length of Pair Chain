@@ -94,6 +94,19 @@ class Solution:
 
 Python3:
 
+// Time Complexity : O(nlogn) where n is the size of the vector nums and space complexity is O(1)
+
+class Solution:
+    def findLongestChain(self, pairs: List[List[int]]) -> int: // add bracket after List
+        pairs.sort(key=lambda x: x[1]) // sort the pairs
+        ans = 0 // variable to store the ans
+        curr = float('-inf') // variable to store the curr
+        for pair in pairs: // loop for pair
+            if curr < pair[0]: // if curr is less than pair[0]
+                ans += 1 // increment the ans
+                curr = pair[1] // update the curr
+        return ans // return the ans
+
 
 C:
 
