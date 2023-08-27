@@ -81,7 +81,11 @@ Python:
 // Time Complexity : O(nlogn) where n is the size of the vector nums and space complexity is O(1)
 
 class Solution:
-    def findLongestChain(self, pairs: List[List[int]]) -> int: // add bracket after List
+  def findLongestChain(self, pairs): // function to find the longest chain
+        """
+        :type pairs: List[List[int]]
+        :rtype: int
+        """
         pairs.sort(key=lambda x: x[1]) // sort the pairs
         ans = 0 // variable to store the ans
         curr = float('-inf') // variable to store the curr
