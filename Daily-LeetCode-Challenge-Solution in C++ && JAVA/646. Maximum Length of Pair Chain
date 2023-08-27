@@ -30,6 +30,30 @@ public:
     }
 };
 
+Approach 2: Greedy
+
+// Time Complexity : O(nlogn) where n is the size of the vector nums and space complexity is O(1)
+
+class Solution {
+public:
+    int findLongestChain(vector<vector<int>>& pairs) { // function to find the longest chain
+        int n=pairs.size(); // variable to store the size of the pairs
+        sort(pairs.begin(),pairs.end(),[](vector<int>&a,vector<int>&b){ // sort the pairs
+            return a[1]<b[1]; // return a[1]<b[1]
+        });
+        int ans=0; // variable to store the ans 
+        int curr=INT_MIN; // variable to store the curr
+        for(auto pair : pairs){ // loop for pair
+            if(curr<pair[0]){ // if curr is less than pair[0]
+                ans++; // increment the ans
+                curr=pair[1]; // update the curr
+            }
+        }
+        return ans; // return the ans
+    }
+};
+
+
 
 
 Java:
