@@ -158,6 +158,21 @@ public class Solution {
 
 JavaScript:
 
+// Time Complexity : O(nlogn) where n is the size of the vector nums and space complexity is O(1)
+
+var findLongestChain = function(pairs) {
+    pairs.sort((a, b) => a[1] - b[1]); // sort the pairs
+    let ans = 0; // variable to store the ans
+    let curr = -Infinity; // variable to store the curr
+    for (let pair of pairs) { // loop for pair
+        if (curr < pair[0]) { // if curr is less than pair[0]
+            ans++; // increment the ans
+            curr = pair[1]; // update the curr
+        }
+    }
+    return ans; // return the ans
+};
+
 
 Swift:
 
