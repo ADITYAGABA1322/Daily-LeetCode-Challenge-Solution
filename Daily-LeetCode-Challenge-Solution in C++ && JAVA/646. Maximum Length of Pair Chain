@@ -11,6 +11,26 @@ Medium
 
 C++:
 
+Approach 1: Iterative Dynamic Programming
+
+// Time Complexity : O(n2) where n is the size of the vector nums and space complexity is O(n)
+
+class Solution {
+public:
+    int findLongestChain(vector<vector<int>>& pairs) { // function to find the longest chain
+        int n=pairs.size(); // variable to store the size of the pairs
+        sort(pairs.begin(),pairs.end()); // sort the pairs
+        vector<int>dp(n,1); // vector to store the dp
+        for(int i=1;i<n;i++){ // loop until i is less than n
+            for(int j=0;j<i;j++){ // loop until j is less than i
+                if(pairs[i][0]>pairs[j][1])dp[i]=max(dp[i],dp[j]+1); // if pairs[i][0] is greater than pairs[j][1] update the dp[i]
+            }
+        }
+        return *max_element(dp.begin(),dp.end()); // return the max element of the dp
+    }
+};
+
+
 
 Java:
 
