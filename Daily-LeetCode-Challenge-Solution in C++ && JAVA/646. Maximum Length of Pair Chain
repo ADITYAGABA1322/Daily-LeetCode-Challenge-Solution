@@ -138,6 +138,23 @@ int findLongestChain(int** pairs, int pairsSize, int* pairsColSize){
 
 C#:
 
+// Time Complexity : O(nlogn) where n is the size of the vector nums and space complexity is O(1)
+
+public class Solution {
+    public int FindLongestChain(int[][] pairs) { // function to find the longest chain
+        Array.Sort(pairs, (a, b) => a[1] - b[1]); // sort the pairs
+        int ans = 0; // variable to store the ans
+        int curr = int.MinValu; // variable to store the curr
+        foreach (int[] pair in pairs) { // loop for pair
+            if (curr < pair[0]) { // if curr is less than pair[0]
+                ans++; // increment the ans
+                curr = pair[1]; // update the curr
+            }
+        }
+        return ans; // return the ans
+    }
+}
+
 
 JavaScript:
 
