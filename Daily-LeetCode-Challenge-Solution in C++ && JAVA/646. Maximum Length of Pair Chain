@@ -110,6 +110,27 @@ class Solution:
 
 C:
 
+// Time Complexity : O(nlogn) where n is the size of the vector nums and space complexity is O(1)
+
+int cmp(const vod *a, const void *b) { // function to compare the two elements
+    int *arr1 = *(int **)a; // variable to store the arr1
+    int *arr2 = *(int **)b; // variable to store the arr2
+    return arr1[1] - arr2[1]; // return arr1[1] - arr2[1]
+}
+
+int findLongestChain(int** pairs, int pairsSize, int* pairsColSize){
+    qsort(pairs, pairsSize, sizeof(int *), cmp); // sort the pairs
+    int ans = 0; // variable to store the ans
+    int curr = INT_MIN; // variable to store the curr
+    for (int i = 0; i < pairsSize; i++) { // loop until i is less than pairsSize
+        if (curr < pairs[i][0]) { // if curr is less than pairs[i][0]
+            ans++; // increment the ans
+            curr = pairs[i][1]; // update the curr
+        }
+    }
+    return ans; // return the ans
+}
+
 
 C#:
 
