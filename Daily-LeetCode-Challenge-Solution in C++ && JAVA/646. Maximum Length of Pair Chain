@@ -176,5 +176,21 @@ var findLongestChain = function(pairs) {
 
 Swift:
 
+// Time Complexity : O(nlogn) where n is the size of the vector nums and space complexity is O(1)
+
+class Solution {
+    func findLongestChain(_ pairs: [[Int]]) -> Int { // function to find the longest chain
+        let pairs = pairs.sorted { $0[1] < $1[1] } // sort the pairs
+        var ans = 0 // variable to store the ans
+        var curr = Int.min // variable to store the curr
+        for pair in pairs { // loop for pair
+            if curr < pair[0] { // if curr is less than pair[0]
+                ans += 1 // increment the ans
+                curr = pair[1] // update the curr
+            }
+        }
+        return ans // return the ans
+    }
+}
 
 Dart:
