@@ -58,6 +58,50 @@ public:
 
 Java:
 
+// Time Complexity : O(n^2) where n is the size of the vector nums and space complexity is O(n^2)
+
+class Solution {
+    public boolean canCross(int[] stones) { // function to check whether the frog can cross the river or not
+        int n=stones.length; // variable to store the size of the stones
+        HashMap<Integer,HashSet<Integer>>mp=new HashMap<>(); // HashMap to store the int and HashSet
+        for(int x:stones)mp.put(x,new HashSet<>()); // loop for x
+        mp.get(0).add(0); // insert the 0
+        for(int x:stones){ // loop for x
+            for(int y:mp.get(x)){ // loop for y
+                for(int k=y-1;k<=y+1;k++){ // loop until k is less than or equal to y+1
+                    if(k>0)mp.get(x+k).add(k); // if k is greater than 0 insert the k
+                }
+            }
+        }
+        return mp.get(stones[n-1]).size()>0; // return the mp.get(stones[n-1]).size()>0
+    }
+};
+
+Approach 2: Dynamic Programming
+
+// Time Complexity : O(n^2) where n is the size of the vector nums and space complexity is O(n^2)
+
+class Solution {
+    public boolean canCross(int[] stones) { // function to check whether the frog can cross the river or not
+        int n=stones.length; // variable to store the size of the stones
+        boolean[][]dp=new boolean[n][n]; // boolean to store the dp
+        dp[0][1]=true; // update the dp[0][1]
+        for(int i=1; i<n; i++) { // loop until i is less than n
+            for(int j=0; j<i; j++) { // loop until j is less than i
+                int diff=stones[i]-stones[j]; // variable to store the diff
+                if(diff<n && dp[j][diff]) { // if diff is less than n and dp[j][diff] is true
+                    dp[i][diff]=true; // update the dp[i][diff]
+                    if(diff-1>=0)dp[i][diff-1]=true; // if diff-1 is greater than or equal to 0 update the dp[i][diff-1]
+                    if(diff+1<n)dp[i][diff+1]=true; // if diff+1 is less than n update the dp[i][diff+1]
+                    if(i==n-1)return true; // if i is equal to n-1 return true
+                }
+            }
+        }
+        return false; // return false
+    }
+};
+
+
 
 Python:
 
