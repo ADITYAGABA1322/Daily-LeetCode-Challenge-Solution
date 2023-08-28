@@ -105,6 +105,47 @@ class Solution {
 
 Python:
 
+// Time Complexity : O(n^2) where n is the size of the vector nums and space complexity is O(n^2)
+
+class Solution(object):
+    def canCross(self, stones): # function to check whether the frog can cross the river or not
+        """
+        :type stones: List[int]
+        :rtype: bool
+        """
+        n=len(stones) # variable to store the size of the stones
+        mp={x:set() for x in stones} # HashMap to store the int and HashSet
+        mp[0].add(0) # insert the 0
+        for x in stones: # loop for x
+            for y in mp[x]: # loop for y
+                for k in range(y-1,y+2): # loop until k is less than or equal to y+1
+                    if k > 0 and x + k in mp:  # if k is greater than 0 insert the k
+                        mp[x+k].add(k) # insert the k
+        return len(mp[stones[-1]]) > 0 # return the len(mp[stones[-1]]) > 0
+
+Approach 2: Dynamic Programming
+
+// Time Complexity : O(n^2) where n is the size of the vector nums and space complexity is O(n^2)
+
+class Solution(object):
+    def canCross(self, stones): # function to check whether the frog can cross the river or not
+        """
+        :type stones: List[int]
+        :rtype: bool
+        """
+        n=len(stones) # variable to store the size of the stones
+       // dp=[[False]*n for _ in range(n)]  # boolean to store the dp
+        dp[0][1]=True # update the dp[0][1]
+        for i in range(1,n): # loop until i is less than n
+            for j in range(i): # loop until j is less than i
+                diff=stones[i]-stones[j] # variable to store the diff
+                if diff<n and dp[j][diff]: # if diff is less than n and dp[j][diff] is true
+                    dp[i][diff]=True # update the dp[i][diff]
+                    if diff-1>=0:dp[i][diff-1]=True # if diff-1 is greater than or equal to 0 update the dp[i][diff-1]
+                    if diff+1<n:dp[i][diff+1]=True # if diff+1 is less than n update the dp[i][diff+1]
+                    if i==n-1:return True # if i is equal to n-1 return true
+        return False # return false
+
 
 Python3:
 
