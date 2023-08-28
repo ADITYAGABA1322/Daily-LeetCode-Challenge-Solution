@@ -308,3 +308,27 @@ class Solution {
 
 
 Dart:
+
+// Time Complexity : O(n^2) where n is the size of the vector nums and space complexity is O(n^2)
+
+class Solution {
+  bool canCross(List<int> stones) { // function to check whether the frog can cross the river or not
+    final n = stones.length; // variable to store the size of the stones
+    final dp = List.generate(n, (_) => List<bool>.filled(n, false)); // boolean to store the dp
+    dp[0][1] = true; // update the dp[0][1]
+    for (var i = 1; i < n; i++) { // loop until i is less than n
+      for (var j = 0; j < i; j++) { // loop until j is less than i
+        final diff = stones[i] - stones[j]; // variable to store the diff
+        if (diff < n && dp[j][diff]) { // if diff is less than n and dp[j][diff] is true
+          dp[i][diff] = true; // update the dp[i][diff]
+          if (diff - 1 >= 0) dp[i][diff - 1] = true; // if diff-1 is greater than or equal to 0 update the dp[i][diff-1]
+          if (diff + 1 < n) dp[i][diff + 1] = true; // if diff+1 is less than n update the dp[i][diff+1]
+          if (i == n - 1) return true; // if i is equal to n-1 return true
+        }
+      }
+    }
+    return false; // return false
+  }
+}
+
+        
