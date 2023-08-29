@@ -68,6 +68,28 @@ class Solution {
 Python:
 
 
+// Time Complexity : O(n) and space complexity is O(1)
+
+class Solution(object):
+    def bestClosingTime(self, customers): 
+        """
+        :type customers: str
+        :rtype: int
+        """
+        n=len(customers) # variable to store the size of the customers
+        currPenality = 0 # variable to store the currPenality
+        minPenality = 0 # variable to store the minPenality
+        earliestHour = 0 # variable to store the earliestHour
+        for i in range(n): # loop until i is less than n
+            if customers[i]=='N': # if customers[i] is equal to 'N'
+                currPenality+=1 # increment the currPenality
+            else: # else
+                currPenality-=1 # decrement the currPenality
+            if currPenality<minPenality: # if currPenality is less than minPenality
+                minPenality=currPenality # update the minPenality
+                earliestHour=i+1 # update the earliestHour
+        return earliestHour # return the earliestHour
+
 
 Python3:
 
