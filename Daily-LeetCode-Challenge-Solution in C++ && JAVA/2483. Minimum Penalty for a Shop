@@ -199,5 +199,29 @@ var bestClosingTime = function(customers)
 
 Swift:
 
+// Time Complexity : O(n) and space complexity is O(1)
+
+class Solution {
+    func bestClosingTime(_ customers: String) -> Int {
+        let n = customers.count // variable to store the size of the customers
+        var currPenality = 0 // variable to store the currPenality
+        var minPenality = 0 // variable to store the minPenality
+        var earliestHour = 0 // variable to store the earliestHour
+        for(i , customer) in customers.enumerated() { // loop until i is less than n
+            if customer == "N" { // if customer is equal to "N"
+                currPenality += 1 // increment the currPenality
+            } else { // else
+                currPenality -= 1 // decrement the currPenality
+            }
+            if currPenality < minPenality { // if currPenality is less than minPenality
+                minPenality = currPenality // update the minPenality
+                earliestHour = i + 1 // update the earliestHour
+            }
+        }
+        return earliestHour // return the earliestHour
+    }
+}
+
+
 
 Dart:
