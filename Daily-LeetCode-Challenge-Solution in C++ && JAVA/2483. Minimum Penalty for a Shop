@@ -112,9 +112,31 @@ class Solution:
         return earliestHour # return the earliestHour
 
 
-
-
 C:
+
+// Time Complexity : O(n) and space complexity is O(1)
+
+int bestClosingTime(char* customers)
+{
+    int n=strlen(customers); // variable to store the size of the customers
+    int currPenality = 0; // variable to store the currPenality
+    int minPenality = 0; // variable to store the minPenality
+    int earliestHour = 0; // variable to store the earliestHour
+    for(int i=0;i<n;i++){ // loop until i is less than n
+        if(customers[i]=='N'){ // if customers[i] is equal to 'N'
+            currPenality++; // increment the currPenality
+        }
+        else{ // else
+            currPenality--; // decrement the currPenality
+        }
+        if(currPenality<minPenality){ // if currPenality is less than minPenality
+            minPenality=currPenality; // update the minPenality
+            earliestHour=i+1; // update the earliestHour
+        }
+    }
+    return earliestHour; // return the earliestHour
+}
+
 
 
 C#:
