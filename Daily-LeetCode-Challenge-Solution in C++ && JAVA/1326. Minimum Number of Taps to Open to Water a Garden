@@ -6,12 +6,109 @@
 
 Hard
 
+// 45.) Jump Game II and  1024.) Video Stitching is same as this problem and greedy approach is used in this problem
+
+
 2 Approaches : DP || Greedy
- 
+
+
 C++:
 
+Approach 1: Dynamic Programming
+
+// Time Complexity : O(n*m) and space complexity is O(n)
+
+class Solution {
+public:
+    int minTaps(int n, vector<int>& ranges) {
+        vector<int> dp(n + 1, n + 2); // vector to store the dp By initializing dp with n+2, you can easily check if it's possible to cover all areas or not. If any element of dp remains n+2 after the DP process, it implies that there is no solution, and the function returns -1. Otherwise, it returns the minimum number of taps needed, which is stored in the dp[n] element.
+        dp[0]=0; // update the dp[0]
+        for(int i=0;i<=n;i++){ // loop until i is less than or equal to n
+            for(int j=max(0,i-ranges[i]+1);j<=min(n,i+ranges[i]);j++){ // loop until j is less than or equal to min(n,i+ranges[i]) &&  This is an inner loop that iterates from j, which is the leftmost area that the current tap can cover, to the rightmost area it can cover. The max(0, i - ranges[i] + 1) expression calculates the leftmost area that can be covered by the current tap without going out of bounds, and min(n, i + ranges[i]) calculates the rightmost area it can cover without exceeding n.
+                dp[j] = min(dp[j], dp[max(0, i - ranges[i])] + 1);     // update the dp[j] && In this line, the DP value for area j is updated. The new value is calculated as the minimum of its current value dp[j] and the value of dp at the leftmost area that can cover this area, plus 1. This step is essential for dynamic programming as it considers whether it's better to turn on a new tap or extend the coverage of an existing tap.
+            }
+        }
+        return dp[n] < n + 2 ? dp[n] : -1; // return the dp[n]<n+2?dp[n]:-1  Finally, after all iterations are completed, the function checks if the DP value at the last area n is less than n+2. If it is, it means that it's possible to cover all areas, so the function returns dp[n], which represents the minimum number of taps needed. If dp[n] is still n+2, it means that it's not possible to cover all areas, so the function returns -1.
+    }
+};
+
+// Approach 2: Greedy
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+class Solution {
+public:
+    int minTaps(int n, vector<int>& ranges) {
+        vector<int>dp(n+1); // vector to store the dp
+        for(int i=0;i<ranges.size();i++){ // loop until i is less than ranges.size()
+        // Inside the loop, it calculates two values left and right representing the leftmost and rightmost areas that the current tap can cover. The max(0, i - ranges[i]) calculation ensures that left doesn't go below 0, and the min(n, i + ranges[i]) calculation ensures that right doesn't go beyond n.
+            int left=max(0,i-ranges[i]); // variable to store the left  
+            int right=min(n,i+ranges[i]); // variable to store the right
+            dp[left]=max(dp[left],right); // update the dp[left]
+            // This line updates the DP value at the left position in the dp vector.It ensures that the DP value at left contains the maximum rightmost position that can be covered by taps that have coverage extending to the left of this point.
+        }
+        int taps = 0; // variable to store the taps
+        int farthest = 0; // variable to store the farthest
+        int currEnd = 0; // variable to store the currEnd
+        for(int i=0;i<=n;i++){ // loop until i is less than or equal to n
+            if(i > farthest) return -1; // if i is greater than farthest return -1
+            if(i > currEnd){ // if i is equal to currEnd
+                taps++; // increment the taps
+                currEnd=farthest; // update the currEnd
+            }
+            farthest = max(farthest, dp[i]); // update the farthest
+            // In each iteration, farthest is updated to be the maximum of its current value and the rightmost coverage provided by the tap that covers or extends to the current area i.
+        }
+        return taps; // return the taps
+    }
+};
 
 Java:
+
+Approach 1: Dynamic Programming
+
+// Time Complexity : O(n*m) and space complexity is O(n)
+
+class Solution {
+    public int minTaps(int n, int[] ranges) {
+        int[]dp=new int[n+1]; // array to store the dp
+        Arrays.fill(dp,n+2); // fill the dp with n+2
+        dp[0]=0; // update the dp[0]
+        for(int i=0;i<=n;i++){ // loop until i is less than or equal to n
+            for(int j=Math.max(0,i-ranges[i]+1);j<=Math.min(n,i+ranges[i]);j++){ // loop until j is less than or equal to min(n,i+ranges[i])
+                dp[j]=Math.min(dp[j],dp[Math.max(0,i-ranges[i])]+1); // update the dp[j]
+            }
+        }
+        return dp[n]<n+2?dp[n]:-1; // return the dp[n]<n+2?dp[n]:-1
+    }
+}
+
+Approach 2: Greedy
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+class Solution {
+    public int minTaps(int n, int[] ranges) {
+        int[]dp=new int[n+1]; // array to store the dp
+        for(int i=0;i<ranges.length;i++){ // loop until i is less than ranges.length
+            int left=Math.max(0,i-ranges[i]); // variable to store the left
+            int right=Math.min(n,i+ranges[i]); // variable to store the right
+            dp[left]=Math.max(dp[left],right); // update the dp[left]
+        }
+        int taps = 0; // variable to store the taps
+        int farthest = 0; // variable to store the farthest
+        int currEnd = 0; // variable to store the currEnd
+        for(int i=0;i<=n;i++){ // loop until i is less than or equal to n
+            if(i > farthest) return -1; // if i is greater than farthest return -1
+            if(i > currEnd){ // if i is equal to currEnd
+                taps++; // increment the taps
+                currEnd=farthest; // update the currEnd
+            }
+            farthest = Math.max(farthest, dp[i]); // update the farthest
+        }
+        return taps; // return the taps
+    }
+}
 
 
 Python:
