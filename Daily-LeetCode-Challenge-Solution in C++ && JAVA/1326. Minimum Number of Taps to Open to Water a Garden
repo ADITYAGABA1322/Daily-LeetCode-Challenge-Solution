@@ -113,16 +113,316 @@ class Solution {
 
 Python:
 
+Approach 1: Dynamic Programming
+
+// Time Complexity : O(n*m) and space complexity is O(n)
+
+class Solution(object):
+    def minTaps(self, n, ranges):
+        """
+        :type n: int
+        :type ranges: List[int]
+        :rtype: int
+        """
+        dp=[n+2]*(n+1) # array to store the dp
+        dp[0]=0 # update the dp[0]
+        for i in range(n+1): # loop until i is less than or equal to n
+            for j in range(max(0,i-ranges[i]+1),min(n,i+ranges[i])+1): # loop until j is less than or equal to min(n,i+ranges[i])
+                dp[j]=min(dp[j],dp[max(0,i-ranges[i])]+1) # update the dp[j]
+        return dp[n] if dp[n]<n+2 else -1 # return the dp[n] if dp[n]<n+2 else -1
+
+Approach 2: Greedy
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+class Solution(object):
+    def minTaps(self, n, ranges):
+        """
+        :type n: int
+        :type ranges: List[int]
+        :rtype: int
+        """
+        dp=[0]*(n+1) # array to store the dp
+        for i in range(len(ranges)): # loop until i is less than len(ranges)
+            left=max(0,i-ranges[i]) # variable to store the left
+            right=min(n,i+ranges[i]) # variable to store the right
+            dp[left]=max(dp[left],right) # update the dp[left]
+        taps = 0 # variable to store the taps
+        farthest = 0 # variable to store the farthest
+        currEnd = 0 # variable to store the currEnd
+        for i in range(n+1): # loop until i is less than or equal to n
+            if i > farthest: return -1 # if i is greater than farthest return -1
+            if i > currEnd: # if i is equal to currEnd
+                taps += 1 # increment the taps
+                currEnd = farthest # update the currEnd
+            farthest = max(farthest, dp[i]) # update the farthest
+        return taps # return the taps
+
 Python3:
+
+Approach 1: Dynamic Programming
+
+// Time Complexity : O(n*m) and space complexity is O(n)
+
+class Solution:
+    def minTaps(self, n: int, ranges: List[int) -> int:  // add the bracket after the List[int]
+        dp=[n+2]*(n+1) # array to store the dp
+        dp[0]=0 # update the dp[0]
+        for i in range(n+1): # loop until i is less than or equal to n
+            for j in range(max(0,i-ranges[i]+1),min(n,i+ranges[i])+1): # loop until j is less than or equal to min(n,i+ranges[i])
+                dp[j]=min(dp[j],dp[max(0,i-ranges[i])]+1) # update the dp[j]
+        return dp[n] if dp[n]<n+2 else -1 # return the dp[n] if dp[n]<n+2 else -1
+
+Approach 2: Greedy
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+class Solution:
+    def minTaps(self, n: int, ranges: List[int) -> int: // add the bracket after the List[int]
+        dp=[0]*(n+1) # array to store the dp
+        for i in range(len(ranges)): # loop until i is less than len(ranges)
+            left=max(0,i-ranges[i]) # variable to store the left
+            right=min(n,i+ranges[i]) # variable to store the right
+            dp[left]=max(dp[left],right) # update the dp[left]
+        taps = 0 # variable to store the taps
+        farthest = 0 # variable to store the farthest
+        currEnd = 0 # variable to store the currEnd
+        for i in range(n+1): # loop until i is less than or equal to n
+            if i > farthest: return -1 # if i is greater than farthest return -1
+            if i > currEnd: # if i is equal to currEnd
+                taps += 1 # increment the taps
+                currEnd = farthest # update the currEnd
+            farthest = max(farthest, dp[i]) # update the farthest
+        return taps # return the taps
 
 C:
 
 
+Approach 1: Dynamic Programming
+
+// Time Complexity : O(n*m) and space complexity is O(n)
+
+int minTaps(int n, int* ranges, int rangesSize){
+    int* dp=(int*)malloc(sizeof(int)*(n+1)); // array to store the dp
+    for(int i=0;i<=n;i++)dp[i]=n+2; // loop until i is less than or equal to n
+    dp[0]=0; // update the dp[0]
+    for(int i=0;i<=n;i++){ // loop until i is less than or equal to n
+        for(int j=fmax(0,i-ranges[i]+1);j<=fmin(n,i+ranges[i]);j++){ // loop until j is less than or equal to min(n,i+ranges[i])
+            dp[j]=fmin(dp[j],dp[fmax(0,i-ranges[i])]+1); // update the dp[j]
+        }
+    }
+    return dp[n]<n+2?dp[n]:-1; // return the dp[n]<n+2?dp[n]:-1
+}
+
+Approach 2: Greedy
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+int minTaps(int n, int* ranges, int rangesSize){
+    int* dp=(int*)malloc(sizeof(int)*(n+1)); // array to store the dp
+    for(int i=0;i<=n;i++)dp[i]=0; // loop until i is less than or equal to n
+    for(int i=0;i<rangesSize;i++){ // loop until i is less than rangesSize
+        int left=fmax(0,i-ranges[i]); // variable to store the left
+        int right=fmin(n,i+ranges[i]); // variable to store the right
+        dp[left]=fmax(dp[left],right); // update the dp[left]
+    }
+    int taps = 0; // variable to store the taps
+    int farthest = 0; // variable to store the farthest
+    int currEnd = 0; // variable to store the currEnd
+    for(int i=0;i<=n;i++){ // loop until i is less than or equal to n
+        if(i > farthest) return -1; // if i is greater than farthest return -1
+        if(i > currEnd){ // if i is equal to currEnd
+            taps++; // increment the taps
+            currEnd = farthest; // update the currEnd
+        }
+        farthest = fmax(farthest, dp[i]); // update the farthest
+    }
+    return taps; // return the taps
+}
+
+
 C#:
+
+Approach 1: Dynamic Programming
+
+// Time Complexity : O(n*m) and space complexity is O(n)
+
+public class Solution {
+    public int MinTaps(int n, int[] ranges) {
+        int[]dp=new int[n+1]; // array to store the dp
+        Array.Fill(dp,n+2); // fill the dp with n+2
+        dp[0]=0; // update the dp[0]
+        for(int i=0;i<=n;i++){ // loop until i is less than or equal to n
+            for(int j=Math.Max(0,i-ranges[i]+1);j<=Math.Min(n,i+ranges[i]);j++){ // loop until j is less than or equal to min(n,i+ranges[i])
+                dp[j]=Math.Min(dp[j],dp[Math.Max(0,i-ranges[i])]+1); // update the dp[j]
+            }
+        }
+        return dp[n]<n+2?dp[n]:-1; // return the dp[n]<n+2?dp[n]:-1
+    }
+}
+
+Approach 2: Greedy
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+public class Solution {
+    public int MinTaps(int n, int[] ranges) {
+        int[]dp=new int[n+1]; // array to store the dp
+        for(int i=0;i<ranges.Length;i++){ // loop until i is less than ranges.Length
+            int left=Math.Max(0,i-ranges[i]); // variable to store the left
+            int right=Math.Min(n,i+ranges[i]); // variable to store the right
+            dp[left]=Math.Max(dp[left],right); // update the dp[left]
+        }
+        int taps = 0; // variable to store the taps
+        int farthest = 0; // variable to store the farthest
+        int currEnd = 0; // variable to store the currEnd
+        for(int i=0;i<=n;i++){ // loop until i is less than or equal to n
+            if(i > farthest) return -1; // if i is greater than farthest return -1
+            if(i > currEnd){ // if i is equal to currEnd
+                taps++; // increment the taps
+                currEnd = farthest; // update the currEnd
+            }
+            farthest = Math.Max(farthest, dp[i]); // update the farthest
+        }
+        return taps; // return the taps
+    }
+}
 
 
 JavaScript:
 
+Approach 1: Dynamic Programming
+
+// Time Complexity : O(n*m) and space complexity is O(n)
+
+var minTaps = function(n, ranges) {
+    let dp=new Array(n+1); // array to store the dp
+    dp.fill(n+2); // fill the dp with n+2
+    dp[0]=0; // update the dp[0]
+    for(let i=0;i<=n;i++){ // loop until i is less than or equal to n
+        for(let j=Math.max(0,i-ranges[i]+1);j<=Math.min(n,i+ranges[i]);j++){ // loop until j is less than or equal to min(n,i+ranges[i])
+            dp[j]=Math.min(dp[j],dp[Math.max(0,i-ranges[i])]+1); // update the dp[j]
+        }
+    }
+    return dp[n]<n+2?dp[n]:-1; // return the dp[n]<n+2?dp[n]:-1
+};
+
+Approach 2: Greedy
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+var minTaps = function(n, ranges) {
+    let dp=new Array(n+1); // array to store the dp
+    dp.fill(0); // fill the dp with 0
+    for(let i=0;i<ranges.length;i++){ // loop until i is less than ranges.length
+        let left=Math.max(0,i-ranges[i]); // variable to store the left
+        let right=Math.min(n,i+ranges[i]); // variable to store the right
+        dp[left]=Math.max(dp[left],right); // update the dp[left]
+    }
+    let taps = 0; // variable to store the taps
+    let farthest = 0; // variable to store the farthest
+    let currEnd = 0; // variable to store the currEnd
+    for(let i=0;i<=n;i++){ // loop until i is less than or equal to n
+        if(i > farthest) return -1; // if i is greater than farthest return -1
+        if(i > currEnd){ // if i is equal to currEnd
+            taps++; // increment the taps
+            currEnd = farthest; // update the currEnd
+        }
+        farthest = Math.max(farthest, dp[i]); // update the farthest
+    }
+    return taps; // return the taps
+};
+
+
 Swift:
 
+Approach 1: Dynamic Programming
+
+// Time Complexity : O(n*m) and space complexity is O(n)
+
+class Solution {
+    func minTaps(_ n: Int, _ ranges: [Int]) -> Int {
+        var dp=[Int](repeating: n+2, count: n+1) // array to store the dp
+        dp[0]=0 // update the dp[0]
+        for i in 0...n { // loop until i is less than or equal to n
+            for j in max(0,i-ranges[i]+1)...min(n,i+ranges[i]) { // loop until j is less than or equal to min(n,i+ranges[i])
+                dp[j]=min(dp[j],dp[max(0,i-ranges[i])]+1) // update the dp[j]
+            }
+        }
+        return dp[n]<n+2 ? dp[n] : -1 // return the dp[n]<n+2 ? dp[n] : -1
+    }
+}
+
+Approach 2: Greedy
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+class Solution {
+    func minTaps(_ n: Int, _ ranges: [Int]) -> Int {
+        var dp=[Int](repeating: 0, count: n+1) // array to store the dp
+        for i in 0..<ranges.count { // loop until i is less than ranges.count
+            let left=max(0,i-ranges[i]) // variable to store the left
+            let right=min(n,i+ranges[i]) // variable to store the right
+            dp[left]=max(dp[left],right) // update the dp[left]
+        }
+        var taps = 0 // variable to store the taps
+        var farthest = 0 // variable to store the farthest
+        var currEnd = 0 // variable to store the currEnd
+        for i in 0...n { // loop until i is less than or equal to n
+            if i > farthest { return -1 } // if i is greater than farthest return -1
+            if i > currEnd { // if i is equal to currEnd
+                taps += 1 // increment the taps
+                currEnd = farthest // update the currEnd
+            }
+            farthest = max(farthest, dp[i]) // update the farthest
+        }
+        return taps // return the taps
+    }
+}
+
 Dart:
+
+Approach 1: Dynamic Programming
+
+// Time Complexity : O(n*m) and space complexity is O(n)
+
+class Solution {
+    int minTaps(int n, int[] ranges) {
+        int[]dp=new int[n+1]; // array to store the dp
+        Arrays.fill(dp,n+2); // fill the dp with n+2
+        dp[0]=0; // update the dp[0]
+        for(int i=0;i<=n;i++){ // loop until i is less than or equal to n
+            for(int j=Math.max(0,i-ranges[i]+1);j<=Math.min(n,i+ranges[i]);j++){ // loop until j is less than or equal to min(n,i+ranges[i])
+                dp[j]=Math.min(dp[j],dp[Math.max(0,i-ranges[i])]+1); // update the dp[j]
+            }
+        }
+        return dp[n]<n+2?dp[n]:-1; // return the dp[n]<n+2?dp[n]:-1
+    }
+}
+
+Approach 2: Greedy
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+class Solution {
+  int minTaps(int n, List<int> ranges) {
+    List<int> dp = new List<int>.filled(n + 1, 0); // array to store the dp
+    for (int i = 0; i < ranges.length; i++) { // loop until i is less than ranges.length
+      int left = max(0, i - ranges[i]); // variable to store the left
+      int right = min(n, i + ranges[i]); // variable to store the right
+      dp[left] = max(dp[left], right); // update the dp[left]
+    }
+    int taps = 0; // variable to store the taps
+    int farthest = 0; // variable to store the farthest
+    int currEnd = 0; // variable to store the currEnd
+    for (int i = 0; i <= n; i++) { // loop until i is less than or equal to n
+      if (i > farthest) return -1; // if i is greater than farthest return -1
+      if (i > currEnd) { // if i is equal to currEnd
+        taps++; // increment the taps
+        currEnd = farthest; // update the currEnd
+      }
+      farthest = max(farthest, dp[i]); // update the farthest
+    }
+    return taps; // return the taps
+  }
+}
