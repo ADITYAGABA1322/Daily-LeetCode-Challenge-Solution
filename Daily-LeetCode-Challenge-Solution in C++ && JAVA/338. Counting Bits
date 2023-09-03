@@ -10,25 +10,145 @@ Easy
 
 C++:
 
+// Time Complexity : O(n) and space complexity is O(n)
+
+class Solution {
+public:
+    vector<int> countBits(int n) {
+        vector<int>dp(n+1); // vector to store the dp
+        dp[0]=0; // update the dp[0]
+        for(int i=1;i<=n;i++){ // loop until i is less than or equal to n
+            dp[i]=dp[i/2]+i%2; // update the dp[i]
+            // or
+            // dp[i]=dp[i>>1]+i&1; // update the dp[i]
+        }
+        return dp; // return the dp
+    }
+};
+
 
 Java:
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+class Solution {
+    public int[] countBits(int n) {
+        int[]dp=new int[n+1]; // array to store the dp
+        dp[0]=0; // update the dp[0]
+        for(int i=1;i<=n;i++){ // loop until i is less than or equal to n
+            dp[i]=dp[i/2]+i%2; // update the dp[i]
+            // or
+            // dp[i]=dp[i>>1]+i&1; // update the dp[i]
+        }
+        return dp; // return the dp
+    }
+}
 
 
 Python:
 
+// Time Complexity : O(n) and space complexity is O(n)
+
+class Solution(object):
+    def countBits(self, n):
+        """
+        :type n: int
+        :rtype: List[int]
+        """
+        dp=[0]*(n+1) # array to store the dp
+        dp[0]=0 # update the dp[0]
+        for i in range(1,n+1): # loop until i is less than or equal to n
+            dp[i]=dp[i>>1]+i&1 # update the dp[i]
+        return dp # return the dp
+
 
 Python3:
 
+// Time Complexity : O(n) and space complexity is O(n)
+
+class Solution:
+    def countBits(self, n: int) -> List[int]:
+        dp=[0]*(n+1) # array to store the dp
+        dp[0]=0 # update the dp[0]
+        for i in range(1,n+1): # loop until i is less than or equal to n
+            dp[i]=dp[i>>1]+i&1 # update the dp[i]
+        return dp # return the dp
+
 C:
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+int* countBits(int n, int* returnSize){
+    int* dp=(int*)malloc(sizeof(int)*(n+1)); // array to store the dp
+    dp[0]=0; // update the dp[0]
+    for(int i=1;i<=n;i++){ // loop until i is less than or equal to n
+        dp[i] = dp[i/2] + (i%2) // update the dp[i]
+    }
+    *returnSize=n+1; // update the returnSize
+    return dp; // return the dp
+}
 
 
 C#:
 
+// Time Complexity : O(n) and space complexity is O(n)
+
+public class Solution
+{
+public int[] CountBits(int n)
+    {
+        int[] dp=new int[n+1]; // array to store the dp
+        dp[0]=0; // update the dp[0]
+        for(int i=1;i<=n;i++){ // loop until i is less than or equal to n
+            dp[i]=dp[i/2]+i%2;; // update the dp[i]
+        }
+        return dp; // return the dp
+    }
+}
+
 
 JavaScript:
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+var countBits = function(n) {
+    let dp=new Array(n+1); // array to store the dp
+    dp[0]=0; // update the dp[0]
+    for(let i=1;i<=n;i++){ // loop until i is less than or equal to n
+        dp[i]=dp[i>>1]+(i&1); // update the dp[i]
+    }
+    return dp; // return the dp
+};
+
 
 
 Swift:
 
+// Time Complexity : O(n) and space complexity is O(n)
+
+class Solution {
+    func countBits(_ n: Int) -> [Int] {
+        var dp=[Int](repeating: 0, count: n+1) // array to store the dp
+        dp[0]=0 // update the dp[0]
+        for i in stride (from: 1, through: n, by: 1) { // loop until i is less than or equal to n
+            dp[i]=dp[i>>1]+i&1 // update the dp[i]
+        }
+        return dp // return the dp
+    }
+}
+
 
 Dart:
+
+// Time Complexity : O(n) and space complexity is O(n)
+
+class Solution {
+    List<int> countBits(int n) {
+        List<int> dp=new List<int>.filled(n+1,0); // array to store the dp
+        dp[0]=0; // update the dp[0]
+        for(int i=1;i<=n;i++){ // loop until i is less than or equal to n
+            dp[i]=dp[i>>1]+(i&1); // update the dp[i]
+        }
+        return dp; // return the dp
+    }
+}
