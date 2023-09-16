@@ -121,6 +121,58 @@ class Solution {
 
 Python:
 
+// Time Complexity : O(n) where n is the length of the vector nums and space complexity is O(1)\
+
+
+class Solution(object):
+    def copyRandomList(self, head):
+        """
+        :type head: Node
+        :rtype: Node
+        """
+        if not head: return None  # if head is null return null
+        curr = head  # variable to store the curr
+        while curr:  # loop until curr is null
+            temp = curr.next  # variable to store the temp
+            curr.next = Node(curr.val)  # update the curr->next
+            curr.next.next = temp  # update the curr->next->next
+            curr = temp  # update the curr
+        curr = head  # update the curr
+        while curr:  # loop until curr is null
+            if curr.random: curr.next.random = curr.random.next  # if curr->random is not null update the curr->next->random
+            curr = curr.next.next  # update the curr
+        curr = head  # update the curr
+        newHead = head.next  # variable to store the newHead
+        while curr:  # loop until curr is null
+            temp = curr.next  # variable to store the temp
+            curr.next = temp.next  # update the curr->next
+            if temp.next: temp.next = temp.next.next  # if temp->next is not null update the temp->next
+            curr = curr.next  # update the curr
+        return newHead  # return the newHead
+
+2nd Method
+
+// Time Complexity : O(n) where n is the length of the vector nums and space complexity is O(n)
+
+class Solution(object):
+    def copyRandomList(self, head):
+        """
+        :type head: Node
+        :rtype: Node
+        """
+        if not head: return None  # if head is null return null
+        mp = {}  # unordered_map to store the Node* and Node*
+        curr = head  # variable to store the curr
+        while curr:  # loop until curr is null
+            mp[curr] = Node(curr.val)  # update the mp[curr]
+            curr = curr.next  # update the curr
+        curr = head  # update the curr
+        while curr:  # loop until curr is null
+            mp[curr].next = mp[curr.next]  # update the mp[curr]->next
+            mp[curr].random = mp[curr.random]  # update the mp[curr]->random
+            curr = curr.next  # update the curr
+        return mp[head]  # return the mp[head]
+
 
 Python3:
 
