@@ -328,3 +328,32 @@ class Solution {
 
 
 Dart:
+
+// Time Complexity : O(n) where n is the length of the vector nums and space complexity is O(1)
+
+class Solution {
+    Node copyRandomList(Node head) {
+        if(head == null) return null;  // if head is null return null
+        Node curr = head;  // variable to store the curr
+        while(curr != null){  // loop until curr is null
+            Node temp = curr.next;  // variable to store the temp
+            curr.next = Node(curr.val);  // update the curr->next
+            curr.next.next = temp;  // update the curr->next->next
+            curr = temp;  // update the curr
+        }
+        curr = head;  // update the curr
+        while(curr != null){  // loop until curr is null
+            if(curr.random != null) curr.next.random = curr.random.next;  // if curr->random is not null update the curr->next->random
+            curr = curr.next.next;  // update the curr
+        }
+        curr = head;  // update the curr
+        Node newHead = head.next;  // variable to store the newHead
+        while(curr != null){  // loop until curr is null
+            Node temp = curr.next;  // variable to store the temp
+            curr.next = temp.next;  // update the curr->next
+            if(temp.next != null) temp.next = temp.next.next;  // if temp->next is not null update the temp->next
+            curr = curr.next;  // update the curr
+        }
+        return newHead;  // return the newHead
+    }
+}
