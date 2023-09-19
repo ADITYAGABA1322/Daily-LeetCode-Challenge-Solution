@@ -271,6 +271,35 @@ struct ListNode** splitListToParts(struct ListNode* head, int k, int* returnSize
 
 C#:
 
+// Time Complexity : O(n+k) where n is the length of the vector nums and space complexity is O(k)
+
+public class Solution {
+    public ListNode[] SplitListToParts(ListNode head, int k) {
+        int n = 0;  // variable to store the n
+        ListNode curr = head;  // variable to store the curr
+        while(curr != null){  // loop until curr is null
+            n++;  // increment n
+            curr = curr.next;  // update the curr
+        }
+        int width = n/k, rem = n%k;  // variable to store the width and rem
+        ListNode[] ans = new ListNode[k];  // vector to store the ans
+        curr = head;  // update the curr
+        for(int i=0; i<k; i++){  // loop until i is less than k
+            ListNode root = curr;  // variable to store the root
+            for(int j=0; j<width+(i<rem?1:0)-1; j++){  // loop until j is less than width+(i<rem?1:0)-1
+                if(curr != null) curr = curr.next;  // if curr is not null update the curr
+            }
+            if(curr != null){  // if curr is not null
+                ListNode prev = curr;  // variable to store the prev
+                curr = curr.next;  // update the curr
+                prev.next = null;  // update the prev->next
+            }
+            ans[i] = root;  // update the ans[i]
+        }
+        return ans;  // return the ans
+    }
+}
+
 
 
 JavaScript:
