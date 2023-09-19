@@ -10,8 +10,33 @@ Hard
 
 C++:
 
+// Time Complexity : O(n) where n is the length of the vector nums and space complexity is O(1)
+
+class Solution {
+public:
+    int countOrders(int n) {
+        long res = 1 , mod = 1e9+7;  // variable to store the res and mod
+        for(int i=1; i<=n; i++){  // loop until i is less than or equal to n
+            res = res*(i*2-1)*i%mod;  // update the res
+        }
+        return res;  // return the res
+    }
+};
+
 
 Java:
+
+// Time Complexity : O(n) where n is the length of the vector nums and space complexity is O(1)
+
+class Solution {
+    public int countOrders(int n) {
+        long res = 1 , mod = 1_000_000_007;  // variable to store the res and mod
+        for(int i=1; i<=n; i++){  // loop until i is less than or equal to n
+            res = res*(i*2-1)*i%mod;  // update the res
+        }
+        return (int)res;  // return the res
+    }
+};
 
 
 
