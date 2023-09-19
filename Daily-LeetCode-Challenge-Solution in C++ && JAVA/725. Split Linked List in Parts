@@ -10,6 +10,83 @@ Medium
 
 C++:
 
+// Time Complexity : O(n+k) where n is the length of the vector nums and space complexity is O(max(n,k))
+
+class Solution {
+public:
+    vector<ListNode*> splitListToParts(ListNode* head, int k) {
+        int n = 0;  // variable to store the n
+        ListNode* curr = head;  // variable to store the curr
+        while(curr){  // loop until curr is null
+            n++;  // increment n
+            curr = curr->next;  // update the curr
+        }
+        int width = n/k, rem = n%k;  // variable to store the width and rem
+        vector<ListNode*> ans(k);  // vector to store the ans
+        curr = head;  // update the curr
+        for(int i=0; i<k; i++){  // loop until i is less than k
+            ListNode* root = new ListNode(0);  // variable to store the root
+            ListNode* write = root;  // variable to store the write
+            for(int j=0; j<width+(i<rem?1:0); j++){  // loop until j is less than width+(i<rem?1:0)
+                write->next = new ListNode(curr->val);  // update the write->next
+                write = write->next;  // update the write
+                if(curr) curr = curr->next;  // if curr is not null update the curr
+            }
+            ans[i] = root->next;  // update the ans[i]
+        }
+        return ans;  // return the ans
+    }
+};
+
+2nd Method
+
+// Time Complexity : O(n+k) where n is the length of the vector nums and space complexity is O(k)
+
+class Solution {
+public:
+    vector<ListNode*> splitListToParts(ListNode* head, int k) {
+        int n = 0;  // variable to store the n
+        ListNode* curr = head;  // variable to store the curr
+        while(curr){  // loop until curr is null
+            n++;  // increment n
+            curr = curr->next;  // update the curr
+        }
+        int width = n/k, rem = n%k;  // variable to store the width and rem
+        vector<ListNode*> ans(k);  // vector to store the ans
+        curr = head;  // update the curr
+        for(int i=0; i<k; i++){  // loop until i is less than k
+            ListNode* root = curr;  // variable to store the root
+            for(int j=0; j<width+(i<rem?1:0)-1; j++){  // loop until j is less than width+(i<rem?1:0)-1
+                if(curr) curr = curr->next;  // if curr is not null update the curr
+            }
+            // Inside the inner for loop, a ListNode* pointer named root is assigned the current curr pointer. This root pointer will point to the beginning of the current part of the split list.
+            // Another loop (for (int j = 0; j < width + (i < rem ? 1 : 0) - 1; j++)) is used to traverse the list to the end of the current part. It adds width nodes initially and an additional node if i < rem (i.e., if there are remaining nodes to distribute among the parts). The - 1 ensures that the loop stops before the next part begins.
+            // Inside this loop, if curr is not null, it is updated to point to the next node using curr = curr->next.
+//             Certainly! Let's break down the expression `for (int j = 0; j < width + (i < rem ? 1 : 0) - 1; j++)` in brief:
+
+// - `int j = 0;` initializes a variable `j` to 0. This variable will be used as a loop counter.
+
+// - `j < width + (i < rem ? 1 : 0) - 1;` is the condition that determines whether the loop should continue. Let's break it down further:
+//    - `width` represents the desired number of nodes for the current part of the split list.
+//    - `(i < rem ? 1 : 0)` is a conditional expression that checks if `i` (the current part index) is less than `rem` (the remainder of nodes after distributing equally among parts). If `i` is less than `rem`, it evaluates to 1; otherwise, it evaluates to 0.
+//    - `width + (i < rem ? 1 : 0)` calculates the total number of nodes for the current part, considering the extra node (1) if `i` is less than `rem`.
+//    - `- 1` subtracts 1 from this total to ensure that the loop stops before the next part begins.
+
+// - `j++` increments the loop counter `j` after each iteration of the loop.
+
+// In summary, this `for` loop iterates over a portion of the linked list nodes (determined by `width` and whether there is an extra node based on `i` and `rem`) and continues until it reaches the specified number of nodes for the current part, minus one. This helps in correctly dividing the linked list into parts, ensuring that each part has the correct number of nodes.
+            if(curr){  // if curr is not null
+                ListNode* prev = curr;  // variable to store the prev
+                curr = curr->next;  // update the curr
+                prev->next = NULL;  // update the prev->next
+            }
+            // After determining the end of the current part, this block of code checks if curr is not null. If it's not null, it means there are more nodes in the list. It creates a ListNode* pointer named prev to point to the current node. The curr pointer is updated to point to the next node, and prev->next is set to NULL, effectively breaking the link between the current part and the next part.
+            ans[i] = root;  // update the ans[i]
+        }
+        return ans;  // return the ans
+    }
+};
+
 
 Java:
 
