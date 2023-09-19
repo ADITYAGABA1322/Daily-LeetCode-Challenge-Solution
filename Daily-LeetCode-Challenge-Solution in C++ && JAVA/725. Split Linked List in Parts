@@ -154,6 +154,63 @@ class Solution {
 
 Python:
 
+// Time Complexity : O(n+k) where n is the length of the vector nums and space complexity is O(max(n,k))
+
+class Solution(object):
+    def splitListToParts(self, head, k):
+        """
+        :type head: ListNode
+        :type k: int
+        :rtype: List[ListNode]
+        """
+        
+        n = 0  # variable to store the n
+        curr = head  # variable to store the curr
+        while curr:  # loop until curr is null
+            n += 1  # increment n
+            curr = curr.next  # update the curr
+        width, rem = divmod(n, k)  # variable to store the width and rem
+        ans = []  # vector to store the ans
+        curr = head  # update the curr
+        for i in range(k):  # loop until i is less than k
+            root = write = ListNode(None)  # variable to store the root and write
+            for j in range(width + (i < rem)):  # loop until j is less than width + (i < rem)
+                write.next = write = ListNode(curr.val)  # update the write->next
+                if curr: curr = curr.next  # if curr is not null update the curr
+            ans.append(root.next)  # update the ans
+        return ans  # return the ans
+
+2nd Method
+
+// Time Complexity : O(n+k) where n is the length of the vector nums and space complexity is O(k)
+
+class Solution(object):
+    def splitListToParts(self, head, k):
+        """
+        :type head: ListNode
+        :type k: int
+        :rtype: List[ListNode]
+        """
+        
+        n = 0  # variable to store the n
+        curr = head  # variable to store the curr
+        while curr:  # loop until curr is null
+            n += 1  # increment n
+            curr = curr.next  # update the curr
+        width, rem = divmod(n, k)  # variable to store the width and rem
+        ans = []  # vector to store the ans
+        curr = head  # update the curr
+        for i in range(k):  # loop until i is less than k
+            root = curr  # variable to store the root
+            for j in range(width + (i < rem) - 1):  # loop until j is less than width + (i < rem) - 1
+                if curr: curr = curr.next  # if curr is not null update the curr
+            if curr:  # if curr is not null
+                prev = curr  # variable to store the prev
+                curr = curr.next  # update the curr
+                prev.next = None  # update the prev->next
+            ans.append(root)  # update the ans
+        return ans  # return the ans
+
 
 Python3:
 
