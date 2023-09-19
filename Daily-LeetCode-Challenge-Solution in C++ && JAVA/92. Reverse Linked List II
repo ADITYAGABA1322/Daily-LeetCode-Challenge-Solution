@@ -58,6 +58,30 @@ class Solution {
 
 Python:
 
+// Time Complexity : O(n) where n is the length of the vector nums and space complexity is O(1)
+
+class Solution(object):
+    def reverseBetween(self, head, left, right):
+        """
+        :type head: ListNode
+        :type left: int
+        :type right: int
+        :rtype: ListNode
+        """
+        
+        dummy = ListNode(0)  # variable to store the dummy
+        dummy.next = head  # update the dummy->next
+        prev = dummy  # variable to store the prev
+        for i in range(left-1):  # loop until i is less than left-1
+            prev = prev.next  # update the prev
+        curr = prev.next  # variable to store the curr
+        for i in range(right-left):  # loop until i is less than right-left
+            temp = prev.next  # variable to store the temp
+            prev.next = curr.next  # update the prev->next
+            curr.next = curr.next.next  # update the curr->next
+            prev.next.next = temp  # update the prev->next->next
+        return dummy.next  # return the dummy->next
+
 
 Python3:
 
