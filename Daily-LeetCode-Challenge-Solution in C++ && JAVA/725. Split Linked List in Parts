@@ -240,6 +240,34 @@ class Solution:
 
 C:
 
+// Time Complexity : O(n+k) where n is the length of the vector nums and space complexity is O(k)
+
+struct ListNode** splitListToParts(struct ListNode* head, int k, int* returnSize) {
+    int n = 0;  // variable to store the n
+    struct ListNode* curr = head;  // variable to store the curr
+    while(curr){  // loop until curr is null
+        n++;  // increment n
+        curr = curr->next;  // update the curr
+    }
+    int width = n/k, rem = n%k;  // variable to store the width and rem
+    struct ListNode** ans = (struct ListNode**)malloc(sizeof(struct ListNode*)*k);  // vector to store the ans
+    curr = head;  // update the curr
+    for(int i=0; i<k; i++){  // loop until i is less than k
+        struct ListNode* root = curr;  // variable to store the root
+        for(int j=0; j<width+(i<rem?1:0)-1; j++){  // loop until j is less than width+(i<rem?1:0)-1
+            if(curr) curr = curr->next;  // if curr is not null update the curr
+        }
+        if(curr){  // if curr is not null
+            struct ListNode* prev = curr;  // variable to store the prev
+            curr = curr->next;  // update the curr
+            prev->next = NULL;  // update the prev->next
+        }
+        ans[i] = root;  // update the ans[i]
+    }
+    *returnSize = k;  // update the returnSize
+    return ans;  // return the ans
+}
+
 
 C#:
 
