@@ -62,6 +62,27 @@ class Solution {
 Python:
 
 
+// Time Complexity : O(n) where n is the length of the vector nums and space complexity is O(n)
+
+class Solution(object):
+    def find132pattern(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        n = len(nums)  # variable to store the n
+        st = []  # stack to store the st
+        s3 = float('-inf')  # variable to store the s3
+        for i in range(n-1, -1, -1):  # loop until i is greater than or equal to 0
+            if nums[i]<s3: return True  # if nums[i] is less than s3 return true
+            else:  # else
+                while st and nums[i]>st[-1]:  # loop until st is not empty and nums[i] is greater than st.top()
+                    s3 = st[-1]  # update the s3
+                    st.pop()  # pop the st
+            st.append(nums[i])  # push the nums[i]
+        return False  # return false
+
+
 Python3:
 
 
