@@ -36,6 +36,29 @@ public:
 Java:
 
 
+// Time Complexity : O(n) where n is the length of the vector nums and space complexity is O(n)
+
+class Solution {
+    public boolean find132pattern(int[] nums) {
+        int n = nums.length;  // variable to store the n
+        Stack<Integer>st = new Stack<>();  // stack to store the st
+        int s3 = Integer.MIN_VALUE;  // variable to store the s3
+        for(int i=n-1; i>=0; i--){  // loop until i is greater than or equal to 0
+            if(nums[i]<s3)return true;  // if nums[i] is less than s3 return true
+            else{  // else
+                while(!st.empty() && nums[i]>st.peek()){  // loop until st is not empty and nums[i] is greater than st.top()
+                    s3 = st.peek();  // update the s3
+                    st.pop();  // pop the st
+                }
+            }
+            st.push(nums[i]);  // push the nums[i]
+        }
+        return false;  // return false
+    }
+}
+
+
+
 Python:
 
 
