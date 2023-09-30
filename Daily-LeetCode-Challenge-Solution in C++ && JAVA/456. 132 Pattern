@@ -128,6 +128,29 @@ bool find132pattern(int* nums, int numsSize){
 
 C#:
 
+// Time Complexity : O(n) where n is the length of the vector nums and space complexity is O(n)
+
+public class Solution {
+    public bool Find132pattern(int[] nums) {
+        int n = nums.Length;  // variable to store the n
+        int[] st = new int[n];  // stack to store the st
+        int top = -1;  // variable to store the top
+        int s3 = int.MinValue;  // variable to store the s3
+        for(int i=n-1; i>=0; i--){  // loop until i is greater than or equal to 0
+            if(nums[i]<s3)return true;  // if nums[i] is less than s3 return true
+            else{  // else
+                while(top!=-1 && nums[i]>st[top]){  // loop until st is not empty and nums[i] is greater than st.top()
+                    s3 = st[top];  // update the s3
+                    top--;  // pop the st
+                }
+            }
+            st[++top] = nums[i];  // push the nums[i]
+        }
+        return false;  // return false
+    }
+}
+
+
 
 JavaScript:
 
