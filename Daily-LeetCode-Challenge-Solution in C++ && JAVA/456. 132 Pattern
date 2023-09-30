@@ -197,3 +197,29 @@ class Solution {
 }
 
 Dart:
+
+// Time Complexity : O(n) where n is the length of the vector nums and space complexity is O(n)
+
+class Solution {
+  bool find132pattern(List<int> nums) {
+    int n = nums.length;  // variable to store the n
+    List<int> st = [];  // stack to store the st
+    int INT_MIN = -2147483648; // Minimum value for a 32-bit signed integer
+    int s3 = INT_MIN; // Now you can use INT_MIN to initialize s3
+    for (int i = n - 1; i >= 0; i--) {  // loop until i is greater than or equal to 0
+      if (nums[i] < s3) return true;  // if nums[i] is less than s3 return true
+      else {  // else
+        while (st.length > 0 && nums[i] > st[st.length - 1]) {  // loop until st is not empty and nums[i] is greater than st.top()
+          s3 = st[st.length - 1];  // update the s3
+          st.removeLast();  // pop the st
+        }
+      }
+      st.add(nums[i]);  // push the nums[i]
+    }
+    return false;  // return false
+  }
+}
+
+
+
+
