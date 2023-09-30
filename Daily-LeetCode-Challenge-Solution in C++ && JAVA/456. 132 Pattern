@@ -154,6 +154,24 @@ public class Solution {
 
 JavaScript:
 
+// Time Complexity : O(n) where n is the length of the vector nums and space complexity is O(n)
+
+var find132pattern = function(nums) {
+    let n = nums.length;  // variable to store the n
+    let st = [];  // stack to store the st
+    let s3 = Number.MIN_SAFE_INTEGER;  // variable to store the s3
+    for(let i=n-1; i>=0; i--){  // loop until i is greater than or equal to 0
+        if(nums[i]<s3)return true;  // if nums[i] is less than s3 return true
+        else{  // else
+            while(st.length && nums[i]>st[st.length-1]){  // loop until st is not empty and nums[i] is greater than st.top()
+                s3 = st[st.length-1];  // update the s3
+                st.pop();  // pop the st
+            }
+        }
+        st.push(nums[i]);  // push the nums[i]
+    }
+    return false;  // return false
+};
 
 Swift:
 
