@@ -12,6 +12,59 @@ Easy
 
 C++:
 
+// Time Complexity : O(nlogn) where n is the size of the vector nums and space complexity is O(1)
+
+class Solution {
+public:
+    vector<int> sortByBits(vector<int>& arr) { // function to find the sortByBits
+        sort(arr.begin(),arr.end(),[](int a,int b){ // sort the arr
+            int x=__builtin_popcount(a); // variable to store the __builtin_popcount(a)
+            int y=__builtin_popcount(b); // variable to store the __builtin_popcount(b)
+            if(x==y)return a<b; // if x is equal to y return a<b
+            return x<y; // return x<y
+        });
+        return arr; // return the arr
+    }
+};
+
+// 2nd Method
+
+class Solution
+{
+public:
+    vector<int> sortByBits(vector<int> &arr)
+    {
+        auto comparator = [](int a, int b)
+        {
+            // int countA = __builtin_popcount(a);
+            // int countB = __builtin_popcount(b);
+            int countA = countBits(a);
+            int countB = countBits(b);
+            if (countA < countB)
+                return true;
+            else if (countA > countB)
+                return false;
+            else
+                return a < b;
+        };
+        sort(arr.begin(), arr.end(), comparator);
+        return arr;
+    }
+
+private:
+    static int countBits(int num)
+    {
+        int count = 0;
+        while (num > 0)
+        {
+            if (num & 1)
+                count++;
+            num >>= 1;
+        }
+        return count;
+    }
+};
+
 
 
 
