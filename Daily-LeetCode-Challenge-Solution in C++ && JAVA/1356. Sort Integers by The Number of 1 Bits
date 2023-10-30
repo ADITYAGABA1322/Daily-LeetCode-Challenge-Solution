@@ -70,4 +70,56 @@ private:
 
 Java:
 
+// Time Complexity : O(nlogn) where n is the size of the vector nums and space complexity is O(1)
+
+
+class Solution {
+    public int[] sortByBits(int[] arr) { // function to find the sortByBits
+        Integer[]arr1=new Integer[arr.length]; // Integer[] to store the arr
+        for(int i=0;i<arr.length;i++)arr1[i]=arr[i]; // loop for i
+        Arrays.sort(arr1,(a,b)->{ // sort the arr
+            int x=Integer.bitCount(a); // variable to store the Integer.bitCount(a)
+            int y=Integer.bitCount(b); // variable to store the Integer.bitCount(b)
+            if(x==y)return a-b; // if x is equal to y return a-b
+            return x-y; // return x-y
+        });
+        for(int i=0;i<arr.length;i++)arr[i]=arr1[i]; // loop for i
+        return arr; // return the arr
+    }
+}
+
+// 2nd Method
+
+import java.util.Arrays;
+
+public class Solution {
+    public int[] sortByBits(int[] arr) {
+        Integer[] boxedArr = new Integer[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            boxedArr[i] = arr[i];
+        }
+
+        Arrays.sort(boxedArr, (a, b) -> {
+            int countA = Integer.bitCount(a);
+            int countB = Integer.bitCount(b);
+
+            if (countA < countB) {
+                return -1;
+            } else if (countA > countB) {
+                return 1;
+            } else {
+                return Integer.compare(a, b);
+            }
+        });
+
+        for (int i = 0; i < boxedArr.length; i++) {
+            arr[i] = boxedArr[i];
+        }
+
+        return arr;
+    }
+}
+
+
+
 
