@@ -8,3 +8,18 @@ Medium
 
 
 C++:
+
+
+class Solution {
+public:
+    int maxCoins(vector<int>& piles) {
+        ios_base::sync_with_stdio(false) , cin.tie(0) , cout.tie(0);
+        int n = piles.size();
+        sort(piles.begin() , piles.end());
+        int sum = 0;
+        for(int i=n/3; i<n; i+=2){
+           sum += piles[i];
+        }
+       return sum;
+    }
+};
