@@ -11,3 +11,45 @@ Medium
 
 C++:
 
+
+#pragma GCC optimize("Ofast","inline","fast-math","unroll-loops","no-stack-protector")
+#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native","f16c")
+static const auto fast = []() {ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0); return 0; } ();
+class Solution {
+public:
+    bool check(vector<int> &arr){
+        // sort(arr.begin() , arr.end());
+        // int diff = arr[1] - arr[0];
+        // for(int i=2; i<arr.size(); i++){
+        //     if(arr[i] - arr[i-1] != diff) return false;
+        // }
+        // return true;
+        // without sorting
+        int min_ele = INT_MAX;
+        int max_ele = INT_MIN;
+        unordered_set<int> arrSet;
+        for(int num : arr){
+            min_ele = min(min_ele , num);
+            max_ele = max(max_ele , num);
+            arrSet.insert(num);
+        }
+         if ((max_ele - min_ele) % (arr.size() - 1) != 0) {
+            return false;
+        }
+        int diff = (max_ele - min_ele)/(arr.size() -1);
+        int curr = min_ele + diff;
+        while(curr < max_ele){
+            if(arrSet.find(curr) == arrSet.end()) return false;
+            curr += diff;
+        }
+        return true;
+    }
+    vector<bool> checkArithmeticSubarrays(vector<int>& nums, vector<int>& l, vector<int>& r) {
+        vector<bool> ans;
+        for(int i=0; i<l.size(); i++){
+            vector<int> arr(begin(nums)+ l[i], begin(nums) + r[i]+1);
+            ans.push_back(check(arr));
+        }
+        return ans;
+    }
+};
