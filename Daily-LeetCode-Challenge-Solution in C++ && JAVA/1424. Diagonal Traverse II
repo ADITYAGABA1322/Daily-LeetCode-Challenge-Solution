@@ -8,3 +8,38 @@ Medium
 
 
 C++:
+
+
+#pragma GCC optimize("Ofast","inline","fast-math","unroll-loops","no-stack-protector")
+#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native","f16c")
+static const auto fast = []() {ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0); return 0; } ();
+class Solution {
+public:
+    vector<int> findDiagonalOrder(vector<vector<int>>& nums) { // function to find the findDiagonalOrder
+        queue<pair<int , int>> q;
+        q.push({0 , 0});
+        vector<int> ans;
+        while(!q.empty()){
+            auto[row ,col] = q.front();
+            q.pop();
+            ans.push_back(nums[row][col]);
+            if(col == 0 && row + 1 < nums.size()) q.push({row+1 , col});
+            if(col+1 < nums[row].size()) q.push({row , col + 1});
+        }
+        return ans;
+    //    unordered_map<int , vector<int>> groups;
+    //    for(int row = nums.size()-1; row>=0; row--){
+    //        for(int col = 0; col<nums[row].size(); col++){
+    //            int diagonal = row + col; // because sum of index give same value
+    //            groups[diagonal].push_back(nums[row][col]);
+    //        }
+    //    }
+    //    vector<int> ans;
+    //    int curr = 0;
+    //    while(groups.find(curr) != groups.end()){
+    //        for(int num : groups[curr]) ans.push_back(num);
+    //        curr++;
+    //    }
+    //    return ans;
+    }
+};
