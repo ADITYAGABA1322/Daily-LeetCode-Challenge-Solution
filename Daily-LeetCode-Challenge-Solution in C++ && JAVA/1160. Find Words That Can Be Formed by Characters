@@ -91,3 +91,71 @@ public:
 
 
 Java:
+
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(1)
+
+class Solution {
+    public int countCharacters(String[] words, String chars) { // function to find the countCharacters
+        int n=words.length; // variable to store the size of the words
+        int m=chars.length(); // variable to store the size of the chars
+        int[]mp=new int[26]; // vector to store the mp
+        for(int i=0;i<m;i++)mp[chars.charAt(i)-'a']++; // loop for i
+        int ans=0; // variable to store the ans
+        for(int i=0;i<n;i++){ // loop for i
+            int[]temp=new int[26]; // vector to store the temp
+            for(int j=0;j<words[i].length();j++)temp[words[i].charAt(j)-'a']++; // loop for j
+            boolean flag=true; // variable to store the flag
+            for(int j=0;j<26;j++){ // loop for j
+                if(temp[j]>mp[j]){ // if temp[j] is greater than mp[j]
+                    flag=false; // update the flag
+                    break; // break
+                }
+            }
+            if(flag)ans+=words[i].length(); // if flag is true update the ans
+        }
+        return ans; // return the ans
+    }
+}
+
+// 2nd Method
+
+import java.util.HashMap;
+
+public class Solution {
+    public int countCharacters(String[] words, String chars) {
+        int count = 0;
+
+        // Count the frequency of characters in chars using a HashMap
+        HashMap<Character, Integer> charCount = new HashMap<>();
+        for (char ch : chars.toCharArray()) {
+            charCount.put(ch, charCount.getOrDefault(ch, 0) + 1);
+        }
+
+        // Check if a word can be formed using the characters in chars
+        for (String word : words) {
+            HashMap<Character, Integer> wordCount = new HashMap<>();
+
+            // Count the frequency of each character in the current word
+            for (char ch : word.toCharArray()) {
+                wordCount.put(ch, wordCount.getOrDefault(ch, 0) + 1);
+            }
+
+            // Check if the characters in the word can be formed using chars
+            boolean validWord = true;
+            for (char ch : wordCount.keySet()) {
+                if (wordCount.get(ch) > charCount.getOrDefault(ch, 0)) {
+                    validWord = false;
+                    break;
+                }
+            }
+
+            // If the word is valid, add its length to the count
+            if (validWord) {
+                count += word.length();
+            }
+        }
+
+        return count;
+    }
+}
+
