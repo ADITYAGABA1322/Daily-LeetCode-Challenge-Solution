@@ -9,3 +9,31 @@ Medium
 
 
 C++:
+
+#define ll long long
+#pragma GCC optimize("Ofast","inline","fast-math","unroll-loops","no-stack-protector")
+#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native","f16c")
+static const auto fast = []() {ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0); return 0; } ();
+class Solution {
+public:
+    int mod = 1e9+7;
+    int rev(int num){
+        int reversed = 0;
+        while(num){
+            reversed = reversed*10 + num%10;
+            num /= 10;
+        }
+        return reversed;
+    }
+    int countNicePairs(vector<int>& nums) {
+
+        ll res = 0;
+        unordered_map<int,  int> mp;
+        for(auto num : nums) mp[num - rev(num)]++;
+        for(auto pair : mp){
+            ll count = pair.second;
+            res = (res + (count * (count -1) / 2)) % mod;
+        }
+        return res;
+    }
+};
