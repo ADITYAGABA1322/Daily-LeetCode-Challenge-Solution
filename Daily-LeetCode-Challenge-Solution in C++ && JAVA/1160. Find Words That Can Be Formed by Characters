@@ -10,6 +10,84 @@ Easy
 
 C++:
 
+// Time Complexity : O(n) where n is the size of the vector nums and space complexity is O(1)
+
+#pragma GCC optimize("Ofast","inline","fast-math","unroll-loops","no-stack-protector")
+#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native","f16c")
+static const auto fast = []() {ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0); return 0; } ();
+class Solution {
+public:
+    int countCharacters(vector<string>& words, string chars) { // function to find the countCharacters
+        int n=words.size(); // variable to store the size of the words
+        int m=chars.size(); // variable to store the size of the chars
+        vector<int>mp(26); // vector to store the mp
+        for(int i=0;i<m;i++)mp[chars[i]-'a']++; // loop for i
+        int ans=0; // variable to store the ans
+        for(int i=0;i<n;i++){ // loop for i
+            vector<int>temp(26); // vector to store the temp
+            for(int j=0;j<words[i].size();j++)temp[words[i][j]-'a']++; // loop for j
+            bool flag=true; // variable to store the flag
+            for(int j=0;j<26;j++){ // loop for j
+                if(temp[j]>mp[j]){ // if temp[j] is greater than mp[j]
+                    flag=false; // update the flag
+                    break; // break
+                }
+            }
+            if(flag)ans+=words[i].size(); // if flag is true update the ans
+        }
+        return ans; // return the ans
+    }
+};
+
+// 2nd Method
+
+#pragma GCC optimize("Ofast","inline","fast-math","unroll-loops","no-stack-protector")
+#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native","f16c")
+static const auto fast = []() {ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0); return 0; } ();
+#include <vector>
+#include <string>
+#include <unordered_map>
+
+class Solution {
+public:
+    int countCharacters(const std::vector<std::string>& words, const std::string& chars) {
+        int count = 0;
+
+        // Count the frequency of characters in chars using an array (assuming ASCII characters)
+        std::vector<int> charCount(26, 0);
+        for (char ch : chars) {
+            charCount[ch - 'a']++;
+        }
+
+        // Check if a word can be formed using the characters in chars
+        for (const std::string& word : words) {
+            std::vector<int> wordCount(26, 0);
+
+            // Count the frequency of each character in the current word
+            for (char ch : word) {
+                wordCount[ch - 'a']++;
+            }
+
+            // Check if the characters in the word can be formed using chars
+            bool validWord = true;
+            for (int i = 0; i < 26; i++) {
+                if (wordCount[i] > charCount[i]) {
+                    validWord = false;
+                    break;
+                }
+            }
+
+            // If the word is valid, add its length to the count
+            if (validWord) {
+                count += word.length();
+            }
+        }
+
+        return count;
+    }
+};
+
+
 
 
 Java:
