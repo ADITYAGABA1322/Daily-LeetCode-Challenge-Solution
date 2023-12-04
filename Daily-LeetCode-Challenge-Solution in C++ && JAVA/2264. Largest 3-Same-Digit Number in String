@@ -1,1 +1,23 @@
 
+
+
+class Solution {
+public:
+    string largestGoodInteger(string num) {
+        string maxGoodInteger = "";
+        
+        for (int i = 0; i < num.size() - 2; i++) {
+            // Check if the substring is a good integer
+            if (num[i] == num[i + 1] && num[i + 1] == num[i + 2]) {
+                string currentGoodInteger = num.substr(i, 3);
+
+                // Compare and update the maximum good integer
+                if (currentGoodInteger > maxGoodInteger) {
+                    maxGoodInteger = currentGoodInteger;
+                }
+            }
+        }
+        
+        return maxGoodInteger;
+    }
+};
