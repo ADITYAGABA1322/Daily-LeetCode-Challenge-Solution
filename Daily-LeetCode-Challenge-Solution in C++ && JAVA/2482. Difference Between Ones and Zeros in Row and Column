@@ -12,3 +12,35 @@ Medium
 
 
 C++:
+
+#include <vector>
+
+class Solution {
+public:
+    std::vector<std::vector<int>> onesMinusZeros(std::vector<std::vector<int>>& grid) {
+        int n = grid.size();
+        int m = grid[0].size();
+        std::vector<std::vector<int>> diff(n, std::vector<int>(m));
+
+        std::vector<int> onesRow(n);
+        std::vector<int> onesCol(m);
+      
+
+        // Calculate cumulative sums
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                onesRow[i] += grid[i][j];
+                onesCol[j] += grid[i][j];
+            }
+        }
+
+        // Calculate the diff matrix
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+               diff[i][j] = 2 * onesRow[i] + 2 * onesCol[j] - n - m;
+            }
+        }
+
+        return diff;
+    }
+};
