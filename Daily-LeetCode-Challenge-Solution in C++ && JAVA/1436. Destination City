@@ -9,3 +9,33 @@ Easy
 
 
 C++:
+
+
+#include <vector>
+#include <string>
+
+class Solution {
+public:
+    std::string destCity(std::vector<std::vector<std::string>>& paths) {
+        std::string ans = "";
+
+        // Create a set to store the cities that are not destinations
+        std::unordered_set<std::string> sourceCities;
+
+        // Populate the set with source cities
+        for (const auto& path : paths) {
+            sourceCities.insert(path[0]);
+        }
+
+        // Find the destination city
+        for (const auto& path : paths) {
+            if (sourceCities.find(path[1]) == sourceCities.end()) {
+                // If the second city is not in the set of source cities, it is the destination
+                ans = path[1];
+                break;
+            }
+        }
+
+        return ans;
+    }
+};
