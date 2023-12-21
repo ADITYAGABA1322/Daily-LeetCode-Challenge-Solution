@@ -1,6 +1,6 @@
 # Daily-LeetCode-Challenge-Solution 👀
 
-![MasterHead](https://jooncco.com/public/images/leetcode-logo.jpeg)
+![MasterHead](https://miro.medium.com/max/1200/1*kBWo_GWrG58h28kDHwnBfg.png)
 
 
 
