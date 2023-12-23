@@ -9,3 +9,22 @@ Easy
 
 
 C++:
+
+
+class Solution {
+public:
+    bool isPathCrossing(string path) {
+        set<pair<int , int>> vis;
+        int x = 0 , y = 0;
+        vis.insert({x, y});
+        for(char p : path){
+            if(p == 'N') y++;
+            else if(p == 'S') y--;
+            else if(p == 'E') x++;
+            else if(p == 'W') x--;
+            if(vis.count({x,y})) return true;
+            vis.insert({x,y});
+        }
+        return false;
+    }
+};
