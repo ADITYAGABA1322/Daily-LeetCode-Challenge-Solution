@@ -9,3 +9,24 @@ Medium
 
 
 C++:
+
+
+class Solution {
+public:
+    int numRollsToTarget(int n, int k, int target) {
+        vector<vector<int>> memo(n+1 , vector<int>(target+1 , -1));
+        int mod = 1e9+7;
+        return helper(n , k , target , memo , mod);
+    }
+    int helper(int n , int k , int target , vector<vector<int>>& memo , int mod){
+        if(n == 0 && target == 0) return 1;
+        if(n == 0 || target <= 0) return 0;
+        if(memo[n][target] != -1) return memo[n][target];
+        int ways = 0;
+        for(int face = 1; face <= k ; face++){
+            ways = (ways + helper(n - 1 , k , target - face , memo , mod))%mod;
+        }
+        memo[n][target] = ways;
+        return ways;
+    } 
+}; 
