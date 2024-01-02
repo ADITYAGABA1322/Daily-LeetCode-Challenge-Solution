@@ -10,3 +10,27 @@ Medium
 
 
 C++:
+
+
+class Solution {
+public:
+    vector<vector<int>> findMatrix(vector<int>& nums) {
+        unordered_map<int, int> mp;
+        for (int num : nums) mp[num]++;
+        
+        vector<vector<int>> ans;
+        while (!mp.empty()) {
+            vector<int> row;
+            for (auto it = mp.begin(); it != mp.end();) {
+                row.push_back(it->first);
+                if (--it->second == 0) {
+                    it = mp.erase(it);
+                } else {
+                    ++it;
+                }
+            }
+            ans.push_back(row);
+        }
+        return ans;
+    }
+};
