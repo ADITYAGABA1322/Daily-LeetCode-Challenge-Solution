@@ -11,3 +11,64 @@ Hard
 
 
 C++:
+
+
+#pragma GCC optimize("Ofast","inline","fast-math","unroll-loops","no-stack-protector")
+#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native","f16c")
+static const auto fast = []() {ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0); return 0; } ();
+class Solution {
+public:
+    int jobScheduling(vector<int>& startTime, vector<int>& endTime, vector<int>& profit) {
+        // 1.) start iterate through start and end and check corresponding profits and access it 
+        // 2.) and the basic thing is that we want there are no two jobs in the subset with overlapping time range.
+        // a.) Means that overlapping is not allowed 
+        // b.) if we sort start and end time and check the repted elements and not consider that consider only once which contain max profit like in jump game
+        // 3.) consider the jump game i think not exact do the same thing for this but their is an idea want a max profit .
+        // 4.) we find the subsets so we use dp concept 2d dp store time and profit
+         
+         // CORRECT WAY TO SOLVE IT
+         // 1.) CREATE A JOB VECTOR OR ARRRAY AND THE SOTRE THE START , END , PROFIT 
+         // 2.) SORT IT JOB
+         // 3.) NOW THE THINK IS COME IN MY MIND I CREATE 1D DP AND FIND THE MAX PROFIT IN THE JOBS AND INCLUDE AND EXCLUIDE PRINCIPLE PLAYS AN IMPORTANT ROLE
+         // 4.) NOW I AM USING THE DP ITERATE THROUH I AND J AND IT LEADS TO TLE
+         // 5.) SOLVE THE PROBLE USING BINARY SEARCH + DP AND GIVE O(nlogn)
+
+         // Lets solve it in a wrong way and after that we optimize it
+         int n = startTime.size();
+         vector<vector<int>> jobs(n);
+         for(int i=0; i<n; i++){
+             jobs[i] = {endTime[i] , startTime[i] , profit[i]};
+         }
+        sort(jobs.begin() , jobs.end());
+        vector<int> dp(n);
+        dp[0] = jobs[0][2];
+        for(int i=1; i<n; i++){
+            int include = jobs[i][2];
+            int l = binarySearch(jobs , i);
+          //  int l = -1;
+            // for(int j = i-1; j>=0; j--){
+            //     if(jobs[j][0] <= jobs[i][1]){
+            //         l = j;
+            //         break;
+            //     }
+            // }
+            if(l != -1) include += dp[l];
+            dp[i] = max(include , dp[i-1]);
+        } 
+        return dp[n-1];
+    }
+    int binarySearch(vector<vector<int>>& jobs , int index){
+        int start = 0 , end = index-1;
+        while(start <= end){
+            int mid = start + (end -start) / 2;
+            if(jobs[mid][0] <= jobs[index][1]){
+               if(jobs[mid+1][0] <= jobs[index][1]) start = mid+1;
+               else return mid;
+            }
+            else{
+                end = mid - 1;
+            }
+        }
+        return -1;
+    }
+};
