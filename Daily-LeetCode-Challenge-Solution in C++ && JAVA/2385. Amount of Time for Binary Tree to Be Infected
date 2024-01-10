@@ -9,3 +9,86 @@ Medium
 
 
 C++:
+
+
+#pragma GCC optimize("Ofast","inline","fast-math","unroll-loops","no-stack-protector")
+#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native","f16c")
+static const auto fast = []() {ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0); return 0; } ();
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public: 
+    int maxDistance = 0 ;
+    int dfs(TreeNode *root , int start){
+        int depth = 0;
+        if(root == NULL) return depth;
+        int leftDepth = dfs(root->left , start);
+        int rightDepth = dfs(root->right , start);
+        if(root->val == start){
+            maxDistance = max(leftDepth , rightDepth);
+            depth = -1;
+        }
+        else if(leftDepth >= 0 && rightDepth >= 0) depth = max(leftDepth , rightDepth) + 1;
+        else{
+            int d = abs(leftDepth) + abs(rightDepth);
+            maxDistance = max(maxDistance , d);
+            depth = min(leftDepth , rightDepth)-1;
+        }
+        return depth;
+    }
+    int amountOfTime(TreeNode* root, int start) {
+         dfs(root , start); 
+         return maxDistance;
+        // create a adj list and push in to graph
+        // vector<vector<int>> adj;
+        // now using a  edges or create a 2d adj list
+        // applying a bfs or dfs using vis nodes and start as our starting node if we use  we need a child parent and a vis onde which marked we chekc adj part also for the tree and add 2 condition also  Each minute, a node becomes infected if:
+// The node is currently uninfected.time to infected node 
+// The node is adjacent to an infected node.
+//  using dfs we easily find the 
+
+    //     unordered_map<int , unordered_set<int>> mp;
+    //     convert(root , 0 , mp);
+    //     // perform bfs
+    //     int min = 0;
+    //     queue<int> q;
+    //     q.push(start);
+    //     unordered_set<int> vis;
+    //     vis.insert(start);
+    //     while(!q.empty()){
+    //         int sz = q.size();
+    //         while(sz > 0){
+    //             int curr = q.front();
+    //             q.pop();
+    //             for(int num : mp[curr]){
+    //                 if(vis.find(num) == vis.end()){
+    //                     vis.insert(num);
+    //                     q.push(num);
+    //                 }
+    //             }
+    //             sz--;
+    //         }
+    //         min++;
+    //     }
+    //     return min-1;
+    // }
+    // void convert(TreeNode* curr , int parent , unordered_map<int , unordered_set<int>>& mp){
+    //     if(curr == NULL) return;
+    //     if(mp.find(curr->val) == mp.end()) mp[curr->val] = unordered_set<int>();
+    //     unordered_set<int>& adj = mp[curr->val];
+    //     if(parent != 0) adj.insert(parent);
+    //     if(curr->left != NULL) adj.insert(curr->left->val);
+    //     if(curr->right != NULL) adj.insert(curr->right->val);
+    //     convert(curr->left , curr->val , mp);
+    //     convert(curr->right , curr->val , mp);
+    }
+};
