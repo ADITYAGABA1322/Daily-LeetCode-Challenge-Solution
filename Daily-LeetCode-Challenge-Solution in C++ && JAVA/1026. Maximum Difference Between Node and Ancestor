@@ -10,3 +10,30 @@ Medium
 
 
 C++:
+
+
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int dfs(TreeNode* root , int mn , int mx){
+        if(root == NULL) return mx - mn; 
+        mn = min(mn , root->val);
+        mx = max(mx , root->val);
+        return max(dfs(root->left , mn , mx) , dfs(root->right , mn , mx));
+    }
+    int maxAncestorDiff(TreeNode* root) {
+        // lets apply dfs or bfs and find the max val diff of the nodes from root ot child and go from A node a is an ancestor of b if either: any child of a is equal to b or any child of a is an ancestor of b.
+        // now check diif and max we need to perfrom bar diif maens negatove val becomes positive nad find the diff b/w all root to child and return amx val
+        return dfs(root  , root->val , root->val);
+    }
+};
