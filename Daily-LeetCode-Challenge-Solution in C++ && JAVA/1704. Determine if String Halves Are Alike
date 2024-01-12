@@ -10,3 +10,28 @@ Easy
 
 
 C++:
+
+
+class Solution {
+public:
+    bool halvesAreAlike(string s) {
+        int n = s.size();
+        int count = 0;
+
+        for (int i = 0; i < n / 2; i++) {
+            if (hasVowel(s[i])) count++;
+        }
+
+        int count1 = 0;
+        for (int i = n / 2; i < n; i++) {
+            if (hasVowel(s[i])) count1++;
+        }
+
+        return count == count1;
+    }
+
+    bool hasVowel(char c) {
+        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+               c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
+    }
+};
