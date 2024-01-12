@@ -12,3 +12,48 @@ Medium
 
 
 C++:
+
+
+#pragma GCC optimize("Ofast","inline","fast-math","unroll-loops","no-stack-protector")
+#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native","f16c")
+static const auto fast = []() {ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0); return 0; } ();
+// class Solution {
+// public:
+//     int minSetSize(vector<int>& arr) {
+//         int n = arr.size();
+//         sort(arr.begin() , arr.end());
+//         unordered_map<int , int> mp;
+//         for(auto num : arr) mp[num]++;
+//         priority_queue<int> pq;
+//         for(auto it : mp) pq.push(it.second);
+//         int cnt = 0;
+//         int removedcnt = 0;
+//             // now we store every character frequncy and i want to remove start ele and more also and check show it qaul to arr/2 we create a temp when we remove elemnt in pq we should store in temp and check shoul it qual or not and count ++
+//             while(!pq.empty() && removedcnt < n/2){
+//                 int freq = pq.top();
+//                 pq.pop();
+//                 removedcnt += freq;
+//                 cnt++;
+//             }
+//             return cnt;
+//     }
+// };
+
+
+class Solution {
+public:
+    int minSetSize(vector<int>& arr) {
+        unordered_map<int , int> mp;
+        int n = arr.size();
+        for(auto num : arr) mp[num]++;
+        priority_queue<int> pq;
+        for(auto it : mp) pq.push(it.second);
+        int cnt = 0 , removedcnt = 0;
+        while(removedcnt < n/2){
+            removedcnt += pq.top();
+            pq.pop();
+            cnt++;
+        }
+    return cnt;
+    }
+};
