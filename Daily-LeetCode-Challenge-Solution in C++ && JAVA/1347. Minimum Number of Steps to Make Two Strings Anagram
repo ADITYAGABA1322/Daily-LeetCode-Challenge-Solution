@@ -10,5 +10,27 @@ Medium
 C++:
 
 
+class Solution {
+public:
+    int minSteps(std::string s, std::string t) {
+        int n = s.size();
+        int m = t.size();
+        std::unordered_map<char, int> freq;
+
+        // Count the frequency of characters in both strings
+        for (auto it : s) freq[it]++;
+        for (auto p : t) freq[p]--;
+
+        int ans = 0;
+
+        // Calculate the number of steps needed to make t an anagram of s
+        for (auto& pair : freq) {
+            ans += std::abs(pair.second);  // Absolute value of frequency difference
+        }
+
+        return ans / 2;  // Divide by 2 since each step involves changing two characters
+    }
+};
+
 
 
