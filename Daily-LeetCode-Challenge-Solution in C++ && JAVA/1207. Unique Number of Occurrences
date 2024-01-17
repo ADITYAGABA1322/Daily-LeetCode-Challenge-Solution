@@ -31,3 +31,18 @@ public:
 
 OR
 
+class Solution {
+public:
+    bool uniqueOccurrences(vector<int>& arr) {
+        unordered_map<int , int> mp;
+        for(auto n : arr)mp[n]++;
+        unordered_set<int> s;
+        for(auto x : mp){
+            int frq = x.second;
+            if(s.find(frq) != s.end()) return false;
+            else s.insert(frq);
+        }
+        return true;
+    }
+};
+
