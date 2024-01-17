@@ -10,3 +10,17 @@ Easy
 
 
 C++:
+
+
+class Solution {
+public:
+    bool uniqueOccurrences(vector<int>& arr) {
+        unordered_map<int , int> mp;
+        for(auto n : arr)mp[n]++;
+        unordered_set<int> s;
+        for(auto x : mp){
+            if (!s.insert(x.second).second) return false;
+        }
+        return true;
+    }
+};
