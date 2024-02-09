@@ -20,4 +20,3 @@ public:
         return s.substr(start , len);
     }
 };
-
