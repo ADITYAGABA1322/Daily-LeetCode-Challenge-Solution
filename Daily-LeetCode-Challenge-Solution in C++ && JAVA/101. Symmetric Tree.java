@@ -1,7 +1,5 @@
 101. Symmetric Tree
 
-
-
     
 
     
