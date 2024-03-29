@@ -7,3 +7,21 @@
 
 
 C++:
+
+
+
+class Solution {
+public:
+    long long countSubarrays(vector<int>& nums, int k) {
+        int max_ele = *max_element(nums.begin() , nums.end()) , curr= 0 , j = 0 ;
+        long long  res = 0;
+        for(int i=0; i<nums.size(); i++){
+            curr += nums[i] == max_ele;
+            while(curr >= k) 
+              curr -= nums[j++] == max_ele;
+
+            res += j;
+        }
+        return res;
+    }
+};
