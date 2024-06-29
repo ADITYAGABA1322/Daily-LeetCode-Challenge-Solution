@@ -53,6 +53,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Graph
 |  |
 | ------- |
+| [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [2379-maximum-total-importance-of-roads](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2379-maximum-total-importance-of-roads) |
 | [3271-count-the-number-of-houses-at-a-certain-distance-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3271-count-the-number-of-houses-at-a-certain-distance-i) |
 ## Sorting
@@ -66,9 +67,18 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Breadth-First Search
 |  |
 | ------- |
+| [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [3271-count-the-number-of-houses-at-a-certain-distance-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3271-count-the-number-of-houses-at-a-certain-distance-i) |
 ## Prefix Sum
 |  |
 | ------- |
 | [3271-count-the-number-of-houses-at-a-certain-distance-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3271-count-the-number-of-houses-at-a-certain-distance-i) |
+## Depth-First Search
+|  |
+| ------- |
+| [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
+## Topological Sort
+|  |
+| ------- |
+| [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 <!---LeetCode Topics End-->
