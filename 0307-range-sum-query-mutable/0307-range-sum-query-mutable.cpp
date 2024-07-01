@@ -94,20 +94,19 @@ private:
     vector<int> nums;
     int n;
 
-    // Function to update the Fenwick Tree
-    void updateFenwickTree(int i, int delta) {
+    void updateFenwickTree(int i, int val) {
         while (i <= n) {
-            fenwickTree[i] += delta;
-            i += i & (-i); // Move to the next index to update
+            fenwickTree[i] += val;
+            i += i & (-i); 
         }
     }
 
-    // Function to get prefix sum up to index i
+   
     int getPrefixSum(int i) {
         int sum = 0;
         while (i > 0) {
             sum += fenwickTree[i];
-            i -= i & (-i); // Move to parent index
+            i -= i & (-i); 
         }
         return sum;
     }
