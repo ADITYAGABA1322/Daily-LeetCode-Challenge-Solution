@@ -158,4 +158,12 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0350-intersection-of-two-arrays-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0350-intersection-of-two-arrays-ii) |
+## Linked List
+|  |
+| ------- |
+| [2299-merge-nodes-in-between-zeros](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2299-merge-nodes-in-between-zeros) |
+## Simulation
+|  |
+| ------- |
+| [2299-merge-nodes-in-between-zeros](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2299-merge-nodes-in-between-zeros) |
 <!---LeetCode Topics End-->
