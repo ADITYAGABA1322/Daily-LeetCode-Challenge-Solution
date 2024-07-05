@@ -96,6 +96,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0005-longest-palindromic-substring) |
+| [0010-regular-expression-matching](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0010-regular-expression-matching) |
 | [0214-shortest-palindrome](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0214-shortest-palindrome) |
 | [0516-longest-palindromic-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0516-longest-palindromic-subsequence) |
 | [0647-palindromic-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0647-palindromic-substrings) |
@@ -103,6 +104,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0005-longest-palindromic-substring) |
+| [0010-regular-expression-matching](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0010-regular-expression-matching) |
 | [0042-trapping-rain-water](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0042-trapping-rain-water) |
 | [0516-longest-palindromic-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0516-longest-palindromic-subsequence) |
 | [0647-palindromic-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0647-palindromic-substrings) |
@@ -166,4 +168,8 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [2299-merge-nodes-in-between-zeros](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2299-merge-nodes-in-between-zeros) |
+## Recursion
+|  |
+| ------- |
+| [0010-regular-expression-matching](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0010-regular-expression-matching) |
 <!---LeetCode Topics End-->
