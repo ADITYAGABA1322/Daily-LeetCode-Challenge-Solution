@@ -49,6 +49,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Greedy
 |  |
 | ------- |
+| [0045-jump-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0055-jump-game) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [2379-maximum-total-importance-of-roads](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2379-maximum-total-importance-of-roads) |
@@ -107,6 +108,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0005-longest-palindromic-substring](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0005-longest-palindromic-substring) |
 | [0010-regular-expression-matching](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0010-regular-expression-matching) |
 | [0042-trapping-rain-water](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0042-trapping-rain-water) |
+| [0045-jump-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0055-jump-game) |
 | [0516-longest-palindromic-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0516-longest-palindromic-subsequence) |
 | [0647-palindromic-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0647-palindromic-substrings) |
@@ -130,6 +132,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0042-trapping-rain-water) |
+| [0045-jump-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0055-jump-game) |
 | [0307-range-sum-query-mutable](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0307-range-sum-query-mutable) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0350-intersection-of-two-arrays-ii) |
