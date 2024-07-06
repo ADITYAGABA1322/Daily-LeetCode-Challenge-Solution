@@ -2,11 +2,12 @@ class Solution {
 public:
     int numberOfAlternatingGroups(vector<int>& colors) {
         int count = 0;
-        int n = colors.size();
         colors.push_back(colors[0]);
         colors.push_back(colors[1]);
+        int n = colors.size();
         for(int i=2; i<n; i++){
-            if(colors[i-1] != colors[i] && colors[i-2] != colors[i-1]) count++;
+              if(colors[i-1]!=colors[i] && colors[i-2]!=colors[i-1])
+                count++;
         }
         // Check for alternating groups in the main part of the array, including
         // wrapping around
