@@ -179,6 +179,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Simulation
 |  |
 | ------- |
+| [1642-water-bottles](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1642-water-bottles) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2299-merge-nodes-in-between-zeros) |
 | [2645-pass-the-pillow](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2645-pass-the-pillow) |
 ## Recursion
@@ -193,6 +194,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0062-unique-paths) |
+| [1642-water-bottles](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1642-water-bottles) |
 | [2645-pass-the-pillow](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2645-pass-the-pillow) |
 ## Combinatorics
 |  |
