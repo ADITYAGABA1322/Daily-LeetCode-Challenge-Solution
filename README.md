@@ -52,6 +52,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0045-jump-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0055-jump-game) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
+| [1818-maximum-score-from-removing-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2379-maximum-total-importance-of-roads](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2379-maximum-total-importance-of-roads) |
 ## Graph
 |  |
@@ -104,6 +105,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0647-palindromic-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0647-palindromic-substrings) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1720-crawler-log-folder) |
+| [1818-maximum-score-from-removing-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1818-maximum-score-from-removing-substrings) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -166,6 +168,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0042-trapping-rain-water](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0042-trapping-rain-water) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1720-crawler-log-folder) |
+| [1818-maximum-score-from-removing-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1818-maximum-score-from-removing-substrings) |
 ## Monotonic Stack
 |  |
 | ------- |
