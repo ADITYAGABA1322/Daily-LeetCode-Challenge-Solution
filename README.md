@@ -153,6 +153,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1720-crawler-log-folder](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1720-crawler-log-folder) |
 | [1803-average-waiting-time](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2306-create-binary-tree-from-descriptions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2846-robot-collisions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2846-robot-collisions) |
 ## Design
 |  |
@@ -184,6 +185,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | ------- |
 | [0350-intersection-of-two-arrays-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0726-number-of-atoms](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0726-number-of-atoms) |
+| [2306-create-binary-tree-from-descriptions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2306-create-binary-tree-from-descriptions) |
 ## Binary Search
 |  |
 | ------- |
@@ -230,4 +232,12 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1951-find-the-winner-of-the-circular-game) |
+## Tree
+|  |
+| ------- |
+| [2306-create-binary-tree-from-descriptions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2306-create-binary-tree-from-descriptions) |
+## Binary Tree
+|  |
+| ------- |
+| [2306-create-binary-tree-from-descriptions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2306-create-binary-tree-from-descriptions) |
 <!---LeetCode Topics End-->
