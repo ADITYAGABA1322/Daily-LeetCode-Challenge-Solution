@@ -154,6 +154,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0063-unique-paths-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0063-unique-paths-ii) |
 | [0307-range-sum-query-mutable](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0307-range-sum-query-mutable) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [1293-three-consecutive-odds](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1293-three-consecutive-odds) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1720-crawler-log-folder](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1720-crawler-log-folder) |
@@ -225,6 +226,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0062-unique-paths) |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [1642-water-bottles](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2645-pass-the-pillow) |
