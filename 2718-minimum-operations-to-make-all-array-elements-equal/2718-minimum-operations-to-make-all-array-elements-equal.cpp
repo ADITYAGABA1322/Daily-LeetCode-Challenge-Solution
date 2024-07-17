@@ -1,34 +1,23 @@
-#include <vector>
-#include <algorithm>
-using namespace std;
-
 class Solution {
 public:
     vector<long long> minOperations(vector<int>& nums, vector<int>& queries) {
-        // Sort nums to efficiently calculate operations needed for each query
-        sort(nums.begin(), nums.end());
-        int n = nums.size();
-        int m = queries.size();
-        vector<long long> prefixSum(n + 1, 0);
-        vector<long long> result(m, 0);
-
-        // Calculate prefix sum for nums to use in operations calculation
-        for (int i = 1; i <= n; ++i) {
-            prefixSum[i] = prefixSum[i - 1] + nums[i - 1];
+        int n = nums.size() , m = queries.size();
+        sort(nums.begin() , nums.end());
+        vector<long long> psum(n+1 , 0)  , res(m , 0);
+        for(int i=1; i<=nums.size(); i++) {
+            psum[i] = psum[i-1] + nums[i-1];
+           // cout<<psum[i]<<endl;
         }
-
-        // For each query, calculate the minimum operations required
-        for (int i = 0; i < m; ++i) {
+        for(int i=0; i<m; i++){
             int query = queries[i];
-            // Binary search to find the first element in nums not less than the query
-            int pos = lower_bound(nums.begin(), nums.end(), query) - nums.begin();
-            // Calculate operations needed for elements less than the query
-            long long opsLeft = 1LL * query * pos - prefixSum[pos];
-            // Calculate operations needed for elements greater than or equal to the query
-            long long opsRight = (prefixSum[n] - prefixSum[pos]) - 1LL * query * (n - pos);
-            result[i] = opsLeft + opsRight;
+            int pos = lower_bound(nums.begin() , nums.end() , query) - nums.begin();
+           // cout<<pos<<endl;
+            long long lpos = 1LL * pos * query - psum[pos];
+           // cout<<lpos<<endl;
+            long long rpos = (psum[n] - psum[pos]) - 1LL * query * (n-pos);
+           // cout<<rpos<<endl;
+            res[i] = lpos + rpos;
         }
-
-        return result;
+        return res;
     }
 };
