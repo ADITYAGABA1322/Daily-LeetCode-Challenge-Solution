@@ -20,19 +20,32 @@ public:
         //     else left = mid+1;
         // }
         // return ans == INT_MAX ? 0 : ans;
-        // 2nd one
+        // // 2nd one
 
-        long long l = 1 , r = 1000000 , cost1 = 0 , cost2 = 0;
+        // long long l = 1 , r = 1000000 , cost1 = 0 , cost2 = 0;
+        // while(l<r){
+        //     int m = l + (r-l)/2;
+        //     cost1 = cost2 = 0;
+        //     for(int i=0; i<nums.size(); i++){
+        //         cost1 += (long long) cost[i] * abs(nums[i] - m);
+        //         cost2 += (long long) cost[i] * abs(nums[i] - (m+1));
+        //     }
+        //     if(cost2 > cost1) r = m;
+        //     else l = m+1;
+        // }
+        // return min(cost1 , cost2);
+
+         // 3rd one weioghted median with binary search
+        long long total = accumulate(begin(cost),end(cost) , 0LL) , res = 0;
+        long long l = 1 , r = 1000000;
         while(l<r){
-            int m = l + (r-l)/2;
-            cost1 = cost2 = 0;
-            for(int i=0; i<nums.size(); i++){
-                cost1 += (long long) cost[i] * abs(nums[i] - m);
-                cost2 += (long long) cost[i] * abs(nums[i] - (m+1));
-            }
-            if(cost2 > cost1) r = m;
-            else l = m+1;
+            long long sum = 0 ,  m = l + (r-l)/2;
+            for(int i=0; i<nums.size(); i++)
+                sum += nums[i] <= m ? cost[i] : 0;
+            if(sum <= total/2) l = m+1;
+            else r= m;
         }
-        return min(cost1 , cost2);
+        for(int i=0; i<nums.size(); i++) res += (long long) cost[i] * abs(nums[i] - l);
+        return res;
     }
 };
