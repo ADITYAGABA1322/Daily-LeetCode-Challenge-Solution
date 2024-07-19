@@ -169,6 +169,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [1207-delete-nodes-and-return-forest](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1207-delete-nodes-and-return-forest) |
 | [1293-three-consecutive-odds](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1293-three-consecutive-odds) |
+| [1496-lucky-numbers-in-a-matrix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1720-crawler-log-folder](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1720-crawler-log-folder) |
 | [1803-average-waiting-time](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1803-average-waiting-time) |
@@ -261,6 +262,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0063-unique-paths-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0063-unique-paths-ii) |
+| [1496-lucky-numbers-in-a-matrix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1496-lucky-numbers-in-a-matrix) |
 ## Queue
 |  |
 | ------- |
