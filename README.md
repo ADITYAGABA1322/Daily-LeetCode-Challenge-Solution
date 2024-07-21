@@ -63,6 +63,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
 | [2379-maximum-total-importance-of-roads](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2379-maximum-total-importance-of-roads) |
+| [2472-build-a-matrix-with-conditions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2472-build-a-matrix-with-conditions) |
 | [3271-count-the-number-of-houses-at-a-certain-distance-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3271-count-the-number-of-houses-at-a-certain-distance-i) |
 ## Sorting
 |  |
@@ -103,6 +104,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
+| [2472-build-a-matrix-with-conditions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2472-build-a-matrix-with-conditions) |
 ## Two Pointers
 |  |
 | ------- |
@@ -177,6 +179,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1803-average-waiting-time](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2306-create-binary-tree-from-descriptions) |
+| [2472-build-a-matrix-with-conditions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2472-build-a-matrix-with-conditions) |
 | [2538-minimum-cost-to-make-array-equal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2538-minimum-cost-to-make-array-equal) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 | [2846-robot-collisions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2846-robot-collisions) |
@@ -266,6 +269,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0063-unique-paths-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0063-unique-paths-ii) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
+| [2472-build-a-matrix-with-conditions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2472-build-a-matrix-with-conditions) |
 ## Queue
 |  |
 | ------- |
