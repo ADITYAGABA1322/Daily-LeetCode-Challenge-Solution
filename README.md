@@ -151,6 +151,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0516-longest-palindromic-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0516-longest-palindromic-subsequence) |
 | [0647-palindromic-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0647-palindromic-substrings) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
+| [1511-count-number-of-teams](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1511-count-number-of-teams) |
 ## Rolling Hash
 |  |
 | ------- |
@@ -187,6 +188,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1293-three-consecutive-odds](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1293-three-consecutive-odds) |
 | [1333-sort-the-jumbled-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1333-sort-the-jumbled-numbers) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1496-lucky-numbers-in-a-matrix) |
+| [1511-count-number-of-teams](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1511-count-number-of-teams) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1720-crawler-log-folder](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1720-crawler-log-folder) |
@@ -209,6 +211,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0307-range-sum-query-mutable](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0307-range-sum-query-mutable) |
+| [1511-count-number-of-teams](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1511-count-number-of-teams) |
 ## Segment Tree
 |  |
 | ------- |
