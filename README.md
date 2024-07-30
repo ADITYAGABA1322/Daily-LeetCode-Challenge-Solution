@@ -130,6 +130,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0005-longest-palindromic-substring](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0005-longest-palindromic-substring) |
 | [0010-regular-expression-matching](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0010-regular-expression-matching) |
 | [0049-group-anagrams](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0049-group-anagrams) |
+| [0139-word-break](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0139-word-break) |
 | [0214-shortest-palindrome](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0214-shortest-palindrome) |
 | [0516-longest-palindromic-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0516-longest-palindromic-subsequence) |
 | [0647-palindromic-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0647-palindromic-substrings) |
@@ -152,6 +153,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0055-jump-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0055-jump-game) |
 | [0062-unique-paths](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0063-unique-paths-ii) |
+| [0139-word-break](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0139-word-break) |
 | [0152-maximum-product-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0152-maximum-product-subarray) |
 | [0300-longest-increasing-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0300-longest-increasing-subsequence) |
 | [0322-coin-change](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0322-coin-change) |
@@ -188,6 +190,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0053-maximum-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0055-jump-game) |
 | [0063-unique-paths-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0063-unique-paths-ii) |
+| [0139-word-break](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0139-word-break) |
 | [0152-maximum-product-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0152-maximum-product-subarray) |
 | [0217-contains-duplicate](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0238-product-of-array-except-self) |
@@ -248,6 +251,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | ------- |
 | [0001-two-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0001-two-sum) |
 | [0049-group-anagrams](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0049-group-anagrams) |
+| [0139-word-break](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0139-word-break) |
 | [0217-contains-duplicate](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0217-contains-duplicate) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0726-number-of-atoms](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0726-number-of-atoms) |
@@ -355,4 +359,12 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0371-sum-of-two-integers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0371-sum-of-two-integers) |
+## Trie
+|  |
+| ------- |
+| [0139-word-break](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0139-word-break) |
+## Memoization
+|  |
+| ------- |
+| [0139-word-break](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0139-word-break) |
 <!---LeetCode Topics End-->
