@@ -72,6 +72,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0049-group-anagrams) |
+| [0217-contains-duplicate](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0217-contains-duplicate) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0726-number-of-atoms](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0726-number-of-atoms) |
@@ -179,6 +180,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0053-maximum-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0055-jump-game) |
 | [0063-unique-paths-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0063-unique-paths-ii) |
+| [0217-contains-duplicate](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0217-contains-duplicate) |
 | [0307-range-sum-query-mutable](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0307-range-sum-query-mutable) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0453-minimum-moves-to-equal-array-elements) |
@@ -234,6 +236,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | ------- |
 | [0001-two-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0001-two-sum) |
 | [0049-group-anagrams](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0049-group-anagrams) |
+| [0217-contains-duplicate](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0217-contains-duplicate) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0726-number-of-atoms](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0726-number-of-atoms) |
 | [1207-delete-nodes-and-return-forest](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1207-delete-nodes-and-return-forest) |
