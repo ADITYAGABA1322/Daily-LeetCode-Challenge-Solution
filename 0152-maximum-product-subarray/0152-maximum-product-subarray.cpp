@@ -1,31 +1,16 @@
-#include <vector>
-#include <algorithm>
-#include <climits>
-using namespace std;
-
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
         int n = nums.size();
-        double prod = 1.0;
-        double res = static_cast<double>(INT_MIN);
-        
-        // Forward pass
-        for (int i = 0; i < n; i++) {
-            prod *= nums[i];
-            res = max(prod, res);
-            if (nums[i] == 0) prod = 1.0;
+        double ans = INT_MIN;
+        double pr = 1, su = 1;
+        for (int i=0; i<n; ++i) {
+            pr *= nums[i];
+            su *= nums[n-1-i];
+            ans = max({ans, pr, su});
+            if (pr == 0) pr = 1;
+            if (su == 0) su = 1;
         }
-        
-        prod = 1.0;
-        
-        // Backward pass
-        for (int i = n - 1; i >= 0; i--) {
-            prod *= nums[i];
-            res = max(prod, res);
-            if (nums[i] == 0) prod = 1.0;
-        }
-        
-        return static_cast<int>(res);
-    }
+    return ans;
+  }
 };
