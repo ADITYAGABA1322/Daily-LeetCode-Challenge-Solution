@@ -154,6 +154,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0214-shortest-palindrome](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0214-shortest-palindrome) |
 | [0273-integer-to-english-words](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0273-integer-to-english-words) |
 | [0516-longest-palindromic-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0516-longest-palindromic-subsequence) |
+| [0564-find-the-closest-palindrome](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0564-find-the-closest-palindrome) |
 | [0592-fraction-addition-and-subtraction](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0592-fraction-addition-and-subtraction) |
 | [0647-palindromic-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0647-palindromic-substrings) |
 | [0664-strange-printer](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0664-strange-printer) |
@@ -372,6 +373,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0371-sum-of-two-integers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0371-sum-of-two-integers) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
+| [0564-find-the-closest-palindrome](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0564-find-the-closest-palindrome) |
 | [0592-fraction-addition-and-subtraction](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0592-fraction-addition-and-subtraction) |
 | [0650-2-keys-keyboard](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0650-2-keys-keyboard) |
 | [0870-magic-squares-in-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0870-magic-squares-in-grid) |
