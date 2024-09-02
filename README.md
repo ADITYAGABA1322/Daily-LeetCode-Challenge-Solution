@@ -122,6 +122,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0238-product-of-array-except-self) |
 | [1240-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1240-stone-game-ii) |
+| [2006-find-the-student-that-will-replace-the-chalk](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2538-minimum-cost-to-make-array-equal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2538-minimum-cost-to-make-array-equal) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 | [3271-count-the-number-of-houses-at-a-certain-distance-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3271-count-the-number-of-houses-at-a-certain-distance-i) |
@@ -278,6 +279,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1741-sort-array-by-increasing-frequency](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1741-sort-array-by-increasing-frequency) |
 | [1803-average-waiting-time](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2006-find-the-student-that-will-replace-the-chalk](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2035-count-sub-islands](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2035-count-sub-islands) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2132-convert-1d-array-into-2d-array) |
@@ -352,6 +354,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0350-intersection-of-two-arrays-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1615-range-sum-of-sorted-subarray-sums) |
+| [2006-find-the-student-that-will-replace-the-chalk](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2538-minimum-cost-to-make-array-equal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2538-minimum-cost-to-make-array-equal) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 ## Linked List
@@ -367,6 +370,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1642-water-bottles](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1642-water-bottles) |
 | [1803-average-waiting-time](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2006-find-the-student-that-will-replace-the-chalk](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2132-convert-1d-array-into-2d-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2132-convert-1d-array-into-2d-array) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2299-merge-nodes-in-between-zeros) |
 | [2645-pass-the-pillow](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2645-pass-the-pillow) |
