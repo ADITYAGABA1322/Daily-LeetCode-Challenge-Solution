@@ -494,6 +494,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | ------- |
 | [0371-sum-of-two-integers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0371-sum-of-two-integers) |
 | [0476-number-complement](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0476-number-complement) |
+| [2323-minimum-bit-flips-to-convert-number](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2323-minimum-bit-flips-to-convert-number) |
 ## Trie
 |  |
 | ------- |
