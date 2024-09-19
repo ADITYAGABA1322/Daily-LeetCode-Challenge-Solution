@@ -7,6 +7,13 @@
 class Solution {
 public:
     std::vector<int> diffWaysToCompute(const std::string& expression) {
+        return compute(expression);
+    }
+
+private:
+    std::unordered_map<std::string, std::vector<int>> memo;
+
+    std::vector<int> compute(const std::string& expression) {
         if (memo.find(expression) != memo.end()) {
             return memo[expression];
         }
@@ -26,8 +33,8 @@ public:
             char c = expression[i];
             if (c == '+' || c == '-' || c == '*') {
                 // Recursively compute the results for the left and right subexpressions
-                std::vector<int> left = diffWaysToCompute(expression.substr(0, i));
-                std::vector<int> right = diffWaysToCompute(expression.substr(i + 1));
+                std::vector<int> left = compute(expression.substr(0, i));
+                std::vector<int> right = compute(expression.substr(i + 1));
 
                 // Combine the results from the left and right subexpressions using the current operator
                 for (int l : left) {
@@ -43,9 +50,6 @@ public:
         memo[expression] = res;
         return res;
     }
-
-private:
-    std::unordered_map<std::string, std::vector<int>> memo;
 
     bool isNumber(const std::string& s) {
         return std::all_of(s.begin(), s.end(), ::isdigit);
