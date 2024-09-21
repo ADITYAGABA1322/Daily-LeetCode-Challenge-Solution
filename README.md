@@ -137,6 +137,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0133-clone-graph](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0133-clone-graph) |
 | [0145-binary-tree-postorder-traversal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0145-binary-tree-postorder-traversal) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0386-lexicographical-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0386-lexicographical-numbers) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0999-regions-cut-by-slashes) |
@@ -528,6 +529,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0139-word-break](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0139-word-break) |
+| [0386-lexicographical-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0386-lexicographical-numbers) |
 ## Memoization
 |  |
 | ------- |
