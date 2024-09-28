@@ -279,6 +279,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0624-maximum-distance-in-arrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0624-maximum-distance-in-arrays) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0729-my-calendar-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0729-my-calendar-i) |
+| [0859-design-circular-deque](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0859-design-circular-deque) |
 | [0870-magic-squares-in-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0870-magic-squares-in-grid) |
 | [0890-lemonade-change](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0890-lemonade-change) |
 | [0906-walking-robot-simulation](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0906-walking-robot-simulation) |
@@ -331,6 +332,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0307-range-sum-query-mutable](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0307-range-sum-query-mutable) |
 | [0729-my-calendar-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0729-my-calendar-i) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0859-design-circular-deque](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0859-design-circular-deque) |
 ## Binary Indexed Tree
 |  |
 | ------- |
@@ -402,6 +404,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0725-split-linked-list-in-parts](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0725-split-linked-list-in-parts) |
+| [0859-design-circular-deque](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0859-design-circular-deque) |
 | [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2299-merge-nodes-in-between-zeros) |
 | [2411-spiral-matrix-iv](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2411-spiral-matrix-iv) |
@@ -480,6 +483,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Queue
 |  |
 | ------- |
+| [0859-design-circular-deque](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0859-design-circular-deque) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Tree
 |  |
