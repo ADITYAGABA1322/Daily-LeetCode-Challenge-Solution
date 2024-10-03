@@ -16,6 +16,7 @@ public:
             if(mp.find(target) != mp.end()){
                 minLen = min(minLen , i - mp[target]);
             }
+            cout<<target<<endl;
             mp[prefixSum] = i;
         }
         return minLen == n ? -1 : minLen;
