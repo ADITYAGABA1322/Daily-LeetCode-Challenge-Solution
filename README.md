@@ -203,6 +203,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0726-number-of-atoms](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0726-number-of-atoms) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0957-minimum-add-to-make-parentheses-valid) |
+| [1197-parsing-a-boolean-expression](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1197-parsing-a-boolean-expression) |
 | [1250-longest-common-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1250-longest-common-subsequence) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1304-longest-happy-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1304-longest-happy-string) |
@@ -394,6 +395,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0776-n-ary-tree-postorder-traversal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1002-maximum-width-ramp](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1002-maximum-width-ramp) |
+| [1197-parsing-a-boolean-expression](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1197-parsing-a-boolean-expression) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1497-design-a-stack-with-increment-operation) |
 | [1720-crawler-log-folder](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1720-crawler-log-folder) |
@@ -490,6 +492,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0010-regular-expression-matching](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0010-regular-expression-matching) |
 | [0241-different-ways-to-add-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0241-different-ways-to-add-parentheses) |
 | [0273-integer-to-english-words](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0273-integer-to-english-words) |
+| [1197-parsing-a-boolean-expression](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1197-parsing-a-boolean-expression) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1667-find-kth-bit-in-nth-binary-string) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Divide and Conquer
