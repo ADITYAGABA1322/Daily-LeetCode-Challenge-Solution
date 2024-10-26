@@ -136,6 +136,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [2035-count-sub-islands](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2035-count-sub-islands) |
 | [2171-second-minimum-time-to-reach-destination](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2171-second-minimum-time-to-reach-destination) |
+| [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2677-cousins-in-binary-tree-ii) |
 | [3271-count-the-number-of-houses-at-a-certain-distance-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3271-count-the-number-of-houses-at-a-certain-distance-i) |
@@ -169,6 +170,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [2035-count-sub-islands](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2035-count-sub-islands) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
+| [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Topological Sort
 |  |
@@ -367,6 +369,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2502-sort-the-people](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2502-sort-the-people) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2538-minimum-cost-to-make-array-equal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2538-minimum-cost-to-make-array-equal) |
+| [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2718-minimum-operations-to-make-all-array-elements-equal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2718-minimum-operations-to-make-all-array-elements-equal) |
 | [2727-number-of-senior-citizens](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2727-number-of-senior-citizens) |
@@ -569,6 +572,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1207-delete-nodes-and-return-forest](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1207-delete-nodes-and-return-forest) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2306-create-binary-tree-from-descriptions) |
+| [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Binary Tree
@@ -581,6 +585,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1207-delete-nodes-and-return-forest](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1207-delete-nodes-and-return-forest) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2306-create-binary-tree-from-descriptions) |
+| [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Merge Sort
