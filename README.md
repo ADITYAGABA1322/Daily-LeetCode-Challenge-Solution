@@ -212,6 +212,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0647-palindromic-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0647-palindromic-substrings) |
 | [0664-strange-printer](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0664-strange-printer) |
 | [0726-number-of-atoms](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0726-number-of-atoms) |
+| [0812-rotate-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0812-rotate-string) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1197-parsing-a-boolean-expression](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1197-parsing-a-boolean-expression) |
@@ -285,6 +286,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0214-shortest-palindrome](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0214-shortest-palindrome) |
+| [0812-rotate-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0812-rotate-string) |
 ## Hash Function
 |  |
 | ------- |
