@@ -595,6 +595,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3427-special-array-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3427-special-array-ii) |
 | [3429-special-array-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3429-special-array-i) |
+| [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 | [3517-shortest-distance-after-road-addition-queries-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3517-shortest-distance-after-road-addition-queries-i) |
 | [3522-find-the-power-of-k-size-subarrays-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3522-find-the-power-of-k-size-subarrays-i) |
@@ -704,6 +705,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
+| [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3455-minimum-length-of-string-after-operations) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Binary Search
@@ -769,6 +771,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2800-minimum-string-length-after-removing-substrings) |
 | [2846-robot-collisions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2846-robot-collisions) |
+| [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 ## Recursion
 |  |
