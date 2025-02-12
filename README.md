@@ -130,6 +130,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2164-two-best-non-overlapping-events](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2379-maximum-total-importance-of-roads](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2379-maximum-total-importance-of-roads) |
+| [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2502-sort-the-people](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2502-sort-the-people) |
 | [2538-minimum-cost-to-make-array-equal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2538-minimum-cost-to-make-array-equal) |
@@ -165,6 +166,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [2379-maximum-total-importance-of-roads](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2379-maximum-total-importance-of-roads) |
 | [2434-design-a-number-container-system](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2434-design-a-number-container-system) |
+| [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2692-take-gifts-from-the-richest-pile) |
@@ -559,6 +561,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2448-count-number-of-bad-pairs](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2448-count-number-of-bad-pairs) |
 | [2465-shifting-letters-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2465-shifting-letters-ii) |
 | [2472-build-a-matrix-with-conditions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2472-build-a-matrix-with-conditions) |
+| [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2502-sort-the-people](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2502-sort-the-people) |
@@ -701,6 +704,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2434-design-a-number-container-system](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2434-design-a-number-container-system) |
 | [2448-count-number-of-bad-pairs](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2448-count-number-of-bad-pairs) |
+| [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2502-sort-the-people](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2502-sort-the-people) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2586-longest-square-streak-in-an-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2586-longest-square-streak-in-an-array) |
