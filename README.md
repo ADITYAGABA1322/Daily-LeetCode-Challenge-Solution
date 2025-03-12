@@ -608,6 +608,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2554-minimum-total-distance-traveled](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2554-minimum-total-distance-traveled) |
 | [2564-most-profitable-path-in-a-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2564-most-profitable-path-in-a-tree) |
 | [2586-longest-square-streak-in-an-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2586-longest-square-streak-in-an-array) |
+| [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
 | [2685-first-completely-painted-row-or-column](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2685-first-completely-painted-row-or-column) |
@@ -794,6 +795,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
 | [2538-minimum-cost-to-make-array-equal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2538-minimum-cost-to-make-array-equal) |
 | [2586-longest-square-streak-in-an-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2586-longest-square-streak-in-an-array) |
+| [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2699-count-the-number-of-fair-pairs) |
 | [2716-prime-subtraction-operation](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2716-prime-subtraction-operation) |
@@ -1006,6 +1008,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2448-count-number-of-bad-pairs](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2448-count-number-of-bad-pairs) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2494-sum-of-prefix-scores-of-strings) |
+| [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3455-minimum-length-of-string-after-operations) |
