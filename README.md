@@ -153,6 +153,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3229-minimum-cost-to-make-array-equalindromic](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3229-minimum-cost-to-make-array-equalindromic) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 | [3291-find-if-array-can-be-sorted](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3291-find-if-array-can-be-sorted) |
+| [3430-count-days-without-meetings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3430-count-days-without-meetings) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -663,6 +664,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3427-special-array-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3427-special-array-ii) |
 | [3429-special-array-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3429-special-array-i) |
+| [3430-count-days-without-meetings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3430-count-days-without-meetings) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3483-alternating-groups-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3483-alternating-groups-ii) |
