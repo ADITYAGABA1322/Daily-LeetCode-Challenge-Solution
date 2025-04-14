@@ -1,10 +1,8 @@
 class Solution {
 public:
     int count(string num1, string num2, int min_sum, int max_sum) {
-        const int MOD = 1e9 + 7;
-        
-        // Function to count numbers <= upper with digit sum in range [min_sum, max_sum]
-        auto countUpTo = [&](const string& upper, int min_sum, int max_sum) -> int {
+        const int MOD = 1e9+7;
+          auto countUpTo = [&](const string& upper, int min_sum, int max_sum) -> int {
             int n = upper.length();
             
             // memo[pos][tight][sum] = count of valid numbers
@@ -44,49 +42,25 @@ public:
             return dp(0, true, 0);
         };
         
-        // Special case: handle numbers with leading zeros
-        int low_sum = 0;
-        for (char c : num1) {
-            low_sum += c - '0';
-        }
-        
-        // If num1 has digit sum in range, include it in count
-        bool includeNum1 = (low_sum >= min_sum && low_sum <= max_sum) ? true : false;
-        
-        // Decrement num1 by 1 to get inclusive range [0, num2] - [0, num1-1]
-        string num1Minus1 = decrementString(num1);
-        
-        // Count numbers in range by using DP for upper bounds
-        int result = (countUpTo(num2, min_sum, max_sum) - countUpTo(num1Minus1, min_sum, max_sum)) % MOD;
-        
-        // Handle modular arithmetic for negative results
-        if (result < 0) result += MOD;
-        
-        return result;
+       int low_sum = 0;
+       for(auto c : num1) low_sum += c -'0';
+       bool includenum1 = (low_sum >= min_sum && low_sum <= max_sum) ? true : false;
+       string num1Minus1 = decrementString(num1);
+       int res = (countUpTo(num2 , min_sum , max_sum) - countUpTo(num1Minus1 , min_sum , max_sum)) % MOD;
+       if(res < 0) res += MOD;
+       return res;
     }
-    
-private:
-    // Helper function to decrement a string representation of a number
-    string decrementString(const string& num) {
-        string result = num;
-        int i = result.length() - 1;
-        
-        while (i >= 0 && result[i] == '0') {
-            result[i] = '9';
+    private:
+    string decrementString(const string& num){
+        string res = num;
+        int i = res.length()-1;
+        while(i>=0 && res[i] == '0'){
+            res[i] = '9';
             i--;
         }
-        
-        if (i >= 0) {
-            result[i]--;
-        } else {
-            return "0"; // If num was "1", return "0"
-        }
-        
-        // Remove leading zeros
-        if (result[0] == '0' && result.length() > 1) {
-            return result.substr(1);
-        }
-        
-        return result;
+        if(i>=0) res[i]--;
+        else return "0";
+        if(res[i] == '0' && res.length() > 1) return res.substr(1);
+        return res;
     }
 };
