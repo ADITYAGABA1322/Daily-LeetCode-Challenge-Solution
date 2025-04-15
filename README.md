@@ -60,6 +60,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0890-lemonade-change](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0890-lemonade-change) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1304-longest-happy-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1304-longest-happy-string) |
+| [1334-sum-of-numbers-with-units-digit-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1334-sum-of-numbers-with-units-digit-k) |
 | [1502-construct-k-palindrome-strings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1502-construct-k-palindrome-strings) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
@@ -455,6 +456,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1170-shortest-common-supersequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1170-shortest-common-supersequence) |
 | [1240-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1240-stone-game-ii) |
 | [1250-longest-common-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1250-longest-common-subsequence) |
+| [1334-sum-of-numbers-with-units-digit-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1334-sum-of-numbers-with-units-digit-k) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1511-count-number-of-teams](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1511-count-number-of-teams) |
@@ -961,6 +963,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0670-maximum-swap](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0670-maximum-swap) |
 | [0870-magic-squares-in-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0870-magic-squares-in-grid) |
 | [1240-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1240-stone-game-ii) |
+| [1334-sum-of-numbers-with-units-digit-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1334-sum-of-numbers-with-units-digit-k) |
 | [1477-product-of-the-last-k-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1477-product-of-the-last-k-numbers) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [1642-water-bottles](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1642-water-bottles) |
@@ -1241,6 +1244,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Enumeration
 |  |
 | ------- |
+| [1334-sum-of-numbers-with-units-digit-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1334-sum-of-numbers-with-units-digit-k) |
 | [1656-count-good-triplets](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1656-count-good-triplets) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
