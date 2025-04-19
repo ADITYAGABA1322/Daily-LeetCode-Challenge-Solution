@@ -453,6 +453,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [1025-minimum-cost-for-tickets](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1025-minimum-cost-for-tickets) |
+| [1057-numbers-with-repeated-digits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1057-numbers-with-repeated-digits) |
 | [1063-best-sightseeing-pair](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1063-best-sightseeing-pair) |
 | [1170-shortest-common-supersequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1170-shortest-common-supersequence) |
 | [1240-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1240-stone-game-ii) |
@@ -971,6 +972,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0650-2-keys-keyboard](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0650-2-keys-keyboard) |
 | [0670-maximum-swap](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0670-maximum-swap) |
 | [0870-magic-squares-in-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0870-magic-squares-in-grid) |
+| [1057-numbers-with-repeated-digits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1057-numbers-with-repeated-digits) |
 | [1240-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1240-stone-game-ii) |
 | [1334-sum-of-numbers-with-units-digit-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1334-sum-of-numbers-with-units-digit-k) |
 | [1477-product-of-the-last-k-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1477-product-of-the-last-k-numbers) |
