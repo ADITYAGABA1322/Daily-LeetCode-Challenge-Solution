@@ -20,7 +20,7 @@ public:
         // }
         // return cnt;
         // Optimized
-                long long min_val = 0, max_val = 0, curr = 0;
+        long long min_val = 0, max_val = 0, curr = 0;
         
         // Calculate the min and max possible values in our array
         for (int diff : differences) {
