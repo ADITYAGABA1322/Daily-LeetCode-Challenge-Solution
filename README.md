@@ -588,6 +588,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1396-count-servers-that-communicate](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1396-count-servers-that-communicate) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1435-xor-queries-of-a-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1435-xor-queries-of-a-subarray) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1477-product-of-the-last-k-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1477-product-of-the-last-k-numbers) |
@@ -997,6 +998,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1057-numbers-with-repeated-digits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1057-numbers-with-repeated-digits) |
 | [1240-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1240-stone-game-ii) |
 | [1334-sum-of-numbers-with-units-digit-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1334-sum-of-numbers-with-units-digit-k) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1477-product-of-the-last-k-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1477-product-of-the-last-k-numbers) |
 | [1500-count-largest-group](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1500-count-largest-group) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
