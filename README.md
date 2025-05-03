@@ -60,6 +60,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0797-rabbits-in-forest](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0797-rabbits-in-forest) |
 | [0890-lemonade-change](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0890-lemonade-change) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0957-minimum-add-to-make-parentheses-valid) |
+| [1049-minimum-domino-rotations-for-equal-row](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1304-longest-happy-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1304-longest-happy-string) |
 | [1334-sum-of-numbers-with-units-digit-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1334-sum-of-numbers-with-units-digit-k) |
 | [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
@@ -579,6 +580,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0999-regions-cut-by-slashes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0999-regions-cut-by-slashes) |
 | [1002-maximum-width-ramp](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1002-maximum-width-ramp) |
 | [1025-minimum-cost-for-tickets](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1025-minimum-cost-for-tickets) |
+| [1049-minimum-domino-rotations-for-equal-row](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1063-best-sightseeing-pair](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1063-best-sightseeing-pair) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1207-delete-nodes-and-return-forest](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1207-delete-nodes-and-return-forest) |
