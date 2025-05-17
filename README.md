@@ -128,6 +128,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0049-group-anagrams) |
+| [0075-sort-colors](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0075-sort-colors) |
 | [0179-largest-number](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0179-largest-number) |
 | [0217-contains-duplicate](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0217-contains-duplicate) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -327,6 +328,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0005-longest-palindromic-substring) |
 | [0042-trapping-rain-water](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0042-trapping-rain-water) |
+| [0075-sort-colors](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0075-sort-colors) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0647-palindromic-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0647-palindromic-substrings) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0719-find-k-th-smallest-pair-distance) |
@@ -556,6 +558,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0053-maximum-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0055-jump-game) |
 | [0063-unique-paths-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0063-unique-paths-ii) |
+| [0075-sort-colors](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0075-sort-colors) |
 | [0128-longest-consecutive-sequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0128-longest-consecutive-sequence) |
 | [0139-word-break](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0139-word-break) |
 | [0152-maximum-product-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0152-maximum-product-subarray) |
