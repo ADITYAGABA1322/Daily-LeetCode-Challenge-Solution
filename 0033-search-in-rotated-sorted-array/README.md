@@ -6,6 +6,7 @@
 
 <p>You must write an algorithm with <code>O(log n)</code> runtime complexity.</p>
 
+
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 <pre><strong>Input:</strong> nums = [4,5,6,7,0,1,2], target = 0
