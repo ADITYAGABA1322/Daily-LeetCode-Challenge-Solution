@@ -1089,6 +1089,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 | [2998-count-symmetric-integers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2998-count-symmetric-integers) |
 | [3001-apply-operations-to-maximize-score](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3001-apply-operations-to-maximize-score) |
+| [3172-divisible-and-non-divisible-sums-difference](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3172-divisible-and-non-divisible-sums-difference) |
 | [3227-find-missing-and-repeated-values](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3227-find-missing-and-repeated-values) |
 | [3229-minimum-cost-to-make-array-equalindromic](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3229-minimum-cost-to-make-array-equalindromic) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3243-count-the-number-of-powerful-integers) |
