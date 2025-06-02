@@ -51,6 +51,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | ------- |
 | [0045-jump-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0055-jump-game) |
+| [0135-candy](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0135-candy) |
 | [0179-largest-number](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0179-largest-number) |
 | [0624-maximum-distance-in-arrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0624-maximum-distance-in-arrays) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
@@ -584,6 +585,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0073-set-matrix-zeroes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0075-sort-colors) |
 | [0128-longest-consecutive-sequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0128-longest-consecutive-sequence) |
+| [0135-candy](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0135-candy) |
 | [0139-word-break](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0139-word-break) |
 | [0152-maximum-product-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0152-maximum-product-subarray) |
 | [0179-largest-number](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0179-largest-number) |
