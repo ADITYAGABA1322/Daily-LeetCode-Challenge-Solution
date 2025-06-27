@@ -74,6 +74,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1917-maximum-average-pass-ratio](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1917-maximum-average-pass-ratio) |
 | [2089-maximum-matrix-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2089-maximum-matrix-sum) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2140-longest-subsequence-repeated-k-times](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
@@ -445,6 +446,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2076-sum-of-digits-of-string-after-convert) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2107-find-unique-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2107-find-unique-binary-string) |
+| [2140-longest-subsequence-repeated-k-times](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
@@ -1295,6 +1297,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1786-count-the-number-of-consistent-strings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1986-largest-color-value-in-a-directed-graph) |
+| [2140-longest-subsequence-repeated-k-times](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2300-construct-string-with-repeat-limit](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2300-construct-string-with-repeat-limit) |
@@ -1420,6 +1423,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2107-find-unique-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2107-find-unique-binary-string) |
+| [2140-longest-subsequence-repeated-k-times](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2456-construct-smallest-number-from-di-string) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2802-find-the-punishment-number-of-an-integer) |
@@ -1457,6 +1461,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1334-sum-of-numbers-with-units-digit-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1334-sum-of-numbers-with-units-digit-k) |
 | [1656-count-good-triplets](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1656-count-good-triplets) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1993-sum-of-all-subset-xor-totals) |
+| [2140-longest-subsequence-repeated-k-times](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2202-sum-of-k-mirror-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2202-sum-of-k-mirror-numbers) |
 | [2215-finding-3-digit-even-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2215-finding-3-digit-even-numbers) |
