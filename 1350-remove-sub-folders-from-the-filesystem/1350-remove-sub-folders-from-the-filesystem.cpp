@@ -2,10 +2,10 @@ class Solution {
 public:
     vector<string> removeSubfolders(vector<string>& folder) {
         sort(folder.begin() , folder.end());
-        string prev = "";
         vector<string> res;
+        string prev = "";
         for(auto f : folder){
-            if(prev.empty() || f.find(prev + '/')){
+            if(prev.empty() || f.find(prev + "/") != 0){
                 res.push_back(f);
                 prev = f;
             }
