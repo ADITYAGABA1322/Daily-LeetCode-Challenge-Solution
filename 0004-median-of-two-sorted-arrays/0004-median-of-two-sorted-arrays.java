@@ -1,4 +1,4 @@
-	class Solution {
+class Solution {
 		public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 					int n1 = nums1.length;  // length of the first array
 					int n2 = nums2.length;  // length of the second array
