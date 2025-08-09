@@ -1184,6 +1184,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0010-regular-expression-matching](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0010-regular-expression-matching) |
+| [0231-power-of-two](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0231-power-of-two) |
 | [0241-different-ways-to-add-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0241-different-ways-to-add-parentheses) |
 | [0273-integer-to-english-words](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0273-integer-to-english-words) |
 | [1197-parsing-a-boolean-expression](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1197-parsing-a-boolean-expression) |
@@ -1204,6 +1205,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0062-unique-paths) |
+| [0231-power-of-two](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0231-power-of-two) |
 | [0241-different-ways-to-add-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0241-different-ways-to-add-parentheses) |
 | [0264-ugly-number-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0264-ugly-number-ii) |
 | [0273-integer-to-english-words](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0273-integer-to-english-words) |
@@ -1433,6 +1435,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Bit Manipulation
 |  |
 | ------- |
+| [0231-power-of-two](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0231-power-of-two) |
 | [0371-sum-of-two-integers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0371-sum-of-two-integers) |
 | [0476-number-complement](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0476-number-complement) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0934-bitwise-ors-of-subarrays) |
