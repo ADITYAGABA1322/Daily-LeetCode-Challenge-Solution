@@ -593,6 +593,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2755-extra-characters-in-a-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2755-extra-characters-in-a-string) |
 | [2757-count-of-integers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2757-count-of-integers) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2794-maximum-number-of-moves-in-a-grid) |
+| [2882-ways-to-express-an-integer-as-sum-of-powers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2882-ways-to-express-an-integer-as-sum-of-powers) |
 | [3142-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3142-longest-unequal-adjacent-groups-subsequence-ii) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3243-count-the-number-of-powerful-integers) |
