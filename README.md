@@ -1194,6 +1194,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0241-different-ways-to-add-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0241-different-ways-to-add-parentheses) |
 | [0273-integer-to-english-words](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0273-integer-to-english-words) |
 | [0326-power-of-three](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0326-power-of-three) |
+| [0342-power-of-four](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0342-power-of-four) |
 | [1197-parsing-a-boolean-expression](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1197-parsing-a-boolean-expression) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1667-find-kth-bit-in-nth-binary-string) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1951-find-the-winner-of-the-circular-game) |
@@ -1217,6 +1218,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0264-ugly-number-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0264-ugly-number-ii) |
 | [0273-integer-to-english-words](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0273-integer-to-english-words) |
 | [0326-power-of-three](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0326-power-of-three) |
+| [0342-power-of-four](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0342-power-of-four) |
 | [0368-largest-divisible-subset](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0368-largest-divisible-subset) |
 | [0371-sum-of-two-integers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0371-sum-of-two-integers) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0453-minimum-moves-to-equal-array-elements) |
@@ -1446,6 +1448,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0231-power-of-two) |
+| [0342-power-of-four](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0342-power-of-four) |
 | [0371-sum-of-two-integers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0371-sum-of-two-integers) |
 | [0476-number-complement](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0476-number-complement) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0934-bitwise-ors-of-subarrays) |
