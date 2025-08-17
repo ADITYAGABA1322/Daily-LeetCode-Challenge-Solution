@@ -561,6 +561,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0806-domino-and-tromino-tiling](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0806-domino-and-tromino-tiling) |
 | [0826-soup-servings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0826-soup-servings) |
+| [0867-new-21-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0867-new-21-game) |
 | [0868-push-dominoes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0868-push-dominoes) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0934-bitwise-ors-of-subarrays) |
@@ -1231,6 +1232,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0670-maximum-swap](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0670-maximum-swap) |
 | [0797-rabbits-in-forest](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0797-rabbits-in-forest) |
 | [0826-soup-servings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0826-soup-servings) |
+| [0867-new-21-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0867-new-21-game) |
 | [0870-magic-squares-in-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0870-magic-squares-in-grid) |
 | [0900-reordered-power-of-2](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0900-reordered-power-of-2) |
 | [1057-numbers-with-repeated-digits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1057-numbers-with-repeated-digits) |
@@ -1506,6 +1508,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | ------- |
 | [0594-longest-harmonious-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0594-longest-harmonious-subsequence) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
+| [0867-new-21-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0867-new-21-game) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0940-fruit-into-baskets](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0940-fruit-into-baskets) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1460-number-of-substrings-containing-all-three-characters) |
@@ -1624,4 +1627,5 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0826-soup-servings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0826-soup-servings) |
+| [0867-new-21-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0867-new-21-game) |
 <!---LeetCode Topics End-->
