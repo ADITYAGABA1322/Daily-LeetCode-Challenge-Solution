@@ -892,6 +892,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3229-minimum-cost-to-make-array-equalindromic](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3229-minimum-cost-to-make-array-equalindromic) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3235-minimum-cost-to-convert-string-i) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3241-divide-array-into-arrays-with-max-difference) |
+| [3251-maximum-area-of-longest-diagonal-rectangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3251-maximum-area-of-longest-diagonal-rectangle) |
 | [3291-find-if-array-can-be-sorted](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3291-find-if-array-can-be-sorted) |
 | [3307-find-the-maximum-sum-of-node-values](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3307-find-the-maximum-sum-of-node-values) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3309-count-prefix-and-suffix-pairs-i) |
