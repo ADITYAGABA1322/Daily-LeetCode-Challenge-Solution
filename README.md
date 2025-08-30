@@ -656,6 +656,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0001-two-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0004-median-of-two-sorted-arrays) |
 | [0033-search-in-rotated-sorted-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0033-search-in-rotated-sorted-array) |
+| [0036-valid-sudoku](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0036-valid-sudoku) |
 | [0040-combination-sum-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0040-combination-sum-ii) |
 | [0042-trapping-rain-water](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0045-jump-game-ii) |
@@ -1011,6 +1012,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0001-two-sum) |
+| [0036-valid-sudoku](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0049-group-anagrams) |
 | [0073-set-matrix-zeroes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0128-longest-consecutive-sequence) |
@@ -1313,6 +1315,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Matrix
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0036-valid-sudoku) |
 | [0063-unique-paths-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0063-unique-paths-ii) |
 | [0073-set-matrix-zeroes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0073-set-matrix-zeroes) |
 | [0407-trapping-rain-water-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0407-trapping-rain-water-ii) |
