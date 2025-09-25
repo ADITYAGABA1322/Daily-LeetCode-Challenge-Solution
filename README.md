@@ -559,6 +559,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0063-unique-paths-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0063-unique-paths-ii) |
 | [0091-decode-ways](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0091-decode-ways) |
 | [0118-pascals-triangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0118-pascals-triangle) |
+| [0120-triangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0120-triangle) |
 | [0139-word-break](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0139-word-break) |
 | [0152-maximum-product-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0198-house-robber) |
@@ -686,6 +687,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0073-set-matrix-zeroes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0075-sort-colors) |
 | [0118-pascals-triangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0118-pascals-triangle) |
+| [0120-triangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0120-triangle) |
 | [0128-longest-consecutive-sequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0128-longest-consecutive-sequence) |
 | [0135-candy](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0135-candy) |
 | [0139-word-break](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0139-word-break) |
