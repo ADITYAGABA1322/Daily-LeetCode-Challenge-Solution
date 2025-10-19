@@ -300,6 +300,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1558-course-schedule-iv](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1558-course-schedule-iv) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
+| [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [1876-map-of-highest-peak](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1876-map-of-highest-peak) |
 | [2035-count-sub-islands](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2035-count-sub-islands) |
 | [2171-second-minimum-time-to-reach-destination](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2171-second-minimum-time-to-reach-destination) |
@@ -385,6 +386,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [1558-course-schedule-iv](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1558-course-schedule-iv) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
+| [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [2035-count-sub-islands](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2035-count-sub-islands) |
 | [2201-valid-arrangement-of-pairs](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2201-valid-arrangement-of-pairs) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
@@ -501,6 +503,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
 | [1720-crawler-log-folder](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1720-crawler-log-folder) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
+| [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1818-maximum-score-from-removing-substrings) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
@@ -1787,6 +1790,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0900-reordered-power-of-2](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0900-reordered-power-of-2) |
 | [1334-sum-of-numbers-with-units-digit-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1334-sum-of-numbers-with-units-digit-k) |
 | [1656-count-good-triplets](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1656-count-good-triplets) |
+| [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
