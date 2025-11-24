@@ -819,6 +819,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1002-maximum-width-ramp](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1002-maximum-width-ramp) |
 | [1006-vowel-spellchecker](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1006-vowel-spellchecker) |
 | [1018-largest-perimeter-triangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1018-largest-perimeter-triangle) |
+| [1018-binary-prefix-divisible-by-5](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1025-minimum-cost-for-tickets](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1025-minimum-cost-for-tickets) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1063-best-sightseeing-pair](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1063-best-sightseeing-pair) |
@@ -1731,6 +1732,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0371-sum-of-two-integers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0371-sum-of-two-integers) |
 | [0476-number-complement](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0476-number-complement) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0934-bitwise-ors-of-subarrays) |
+| [1018-binary-prefix-divisible-by-5](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1435-xor-queries-of-a-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1435-xor-queries-of-a-subarray) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1732-minimum-one-bit-operations-to-make-integers-zero](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1732-minimum-one-bit-operations-to-make-integers-zero) |
