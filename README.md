@@ -551,6 +551,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2163-kth-distinct-string-in-an-array) |
+| [2211-count-collisions-on-a-road](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2211-count-collisions-on-a-road) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
@@ -1157,6 +1158,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1818-maximum-score-from-removing-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2211-count-collisions-on-a-road](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2211-count-collisions-on-a-road) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2307-replace-non-coprime-numbers-in-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2456-construct-smallest-number-from-di-string) |
@@ -1404,6 +1406,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [2155-find-missing-observations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2155-find-missing-observations) |
 | [2169-simple-bank-system](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2169-simple-bank-system) |
+| [2211-count-collisions-on-a-road](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2211-count-collisions-on-a-road) |
 | [2232-adding-spaces-to-a-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2232-adding-spaces-to-a-string) |
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2260-divide-a-string-into-groups-of-size-k) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2265-partition-array-according-to-given-pivot) |
