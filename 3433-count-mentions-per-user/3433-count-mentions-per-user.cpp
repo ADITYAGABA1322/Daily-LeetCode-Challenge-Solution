@@ -1,53 +1,51 @@
 class Solution {
 public:
-    vector<int> countMentions(int numberOfUsers,
-                              vector<vector<string>>& events) {
-        vector<int> count(numberOfUsers);
-        vector<int> next_online_time(numberOfUsers);
-        sort(events.begin(), events.end(),
-             [&](const vector<string>& lth, const vector<string>& rth) {
-                 int lth_timestamp = stoi(lth[1]);
-                 int rth_timestamp = stoi(rth[1]);
-                 if (lth_timestamp != rth_timestamp) {
-                     return lth_timestamp < rth_timestamp;
-                 }
-                 if (rth[0] == "OFFLINE") {
-                     return false;
-                 }
-                 return true;
-             });
+    vector<int> countMentions(int numberOfUsers, vector<vector<string>>& events) {
+        vector<int> mentionCnt(numberOfUsers);
+        vector<int> offlineTime(numberOfUsers);
+        auto lambda = [](vector<string>& vec1 , vector<string>& vec2){
+            int t1 = stoi(vec1[1]) , t2 = stoi(vec2[1]);
+            if(t1 == t2){
+                return vec1[0][1] > vec2[0][1]; // MEANS OFFLINE 'O' COMES FIRST BEFORE THE MESSAGES ACC TO LEXO STRING 
+            }
+            return t1 < t2;
+        };
+        sort(events.begin() , events.end() , lambda);
 
-        for (auto&& event : events) {
-            int cur_time = stoi(event[1]);
-            if (event[0] == "MESSAGE") {
-                if (event[2] == "ALL") {
-                    for (int i = 0; i < numberOfUsers; i++) {
-                        count[i]++;
-                    }
-                } else if (event[2] == "HERE") {
-                    for (int i = 0; i < numberOfUsers; i++) {
-                        if (next_online_time[i] <= cur_time) {
-                            count[i]++;
-                        }
-                    }
-                } else {
-                    int idx = 0;
-                    for (int i = 0; i < event[2].size(); i++) {
-                        if (isdigit(event[2][i])) {
-                            idx = idx * 10 + (event[2][i] - '0');
-                        }
-                        if (i + 1 == event[2].size() ||
-                            event[2][i + 1] == ' ') {
-                            count[idx]++;
-                            idx = 0;
-                        }
+        for(vector<string> e : events){
+            if(e[0] == "MESSAGE"){
+                applyMessageEvent(e , mentionCnt  , offlineTime);
+            } else if(e[0] == "OFFLINE"){
+                int timeStamp = stoi(e[1]);
+                int id = stoi(e[2]);
+                offlineTime[id] = timeStamp;
+            }
+        }
+        return mentionCnt;
+    }
+
+    void  applyMessageEvent(vector<string>& event , vector<int>& mentionCnt , vector<int>& offlineTime){
+        int timeStamp = stoi(event[1]);
+        vector<string> ids;
+        stringstream ss(event[2]);
+        string token;
+        while(ss >> token){
+             ids.push_back(token);
+        }
+        for(auto id: ids){
+            if(id == "ALL"){
+                for(int i=0; i<mentionCnt.size(); i++){
+                    mentionCnt[i]++;
+                }
+            } else if(id == "HERE"){
+                for(int i=0; i<mentionCnt.size(); i++){
+                    if(offlineTime[i] == 0 || offlineTime[i]+60 <= timeStamp){
+                        mentionCnt[i]++;
                     }
                 }
             } else {
-                int idx = stoi(event[2]);
-                next_online_time[idx] = cur_time + 60;
+                mentionCnt[stoi(id.substr(2))]++;
             }
         }
-        return count;
     }
 };
