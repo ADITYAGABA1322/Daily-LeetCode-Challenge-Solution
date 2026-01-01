@@ -804,6 +804,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0053-maximum-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0055-jump-game) |
 | [0063-unique-paths-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0063-unique-paths-ii) |
+| [0066-plus-one](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0075-sort-colors) |
 | [0118-pascals-triangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0118-pascals-triangle) |
@@ -1532,6 +1533,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0062-unique-paths) |
+| [0066-plus-one](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0066-plus-one) |
 | [0166-fraction-to-recurring-decimal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0166-fraction-to-recurring-decimal) |
 | [0231-power-of-two](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0231-power-of-two) |
 | [0241-different-ways-to-add-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0241-different-ways-to-add-parentheses) |
