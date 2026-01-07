@@ -430,6 +430,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1207-delete-nodes-and-return-forest](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1207-delete-nodes-and-return-forest) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1339-maximum-product-of-splitted-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1396-count-servers-that-communicate](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1396-count-servers-that-communicate) |
@@ -1747,6 +1748,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1207-delete-nodes-and-return-forest](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1207-delete-nodes-and-return-forest) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1339-maximum-product-of-splitted-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2306-create-binary-tree-from-descriptions) |
@@ -1777,6 +1779,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1207-delete-nodes-and-return-forest](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1207-delete-nodes-and-return-forest) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1339-maximum-product-of-splitted-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2306-create-binary-tree-from-descriptions) |
