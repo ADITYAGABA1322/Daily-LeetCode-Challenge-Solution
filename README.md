@@ -662,6 +662,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0055-jump-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0055-jump-game) |
 | [0062-unique-paths](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0063-unique-paths-ii) |
+| [0085-maximal-rectangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0085-maximal-rectangle) |
 | [0091-decode-ways](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0091-decode-ways) |
 | [0118-pascals-triangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0120-triangle) |
@@ -817,6 +818,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0066-plus-one](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0075-sort-colors) |
+| [0085-maximal-rectangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0085-maximal-rectangle) |
 | [0118-pascals-triangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0120-triangle) |
 | [0128-longest-consecutive-sequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0128-longest-consecutive-sequence) |
@@ -1216,6 +1218,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0042-trapping-rain-water) |
+| [0085-maximal-rectangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0085-maximal-rectangle) |
 | [0145-binary-tree-postorder-traversal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0145-binary-tree-postorder-traversal) |
 | [0726-number-of-atoms](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0726-number-of-atoms) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0776-n-ary-tree-postorder-traversal) |
@@ -1249,6 +1252,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0042-trapping-rain-water) |
+| [0085-maximal-rectangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0085-maximal-rectangle) |
 | [0780-max-chunks-to-make-sorted](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0780-max-chunks-to-make-sorted) |
 | [1002-maximum-width-ramp](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1002-maximum-width-ramp) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
@@ -1677,6 +1681,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0037-sudoku-solver](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0037-sudoku-solver) |
 | [0063-unique-paths-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0063-unique-paths-ii) |
 | [0073-set-matrix-zeroes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0073-set-matrix-zeroes) |
+| [0085-maximal-rectangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0085-maximal-rectangle) |
 | [0407-trapping-rain-water-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0407-trapping-rain-water-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0417-pacific-atlantic-water-flow) |
 | [0498-diagonal-traverse](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0498-diagonal-traverse) |
