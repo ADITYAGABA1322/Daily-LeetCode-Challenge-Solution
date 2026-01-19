@@ -366,6 +366,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0238-product-of-array-except-self](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0238-product-of-array-except-self) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1240-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1240-stone-game-ii) |
+| [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1435-xor-queries-of-a-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1435-xor-queries-of-a-subarray) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1477-product-of-the-last-k-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1477-product-of-the-last-k-numbers) |
@@ -897,6 +898,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1256-rank-transform-of-an-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1256-rank-transform-of-an-array) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1266-minimum-time-visiting-all-points](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1266-minimum-time-visiting-all-points) |
+| [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1293-three-consecutive-odds](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1293-three-consecutive-odds) |
 | [1325-path-with-maximum-probability](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1325-path-with-maximum-probability) |
 | [1333-sort-the-jumbled-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1333-sort-the-jumbled-numbers) |
@@ -1428,6 +1430,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0729-my-calendar-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0729-my-calendar-i) |
 | [0794-swim-in-rising-water](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0794-swim-in-rising-water) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
+| [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1468-check-if-n-and-its-double-exist) |
@@ -1707,6 +1710,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0945-snakes-and-ladders](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0945-snakes-and-ladders) |
 | [0999-regions-cut-by-slashes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0999-regions-cut-by-slashes) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
+| [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1396-count-servers-that-communicate](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1396-count-servers-that-communicate) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1402-count-square-submatrices-with-all-ones) |
