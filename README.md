@@ -83,6 +83,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1818-maximum-score-from-removing-substrings) |
 | [1834-minimum-number-of-people-to-teach](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1834-minimum-number-of-people-to-teach) |
+| [1877-minimize-maximum-pair-sum-in-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1917-maximum-average-pass-ratio](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1917-maximum-average-pass-ratio) |
 | [1975-maximum-matrix-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1975-maximum-matrix-sum) |
 | [2089-maximum-matrix-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2089-maximum-matrix-sum) |
@@ -202,6 +203,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [1741-sort-array-by-increasing-frequency](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1741-sort-array-by-increasing-frequency) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
+| [1877-minimize-maximum-pair-sum-in-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [2054-two-best-non-overlapping-events](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2054-two-best-non-overlapping-events) |
 | [2092-find-all-people-with-secret](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2092-find-all-people-with-secret) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2141-maximum-running-time-of-n-computers) |
@@ -496,6 +498,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
+| [1877-minimize-maximum-pair-sum-in-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1923-sentence-similarity-iii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1923-sentence-similarity-iii) |
 | [1972-rotating-the-box](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1972-rotating-the-box) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
@@ -959,6 +962,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1876-map-of-highest-peak](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1876-map-of-highest-peak) |
+| [1877-minimize-maximum-pair-sum-in-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
