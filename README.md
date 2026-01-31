@@ -869,6 +869,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0717-1-bit-and-2-bit-characters](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0717-1-bit-and-2-bit-characters) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0729-my-calendar-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0729-my-calendar-i) |
+| [0744-find-smallest-letter-greater-than-target](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0757-set-intersection-size-at-least-two](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0757-set-intersection-size-at-least-two) |
 | [0780-max-chunks-to-make-sorted](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0780-max-chunks-to-make-sorted) |
 | [0787-sliding-puzzle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0787-sliding-puzzle) |
@@ -1452,6 +1453,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0611-valid-triangle-number](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0611-valid-triangle-number) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0729-my-calendar-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0729-my-calendar-i) |
+| [0744-find-smallest-letter-greater-than-target](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0794-swim-in-rising-water](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0794-swim-in-rising-water) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
