@@ -426,6 +426,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Depth-First Search
 |  |
 | ------- |
+| [0110-balanced-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0110-balanced-binary-tree) |
 | [0133-clone-graph](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0133-clone-graph) |
 | [0145-binary-tree-postorder-traversal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0145-binary-tree-postorder-traversal) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
@@ -1813,6 +1814,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Tree
 |  |
 | ------- |
+| [0110-balanced-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0110-balanced-binary-tree) |
 | [0145-binary-tree-postorder-traversal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0145-binary-tree-postorder-traversal) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0515-find-largest-value-in-each-tree-row) |
@@ -1846,6 +1848,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Binary Tree
 |  |
 | ------- |
+| [0110-balanced-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0110-balanced-binary-tree) |
 | [0145-binary-tree-postorder-traversal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0145-binary-tree-postorder-traversal) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0515-find-largest-value-in-each-tree-row) |
