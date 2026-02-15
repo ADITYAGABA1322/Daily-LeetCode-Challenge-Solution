@@ -536,6 +536,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0010-regular-expression-matching](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0010-regular-expression-matching) |
 | [0038-count-and-say](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0038-count-and-say) |
 | [0049-group-anagrams](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0049-group-anagrams) |
+| [0067-add-binary](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0067-add-binary) |
 | [0091-decode-ways](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0091-decode-ways) |
 | [0139-word-break](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0139-word-break) |
 | [0165-compare-version-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0165-compare-version-numbers) |
@@ -1553,6 +1554,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Simulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0067-add-binary) |
 | [0498-diagonal-traverse](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0498-diagonal-traverse) |
 | [0592-fraction-addition-and-subtraction](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0592-fraction-addition-and-subtraction) |
 | [0906-walking-robot-simulation](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0906-walking-robot-simulation) |
@@ -1633,6 +1635,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | ------- |
 | [0062-unique-paths](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0062-unique-paths) |
 | [0066-plus-one](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0066-plus-one) |
+| [0067-add-binary](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0067-add-binary) |
 | [0166-fraction-to-recurring-decimal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0166-fraction-to-recurring-decimal) |
 | [0231-power-of-two](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0231-power-of-two) |
 | [0241-different-ways-to-add-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0241-different-ways-to-add-parentheses) |
@@ -1964,6 +1967,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Bit Manipulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0067-add-binary) |
 | [0231-power-of-two](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0231-power-of-two) |
 | [0342-power-of-four](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0342-power-of-four) |
 | [0371-sum-of-two-integers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0371-sum-of-two-integers) |
