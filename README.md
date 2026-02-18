@@ -1975,6 +1975,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0371-sum-of-two-integers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0371-sum-of-two-integers) |
 | [0401-binary-watch](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0401-binary-watch) |
 | [0476-number-complement](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0476-number-complement) |
+| [0693-binary-number-with-alternating-bits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0693-binary-number-with-alternating-bits) |
 | [0756-pyramid-transition-matrix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0756-pyramid-transition-matrix) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0934-bitwise-ors-of-subarrays) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1018-binary-prefix-divisible-by-5) |
