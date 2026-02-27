@@ -372,6 +372,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3517-shortest-distance-after-road-addition-queries-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3517-shortest-distance-after-road-addition-queries-i) |
 | [3633-maximize-the-number-of-target-nodes-after-connecting-trees-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3633-maximize-the-number-of-target-nodes-after-connecting-trees-i) |
 | [3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii) |
+| [3666-minimum-operations-to-equalize-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3666-minimum-operations-to-equalize-binary-string) |
 | [3863-power-grid-maintenance](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3863-power-grid-maintenance) |
 ## Prefix Sum
 |  |
@@ -676,6 +677,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3637-count-number-of-balanced-permutations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3637-count-number-of-balanced-permutations) |
+| [3666-minimum-operations-to-equalize-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3666-minimum-operations-to-equalize-binary-string) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 | [3713-longest-balanced-substring-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3713-longest-balanced-substring-i) |
 | [3714-longest-balanced-substring-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3714-longest-balanced-substring-ii) |
@@ -1753,6 +1755,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3637-count-number-of-balanced-permutations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3637-count-number-of-balanced-permutations) |
+| [3666-minimum-operations-to-equalize-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3666-minimum-operations-to-equalize-binary-string) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3676-smallest-number-with-all-set-bits) |
 | [3682-count-the-number-of-arrays-with-k-matching-adjacent-elements](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3682-count-the-number-of-arrays-with-k-matching-adjacent-elements) |
 | [3744-minimum-operations-to-make-array-elements-zero](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3744-minimum-operations-to-make-array-elements-zero) |
@@ -2175,6 +2178,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2868-continuous-subarrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2868-continuous-subarrays) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3510-minimum-pair-removal-to-sort-array-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3510-minimum-pair-removal-to-sort-array-ii) |
+| [3666-minimum-operations-to-equalize-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3666-minimum-operations-to-equalize-binary-string) |
 | [3678-design-task-manager](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3678-design-task-manager) |
 | [3790-fruits-into-baskets-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3790-fruits-into-baskets-ii) |
 | [3791-fruits-into-baskets-iii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3791-fruits-into-baskets-iii) |
@@ -2257,4 +2261,8 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2976-minimum-cost-to-convert-string-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2976-minimum-cost-to-convert-string-i) |
 | [2977-minimum-cost-to-convert-string-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2977-minimum-cost-to-convert-string-ii) |
 | [3650-minimum-cost-path-with-edge-reversals](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3650-minimum-cost-path-with-edge-reversals) |
+## Union-Find
+|  |
+| ------- |
+| [3666-minimum-operations-to-equalize-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3666-minimum-operations-to-equalize-binary-string) |
 <!---LeetCode Topics End-->
