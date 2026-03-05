@@ -605,6 +605,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1720-crawler-log-folder](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1720-crawler-log-folder) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
+| [1758-minimum-changes-to-make-alternating-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1758-minimum-changes-to-make-alternating-binary-string) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1818-maximum-score-from-removing-substrings) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
