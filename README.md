@@ -487,6 +487,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [1558-course-schedule-iv](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1558-course-schedule-iv) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
+| [1722-minimize-hamming-distance-after-swap-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2035-count-sub-islands](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2035-count-sub-islands) |
@@ -1044,6 +1045,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1700-minimum-time-to-make-rope-colorful) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1720-crawler-log-folder](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1720-crawler-log-folder) |
+| [1722-minimize-hamming-distance-after-swap-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1727-largest-submatrix-with-rearrangements) |
 | [1741-sort-array-by-increasing-frequency](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1741-sort-array-by-increasing-frequency) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
@@ -2408,6 +2410,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Union-Find
 |  |
 | ------- |
+| [1722-minimize-hamming-distance-after-swap-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
 | [2573-find-the-string-with-lcp](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2573-find-the-string-with-lcp) |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3600-maximize-spanning-tree-stability-with-upgrades) |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3666-minimum-operations-to-equalize-binary-string) |
