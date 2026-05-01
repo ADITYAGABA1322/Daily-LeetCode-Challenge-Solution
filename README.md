@@ -765,6 +765,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0322-coin-change](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0322-coin-change) |
 | [0368-largest-divisible-subset](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0368-largest-divisible-subset) |
 | [0377-combination-sum-iv](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0377-combination-sum-iv) |
+| [0396-rotate-function](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0396-rotate-function) |
 | [0416-partition-equal-subset-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0416-partition-equal-subset-sum) |
 | [0474-ones-and-zeroes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0474-ones-and-zeroes) |
 | [0494-target-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0494-target-sum) |
@@ -944,6 +945,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0350-intersection-of-two-arrays-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0368-largest-divisible-subset](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0368-largest-divisible-subset) |
 | [0377-combination-sum-iv](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0377-combination-sum-iv) |
+| [0396-rotate-function](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0396-rotate-function) |
 | [0407-trapping-rain-water-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0407-trapping-rain-water-ii) |
 | [0416-partition-equal-subset-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0417-pacific-atlantic-water-flow) |
@@ -1799,6 +1801,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0342-power-of-four](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0342-power-of-four) |
 | [0368-largest-divisible-subset](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0368-largest-divisible-subset) |
 | [0371-sum-of-two-integers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0371-sum-of-two-integers) |
+| [0396-rotate-function](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0396-rotate-function) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0539-minimum-time-difference](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0539-minimum-time-difference) |
