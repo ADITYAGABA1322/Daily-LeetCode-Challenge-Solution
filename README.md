@@ -923,6 +923,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0040-combination-sum-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0040-combination-sum-ii) |
 | [0042-trapping-rain-water](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0045-jump-game-ii) |
+| [0048-rotate-image](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0055-jump-game) |
@@ -1792,6 +1793,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Math
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0048-rotate-image) |
 | [0062-unique-paths](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0062-unique-paths) |
 | [0066-plus-one](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0066-plus-one) |
 | [0067-add-binary](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0067-add-binary) |
@@ -1935,6 +1937,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | ------- |
 | [0036-valid-sudoku](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0037-sudoku-solver) |
+| [0048-rotate-image](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0048-rotate-image) |
 | [0063-unique-paths-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0063-unique-paths-ii) |
 | [0073-set-matrix-zeroes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0073-set-matrix-zeroes) |
 | [0085-maximal-rectangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0085-maximal-rectangle) |
