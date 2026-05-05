@@ -535,6 +535,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0005-longest-palindromic-substring](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0005-longest-palindromic-substring) |
 | [0011-container-with-most-water](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0011-container-with-most-water) |
 | [0042-trapping-rain-water](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0042-trapping-rain-water) |
+| [0061-rotate-list](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0075-sort-colors) |
 | [0165-compare-version-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0165-compare-version-numbers) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -1685,6 +1686,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Linked List
 |  |
 | ------- |
+| [0061-rotate-list](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0061-rotate-list) |
 | [0432-all-oone-data-structure](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0432-all-oone-data-structure) |
 | [0725-split-linked-list-in-parts](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0725-split-linked-list-in-parts) |
 | [0859-design-circular-deque](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0859-design-circular-deque) |
