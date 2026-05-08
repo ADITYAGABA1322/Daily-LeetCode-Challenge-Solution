@@ -391,6 +391,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3271-count-the-number-of-houses-at-a-certain-distance-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3271-count-the-number-of-houses-at-a-certain-distance-i) |
 | [3439-find-minimum-diameter-after-merging-two-trees](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3439-find-minimum-diameter-after-merging-two-trees) |
 | [3517-shortest-distance-after-road-addition-queries-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3517-shortest-distance-after-road-addition-queries-i) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3633-maximize-the-number-of-target-nodes-after-connecting-trees-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3633-maximize-the-number-of-target-nodes-after-connecting-trees-i) |
 | [3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii) |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3666-minimum-operations-to-equalize-binary-string) |
@@ -1325,6 +1326,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3625-count-number-of-trapezoids-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3625-count-number-of-trapezoids-ii) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3634-minimum-removals-to-balance-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3634-minimum-removals-to-balance-array) |
 | [3637-trionic-array-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3637-trionic-array-i) |
 | [3639-zero-array-transformation-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3639-zero-array-transformation-i) |
@@ -1601,6 +1603,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3623-count-number-of-trapezoids-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3623-count-number-of-trapezoids-i) |
 | [3625-count-number-of-trapezoids-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3625-count-number-of-trapezoids-ii) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3629-total-characters-in-string-after-transformations-i) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3678-design-task-manager](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3678-design-task-manager) |
@@ -1912,6 +1915,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3623-count-number-of-trapezoids-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3623-count-number-of-trapezoids-i) |
 | [3625-count-number-of-trapezoids-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3625-count-number-of-trapezoids-ii) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3629-total-characters-in-string-after-transformations-i) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3637-count-number-of-balanced-permutations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3637-count-number-of-balanced-permutations) |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3666-minimum-operations-to-equalize-binary-string) |
@@ -2349,6 +2353,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 | [3001-apply-operations-to-maximize-score](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3001-apply-operations-to-maximize-score) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
 ## Brainteaser
 |  |
