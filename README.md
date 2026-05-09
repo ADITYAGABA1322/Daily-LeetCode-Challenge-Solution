@@ -1093,6 +1093,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1895-largest-magic-square](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1895-largest-magic-square) |
+| [1914-cyclically-rotating-a-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1914-cyclically-rotating-a-grid) |
 | [1917-maximum-average-pass-ratio](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1917-maximum-average-pass-ratio) |
 | [1923-sentence-similarity-iii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1923-sentence-similarity-iii) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1927-maximum-ascending-subarray-sum) |
@@ -1721,6 +1722,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1667-find-kth-bit-in-nth-binary-string) |
 | [1680-concatenation-of-consecutive-binary-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1680-concatenation-of-consecutive-binary-numbers) |
 | [1803-average-waiting-time](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1803-average-waiting-time) |
+| [1914-cyclically-rotating-a-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1914-cyclically-rotating-a-grid) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2021-remove-all-occurrences-of-a-substring) |
@@ -1983,6 +1985,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [1895-largest-magic-square](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1895-largest-magic-square) |
+| [1914-cyclically-rotating-a-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1914-cyclically-rotating-a-grid) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1970-last-day-where-you-can-still-cross) |
 | [1972-rotating-the-box](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1972-rotating-the-box) |
 | [1975-maximum-matrix-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1975-maximum-matrix-sum) |
