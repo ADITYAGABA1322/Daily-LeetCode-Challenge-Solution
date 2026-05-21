@@ -713,6 +713,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2976-minimum-cost-to-convert-string-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2976-minimum-cost-to-convert-string-i) |
 | [2977-minimum-cost-to-convert-string-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2977-minimum-cost-to-convert-string-ii) |
 | [3018-make-string-a-subsequence-using-cyclic-increments](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3018-make-string-a-subsequence-using-cyclic-increments) |
+| [3043-find-the-length-of-the-longest-common-prefix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3142-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3142-longest-unequal-adjacent-groups-subsequence-ii) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 | [3174-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3174-minimum-number-of-changes-to-make-binary-string-beautiful) |
@@ -1261,6 +1262,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3001-apply-operations-to-maximize-score](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3001-apply-operations-to-maximize-score) |
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 | [3013-divide-an-array-into-subarrays-with-minimum-cost-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3013-divide-an-array-into-subarrays-with-minimum-cost-ii) |
+| [3043-find-the-length-of-the-longest-common-prefix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3070-count-submatrices-with-top-left-element-and-sum-less-than-k) |
 | [3074-apple-redistribution-into-boxes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3074-apple-redistribution-into-boxes) |
@@ -1601,6 +1603,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2915-count-of-interesting-subarrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2915-count-of-interesting-subarrays) |
 | [2975-maximum-square-area-by-removing-fences-from-a-field](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2975-maximum-square-area-by-removing-fences-from-a-field) |
 | [3013-divide-an-array-into-subarrays-with-minimum-cost-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3013-divide-an-array-into-subarrays-with-minimum-cost-ii) |
+| [3043-find-the-length-of-the-longest-common-prefix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3227-find-missing-and-repeated-values](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3227-find-missing-and-repeated-values) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
@@ -2277,6 +2280,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2755-extra-characters-in-a-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2755-extra-characters-in-a-string) |
 | [2977-minimum-cost-to-convert-string-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2977-minimum-cost-to-convert-string-ii) |
+| [3043-find-the-length-of-the-longest-common-prefix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3043-find-the-length-of-the-longest-common-prefix) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Memoization
