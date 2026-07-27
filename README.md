@@ -222,6 +222,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1340-jump-game-v](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1340-jump-game-v) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
+| [1464-maximum-product-of-two-elements-in-an-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
@@ -326,6 +327,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0948-sort-an-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0948-sort-an-array) |
 | [1304-longest-happy-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1304-longest-happy-string) |
 | [1325-path-with-maximum-probability](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1325-path-with-maximum-probability) |
+| [1464-maximum-product-of-two-elements-in-an-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1612-avoid-flood-in-the-city](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1612-avoid-flood-in-the-city) |
@@ -1128,6 +1130,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
 | [1435-xor-queries-of-a-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1435-xor-queries-of-a-subarray) |
 | [1458-max-dot-product-of-two-subsequences](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1458-max-dot-product-of-two-subsequences) |
+| [1464-maximum-product-of-two-elements-in-an-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1477-product-of-the-last-k-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1477-product-of-the-last-k-numbers) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
