@@ -853,6 +853,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0396-rotate-function](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0396-rotate-function) |
 | [0416-partition-equal-subset-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0416-partition-equal-subset-sum) |
 | [0474-ones-and-zeroes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0474-ones-and-zeroes) |
+| [0486-predict-the-winner](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0486-predict-the-winner) |
 | [0494-target-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0494-target-sum) |
 | [0516-longest-palindromic-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0516-longest-palindromic-subsequence) |
 | [0600-non-negative-integers-without-consecutive-ones](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0600-non-negative-integers-without-consecutive-ones) |
@@ -1054,6 +1055,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0474-ones-and-zeroes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0474-ones-and-zeroes) |
+| [0486-predict-the-winner](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0486-predict-the-winner) |
 | [0494-target-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0494-target-sum) |
 | [0498-diagonal-traverse](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0498-diagonal-traverse) |
 | [0539-minimum-time-difference](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0539-minimum-time-difference) |
@@ -1968,6 +1970,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0273-integer-to-english-words](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0273-integer-to-english-words) |
 | [0326-power-of-three](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0342-power-of-four) |
+| [0486-predict-the-winner](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0486-predict-the-winner) |
 | [1197-parsing-a-boolean-expression](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1197-parsing-a-boolean-expression) |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1545-find-kth-bit-in-nth-binary-string) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1667-find-kth-bit-in-nth-binary-string) |
@@ -2010,6 +2013,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0396-rotate-function](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0396-rotate-function) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
+| [0486-predict-the-winner](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0486-predict-the-winner) |
 | [0539-minimum-time-difference](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0539-minimum-time-difference) |
 | [0564-find-the-closest-palindrome](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0564-find-the-closest-palindrome) |
 | [0592-fraction-addition-and-subtraction](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0592-fraction-addition-and-subtraction) |
@@ -2581,6 +2585,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Game Theory
 |  |
 | ------- |
+| [0486-predict-the-winner](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0486-predict-the-winner) |
 | [1240-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1240-stone-game-ii) |
 | [3462-vowels-game-in-a-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3462-vowels-game-in-a-string) |
 ## Number Theory
