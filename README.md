@@ -431,6 +431,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2793-count-the-number-of-complete-components](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2793-count-the-number-of-complete-components) |
 | [3271-count-the-number-of-houses-at-a-certain-distance-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3271-count-the-number-of-houses-at-a-certain-distance-i) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3286-find-a-safe-walk-through-a-grid) |
+| [3310-remove-methods-from-project](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3310-remove-methods-from-project) |
 | [3439-find-minimum-diameter-after-merging-two-trees](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3439-find-minimum-diameter-after-merging-two-trees) |
 | [3517-shortest-distance-after-road-addition-queries-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3517-shortest-distance-after-road-addition-queries-i) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
@@ -566,6 +567,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2793-count-the-number-of-complete-components](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2793-count-the-number-of-complete-components) |
 | [2872-maximum-number-of-k-divisible-components](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2872-maximum-number-of-k-divisible-components) |
 | [3058-maximum-number-of-k-divisible-components](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3058-maximum-number-of-k-divisible-components) |
+| [3310-remove-methods-from-project](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3310-remove-methods-from-project) |
 | [3439-find-minimum-diameter-after-merging-two-trees](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3439-find-minimum-diameter-after-merging-two-trees) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3559-number-of-ways-to-assign-edge-weights-ii) |
@@ -2728,6 +2730,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2976-minimum-cost-to-convert-string-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2976-minimum-cost-to-convert-string-i) |
 | [2977-minimum-cost-to-convert-string-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2977-minimum-cost-to-convert-string-ii) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3286-find-a-safe-walk-through-a-grid) |
+| [3310-remove-methods-from-project](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3310-remove-methods-from-project) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3532-path-existence-queries-in-a-graph-i) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3600-maximize-spanning-tree-stability-with-upgrades) |
