@@ -6,11 +6,11 @@ public:
             while(num > 0){
                 product *= (num % 10);
                 num /= 10;
-                if(!product){
-                    break;
-                }
+                // if(!product){
+                //     break;
+                // }
             }
-            return !(product % t);
+            return  product % t == 0;
         };
         while(!check(n)){
             n++;
