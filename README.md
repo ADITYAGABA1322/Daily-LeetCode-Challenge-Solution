@@ -446,6 +446,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0238-product-of-array-except-self) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
+| [1140-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1140-stone-game-ii) |
 | [1240-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1240-stone-game-ii) |
 | [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1435-xor-queries-of-a-subarray](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1435-xor-queries-of-a-subarray) |
@@ -884,6 +885,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1057-numbers-with-repeated-digits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1057-numbers-with-repeated-digits) |
 | [1063-best-sightseeing-pair](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1063-best-sightseeing-pair) |
 | [1111-minimum-score-triangulation-of-polygon](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1111-minimum-score-triangulation-of-polygon) |
+| [1140-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1140-stone-game-ii) |
 | [1170-shortest-common-supersequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1170-shortest-common-supersequence) |
 | [1240-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1240-stone-game-ii) |
 | [1250-longest-common-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1250-longest-common-subsequence) |
@@ -1117,6 +1119,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1063-best-sightseeing-pair](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1063-best-sightseeing-pair) |
 | [1111-minimum-score-triangulation-of-polygon](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1111-minimum-score-triangulation-of-polygon) |
+| [1140-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1140-stone-game-ii) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1200-minimum-absolute-difference](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1200-minimum-absolute-difference) |
 | [1207-delete-nodes-and-return-forest](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1207-delete-nodes-and-return-forest) |
@@ -2049,6 +2052,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1015-smallest-integer-divisible-by-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1018-largest-perimeter-triangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1018-largest-perimeter-triangle) |
 | [1057-numbers-with-repeated-digits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1057-numbers-with-repeated-digits) |
+| [1140-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1140-stone-game-ii) |
 | [1240-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1240-stone-game-ii) |
 | [1266-minimum-time-visiting-all-points](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1266-minimum-time-visiting-all-points) |
 | [1334-sum-of-numbers-with-units-digit-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1334-sum-of-numbers-with-units-digit-k) |
@@ -2607,6 +2611,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | ------- |
 | [0486-predict-the-winner](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0877-stone-game) |
+| [1140-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1140-stone-game-ii) |
 | [1240-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1240-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1406-stone-game-iii) |
 | [3462-vowels-game-in-a-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3462-vowels-game-in-a-string) |
@@ -2766,9 +2771,11 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 ## Minimax
 |  |
 | ------- |
+| [1140-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1406-stone-game-iii) |
 ## Zero-Sum Game
 |  |
 | ------- |
+| [1140-stone-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1406-stone-game-iii) |
 <!---LeetCode Topics End-->
