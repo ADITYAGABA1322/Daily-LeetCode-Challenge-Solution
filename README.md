@@ -2174,6 +2174,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 | [3601-find-the-k-th-character-in-string-game-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3601-find-the-k-th-character-in-string-game-ii) |
+| [3622-check-divisibility-by-digit-sum-and-product](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3622-check-divisibility-by-digit-sum-and-product) |
 | [3623-count-number-of-trapezoids-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3623-count-number-of-trapezoids-i) |
 | [3625-count-number-of-trapezoids-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3625-count-number-of-trapezoids-ii) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3629-total-characters-in-string-after-transformations-i) |
