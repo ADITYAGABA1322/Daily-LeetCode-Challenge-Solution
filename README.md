@@ -94,6 +94,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1917-maximum-average-pass-ratio](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1917-maximum-average-pass-ratio) |
+| [1927-sum-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1927-sum-game) |
 | [1975-maximum-matrix-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1975-maximum-matrix-sum) |
 | [2029-stone-game-ix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2029-stone-game-ix) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -730,6 +731,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [1923-sentence-similarity-iii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1923-sentence-similarity-iii) |
+| [1927-sum-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1927-sum-game) |
 | [1930-unique-length-3-palindromic-subsequences](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [1980-find-unique-binary-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1980-find-unique-binary-string) |
@@ -2105,6 +2107,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [1925-count-square-sum-triples](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1925-count-square-sum-triples) |
+| [1927-sum-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1927-sum-game) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1993-sum-of-all-subset-xor-totals) |
@@ -2653,6 +2656,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1406-stone-game-iii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1563-stone-game-v) |
+| [1927-sum-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1927-sum-game) |
 | [2029-stone-game-ix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2029-stone-game-ix) |
 | [3462-vowels-game-in-a-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3462-vowels-game-in-a-string) |
 ## Number Theory
