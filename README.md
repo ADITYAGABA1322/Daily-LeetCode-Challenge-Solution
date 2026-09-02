@@ -1564,6 +1564,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
 | [3863-power-grid-maintenance](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3863-power-grid-maintenance) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3867-sum-of-gcd-of-formed-pairs) |
+| [3875-construct-uniform-parity-array-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3875-construct-uniform-parity-array-i) |
 ## Design
 |  |
 | ------- |
@@ -2220,6 +2221,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3830-find-closest-person](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3830-find-closest-person) |
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3867-sum-of-gcd-of-formed-pairs) |
+| [3875-construct-uniform-parity-array-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3875-construct-uniform-parity-array-i) |
 ## Combinatorics
 |  |
 | ------- |
