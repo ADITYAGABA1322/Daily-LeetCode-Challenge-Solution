@@ -663,6 +663,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0049-group-anagrams](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0049-group-anagrams) |
 | [0067-add-binary](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0067-add-binary) |
 | [0091-decode-ways](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0091-decode-ways) |
+| [0115-distinct-subsequences](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0115-distinct-subsequences) |
 | [0139-word-break](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0139-word-break) |
 | [0165-compare-version-numbers](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0165-compare-version-numbers) |
 | [0166-fraction-to-recurring-decimal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0166-fraction-to-recurring-decimal) |
@@ -865,6 +866,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0063-unique-paths-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0063-unique-paths-ii) |
 | [0085-maximal-rectangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0085-maximal-rectangle) |
 | [0091-decode-ways](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0091-decode-ways) |
+| [0115-distinct-subsequences](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0115-distinct-subsequences) |
 | [0118-pascals-triangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0120-triangle) |
 | [0139-word-break](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0139-word-break) |
