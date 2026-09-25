@@ -224,6 +224,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0900-reordered-power-of-2](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0900-reordered-power-of-2) |
 | [0948-sort-an-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0948-sort-an-array) |
 | [1018-largest-perimeter-triangle](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1018-largest-perimeter-triangle) |
+| [1096-brace-expansion-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1096-brace-expansion-ii) |
 | [1200-minimum-absolute-difference](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1200-minimum-absolute-difference) |
 | [1256-rank-transform-of-an-array](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1256-rank-transform-of-an-array) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1262-greatest-sum-divisible-by-three) |
@@ -409,6 +410,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0945-snakes-and-ladders](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0945-snakes-and-ladders) |
 | [0999-regions-cut-by-slashes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0999-regions-cut-by-slashes) |
+| [1096-brace-expansion-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1096-brace-expansion-ii) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1306-jump-game-iii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1306-jump-game-iii) |
@@ -706,6 +708,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1093-recover-a-tree-from-preorder-traversal) |
+| [1096-brace-expansion-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1096-brace-expansion-ii) |
 | [1160-letter-tile-possibilities](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1160-letter-tile-possibilities) |
 | [1170-shortest-common-supersequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1170-shortest-common-supersequence) |
 | [1189-maximum-number-of-balloons](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1189-maximum-number-of-balloons) |
@@ -1655,6 +1658,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1002-maximum-width-ramp](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1002-maximum-width-ramp) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1081-smallest-subsequence-of-distinct-characters) |
+| [1096-brace-expansion-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1096-brace-expansion-ii) |
 | [1197-parsing-a-boolean-expression](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1197-parsing-a-boolean-expression) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1497-design-a-stack-with-increment-operation) |
@@ -1734,6 +1738,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0999-regions-cut-by-slashes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0999-regions-cut-by-slashes) |
 | [1006-vowel-spellchecker](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1006-vowel-spellchecker) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1015-smallest-integer-divisible-by-k) |
+| [1096-brace-expansion-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1096-brace-expansion-ii) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1160-letter-tile-possibilities](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1160-letter-tile-possibilities) |
 | [1189-maximum-number-of-balloons](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1189-maximum-number-of-balloons) |
@@ -2709,6 +2714,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0494-target-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0494-target-sum) |
 | [0679-24-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0679-24-game) |
 | [0756-pyramid-transition-matrix](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0756-pyramid-transition-matrix) |
+| [1096-brace-expansion-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1096-brace-expansion-ii) |
 | [1160-letter-tile-possibilities](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1160-letter-tile-possibilities) |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
