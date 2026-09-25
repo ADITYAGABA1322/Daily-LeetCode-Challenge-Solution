@@ -1,63 +1,60 @@
 class Solution {
-    string expression;
-    int idx;
-
-    // item -> letter | { expr }
-    set<string> item() {
-        set<string> ret;
-        if (expression[idx] == '{') {
-            idx++;
-            ret = expr();
-        } else {
-            ret = {string(1, expression[idx])};
+public:
+set<string> solve(string expr) {
+    set<string> res;
+    int depth = 0;
+    int i = 0;
+    // CASE 1: find top level comma
+    for (int i = 0; i < expr.size(); i++) {
+        if (expr[i] == '{') depth++;
+        else if (expr[i] == '}') depth--;
+        else if (expr[i] == ',' && depth == 0) {
+            set<string> leftSet = solve(expr.substr(0 , i));
+            set<string> rightSet = solve(expr.substr(i+1));
+            res.insert(leftSet.begin(), leftSet.end());
+            res.insert(rightSet.begin(), rightSet.end());
+            return res;
         }
-        idx++;
-        return move(ret);
     }
-
-    // term -> item | item term
-    set<string> term() {
-        // Initialize an empty set and take its Cartesian product with
-        // subsequent results
-        set<string> ret = {""};
-        // An item starts with { or a lowercase letter; continue matching only
-        // when this condition is met
-        while (idx < expression.size() &&
-               (expression[idx] == '{' || isalpha(expression[idx]))) {
-            auto sub = item();
-            set<string> tmp;
-            for (auto& left : ret) {
-                for (auto& right : sub) {
-                    tmp.insert(left + right);
+    
+    // CASE 2 & 3: cartesian product
+    set<string> curr = {""};
+    depth = 0;
+    while (i < expr.size()) {
+        if (expr[i] == '{') {
+            int j = i;
+            while(j < expr.size()){
+                if(expr[j] == '{') depth++;
+                else if(expr[j] == '}') depth--;
+                if(depth == 0) break;
+                 j++;
+            }
+            set<string> inner = solve(expr.substr(i+1 , j-i-1));
+            set<string> newSet;
+            for(auto s : curr){
+                for(auto t: inner){
+                    newSet.insert(s+t);
                 }
             }
-            ret = move(tmp);
-        }
-        return move(ret);
-    }
-
-    // expr -> term | term, expr
-    set<string> expr() {
-        set<string> ret;
-        while (true) {
-            // Take the union with the result of term()
-            ret.merge(term());
-            // Continue if a comma is matched; otherwise, stop matching
-            if (idx < expression.size() && expression[idx] == ',') {
-                idx++;
-                continue;
-            } else {
-                break;
+            curr = newSet;
+            i = j+1;
+        } else {
+            // single letter case
+            // you already wrote this
+            set<string> newSet;
+            for(auto s: curr){
+                newSet.insert(s + expr[i]);
             }
+            curr = newSet;
+            i++;
         }
-        return move(ret);
     }
-
-public:
+    
+    return curr;
+};
     vector<string> braceExpansionII(string expression) {
-        this->expression = expression;
-        this->idx = 0;
-        auto ret = expr();
-        return {ret.begin(), ret.end()};
+        set<string> res = solve(expression);
+        vector<string> ans = vector<string>(res.begin() , res.end());
+        return ans;
     }
 };
