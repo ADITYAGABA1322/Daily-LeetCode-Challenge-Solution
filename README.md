@@ -701,6 +701,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0768-partition-labels](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0768-partition-labels) |
 | [0796-rotate-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0796-rotate-string) |
 | [0812-rotate-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0812-rotate-string) |
+| [0856-score-of-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0856-score-of-parentheses) |
 | [0868-push-dominoes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0868-push-dominoes) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0940-distinct-subsequences-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0940-distinct-subsequences-ii) |
@@ -1672,6 +1673,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0726-number-of-atoms](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0726-number-of-atoms) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0776-n-ary-tree-postorder-traversal) |
 | [0780-max-chunks-to-make-sorted](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0780-max-chunks-to-make-sorted) |
+| [0856-score-of-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0856-score-of-parentheses) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1002-maximum-width-ramp](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1002-maximum-width-ramp) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1081-smallest-subsequence-of-distinct-characters) |
@@ -2958,6 +2960,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0022-generate-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0032-longest-valid-parentheses) |
 | [0678-valid-parenthesis-string](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0678-valid-parenthesis-string) |
+| [0856-score-of-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0856-score-of-parentheses) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
