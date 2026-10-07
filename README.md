@@ -400,6 +400,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 |  |
 | ------- |
 | [0133-clone-graph](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0133-clone-graph) |
+| [0301-remove-invalid-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0301-remove-invalid-parentheses) |
 | [0322-coin-change](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0322-coin-change) |
 | [0407-trapping-rain-water-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0407-trapping-rain-water-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0417-pacific-atlantic-water-flow) |
@@ -685,6 +686,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0214-shortest-palindrome](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0214-shortest-palindrome) |
 | [0241-different-ways-to-add-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0241-different-ways-to-add-parentheses) |
 | [0273-integer-to-english-words](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0273-integer-to-english-words) |
+| [0301-remove-invalid-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0301-remove-invalid-parentheses) |
 | [0474-ones-and-zeroes](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0474-ones-and-zeroes) |
 | [0516-longest-palindromic-subsequence](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0516-longest-palindromic-subsequence) |
 | [0539-minimum-time-difference](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0539-minimum-time-difference) |
@@ -2737,6 +2739,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [0022-generate-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0022-generate-parentheses) |
 | [0037-sudoku-solver](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0037-sudoku-solver) |
 | [0040-combination-sum-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0040-combination-sum-ii) |
+| [0301-remove-invalid-parentheses](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0301-remove-invalid-parentheses) |
 | [0401-binary-watch](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0401-binary-watch) |
 | [0494-target-sum](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0494-target-sum) |
 | [0679-24-game](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/0679-24-game) |
