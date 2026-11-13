@@ -1554,6 +1554,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3383-taking-maximum-energy-from-the-mystic-dungeon](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3383-taking-maximum-energy-from-the-mystic-dungeon) |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3418-maximum-amount-of-money-robot-can-earn) |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
 | [3427-special-array-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3427-special-array-ii) |
 | [3429-special-array-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3429-special-array-i) |
 | [3430-count-days-without-meetings](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3430-count-days-without-meetings) |
@@ -1723,6 +1724,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2916-subarrays-distinct-element-sum-of-squares-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2916-subarrays-distinct-element-sum-of-squares-ii) |
 | [3161-block-placement-queries](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3161-block-placement-queries) |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
 | [3454-separate-squares-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3454-separate-squares-ii) |
 | [3501-maximize-active-section-with-trade-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3501-maximize-active-section-with-trade-ii) |
 | [3691-maximum-total-subarray-value-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3691-maximum-total-subarray-value-ii) |
@@ -1777,6 +1779,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2846-robot-collisions](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2846-robot-collisions) |
 | [3001-apply-operations-to-maximize-score](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3001-apply-operations-to-maximize-score) |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 | [3447-clear-digits](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3447-clear-digits) |
 | [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
@@ -1794,6 +1797,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
 | [3001-apply-operations-to-maximize-score](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3001-apply-operations-to-maximize-score) |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
 | [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## Hash Table
 |  |
@@ -2513,6 +2517,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2618-maximize-the-minimum-powered-city](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2618-maximize-the-minimum-powered-city) |
 | [2868-continuous-subarrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2868-continuous-subarrays) |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3578-count-partitions-with-max-min-difference-at-most-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3578-count-partitions-with-max-min-difference-at-most-k) |
 | [3827-implement-router](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3827-implement-router) |
@@ -2810,6 +2815,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3479-count-the-number-of-substrings-with-dominant-ones](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3479-count-the-number-of-substrings-with-dominant-ones) |
 | [3483-alternating-groups-ii](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3483-alternating-groups-ii) |
@@ -2981,6 +2987,7 @@ C++🫶 && JAVA && Python && Python3 &&  C && C#  && JavaScript && Swift && Dart
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2868-continuous-subarrays](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/2868-continuous-subarrays) |
+| [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
 | [3578-count-partitions-with-max-min-difference-at-most-k](https://github.com/ADITYAGABA1322/Daily-LeetCode-Challenge-Solution/tree/master/3578-count-partitions-with-max-min-difference-at-most-k) |
 ## Eulerian Circuit
 |  |
